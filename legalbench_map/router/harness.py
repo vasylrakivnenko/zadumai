@@ -225,7 +225,10 @@ class Harness:
             frame = replace(frame, leaf="choice", lehnert="disjunctive", options=frame.maybe_options,
                             trace=[*frame.trace, "the text states exactly one alternative: it asks which"])
         result.qtree = frame.to_dict()
-        result.contract_map = decision.to_dict() if decision is not None else None
+        if decision is not None:  # the clause types of what the answer read (its evidence's section, or a short text)
+            decision.clause_types, decision.clause_from = self.contract_map.clause_types(
+                document, [e.get("text") for e in result.evidence or [] if isinstance(e, dict)])
+            result.contract_map = decision.to_dict()
         return result
 
     def _calls(self) -> int:

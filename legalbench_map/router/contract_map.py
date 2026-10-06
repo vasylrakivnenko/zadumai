@@ -102,6 +102,7 @@ class DocMap:
     kind_top: str  # the router's pick even when not sure
     sections: list = field(default_factory=list)  # [{"i", "start", "chars", "text", "types": [{"type", "p", "by"}]}]
     pending: bool = False  # the lease encoder is still reading it
+    short: bool = False  # under MIN_DOC_CHARS: no kind is named
 
     def summary(self, n: int = 12) -> dict:
         counts = {}
@@ -111,7 +112,7 @@ class DocMap:
         top = sorted(counts.items(), key=lambda kv: -kv[1])[:n]
         return {"kind": self.kind, "kind_p": round(self.kind_p, 3), "kind_top": self.kind_top,
                 "sections": len(self.sections), "tagged": sum(bool(s["types"]) for s in self.sections),
-                "types": dict(top), "pending": self.pending}
+                "types": dict(top), "pending": self.pending, "short": self.short}
 
 
 @dataclass
@@ -120,6 +121,8 @@ class Decision:
     reason: str
     question_types: list  # high-risk clause types the question names
     document: dict  # DocMap.summary()
+    clause_types: list = field(default_factory=list)  # [{"type", "p", "by"}] of the text the answer is about
+    clause_from: str = ""  # "this text" (a short text: all of it) | "the answer's section" | "" (unknown)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -127,21 +130,24 @@ class Decision:
 
 def split_sections(text: str) -> list:
     """Paragraphs: blank-line blocks (single lines when the text has few blank lines); a short piece (a heading,
-    a number) joins the next one; long ones are cut. Returns [(start, text)]."""
+    a number) joins the next one; long ones are cut. Returns [(start, end, text)]: offsets into `text`."""
     sep = r"\n\s*\n" if len(re.findall(r"\n\s*\n", text)) >= max(3, text.count("\n") // 4) else r"\n"
     pieces, pos = [], 0
     for m in re.finditer(sep, text + "\n\n"):
         pieces.append((pos, text[pos:m.start()])); pos = m.end()
     out, carry, carry_start = [], "", None
-    for start, p in pieces:
-        p = re.sub(r"\s+", " ", p).strip()
+    for start, raw in pieces:
+        end = start + len(raw)
+        p = re.sub(r"\s+", " ", raw).strip()
         if not p: continue
         if carry: p, start = carry + " " + p, carry_start
         if len(p) < MIN_SECTION_CHARS:
             carry, carry_start = p, start; continue
         carry = ""
-        for k in range(0, len(p), MAX_SECTION_CHARS): out.append((start + k, p[k:k + MAX_SECTION_CHARS]))
-    if carry: out.append((carry_start, carry))
+        cuts = list(range(0, len(p), MAX_SECTION_CHARS))
+        for n, k in enumerate(cuts):  # a cut piece's offsets are approximate (whitespace was collapsed)
+            out.append((start + k, end if n == len(cuts) - 1 else start + k + MAX_SECTION_CHARS, p[k:k + MAX_SECTION_CHARS]))
+    if carry: out.append((carry_start, len(text), carry))
     return out
 
 
@@ -161,6 +167,25 @@ class _Tagger:
     def scores(self, texts: list) -> np.ndarray:
         z = self.vec.transform(texts) @ self.W + self.b
         return 1 / (1 + np.exp(-np.clip(z, -30, 30)))
+
+
+class _AnyTagger:
+    """For texts without a kind (a clause or a few): all six datasets' classes in one model, trained with other
+    kinds' clauses as negatives (/root/zadumai_nli_proto/contract_map/any_tagger.py). Each class has its own threshold."""
+    def __init__(self, path: Path):
+        import joblib
+        d = joblib.load(path)
+        self.vec, self.classes, self.W, self.b = d["vec"], d["classes"], d["W"], d["b"]
+        self.th = np.array(d["thresholds"]); self.labels = d["labels"]
+
+    def tags(self, texts: list, top: int = 3) -> list:
+        z = self.vec.transform(texts) @ self.W + self.b
+        S = 1 / (1 + np.exp(-np.clip(z, -30, 30)))
+        out = []
+        for s in S:
+            hits = sorted((j for j in np.where(s >= self.th)[0]), key=lambda j: -s[j])[:top]
+            out.append([{"type": self.labels.get(self.classes[j], self.classes[j]), "p": round(float(s[j]), 3), "by": "any"} for j in hits])
+        return out
 
 
 class _LeaseEncoder:
@@ -195,6 +220,7 @@ class ContractMap:
         r = joblib.load(d / "router.joblib"); self.rvec, self.rlr = r["vec"], r["lr"]
         self.taggers = {n: _Tagger(d / f"tagger_{n}.joblib") for n in {t for ts in TAGGERS.values() for t in ts}}
         self.to_llm_types = set(self.meta["to_llm"]["cuad_types"])
+        self.any = _AnyTagger(d / "tagger_any.joblib") if (d / "tagger_any.joblib").exists() else None
         self.lease = None
         if lease_encoder and (d / "lease" / "head.pt").exists():
             self.lease = _LeaseEncoder(d / "lease")
@@ -217,9 +243,12 @@ class ContractMap:
                 self._cache.move_to_end(key); return self._cache[key]
         kind, p, top = self.kind(document)
         secs = split_sections(document)
-        dm = DocMap(kind, p, top, [{"i": i, "start": s, "chars": len(t), "text": t[:160], "types": []} for i, (s, t) in enumerate(secs)])
-        texts = [t for _, t in secs]
-        if kind in TAGGERS and texts:
+        dm = DocMap(kind, p, top, [{"i": i, "start": s, "end": e, "chars": len(t), "text": t[:160], "types": []}
+                                   for i, (s, e, t) in enumerate(secs)], short=len(document) < MIN_DOC_CHARS)
+        texts = [t for _, _, t in secs]
+        if kind is None and self.any is not None and texts:  # no kind (short or unsure): the kind-free tagger
+            for sec, tags in zip(dm.sections, self.any.tags(texts)): sec["types"] = tags
+        elif kind in TAGGERS and texts:
             for name in TAGGERS[kind]:
                 self._tag(dm, texts, self.taggers[name], llm if name in LLM_TAGGERS else None)
         elif kind == "lease" and self.lease is not None and texts:
@@ -266,6 +295,27 @@ class ContractMap:
                                            for j in np.where(s >= self.lease.th)[0]]
         finally:
             dm.pending = False
+
+    def clause_types(self, document: str, evidence: list) -> tuple:
+        """The clause types of what an answer is about: a short text's own tags; in a longer document, the tags of
+        the section(s) its evidence quotes. Returns (types, where from)."""
+        dm = self.analyze(document)
+        def merged(secs):
+            best = {}
+            for s in secs:
+                for t in s["types"]:
+                    if t["type"] not in best or t["p"] > best[t["type"]]["p"]: best[t["type"]] = t
+            return sorted(best.values(), key=lambda t: -t["p"])[:4]
+        if dm.short or len(dm.sections) <= 2:
+            return merged(dm.sections), "this text"
+        hit = []
+        for ev in evidence or []:
+            words = re.findall(r"\w+", (ev or "")[:400])[:12]
+            if len(words) < 3: continue
+            m = re.search(r"\W+".join(map(re.escape, words)), document)
+            if m:
+                hit += [s for s in dm.sections if s["start"] <= m.start() < s["end"]]
+        return (merged(hit), "the answer's section") if hit else ([], "")
 
     # ---------- questions ----------
     def decide(self, question: str, document: str, llm=None) -> Decision:

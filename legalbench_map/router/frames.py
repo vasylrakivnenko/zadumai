@@ -73,6 +73,9 @@ LEXICON = {
     # actions
     ("ACTION", "SHARE"): ["share", "disclose", "provide", "transfer", "make available", "give access", "pass on",
                           "release", "transmit", "distribute", "divulge", "reveal", "communicate"],
+    # making it public isn't sharing it with someone: "Do you publish my data?" isn't answered by "we share it with
+    # our service providers" (2026-10-02, PrivacyQA; "publish" was an LLM-proposed SHARE phrase)
+    ("ACTION", "PUBLISH"): ["publish", "make public", "made public", "make publicly available", "post publicly"],
     ("ACTION", "SELL"): ["sell", "rent out", "trade"],
     ("ACTION", "COLLECT"): ["collect", "gather", "obtain"],
     ("ACTION", "USE"): ["use", "process", "utilize", "exploit"],
@@ -861,7 +864,51 @@ def _presence_guards(q: str) -> dict:
         g["all"] = True
     if re.search(r"\b(?:if|when|whenever|once|unless|after|upon|in the event)\b", q):
         g["cond"] = True  # a concept can come back in the condition ("If the lease is terminated, does ... terminate?")
+    if m := _PASSIVE_Q.search(q):
+        subj = [w for w in m.group("subj").split() if w not in _PATIENT_SKIP]
+        if subj:
+            heads = {_crude(subj[-1])}
+            stoks = tokens(" ".join(subj))
+            for t in tag(stoks, _BASE_TRIE):  # only the concept the subject ends in: "user information" -> information
+                if t.kind in ("THING", "ACTOR") and (t.end if t.end != -1 else t.start + 1) >= len(stoks):
+                    heads |= {_crude(ph.split()[-1]) for ph in LEXICON.get((t.kind, t.name), [])
+                              if t.kind == "ACTOR" or ph.split()[-1] not in ("you", "me", "us", "them", "it")}
+            verbs = {_crude(m.group("p"))}
+            for t in tag(tokens(m.group("p")), _BASE_TRIE):
+                if t.kind == "ACTION":
+                    verbs |= {_crude(ph) for ph in LEXICON.get(("ACTION", t.name), []) if " " not in ph}
+            g["patient"] = [sorted(v for v in verbs if len(v) >= 3), sorted(h for h in heads if len(h) >= 3)]
     return g
+
+
+# "Does the clause describe how user information is protected?": the sentence's "protect" must be done to the user
+# information ("protect your personal information", "your data is protected"), not to something else ("to protect
+# our rights or property", "a password-protected account"). 2026-10-02, OPP-115 (6 wrong yeses) on free sets.
+_PASSIVE_Q = re.compile(r"\b(?:how|whether|that|why)\s+(?P<subj>(?:[\w'-]+\s+){0,4}?[\w'-]+)\s+(?:is|are|will be|"
+                        r"would be|gets|get|can be|may be|must be|shall be)\s+(?P<p>\w+(?:ed|en))\b")
+_PATIENT_SKIP = {"the", "a", "an", "any", "all", "your", "my", "our", "their", "its", "his", "her", "this", "that", "long",
+                 "much", "many", "often", "far", "soon"}
+_CLAUSE_TOKEN = re.compile(r"[a-z0-9][a-z0-9'-]*|[;:.()]")
+
+
+def _patient_near(verbs: list, heads: list, sentence: str) -> bool:
+    """Whether some form of one of the verbs ("protect", "protected", "protection"; an action's synonyms) has one of
+    the heads as what it is done to: up to 6 words before it ("your information is encrypted and is protected") or 8
+    after ("protect against unauthorized access to your personal information"), within one clause."""
+    toks = _CLAUSE_TOKEN.findall(sentence.lower().replace("’", "'"))
+    for i, w in enumerate(toks):
+        if not any(part.startswith(v) for v in verbs for part in w.split("-")) or "-" in w and not w.startswith(tuple(verbs)):
+            continue  # "password-protected" describes the account
+        before, after = [], []
+        for x in reversed(toks[max(0, i - 6):i]):
+            if not x[0].isalnum(): break
+            before.append(x)
+        for x in toks[i + 1:i + 9]:
+            if not x[0].isalnum(): break
+            after.append(x)
+        if any(_crude(x) in heads for x in before + after):
+            return True
+    return False
 
 
 # "Is there a specified interest rate ...?", "Does it state the exact amount ...?": the sentence must give one
@@ -1529,6 +1576,8 @@ def _judge_presence(frame: Frame, sentence: str, trie: dict):
         return None
     if not _same_side(frame, sentence):
         return None
+    if "patient" in frame.guards and not _patient_near(*frame.guards["patient"], sentence):
+        return None  # "to protect our rights" doesn't say how user information is protected; another sentence may
     if (why := _guards_fail(frame, sentence, raw, norm)) is not None:
         return None if frame.strict else why
     if any(all(_item_present(it, raw, norm) for it in alt) and _excluded(alt, raw, sentence) for alt in frame.alts):

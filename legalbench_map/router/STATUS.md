@@ -46,6 +46,70 @@ Lexicon: 94 concepts / 767 phrases. The LLM-proposed ones are in `lexicon_extra.
 `kimi-k3` verifies, via Fireworks, key `FIREWORKS_API_KEY` in `/root/.env`; 202 requests used. Work files are in
 `/root/zadumai_nli_proto/extensive/v3/`.
 
+## FREE PUBLIC SETS (2026-10-02 ~06:00 UTC; the user: find free labeled data first, then "go ahead")
+Workspace `/root/zadumai_nli_proto/extensive/free/` (not in git): `build_free.py` (sets, questions, scoring written
+before any run), `free_eval.py NAME [--no-net] [--sample N]` (8 worker processes; ROUTER_PATH for older versions),
+`audit.py RUN SET` (answers with their evidence, for reading by hand), `runs.log`. No LLM calls. Never used before by
+any Pre-Tier 0 eval, tuning or network training (all open now). 28,428 rows:
+opp115 (LegalBench, 9 privacy-policy topic tasks, 9,258), supply (LegalBench supply_chain_disclosure, 10 tasks,
+3,787), maud (LegalBench MAUD tasks with No/Yes options, 1,358), ppqa (LegalBench privacy_policy_qa = PrivacyQA user
+questions; Irrelevant sentence -> any answer wrong, Relevant -> audited by hand; 10,923), cqa (ConditionalQA yes/no +
+unanswerable, scenario + question over whole gov.uk pages; 1,357), tosdr (archived ToS;DR dump, CC BY-SA: 63 cases
+given a user question each, quote = premise, plus one other-topic question per quote as not_stated; 1,745).
+Gotcha: router/netreader.py sets 4 torch threads; with 8 worker processes that oversubscribes the cores (~100x
+slower), so free_eval sets `netreader.TORCH_THREADS = 1` per worker. Pre-Tier 0 alone: 28,428 rows in 6 s.
+**Pre-Tier 0 alone, all rows (p3 = live):**
+| set | answers | right (gold) | after reading them |
+|---|---|---|---|
+| opp115 | 74 = 0.8% | 68 (91.9%) | 6 wrong are one pattern: "how user information is protected" matched "protect our rights / safety", "password-protected" (1 arguable) |
+| supply | 0 | | long criteria questions don't parse |
+| maud | 0 | | c4 answered 19 (all right); p3 now leaves them to the network |
+| ppqa | 6 | | 1 right; 5 wrong: "Do you publish my data?" answered from sharing with service providers ("publish" read as share/disclose) |
+| cqa | 0 | | scenario + question doesn't parse |
+| tosdr | 23 = 1.3% | 22 | 23/23: the 1 "wrong" is a bad not_stated row of ours (the quote does share data with third parties) |
+| all | 103 = 0.36% | | 92 right = 89.3% |
+Older versions on the same rows: 4ef0122 186 answers (opp115 102 @ 89.2%, maud 19/19, tosdr 41 @ 90.2%, ppqa 12),
+c4 145 (opp115 74, maud 19/19, tosdr 40, ppqa 12), p3 103.
+**System (Pre-Tier 0, then the network), p3, 300 random rows per set (1,800; `--sample 300`, 133 s):** 22 answers =
+1.2%, 21 right (the 1 wrong is Pre-Tier 0's opp115 "protect" pattern). The network added 16, all right: maud 4 (of 20
+"COR permitted in response to an intervening event" rows), tosdr 12 (of 101 positives); none on opp115, supply, ppqa
+or cqa.
+Takeaway: outside the question styles it was built and tuned on (checklist/clause questions, user yes/no about a
+clause), Pre-Tier 0 almost never answers (0.4%), and its precision on what it does answer is ~89% (two fixable word
+patterns), not the 99.7% of the tuned sets. Fixable now: a topic question's object must be what the verb applies to
+("how user information is protected" vs "protect our rights"); "publish" isn't "share/disclose". ToS;DR is the closest
+match to real consumer questions; a bigger ToS;DR set (live API: ~10k services, rate-limited) is the natural next eval.
+**Fix candidate f1 (2026-10-02 ~06:45 UTC; working tree only, NOT deployed, NOT committed; live = p3 = 0ee157e):**
+- frames.py: a presence question "... how/whether/that/why X is <verb>ed" gets a `patient` guard: a sentence counts
+  only if some form of the verb (or its lexicon synonyms) has X as what it's done to, up to 6 words before it or 8
+  after, within one clause (`_patient_near`; X = the subject's head and its concept's head words, no pronouns for
+  things). It filters sentences (another sentence may still answer); it doesn't block the answer like `_guards_fail`.
+  "password-protected" isn't the verb.
+- "publish" is no longer an LLM-proposed SHARE phrase (lexicon_extra.json "rejected" notes why); new hand-curated
+  ACTION:PUBLISH (publish, make public, made public, make publicly available, post publicly). "publicize" and
+  "publicly disclose" were tried in it and dropped: they split "not publicize or disclose" into two actions (2 right
+  answers lost on held-out / fresh A).
+- Free sets, Pre-Tier 0 alone, p3 -> f1: opp115 74 answers (68 right) -> 58 (57 right; the 1 "wrong" says "protecting
+  the security of ... Personal Information", arguably right); ppqa 6 (1 right) -> 1 (right); all the 11 errors of
+  those two patterns gone but that one; 11 gold-right opp115 answers lost, several right by accident ("protect
+  yourself", "other protected area"). Every older open set (dev, held-out, fresh A/B, genval, conval, adv, prior,
+  v4-v7 all): no answer changed. Tests: 12 new cases in tests/test_pretier0_v4.py; 732 pass (test_per_item_dump's 3
+  errors happen on p3 too).
+**Full system run, all 28,428 rows (p3 frozen copy `free/versions/p3`, 8 niced workers with 1 torch thread each,
+checkpointed to runs/sys_p3_full.partial.jsonl, 23 min; f1 = the same with the 33 rows whose Pre-Tier 0 answer changed
+re-read by the network, runs/sys_f1_full.json):**
+| set | p3: Pre-Tier 0 + network | right (read by hand) | f1: Pre-Tier 0 + network | right (read by hand) |
+|---|---|---|---|---|
+| opp115 | 74 + 11 = 85 | 79 | 58 + 11 = 69 | 68 (+1 arguable) |
+| supply | 0 | | 0 | |
+| maud | 0 + 12 | 12 | 0 + 12 | 12 |
+| ppqa | 6 + 7 = 13 | 8 (the network's 7 all right) | 1 + 7 = 8 | 8 |
+| cqa | 0 + 1 | 1 | 0 + 1 | 1 |
+| tosdr | 23 + 39 = 62 | 60 | 23 + 39 = 62 | 60 |
+| all | 173 = 0.61% | 160 = 92.5% | 152 = 0.53% | 149-150 = 98-99% |
+The network's 2 ToS;DR misses are quote fragments cut from a "You may not:" list ("Post any illegal or unauthorized
+content ..."), read as permission without their lead-in: an artifact of quote-only premises (whole documents fix it).
+
 ## CONTRACT MAP (2026-10-02; deployed 23:30 UTC = 16:30 PDT; /admin switch "Contract map", off until an admin turns it on)
 The user asked to use SALI/FOLIO, CUAD and ACORD for a tree of contract and clause types; research, benchmarks and
 the build are in `/root/zadumai_nli_proto/contract_map/` (`bench/RESULTS.md` has every number; `taxonomy.json` = the
@@ -937,3 +1001,10 @@ The current plan is NEXT STEPS: Pre-Tier 0 coverage, near the top. The items bel
 - Stop the 8777 test server in its own Bash call, with a command line that doesn't contain its own pattern
   (`pkill -f "ask_ui.py --port 877[7]"` alone): if the same command line holds "--port 8777", pkill kills the shell.
 - Git has no identity on this machine; commits use `-c user.name=... -c user.email=...` from earlier commits.
+
+**2026-10-06: committed, NOT deployed.** The fix candidate f1 (frames.py patient guard, lexicon, tests) and the contract
+map follow-ups (kind-free tagger for short texts, section end offsets, clause types of what an answer is about, shown
+in ui.html) are committed to main on the user's request. The live service still runs the tree of 2026-10-02 23:30 UTC
+(= 56093f4); the service runs from this working tree, so the next restart deploys them. Router tests pass from
+legalbench_map/ (354 + 120); the 9 failures / 3 errors in test_determinism, test_phase2_runner and test_per_item_dump
+(and 4 test files needing the `downshift` module) fail the same on 56093f4: pre-existing, unrelated.

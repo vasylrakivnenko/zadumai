@@ -48,8 +48,8 @@ def test_sections_are_paragraphs_and_headings_join_the_next_one():
            "2. Fees\n\nCustomer shall pay the fees within thirty (30) days of each invoice date."
     secs = split_sections(text)
     assert len(secs) == 2
-    assert secs[0][1].startswith("1. Term This Agreement") and secs[1][1].startswith("2. Fees Customer")
-    assert text[secs[1][0]:].startswith("2. Fees")
+    assert secs[0][2].startswith("1. Term This Agreement") and secs[1][2].startswith("2. Fees Customer")
+    assert text[secs[1][0]:].startswith("2. Fees") and secs[1][1] == len(text)
 
 
 class FakeMap:
@@ -61,6 +61,9 @@ class FakeMap:
         self.seen.append(question)
         return Decision(self.to_llm, "the question is about Non-Compete, a high-risk business clause" if self.to_llm else "",
                         ["Non-Compete"], {"kind": "commercial", "kind_p": 0.99})
+
+    def clause_types(self, document, evidence):
+        return [{"type": "Non-Compete", "p": 0.9, "by": "any"}], "this text"
 
 
 DOC = "The Supplier shall not, during the Term, sell competing products in the Territory. " * 3
@@ -132,3 +135,23 @@ def test_the_rule_when_turned_on(monkeypatch):
     assert not m.decide("Can they share my data with advertisers?", PRIVACY).to_llm
     assert not m.decide("Can they terminate my account at any time?", PRIVACY).to_llm  # consumer policy: rule off
     assert m.decide("Is there a cap on liability?", "Fees are due monthly.").to_llm  # short text: no kind, rule applies
+
+
+@needs_models
+def test_a_short_text_gets_its_clause_types_without_a_kind():
+    m = ContractMap(lease_encoder=False)
+    if m.any is None:
+        pytest.skip("no kind-free tagger")
+    clause = ("This Agreement shall be governed by and construed in accordance with the laws of the State of New York, "
+              "without regard to its conflict of laws principles.")
+    d = m.decide("Which law governs?", clause)
+    assert d.document["kind"] is None and d.document["short"]
+    types, where = m.clause_types(clause, [])
+    assert where == "this text" and any("overn" in t["type"] for t in types)
+
+
+@needs_models
+def test_a_long_document_reports_the_section_its_evidence_quotes():
+    m = ContractMap(lease_encoder=False)
+    types, where = m.clause_types(PRIVACY, ["We retain your information for as long as your account is active."])
+    assert where == "the answer's section"

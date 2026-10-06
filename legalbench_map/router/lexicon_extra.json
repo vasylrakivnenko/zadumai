@@ -42,10 +42,10 @@
     "furnish",
     "hand over",
     "impart",
-    "publish",
     "supply"
    ],
    "rejected": {
+    "publish": "hand review 2026-10-02: publishing is making public, not sharing (PrivacyQA); ACTION:PUBLISH in frames.py",
     "convey": "verifier said no",
     "deliver": "verifier said no"
    }

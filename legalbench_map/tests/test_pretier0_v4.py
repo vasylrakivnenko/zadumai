@@ -264,3 +264,40 @@ def test_lemmas_dont_depend_on_the_hash_seed():
     out = {subprocess.run([sys.executable, "-c", code], env={"PYTHONHASHSEED": str(s), "PATH": ""}, cwd=".",
                           capture_output=True, text=True).stdout.strip() for s in range(1, 9)}
     assert out == {"fee"}, out  # (a failed run prints nothing: the set would still have one element)
+
+
+# 2026-10-02, free public sets (router/STATUS.md "FREE PUBLIC SETS"): OPP-115's "how user information is protected"
+# was answered from "to protect our rights", and PrivacyQA's "do you publish my data" from "we share it with ...".
+@pytest.mark.parametrize("text, expected", [
+    ("We may use your personal information as we believe is necessary or appropriate to protect, enforce, or defend "
+     "the legal rights, privacy, safety, or property of the Services, its employees or agents, or other users.", None),
+    ("We may disclose your information when we believe it's necessary to address fraud, security, or spam; or to "
+     "protect our rights or property.", None),
+    ("To use the app, you may be required to create a password-protected user account and provide us with personal "
+     "information when you do so.", None),
+    ("We may disclose personal information to (1) comply with the law; (2) protect the personal safety or property "
+     "of our users or the public.", None),
+    ("We use industry-standard encryption to protect your personal information.", "yes"),
+    ("Your information is encrypted and is protected utilizing the industry standard SSL encryption software.", "yes"),
+    ("We follow procedures that will protect against unauthorized access to your Personally Identifiable Information.",
+     "yes"),
+])
+def test_the_protected_thing_is_the_one_asked_about(text, expected):
+    r = check("Does the clause describe how user information is protected?", text)
+    assert (r.answer if r.fired else None) == expected, r.reason
+
+
+@pytest.mark.parametrize("question, text, expected", [
+    ("do you publish my data", "We share the information described above with our third party service providers, "
+     "as necessary for them to provide their services to us.", None),
+    ("Do you publish my data?", "We will only share your Personal Information with third parties for marketing "
+     "purposes with your explicit consent.", None),
+    ("Do you publish my data?", "We may publish your profile information on our public website.", "yes"),
+    ("Can the Recipient publish the Confidential Information?",
+     "The Recipient shall not publish or disclose the Confidential Information to any third party.", "no"),
+    ("Can we share your data with service providers?", "We may share your personal information with our service "
+     "providers.", "yes"),
+])
+def test_publishing_is_not_sharing(question, text, expected):
+    r = check(question, text)
+    assert (r.answer if r.fired else None) == expected, r.reason
