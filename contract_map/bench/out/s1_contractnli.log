@@ -1,0 +1,16 @@
+== contractnli stage 1: 17 classes, eval 500 rows, train 6000 of 23399
+   eval rows with a type 300, none 200
+   (tfidf: trained on 6000 rows in 41s)
+   (tfidf: threshold 0.6, picked on 2000 validation rows)
+  tfidf        micro P  75.5% R  74.0% F1 0.747  macro-F1 0.730  exact  71.0%  'none' rows kept empty 176/200  (0.0 ms/item)
+      weakest types (F1): Return of confidential information 0.40, Permissible copy 0.62, None-inclusion of non-technical information 0.62, Explicit identification 0.62, Limited use 0.64, No solicitation 0.64
+   jev: 0 cached, 500 to call
+   jev: 100/500
+   jev: 200/500
+   jev: 300/500
+   jev: 400/500
+   jev: 500/500
+   (jev: 0 errors; latency p50 71 ms, p95 123 ms; this run: 500 calls, tokens in 440359, out 106860, model jev-1.13.0)
+  jev          micro P  79.3% R  46.5% F1 0.586  macro-F1 0.578  exact  62.2%  'none' rows kept empty 177/200  (70.9 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  72.2%)
+      weakest types (F1): None-inclusion of non-technical information 0.00, Explicit identification 0.31, Return of confidential information 0.34, Permissible post-agreement possession 0.38, Permissible acquirement of similar information 0.45, Permissible copy 0.50

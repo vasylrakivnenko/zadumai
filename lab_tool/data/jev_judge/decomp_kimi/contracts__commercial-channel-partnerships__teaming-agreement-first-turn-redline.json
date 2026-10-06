@@ -1,0 +1,437 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline is labeled, titled, or designated as version 1.2 (v1.2) of the Teaming Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes, rejects, or replaces Cerulean's proposed work-share range of 'not less than 28% and not more than 35%' of total contract value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes a Cerulean work-share ceiling of no more than 25% of total contract value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes, rejects, or replaces Cerulean's added clause guaranteeing a minimum annual task-order value of $16,800,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline entirely deletes the guaranteed minimum annual task-order value clause with no replacement work-share commitment.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline's replacement for the task-order guarantee is expressly conditioned on actual government task-order issuance (e.g., an effort-based or best-efforts obligation contingent on task orders being issued by the government).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects Cerulean's change making the exclusivity obligation unilateral (binding only on Vanguard).",
+     "pass_if": true
+    },
+    {
+     "s": "The redline rejects or deletes the carve-out permitting Cerulean to team with third parties on the ECS-III procurement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores mutual exclusivity so that both Vanguard and Cerulean are bound not to team with competitors at least for the ECS-III procurement (Draft Solicitation No. 70CDCR-25-R-00004).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects or modifies Cerulean's reduction of the post-award Teaming Period from 18 months to 6 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes a Teaming Period of at least 12 months after contract award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores joint Vanguard\u2013Cerulean ownership of all Foreground IP as in the original Section 7.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline proposes a structured fallback position on Foreground IP that does not simply accept Cerulean's sole-ownership claim with only a limited, non-exclusive, non-sublicensable license back to Vanguard.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores full joint ownership of Foreground IP.",
+     "pass_if": true
+    },
+    {
+     "s": "Where the redline accepts Cerulean sole ownership of Foreground IP derived from Cerulean Background IP as a fallback, the license granted to Vanguard is expressly stated to be irrevocable.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores full joint ownership of Foreground IP.",
+     "pass_if": true
+    },
+    {
+     "s": "Where the redline accepts Cerulean sole ownership of certain Foreground IP as a fallback, the license granted to Vanguard is expressly stated to be sublicensable (correcting Cerulean's 'non-sublicensable' restriction).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes or rejects Cerulean's new Section 7.6 that restricts Vanguard from filing any patent applications covering methods or processes performed using CeruleanShield\u2122.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects Cerulean's change that removed the liability cap for Vanguard (which left Vanguard's liability uncapped while Cerulean retained a 12-month cap).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores a mutual, capped liability regime that applies equally to both Vanguard and Cerulean (such as the original 12-months-of-fees cap or an increased mutual cap such as 18 months).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects Cerulean's deletion of the mutual waiver of consequential damages and its replacement with a unilateral waiver benefiting only Cerulean.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores a mutual waiver of consequential damages applying to both Vanguard and Cerulean, consistent with the original Section 10 of v1.0.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects Cerulean's expansion of Vanguard's indemnification obligation to cover 'any and all losses arising from the teaming arrangement or resulting contract performance.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline limits Vanguard's indemnification obligation to specified categories such as third-party IP infringement claims and/or breaches of confidentiality obligations, rather than unlimited 'any and all losses.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects Cerulean's change moving the seat of arbitration from Fairfax County, Virginia to Baltimore, Maryland.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores or maintains the seat of arbitration in Virginia (the original v1.0 specified Fairfax County, Virginia under AAA Commercial Rules).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects or modifies Cerulean's asymmetric termination-for-convenience notice periods (30 days for Cerulean, 180 days for Vanguard) and proposes more balanced notice periods.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes a termination-for-convenience notice period for Vanguard of no more than 120 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects or substantially reduces Cerulean's proposed Transition Fee of 6 months of Cerulean's average monthly billings under active task orders (payable upon Vanguard's termination for convenience).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes no Transition Fee.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline caps any retained Transition Fee at no more than 3 months of Cerulean's average monthly billings.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "A professional cover note is produced as a separate deliverable (cover-note.docx), distinct from the counter-turn redline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note is addressed to Alina M. Ferris, Cerulean's Vice President of Strategic Partnerships.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references and transmits the counter-turn redline of the Teaming Agreement (e.g., references v1.2 or the counter-turn markup).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note identifies at least three major open commercial or legal issues on which the parties' positions diverge (e.g., work-share, IP ownership, exclusivity, liability caps, termination, arbitration seat, indemnification).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline addresses and modifies (does not accept as-is) Cerulean's added per-seat license fee provision for CeruleanShield\u2122 ($1,150/user/year beyond the 500-seat initial deployment).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes an included-seat threshold above 500 seats before per-seat fees apply (e.g., 1,000 seats).",
+     "pass_if": true
+    },
+    {
+     "s": "The redline proposes a per-seat fee lower than $1,150/user/year (e.g., $850/user/year).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes Cerulean's B&P cost-sharing provision entirely.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline materially modifies Cerulean's B&P cost-sharing proposal of 50% reimbursement capped at $375,000 triggered by non-submission or non-award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes the B&P cost-sharing provision entirely.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline reduces the B&P reimbursement percentage to no more than 25% of Cerulean's B&P costs (down from Cerulean's proposed 50%).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes the B&P cost-sharing provision entirely.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline reduces the B&P reimbursement cap to no more than $200,000 (down from Cerulean's proposed $375,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes the B&P cost-sharing provision entirely.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline limits the B&P reimbursement trigger solely to the scenario where Vanguard elects not to submit the proposal, excluding the scenario where the proposal is submitted but the contract is not awarded.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 3461,
+  "completion": 7320
+ }
+}

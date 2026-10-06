@@ -1,0 +1,674 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo is addressed to Marcus Yardley.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo is addressed to Diane Suh.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo is addressed to Anton Prewitt.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo is addressed to Rachel Guzm\u00e1n.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed to General Counsel Theodore 'Ted' Calloway or Ted Calloway.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Priya Nandakumar as its author or preparer and gives her title as Vice President & Associate General Counsel or substantively equivalent wording.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo refers to the separately managed account as SMA-VII.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Thalweg Public Employees' Retirement System or Thalweg PERS as the institutional limited partner or counterparty.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies management fee as an out-of-policy IMA term category.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies investment period termination as an out-of-policy IMA term category.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies GP removal as an out-of-policy IMA term category.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies key person as an out-of-policy IMA term category.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies indemnification as an out-of-policy IMA term category.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies co-investment/MFN as an out-of-policy IMA term category.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies carried interest as an out-of-policy IMA term category.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies portfolio transparency/reporting as an out-of-policy IMA term category.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the LP proposes a 1.00% management fee on committed capital during the investment period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the LP proposes a 0.65% post-investment-period management fee on net invested cost.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix investment-period management fee floor is 1.25% on committed capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix post-investment-period management fee floor is 1.00% on invested capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explicitly notes that the LP's markup changes the post-investment-period fee basis from 'invested capital' to 'net invested cost'.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the LP's proposed investment-period termination right as unilateral and LP-initiated.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the LP's proposed no-cause investment-period termination right may be exercised after 3 years.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the LP's proposed right requires 90 days' written notice.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the LP may exercise the proposed right without cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix permits no-cause termination no earlier than the 4th anniversary of the investment period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the proposed GP removal right as unilateral and exercisable by a single LP.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies the proposed GP removal right as no-fault, or not for cause.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the proposed GP removal right requires 180 days' notice.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the proposed GP removal right is exercisable after year 3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix permits GP removal only for cause and requires a minimum voting threshold of 66.67% in interest.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo discusses a qualitative risk of granting a single investor no-fault GP removal authority, such as precedent risk, leverage asymmetry, governance implications, or impact on fund stability.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the LP's key person clause automatically suspends upon the departure of any 1 of 4 named key persons.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo lists Marcus Yardley as a key person in the LP markup.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo lists Diane Suh as a key person in the LP markup.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo lists Anton Prewitt as a key person in the LP markup.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo lists Lena Kova\u00e7i as a key person in the LP markup.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the LP's key person provision includes a 90-day cure period.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the LP's key person provision allows full termination if the event is not cured within that period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix permits a key person trigger upon the departure of any 2 of 3 named key persons.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix requires a key person cure period of not less than 120 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo separately identifies the expansion of the named key person list beyond the standard three to include a fourth person, Lena Kova\u00e7i, as a concern or deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP's markup adds simple negligence, distinct from gross negligence, to the carve-outs from GP indemnification.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix does not permit indemnification carve-outs beyond the standard carve-outs of fraud, gross negligence, and willful misconduct.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP's markup caps the LP's indemnification obligations at the LP's unfunded commitment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix requires LP indemnification obligations to remain uncapped.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP demands a contractual right to co-invest up to 100% of any single deal.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP's proposed co-investment has zero management fee and zero carried interest.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix limits co-investment to 50% of deal equity at a reduced management fee of 0.50%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP's MFN clause extends across all Crestfall-managed vehicles, not only the SMA-VII vehicle.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix restricts MFN rights to the SMA-VII vehicle only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo discusses the systemic risk that a cross-vehicle MFN clause poses to Crestfall's other fund vehicles, such as cascading concessions, effects on existing LP economics, or constraints on future fund terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP proposes 15% carried interest, below the Fallback Authority Matrix minimum of 17.5%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP proposes a 9% preferred return, above the Fallback Authority Matrix maximum of 8.5%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP's markup eliminates the GP catch-up entirely, contrary to the Fallback Authority Matrix requirement of a 100% GP catch-up.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP proposes a clawback escrow of 100% of all carried interest distributions, exceeding the Fallback Authority Matrix maximum of 50% of net carried interest distributions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the LP's proposed 10-business-day portfolio reporting delivery window is more aggressive than the Fallback Authority Matrix's permitted 30-calendar-day delivery window.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the requirement to deliver underlying portfolio company financial statements to a single LP is not authorized by the Fallback Authority Matrix.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C039",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo gives an explicit recommendation to accept, counter-propose, or reject the management fee terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives an explicit recommendation to accept, counter-propose, or reject the investment period termination terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives an explicit recommendation to accept, counter-propose, or reject the GP removal terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives an explicit recommendation to accept, counter-propose, or reject the key person terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives an explicit recommendation to accept, counter-propose, or reject the indemnification terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives an explicit recommendation to accept, counter-propose, or reject the co-investment/MFN terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives an explicit recommendation to accept, counter-propose, or reject the carried interest terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives an explicit recommendation to accept, counter-propose, or reject the portfolio transparency/reporting terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C040",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each out-of-policy term for which the memo recommends a counter-proposal, the counter-proposal includes specific parameters, such as rates, thresholds, time periods, or structural terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the next Investment Committee meeting scheduled for June 18, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Thalweg PERS's hard deadline of June 30, 2025, for IMA execution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo connects the June 18, 2025 Investment Committee meeting and the June 30, 2025 hard deadline to explain the urgency of obtaining approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Thalweg PERS commitment amount for SMA-VII as $175,000,000 or $175 million.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that SMA-VII would represent Crestfall's largest single separately managed account.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Crestfall's current total AUM across all vehicles is approximately $2.4 billion.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo expressly identifies Fallback Authority Matrix v.4.2 as the governing policy against which deviations are measured.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix v.4.2 was approved by the Investment Committee on March 14, 2024.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies IMA Draft 3, or Draft 3 of the Investment Management Agreement, as the marked-up document under review.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Bridlewood Haines LLP as the outside counsel that prepared and submitted the IMA markup.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the IMA Draft 3 markup was received or delivered on June 4, 2025.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

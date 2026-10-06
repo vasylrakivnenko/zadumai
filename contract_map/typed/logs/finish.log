@@ -1,0 +1,17 @@
+nda_tune: 1700 rows re-prioritized
+cuad_tune: 1558 rows re-prioritized
+learned parser vs the grammar (5-fold CV, 3062 typed questions): asks 82.4%, action 87.5%; sure (both p >= 0.8) on 52.0%, both right there 90.7%
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 40766.46it/s]
+done nda_tune: 100 untyped questions (1s)
+done cuad_tune: 7 untyped questions (0s)
+nda_ho: 1020 rows re-prioritized
+cuad_ho: 950 rows re-prioritized
+learned parser vs the grammar (5-fold CV, 3062 typed questions): asks 82.4%, action 87.5%; sure (both p >= 0.8) on 52.0%, both right there 90.7%
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 8817.52it/s]
+done nda_ho: 60 untyped questions (1s)
+done cuad_ho: 1 untyped questions (0s)
+FINISHED

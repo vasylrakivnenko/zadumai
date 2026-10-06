@@ -1,0 +1,1281 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document identifies itself as SOW #001, Statement of Work No. 001, or an equivalent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW references MSA No. CNHS-MSA-2025-0042 and states it was executed on January 15, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states the Verdantis Deal ID as VRD-2025-00187.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states an Effective Date of May 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW identifies the Provider as Verdantis Solutions, Inc., a Delaware corporation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW identifies the Client as Caldwell National Health System, Inc., a Maryland nonprofit corporation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes a precedence clause referencing MSA \u00a7 14.2 that says the MSA governs conflicts except where the SOW expressly states a more protective standard.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Scope of Work describes Phase 1 of the CaldwellConnect Intake & Interoperability Platform (CCIP), covering design, development, integration testing, and go-live deployment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The SOW names all four pilot hospitals with these locations: Caldwell Memorial Hospital \u2014 Baltimore, MD; Caldwell Chesapeake Medical Center \u2014 Annapolis, MD; Caldwell Northern Virginia Hospital \u2014 Arlington, VA; and Caldwell Capital Region Hospital \u2014 Washington, D.C.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW indicates that the four pilot hospitals are part of a larger 14-hospital system.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies integration with Caldwell's existing Epic EHR (November 2024 release) via HL7 FHIR R4 APIs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states a minimum sustained throughput of 2,500 patient-record transactions per hour per facility and an aggregate minimum of 10,000 transactions/hour across all four sites.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states the Total Fixed Fee for Phase 1 as $8,640,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The milestone payment table includes exactly six milestones with percentages of 15%, 15%, 20%, 20%, 15%, and 15%, summing to 100%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The milestone payment amounts are M1: $1,296,000; M2: $1,296,000; M3: $1,728,000; M4: $1,728,000; M5: $1,296,000; and M6: $1,296,000, summing to $8,640,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "M1 is listed with target date May 1, 2025 and description \u201cSOW Execution & Kickoff\u201d or a substantively equivalent description.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "M2 is listed with target date July 15, 2025 and description \u201cRequirements & Design Approval\u201d or a substantively equivalent description.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "M3 is listed with target date November 14, 2025 and description \u201cDevelopment Complete (Code Freeze)\u201d or a substantively equivalent description.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "M4 is listed with target date January 15, 2026 and description \u201cPlatform Staging & Integration Testing Start\u201d or a substantively equivalent description.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "M5 is listed with target date March 31, 2026 and description \u201cUAT Complete\u201d or a substantively equivalent description.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "M6 is listed with target date May 15, 2026 and description \u201cGo-Live & Final Acceptance\u201d or a substantively equivalent description.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies a 10% retainage or holdback on each milestone payment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states or implies total retainage of $864,000 (10% \u00d7 $8,640,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that retainage is released upon Final Acceptance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rate card lists Senior Architect at $385/hr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rate card lists Lead Engineer at $310/hr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rate card lists Engineer II at $245/hr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rate card lists QA Analyst at $195/hr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rate card lists Project Manager at $275/hr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that rates are fixed for 24 months from the SOW Effective Date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that after the 24-month rate-lock period, rates escalate by CPI-U capped at 3.5% per year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states an expense cap of $432,000 or 5% of the Total Fixed Fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies that travel, lodging, and per diem are reimbursed at federal GSA rates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes an early-completion bonus of $216,000 or 2.5% of $8,640,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that the early-completion bonus is payable if Final Acceptance occurs on or before March 15, 2026.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states delay liquidated damages of $14,400 per calendar day.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW caps delay liquidated damages at $864,000 or 10% of the Total Fixed Fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW references Nightfall Cloud Services hosting at $37,500/month or $450,000/year as a pass-through cost.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states hosting fees commence at Milestone 4 (Platform Staging, January 15, 2026).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW expressly states or structures the Nightfall arrangement so that no privity or direct contractual relationship is created between Caldwell and Nightfall.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that Verdantis retains full responsibility to Caldwell for hosting-tier SLAs and does not pass through Nightfall liability.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies a 10-business-day acceptance period after delivery of a milestone completion notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes deemed acceptance when Caldwell does not deliver a written deficiency notice within the 10-business-day acceptance period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW defines Sev-1 (Critical), Sev-2 (Major), Sev-3 (Minor), and Sev-4 (Cosmetic).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that Go-Live requires zero open Sev-1 defects.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that Go-Live allows no more than five (5) open Sev-2 defects, each with an agreed remediation plan.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that Sev-3 and Sev-4 defects may remain open at Go-Live.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies a UAT duration of 45 calendar days, from February 14, 2026 through March 31, 2026.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states a platform uptime benchmark of 99.5% measured over a 30-consecutive-calendar-day stability period post-go-live.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states an average API response time SLA of \u2264 400 ms at the 95th percentile (p95).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes a 12-month warranty period commencing upon Final Acceptance (projected May 15, 2026 \u2013 May 15, 2027 if on-time).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states the warranty covers Sev-1 and Sev-2 defects attributable to Verdantis work product at no additional charge.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies Sev-1 warranty response within 1 hour and a resolution target of 4 hours.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies Sev-2 warranty response within 4 hours and a resolution target of 1 business day.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW references the Verdantis BAA with Ref. CNHS-BAA-VRD-2025, dated January 15, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW references the Nightfall BAA with Ref. CNHS-BAA-NCS-2025, dated February 3, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that both Verdantis and Nightfall are Business Associates of Caldwell under HIPAA/HITECH.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW references Verdantis's SOC 2 Type II audit dated September 30, 2024 with Report ID VRD-SOC2-2024-AR.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW references Nightfall's FedRAMP Moderate authorization dated June 12, 2023 with Package ID FR-MOD-NCS-2023-0041.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires all PHI to reside within the continental United States.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies encryption at rest using AES-256.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies encryption in transit using TLS 1.3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires an independent third-party penetration test before UAT commences.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states Caldwell retains the right to commission its own penetration test at Caldwell's expense.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires Technology Errors & Omissions insurance at $10,000,000 per occurrence and $15,000,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires Cyber Liability / Privacy & Network Security insurance at $10,000,000 per occurrence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires Commercial General Liability insurance at $2,000,000 per occurrence and $5,000,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires Workers' Compensation at statutory limits.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that its insurance requirements supplement MSA \u00a7 11.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states Verdantis retains ownership of all pre-existing IP and the CCIP platform code (Provider IP).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states Caldwell owns configuration data, custom workflows, and bespoke integration adapters developed exclusively for Caldwell (Client IP).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW grants Caldwell a perpetual, non-exclusive, royalty-free license to use Provider IP embedded in deliverables solely for Caldwell's internal operations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires Verdantis to deposit source code in escrow with Iron Vault Escrow Services, Inc. under a three-party escrow agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires source-code deposit within 30 days of M3, by December 14, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies escrow release triggers including Verdantis insolvency, material uncured breach with a 60-day cure period, and discontinuation of support.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex D lists Priya Chandrasekaran as Engagement Lead with a 40% minimum commitment through the SOW term.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex D lists Marcus Adeyemi as Solution Architect with 100% commitment through M3 and 50% for M4\u2013M6.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex D lists Juniper Tran as Integration Lead with 100% commitment for M2\u2013M5.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex D lists Dr. Nadia Okonkwo as HIPAA Compliance Lead with 25% commitment throughout.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex D lists Dr. Raymond Liu as Caldwell Project Sponsor for governance and escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-081",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex D lists Brian Halloran as Caldwell Technical Lead for day-to-day technical decisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-082",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires 30 days' prior written notice for key-person replacements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-083",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires Caldwell's consent for key-person replacements and states that consent shall not be unreasonably withheld.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-084",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires replacement personnel to have substantially equivalent qualifications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-085",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states either party may submit a written Change Order Request (COR).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-086",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires Verdantis to provide a written impact assessment covering cost, schedule, and risk within 7 business days of a COR.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-087",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states no change is effective until both parties execute the Change Order.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-088",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW requires additional approval from Caldwell's CFO Thomas Andreasen for Change Orders exceeding $500,000 individually or $1,500,000 in aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-089",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW provides Caldwell the right to terminate for convenience on 60 days' written notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-090",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states that upon convenience termination Caldwell pays for accepted milestones plus documented wind-down costs capped at 15% of the remaining unpaid balance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-091",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW specifies a 30-day cure period for cause termination and notes that this is shortened from the MSA \u00a7 12 default of 45 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-092",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW provides transition assistance for up to 90 calendar days post-termination/expiration at rate-card rates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-093",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW expressly states that its termination provisions supplement MSA \u00a7 12.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-094",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW expressly states that the shortened 30-day cure period constitutes a \u201cmore protective standard\u201d under MSA \u00a7 14.2, thereby validly overriding the MSA's 45-day default.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-095",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW lists Verdantis's notice address as 4200 Congress Avenue, Suite 1400, Austin, TX 78701, Attn: Priya Chandrasekaran.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-096",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes a copy-to for Verdantis notices to Douglas R. Oates, Kessler, Oates & Fenn LLP, 200 South Wacker Drive, Suite 3100, Chicago, IL 60606.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-097",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW lists Caldwell's notice address as 7500 Woodlawn Drive, Suite 800, Baltimore, MD 21208, Attn: Sarah Kwan-Morales.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-098",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes a copy-to for Caldwell notices to Tanya Brevard, Brevard Hargrove LLP, 1700 K Street NW, Suite 900, Washington, D.C. 20006.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-099",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states it is governed by the laws of the State of Maryland.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-100",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes a signature block for Priya Chandrasekaran with title VP, Enterprise Delivery (or VP Enterprise Delivery) on behalf of Verdantis Solutions, Inc.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-101",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes a signature block for an authorized signatory on behalf of Caldwell National Health System, Inc. with spaces for printed name, title, and date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-102",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes Annex A titled \u201cScope & Deliverables Description\u201d or a substantively equivalent title, populated with deal-specific scope information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-103",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes Annex B titled \u201cMilestone Payment Schedule\u201d or a substantively equivalent title, populated with the six milestones, dates, percentages, and amounts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-104",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes Annex C titled \u201cRate Card\u201d or a substantively equivalent title, populated with the five roles and rates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-105",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes Annex D titled \u201cKey Personnel\u201d or a substantively equivalent title, populated with the six named individuals and their roles/commitments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-106",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes Annex E titled \u201cAcceptance Criteria & Testing Protocol\u201d or a substantively equivalent title, populated with acceptance periods, severity classifications, and go-live gate criteria.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-107",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW includes Annex F titled \u201cSecurity & Regulatory Requirements\u201d or a substantively equivalent title, populated with HIPAA/HITECH, BAA references, encryption standards, and other security requirements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-108",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states late-payment interest at 1.0% per month or 12.68% APR, consistent with MSA \u00a7 7.4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-109",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW references Nightfall's 99.9% infrastructure uptime SLA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-110",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW references Nightfall disaster-recovery specifications of RPO of 1 hour and RTO of 4 hours.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-111",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The SOW clearly distinguishes Nightfall's 99.9% infrastructure uptime SLA from the platform-level uptime SLA that Verdantis owes Caldwell (99.5% over 30 consecutive calendar days post-go-live), and makes Verdantis responsible for the platform-level SLA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-112",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The SOW contains no unfilled bracketed placeholders (e.g., [INSERT], [TBD], [\u25cf]), unresolved drafting notes, or template comment bubbles.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-113",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW states hosting fees begin at Milestone 4 (Platform Staging, January 15, 2026), not at an earlier milestone.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-114",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SOW clearly presents hosting fees as a separate line item from and in addition to the $8,640,000 Total Fixed Fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-115",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The SOW references the $43,200,000 full-program TCV across five phases only in appropriate background context, without creating a binding commitment to future phases or implying that the SOW covers more than Phase 1's $8,640,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-116",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The SOW clearly states it covers Phase 1 only at $8,640,000 and creates no binding obligation for future phases.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

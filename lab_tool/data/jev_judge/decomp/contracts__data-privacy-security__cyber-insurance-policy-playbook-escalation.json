@@ -1,0 +1,867 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's TO/addressee field lists Diane Koslow (CRO) and Jonathan Aldric (General Counsel) as primary addressees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's CC field includes Sandra Pruitt-Haynes (CFO) and Director Leland Cobb (Audit & Risk Committee Chair).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's FROM field identifies Marcus Ellerby, VP, Risk Management, as the author.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is dated on or before June 18, 2025, and its priority field is marked high or urgent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled Executive Summary section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled Policy Background section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo presents a Deviation Analysis section in table format.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Risk Assessment section addresses both quantitative and qualitative risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled Market Alternatives section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled Recommended Options section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled Approval Request section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes signature or approval lines for Diane Koslow (CRO), Jonathan Aldric (General Counsel), and Director Leland Cobb (Committee Chair).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Executive Summary identifies the ransomware sublimit, retroactive date, and breach counsel selection as the three material deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Executive Summary identifies both the premium increase deviation and the SIR/retention deviation as additional threshold breaches.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Executive Summary states that combined incremental annualized uninsured exposure is approximately $1,241,933, or a substantially equivalent figure within rounding.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Executive Summary states that combined exposure exceeds the $500,000 CRO delegation ceiling under IRP \u00a7 7.3 and therefore requires Audit & Risk Committee approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis states that the IRP minimum ransomware sublimit is \u226566% of the $15M aggregate, or $9,900,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis states that the proposed ransomware sublimit is $5,000,000, or 33.3% of the $15M aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis states that the ransomware sublimit shortfall versus the IRP floor is $4,900,000, or equivalently about a 49.5% shortfall relative to the floor.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the expiring policy had no separate ransomware sublimit and that the full $15M aggregate applied to ransomware claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis states that the expiring retroactive date is August 1, 2019.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis states that the IRP permits a maximum retro-date advance of 1 year from the expiring retroactive date, yielding a permissible floor of August 1, 2020.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis states that the proposed retroactive date is August 1, 2022.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis identifies a 3-year coverage gap from August 1, 2019 to July 31, 2022.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis states that the IRP requires the insured to retain the right to select counsel from a mutually agreed panel of at least 8 firms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis states that Endorsement 14 gives Bastion Mutual sole discretion to appoint breach counsel and that Dawnfield loses its contractual selection right entirely.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Whitecross Dey LLP, Dawnfield's preferred breach counsel, is not on Bastion's designated panel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the expiring policy gave the insured the right to choose from a pre-approved panel of 12 firms that included Whitecross Dey LLP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the proposed premium is $561,400, a 15.2% increase ($74,200) over the expiring premium of $487,200.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the 15.2% premium increase exceeds the IRP 12% ceiling by 3.2 percentage points and requires CFO sign-off.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the proposed ransomware SIR is $350,000 per claim / $750,000 aggregate, against IRP ceilings of $300,000 per claim / $600,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the proposed SIR exceeds the IRP ceiling by $50,000 per claim and $150,000 aggregate, and that the current or expiring SIR is $250,000 per claim / $500,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo calculates additional annualized uninsured exposure from the sublimit reduction as approximately $608,600 using 22% probability \u00d7 58% probability of exceeding $5M \u00d7 ($9.77M \u2212 $5M) = 22% \u00d7 58% \u00d7 $4.77M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites CyberLenz benchmarking data as the source of the 58% exceedance probability and $9.77M average healthcare cyber incident cost.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites Dawnfield's internal ransomware risk model as the source of the 22% annualized ransomware probability.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the incident log contains 14 matters with wrongful-act dates between August 1, 2019 and July 31, 2022, and that 3 are classified as open/monitoring.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Whitecross Dey estimates potential aggregate exposure for the 3 open matters at $1.2M\u2013$2.6M, with a midpoint of $1.9M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo presents annualized retro-date gap exposure as approximately $633,333 per year, based on the $1.9M midpoint over a 3-year tail.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo discusses the conflict-of-interest risk created by Endorsement 14 removing Dawnfield's breach-counsel selection rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Whitecross Dey LLP has institutional knowledge of Dawnfield's PHI environment from prior incident responses and serves as both outside coverage counsel and preferred breach counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that carrier-appointed counsel without Dawnfield-specific background increases response-time risk and potential regulatory exposure under HIPAA and/or state breach-notification laws.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explicitly adds the sublimit gap exposure (~$608,600) and annualized retro-date gap exposure (~$633,333) to reach approximately $1,241,933 in combined incremental annualized uninsured exposure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo acknowledges breach-counsel risk as qualitative or non-quantified in its combined exposure assessment.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo assigns breach-counsel risk a specific dollar figure without identifying it as qualitative.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the combined ~$1,241,933 exposure exceeds the $500,000 CRO delegation ceiling by approximately $741,933 and explicitly concludes that escalation to the Audit & Risk Committee is required under IRP \u00a7 7.3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Everpoint Specialty declined to quote because healthcare SaaS is out of appetite following a Q1 2025 portfolio review.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo presents Helmcrest Indemnity Group's non-binding indication as $15M aggregate, a $7.5M ransomware sublimit, an Aug 1 2021 retro date, and a $624,800 premium (28.2% above expiring), with insured-selected panel counsel from 6 firms and Whitecross Dey eligible to be added.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Helmcrest's full quote requires a 3-week underwriting period that risks missing the July 18 binding deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Helmcrest's August 1, 2021 retro date exceeds the IRP's 1-year advance maximum, whose permissible floor is August 1, 2020.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Helmcrest's $624,800 premium, 28.2% above expiring, exceeds the IRP 12% premium-increase ceiling.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Helmcrest's $7.5M ransomware sublimit (50% of aggregate) is below the IRP floor of $9.9M (66% of aggregate).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Recommended Options section presents accepting Bastion Mutual's renewal terms with the identified residual risk (~$1,241,933 annualized) and includes a risk/benefit assessment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Recommended Options section presents negotiating specific pushback positions with Bastion Mutual and includes a risk/benefit assessment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Recommended Options section presents pursuing the Helmcrest Indemnity Group indication, notes the 3-week underwriting timeline risk against the July 18 deadline, and includes a risk/benefit assessment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Recommended Options section presents a hybrid option, such as negotiating with Bastion while pursuing Helmcrest in parallel, and includes a risk/benefit assessment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Approval Request section asks the Audit & Risk Committee to approve the selected course of action no later than the June 25 special session.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Approval Request section identifies the July 18, 2025 Bastion binding deadline and the August 1, 2025 policy expiration as the driving timeline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Dawnfield's October 2022 ransomware incident ($1.1M total cost) and March 2024 ransomware incident ($3.8M total cost including forensics, notification, credit monitoring, and business interruption).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the October 2022 incident occurred just after the proposed August 1, 2022 retro date, but wrongful acts in the immediately preceding gap period (August 1, 2019 \u2013 July 31, 2022) would not be covered under the proposed renewal terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo presents the $74,200 (15.2%) premium increase over the expiring $487,200 and states that CFO sign-off is required because it exceeds the 12% IRP threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo presents the increased SIR as creating additional first-dollar exposure of $50,000 per claim and $150,000 aggregate above IRP ceilings.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo discusses, as analyzed by Whitecross Dey, the practical difficulty of obtaining tail or run-off coverage for the August 1, 2019 \u2013 July 31, 2022 retro-date gap period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo discusses the legal effect of the retroactive date change on claims-made coverage mechanics, including that wrongful acts in the gap period lose coverage.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites IRP v.4.1, adopted September 12, 2024, pursuant to Audit & Risk Committee Resolution 2024-AR-09.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo specifically references IRP \u00a7 7.3 for the CRO delegation ceiling and escalation pathway to the Audit & Risk Committee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo incorporates and attributes to General Counsel Jonathan Aldric a perspective on the legal rights implications of surrendering counsel-selection authority under Endorsement 14.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo addresses the conflict-of-interest waiver provision contained in Endorsement 14.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Policy Background identifies the current or expiring policy as BM-CY-2024-07831, with a policy period of August 1, 2024 \u2013 August 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Policy Background identifies the proposed renewal period as August 1, 2025 \u2013 August 1, 2026.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Policy Background identifies Bastion Mutual with an A.M. Best rating of A (Excellent) / FSC IX and Lockridge & Stahl (Thomas Beckford, SVP) as the broker.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Policy Background identifies Dawnfield as a HIPAA business associate processing PHI for 74 hospital-system clients, with SOC 2 Type II certification and 50-state breach-notification obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Deviation Analysis table includes columns or equivalent structured fields for each parameter's IRP threshold, proposed term, and deviation magnitude.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Deviation Analysis table includes rows for all five deviating parameters: ransomware sublimit, retroactive date, breach counsel selection, premium increase, and SIR/retention.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo presents the ransomware annualized loss expectancy (ALE) as approximately $2,149,400, derived from 22% probability \u00d7 $9.77M expected severity, to contextualize the materiality of the sublimit reduction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo mentions the Bastion Mutual quote date of June 4, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references June 18, 2025 as the target date for CRO/GC review.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references June 25, 2025 as the earliest Audit & Risk Committee special session.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Bastion Mutual binding deadline of July 18, 2025 and the current policy expiration of August 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Helmcrest's 3-week underwriting period risks missing the July 18 deadline and states that a bare or lapse in coverage must be avoided.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

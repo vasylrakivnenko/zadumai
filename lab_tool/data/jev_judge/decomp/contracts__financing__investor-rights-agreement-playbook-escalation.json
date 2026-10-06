@@ -1,0 +1,456 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Avalon's requirement to deliver unaudited monthly financial statements within 20 days of each month-end as exceeding the Board-approved negotiation fallback authority, which prohibits any monthly reporting obligation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Avalon's requirement to deliver a quarterly updated forecast or reforecast within 15 days of each quarter-end as exceeding the Board-approved negotiation fallback authority, which prohibits any quarterly reforecast obligation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Avalon's provision permitting S-3 demand registrations immediately upon S-3 eligibility, without a 12-month seasoning period, as exceeding the Board-approved fallback authority requiring at least 12 months of S-3 eligibility.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Avalon's provision that its piggyback shares are cut back last among all investors as a super-priority piggyback term exceeding the Board-approved fallback authority, which prohibits super-priority piggyback for any single investor.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Avalon's removal of the standard exclusions for conflicts-of-interest and attorney-client privileged sessions, requiring the observer to attend all Board and committee meetings without exception, as exceeding the Board-approved fallback authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Avalon's reduction of the preemptive rights threshold to holders of at least 500,000 shares of Series B Preferred, from the Policy's 2,000,000-share minimum, as exceeding the Board-approved fallback authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Avalon's covenant restricting the Company from entering any line of business outside 'enterprise data analytics software' without majority Series B Preferred consent as exceeding the Board-approved fallback authority, which prohibits any non-compete or exclusivity covenant on the Company.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Avalon's MFN provision granting an automatic right to elect more favorable terms from subsequent financings as exceeding the Board-approved fallback authority, which categorically prohibits any MFN clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is formally addressed to the Financing Committee of the Board of Directors of Casterbridge Systems, Inc.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Senator (Ret.) Priya Okafor-Nash as the Chair of the Financing Committee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Whitfield Pryor LLP as the law firm preparing the escalation memo.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo names James Odera as the drafting attorney.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Tomoko Reinhardt as the supervising partner on the matter.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo characterizes Avalon's deadline to deliver unaudited monthly financial statements within 20 days of each month-end as operationally infeasible or impracticable for the Company.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites the Company's monthly close process taking approximately 30 business days after month-end as the reason the 20-day monthly reporting deadline is operationally infeasible.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the non-competition covenant restricts the Company to 'enterprise data analytics software' or describes an equivalent narrow business scope.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo connects the non-compete restriction to the Company's planned expansion into enterprise compliance automation and identifies that adjacent product line as strategically critical.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo analyzes or states that Avalon Growth Partners' $40,000,000 commitment out of the $55,000,000 total round size gives Avalon a majority of the Series B Preferred shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that because Avalon holds a majority of the Series B Preferred, the requirement for 'prior written consent of holders of a majority of the Series B Preferred' effectively gives Avalon unilateral veto power over the Company's entry into new lines of business.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the MFN clause is categorically prohibited or barred by the Board-approved Term Sheet Negotiation Policy.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the MFN provision applies to any subsequent financing occurring within 36 months of the Series B closing and describes or references that duration as part of the automatic ratchet mechanism.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that Avalon's markup reduces the pro rata or preemptive rights threshold from 2,000,000 shares of Series B Preferred to 500,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo analyzes which Series B holders would gain preemptive participation rights under the lowered threshold using pro forma capitalization table data, such as by identifying qualifying holders or their number at 500,000 shares versus 2,000,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that Avalon's markup removes the standard exclusion of the board observer from attorney-client privileged sessions, requiring attendance at all Board and committee meetings without exception.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that allowing a non-director observer to attend attorney-client privileged sessions risks waiving or undermining the Company's attorney-client privilege.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that Avalon's markup removes the Policy's required 12-month seasoning period after the Company becomes S-3 eligible, permitting S-3 demand registrations immediately upon S-3 eligibility.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that Avalon's markup permits unlimited S-3 demand registrations, in contrast to the Policy's cap of up to two demand registrations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Avalon's provision cutting back its piggyback shares last among all investors is a super-priority piggyback expressly prohibited by the Policy, which mandates standard pro rata cutback among investors with no super-priority for any single investor.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo gives a clear accept, counter, or reject recommendation for each of the eight out-of-policy provisions: monthly reporting, quarterly reforecasting, S-3 demand registration timing, super-priority piggyback, expanded board observer scope, lowered pro rata threshold, non-competition covenant, and MFN clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo provides supporting rationale or reasoning for each accept, counter, or reject recommendation across all eight out-of-policy terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references May 28, 2025 as the deadline for delivery of the escalation memo to the Financing Committee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references June 9, 2025 as the target signing date for the Series B documents.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo names the 'Term Sheet Negotiation Policy' or a substantially equivalent title as the authority baseline against which departures are measured.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Financing Committee approved the Term Sheet Negotiation Policy on February 12, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the Series A Investor Rights Agreement and states its execution date as September 8, 2023.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C036",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo uses the Series A IRA as precedent to establish that the Company has not previously granted monthly reporting, quarterly reforecasting, super-priority piggyback, an MFN clause, or business-restriction or non-competition covenants.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Driscoll Sato & Keane LLP as the law firm representing Avalon Growth Partners.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the marked-up IRA was received from Driscoll Sato & Keane LLP or Avalon's counsel on May 19, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Series B pre-money valuation as $185,000,000 or $185M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the total Series B round size as $55,000,000 or $55M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Avalon Growth Partners Fund III, L.P. or Avalon Growth Partners as the lead investor in the Series B round.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

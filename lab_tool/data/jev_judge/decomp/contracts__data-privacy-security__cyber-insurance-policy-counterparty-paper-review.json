@@ -1,0 +1,767 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the tendered aggregate limit as $5,000,000 and the Playbook \u00a7 3.1 requirement as $10,000,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies the aggregate shortfall as $5,000,000 (50%).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the aggregate limit shortfall as Critical risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo connects the $5,000,000 aggregate limit shortfall to MSA \u00a7 11.2, which requires no less than $10,000,000 per claim and aggregate cyber liability insurance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the tendered per-claim limit as $5,000,000 versus the $10,000,000 requirement in Playbook \u00a7 3.1 and MSA \u00a7 11.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the complete absence of Social Engineering Fraud coverage as a separate deviation rated Critical or High.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that Playbook \u00a7 3.1 requires a $1,000,000 Social Engineering Fraud sub-limit and that the tendered policy excludes this coverage entirely.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the complete absence of Contingent/Dependent Business Interruption coverage as a separate deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that Playbook \u00a7 3.1 requires a $2,000,000 sub-limit and that the tendered policy excludes this coverage entirely.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the BI & Extra Expense sub-limit as $2,000,000 tendered versus $5,000,000 required by Playbook \u00a7 3.1, a $3,000,000 / 60% shortfall.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo assigns a risk rating to the BI & Extra Expense sub-limit shortfall.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Regulatory Defense & Penalties sub-limit as $1,000,000 tendered versus $3,000,000 required by Playbook \u00a7 3.1, a $2,000,000 / 67% shortfall.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the PCI-DSS Assessment Coverage sub-limit as $500,000 tendered versus $2,000,000 required by Playbook \u00a7 3.1, a $1,500,000 / 75% shortfall.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Crisis Management / Notification Costs sub-limit as $750,000 tendered versus $2,000,000 required by Playbook \u00a7 3.1, a $1,250,000 / 63% shortfall.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Ransomware / Cyber Extortion sub-limit as $1,000,000 tendered versus $3,000,000 required by Playbook \u00a7 3.1, a $2,000,000 / 67% shortfall.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates Section XII.A (subrogation clause) as a Critical risk to Meridian.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the insurer retains full subrogation rights against all service providers, including IT vendors, directly exposing Meridian, and that Playbook \u00a7 4 requires a waiver of subrogation in favor of contracted service providers.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the subrogation clause conflicts with MSA \u00a7 11.4, which requires a mutual waiver of subrogation for all insurance policies maintained under the agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a full waiver-of-subrogation endorsement naming Meridian for the subrogation deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the 'Computer System' definition in Section II.F as a Critical or High deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the definition is limited to systems 'owned, operated, or leased by the Insured,' excludes third-party cloud infrastructure, and differs from Playbook \u00a7 4's requirement to include cloud-hosted environments managed by authorized service providers.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo says the narrow 'Computer System' definition is especially significant because Meridian provides cloud-hosted ERP and/or payroll services to Castlegate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags Section VI.A's notice period as a deviation, stating that the tendered policy requires claims reported within 30 days of discovery versus the 60-day standard in Playbook \u00a7 4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags Section VII.D's consent-to-settle / hammer clause as a deviation, stating that the tendered 70/30 hammer differs from Playbook \u00a7 4's maximum of 80/20 or softer.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends amending the hammer clause to at least 80/20.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags Section IX.B as a panel counsel deviation and identifies the three pre-approved firms: Rourke Stillman LLP, Hargrove & Ng P.C., and Adler Fenn McCready PLLC.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the policy provides no ability to appoint own counsel and that Playbook \u00a7 4 requires free choice of counsel upon conflict or regulatory proceeding.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags Endorsement PIS-E-2024-014 (Insured vs. Insured Exclusion) as a deviation and notes that it lacks the whistleblower and derivative claims carve-back required by Playbook \u00a7 5.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags Endorsement PIS-E-2024-019 (War / Cyber-Terrorism Exclusion) as a deviation, identifying its broad LMA 5567-equivalent language and lack of carve-back for collateral cyber events or passive infrastructure.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that Playbook \u00a7 5 requires LMA 5569 or equivalent wording with a passive-infrastructure carve-back.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags Section XIV.C as a change-of-control deviation, stating that the tendered policy terminates upon an acquisition/merger exceeding 25% voting equity and provides only a 30-day discovery period.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that Playbook \u00a7 4 requires a 60-day discovery window plus automatic 90-day ERP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags Section IV.K as a betterment-exclusion deviation, stating that the tendered policy applies a full exclusion with no percentage threshold and Playbook \u00a7 4 permits a deduction only to the extent improvement exceeds 120% of pre-loss functionality.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags Endorsement PIS-E-2024-022 (Voluntary Shutdown) as a deviation, stating that the tendered sub-limit is $250,000 with a 24-hour waiting period versus Playbook \u00a7 3.1's $1,000,000 sub-limit and 8-hour waiting period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Privacy/Network Security SIR as $150,000 versus Playbook \u00a7 3.2's maximum of $100,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the BI waiting period as 16 hours versus Playbook \u00a7 3.2's maximum of 8 hours.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Ransomware SIR as $250,000 versus Playbook \u00a7 3.2's maximum of $100,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Regulatory SIR as $150,000 versus Playbook \u00a7 3.2's maximum of $75,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the optional 12-month ERP buy-back as off-market: $187,500 (100% of annual premium) versus the Playbook \u00a7 6 benchmark of \u226475% of premium ($140,625), exceeding it by $46,875.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends negotiating the optional 12-month ERP buy-back down to 75% of premium or less.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the broker estimates increasing the aggregate to $10,000,000 would cost approximately $340,000 annually, an ~81.3% increase from $187,500 per broker-premium-schedule.xlsx Tab 3.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo assesses whether the premium increase is proportionate to the risk mitigation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo uses the Playbook \u00a7 8 risk-rating scale of Critical / High / Medium / Low and applies an appropriate rating to each deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the aggregate limit shortfall and subrogation exposure to Meridian as Critical.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the aggregate limit shortfall directly breaches MSA \u00a7 11.2, which requires $10M per claim and aggregate cyber insurance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cross-references MSA \u00a7 11.4, which requires a mutual waiver of subrogation, for the subrogation clause deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cross-references MSA \u00a7 14.1, stating that Castlegate indemnifies Meridian for data breach/network-security failure losses and that inadequate coverage may impair this indemnification backstop.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's TB&A template header block includes the matter name, reference number MSA-2025-CF-0417, date, attorney Lena Kowalski, and client contact Priya Chandrasekaran.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes an executive summary section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a structured issues table with columns for Issue Number, Policy Provision Reference, Playbook Requirement Reference, Description of Deviation, Risk Rating, Financial Impact, Recommended Position, and Fallback Position.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes sections for missing coverages, off-market terms, retention/deductible analysis, ERP analysis, carrier rating assessment, MSA cross-reference compliance, and concluding recommendation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks the Declarations page aggregate limit of $5M versus the required $10M with proposed conforming language or commentary.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline marks the Declarations page per-claim limit of $5M versus the required $10M with proposed conforming language or commentary.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline marks the BI sub-limit ($2M\u2192$5M), Regulatory sub-limit ($1M\u2192$3M), PCI-DSS sub-limit ($500K\u2192$2M), Crisis Management sub-limit ($750K\u2192$2M), Ransomware sub-limit ($1M\u2192$3M), and Voluntary Shutdown sub-limit ($250K\u2192$1M) with proposed conforming language or commentary.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline marks the Voluntary Shutdown waiting period change (24h\u21928h) with proposed conforming language or commentary.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline marks all four retention/SIR deviations with proposed conforming language or commentary: Privacy/Network Security ($150K\u2192$100K), BI waiting period (16h\u21928h), Ransomware ($250K\u2192$100K), and Regulatory ($150K\u2192$75K).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Section II.F ('Computer System' definition) with proposed language including cloud-hosted environments managed by authorized service providers.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Section VI.A with a proposed notice-period change from 30 days to 60 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Section VII.D with a proposed hammer-clause change from 70/30 to 80/20 or softer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Section IX.B with a proposed addition of free choice of counsel upon conflict or regulatory proceeding.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Section XII.A with a proposed waiver-of-subrogation endorsement naming Meridian.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Section IV.K with a proposed amendment limiting the betterment deduction to improvements exceeding 120% of pre-loss functionality.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Section XIV.C with proposed changes to a 60-day discovery window and automatic 90-day ERP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Endorsement PIS-E-2024-014 with a proposed addition of a whistleblower and derivative claims carve-back.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Endorsement PIS-E-2024-019 with a proposed replacement of LMA 5567-equivalent language with LMA 5569 or equivalent wording that includes a passive-infrastructure carve-back.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline marks Endorsement PIS-E-2024-022 with a proposed sub-limit change from $250K to $1M and waiting-period change from 24h to 8h.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo assesses Pinnacle's AM Best rating of A- (Excellent), Financial Size Category VIII, against the carrier standards in Playbook \u00a7 7.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Every deviation in the structured issues table has both a Recommended Position stating the ideal outcome per playbook and a Fallback Position stating an acceptable alternative.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Castlegate expressed willingness to discuss endorsement modifications subject to commercially reasonable premium impact, per castlegate-policy-transmittal-email.eml.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo calibrates its recommended positions to use Castlegate's stated willingness to negotiate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the automatic 60-day ERP as conforming with the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the optional 12-month ERP cost as off-market, stating it is 100% of premium versus the Playbook \u00a7 6 benchmark of \u226475%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo separately analyzes the absence of an automatic 90-day ERP triggered by change of control against Playbook \u00a7 4's requirement for a 60-day discovery window plus automatic 90-day ERP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's concluding recommendation clearly assesses whether the tendered policy satisfies Meridian's playbook and MSA requirements.",
+     "pass_if": true
+    },
+    {
+     "s": "The concluding recommendation identifies which deviations are deal-critical and must be resolved before the April 1, 2025 MSA execution date and which can be addressed at renewal.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes adding Social Engineering Fraud coverage as a new endorsement with a minimum $1,000,000 sub-limit per Playbook \u00a7 3.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes adding Contingent/Dependent Business Interruption coverage as a new endorsement with a minimum $2,000,000 sub-limit per Playbook \u00a7 3.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the MSA has a 3-year total contract value of $4,860,000 and annual value of $1,620,000 per msa-2025-cf-0417-draft.docx.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo relates coverage adequacy to the scale of the engagement and explains why the $5M aggregate is insufficient relative to deal size and Meridian's downstream liability exposure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Monica Chu at Whitfield Brokerage Partners as the broker contact for policy amendments and endorsement requests.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Pinnacle is a surplus lines insurer domiciled in Connecticut and admitted in 38 states per the policy.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo assesses the implications of Pinnacle's surplus lines status for policy enforceability or guarantee-fund protection.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

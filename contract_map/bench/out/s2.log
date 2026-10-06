@@ -1,0 +1,181 @@
+== cuad_type stage 2: 25 classes, eval 508 rows
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+ -- view: head (first 4,000 chars, title included)
+  tfidf        accuracy  74.2% [lo 0.702]  macro-F1 0.660  (39.7 ms/item)
+      answer only if p >= 0.5: coverage  13.8%  precision 100.0% [lo 0.948]
+      answer only if p >= 0.7: coverage   4.5%  precision 100.0% [lo 0.857]
+      most confused (gold -> predicted): Supply Agreement -> Development Agreement ×5; Collaboration Agreement -> Development Agreement ×4; Marketing Agreement -> Service Agreement ×3; Affiliate Agreement -> License Agreement ×3; Promotion Agreement -> Sponsorship Agreement ×3; Marketing Agreement -> Development Agreement ×3
+   jev: 200 cached, 308 to call
+   jev: 100/308
+   jev: 200/308
+   jev: 300/308
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+   (jev: 0 errors; latency p50 75 ms, p95 139 ms; this run: 308 calls, tokens in 501845, out 79272, model jev-1.13.0)
+  jev          accuracy  89.4% [lo 0.864]  macro-F1 0.894  (74.9 ms/item)
+      answer only if p >= 0.5: coverage  98.2%  precision  90.6% [lo 0.877]
+      answer only if p >= 0.7: coverage  93.9%  precision  92.2% [lo 0.895]
+      answer only if p >= 0.9: coverage  86.2%  precision  94.1% [lo 0.914]
+      most confused (gold -> predicted): Maintenance Agreement -> License Agreement ×8; Joint Venture Agreement -> Collaboration Agreement ×6; Development Agreement -> License Agreement ×5; Joint Venture Agreement -> Affiliate Agreement ×4; Marketing Agreement -> Agency Agreement ×3; Hosting Agreement -> License Agreement ×3
+ -- view: body (chars 2,000-6,000, no title)
+  tfidf        accuracy  54.9% [lo 0.506]  macro-F1 0.482  (42.0 ms/item)
+      answer only if p >= 0.5: coverage   7.3%  precision  97.3% [lo 0.862]
+      answer only if p >= 0.7: coverage   2.0%  precision 100.0% [lo 0.722]
+      most confused (gold -> predicted): Supply Agreement -> Development Agreement ×7; Collaboration Agreement -> Development Agreement ×6; Hosting Agreement -> Maintenance Agreement ×5; Transportation Agreement -> Maintenance Agreement ×5; Outsourcing Agreement -> Maintenance Agreement ×4; Sponsorship Agreement -> Service Agreement ×4
+   jev: 200 cached, 308 to call
+   jev: 100/308
+   jev: 200/308
+   jev: 300/308
+   (jev: 0 errors; latency p50 69 ms, p95 127 ms; this run: 308 calls, tokens in 476730, out 79225, model jev-1.13.0)
+  jev          accuracy  66.1% [lo 0.619]  macro-F1 0.673  (69.3 ms/item)
+      answer only if p >= 0.5: coverage  93.5%  precision  68.4% [lo 0.641]
+      answer only if p >= 0.7: coverage  79.7%  precision  75.3% [lo 0.709]
+      answer only if p >= 0.9: coverage  62.6%  precision  84.3% [lo 0.799]
+      most confused (gold -> predicted): Collaboration Agreement -> Strategic Alliance Agreement ×9; Development Agreement -> License Agreement ×9; Joint Venture Agreement -> Service Agreement ×8; Outsourcing Agreement -> Service Agreement ×8; Maintenance Agreement -> License Agreement ×7; Collaboration Agreement -> Development Agreement ×6
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== tos stage 2: 8 classes, eval 1607 rows, train 5532 of 5532
+   eval rows with a type 172, none 1435
+   (tfidf: trained on 5532 rows in 8s)
+   (tfidf: threshold 0.6, picked on 2000 validation rows)
+  tfidf        micro P  72.5% R  75.3% F1 0.739  macro-F1 0.773  exact  94.6%  'none' rows kept empty 1405/1435  (0.1 ms/item)
+      weakest types (F1): Content removal 0.67, Unilateral termination 0.68, Unilateral change 0.69, Limitation of liability 0.73, Contract by using 0.80, Jurisdiction 0.80
+   jev: 500 cached, 1107 to call
+   jev: 100/1107
+   jev: 200/1107
+   jev: 300/1107
+   jev: 400/1107
+   jev: 500/1107
+   jev: 600/1107
+   jev: 700/1107
+   jev: 800/1107
+   jev: 900/1107
+   jev: 1000/1107
+   jev: 1100/1107
+   (cascade: 0 errors; latency p50 69 ms, p95 121 ms; this run: 1107 calls, tokens in 516058, out 80436, model jev-1.13.0)
+  cascade      micro P  30.4% R  84.4% F1 0.447  macro-F1 0.524  exact  76.4%  'none' rows kept empty 1084/1435  (68.8 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  77.2%)
+      weakest types (F1): Arbitration 0.10, Limitation of liability 0.36, Content removal 0.37, Contract by using 0.42, Unilateral change 0.62, Unilateral termination 0.74
+   jev: 500 cached, 1107 to call
+   jev: 100/1107
+   jev: 200/1107
+   jev: 300/1107
+   jev: 400/1107
+   jev: 500/1107
+   jev: 600/1107
+   jev: 700/1107
+   jev: 800/1107
+   jev: 900/1107
+   jev: 1000/1107
+   jev: 1100/1107
+   (jev: 0 errors; latency p50 71 ms, p95 126 ms; this run: 1107 calls, tokens in 590950, out 111457, model jev-1.13.0)
+  jev          micro P  29.1% R  82.3% F1 0.430  macro-F1 0.507  exact  75.7%  'none' rows kept empty 1077/1435  (70.5 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  76.5%)
+      weakest types (F1): Arbitration 0.09, Content removal 0.35, Limitation of liability 0.37, Contract by using 0.39, Unilateral change 0.58, Unilateral termination 0.68
+== ledgar stage 2: 100 classes, eval 2000 rows, train 20000 of 60000
+   (tfidf: trained on 20000 rows in 73s)
+  tfidf        accuracy  84.7% [lo 0.831]  macro-F1 0.755  (0.1 ms/item)  | near-synonym labels merged:  89.4%
+      answer only if p >= 0.5: coverage  81.5%  precision  91.7% [lo 0.903]
+      answer only if p >= 0.7: coverage  70.2%  precision  95.2% [lo 0.939]
+      answer only if p >= 0.9: coverage  48.9%  precision  97.5% [lo 0.964]
+      most confused (gold -> predicted): Applicable Laws -> Governing Laws ×11; Indemnity -> Indemnifications ×6; Successors -> Binding Effects ×5; Costs -> Expenses ×5; Waivers -> No Waivers ×5; Successors -> Assignments ×4
+   jev: 0 cached, 2000 to call
+   jev: 100/2000
+   jev: 200/2000
+   jev: 300/2000
+   jev: 400/2000
+   jev: 500/2000
+   jev: 600/2000
+   jev: 700/2000
+   jev: 800/2000
+   jev: 900/2000
+   jev: 1000/2000
+   jev: 1100/2000
+   jev: 1200/2000
+   jev: 1300/2000
+   jev: 1400/2000
+   jev: 1500/2000
+   jev: 1600/2000
+   jev: 1700/2000
+   jev: 1800/2000
+   jev: 1900/2000
+   jev: 2000/2000
+   (cascade: 0 errors; latency p50 71 ms, p95 130 ms; this run: 2000 calls, tokens in 998638, out 126064, model jev-1.13.0)
+  cascade      accuracy  75.9% [lo 0.740]  macro-F1 0.634  (71.0 ms/item)  | near-synonym labels merged:  83.7%
+      answer only if p >= 0.5: coverage  97.2%  precision  77.2% [lo 0.753]
+      answer only if p >= 0.7: coverage  86.2%  precision  81.5% [lo 0.796]
+      answer only if p >= 0.9: coverage  72.7%  precision  87.6% [lo 0.858]
+      most confused (gold -> predicted): Withholdings -> Tax Withholdings ×17; Waivers -> No Waivers ×15; Disclosures -> Representations ×14; Definitions -> Defined Terms ×13; Organizations -> Existence ×13; Remedies -> Specific Performance ×12
+   jev: 500 cached, 1500 to call
+   jev: 100/1500
+   jev: 200/1500
+   jev: 300/1500
+   jev: 400/1500
+   jev: 500/1500
+   jev: 600/1500
+   jev: 700/1500
+   jev: 800/1500
+   jev: 900/1500
+   jev: 1000/1500
+   jev: 1100/1500
+   jev: 1200/1500
+   jev: 1300/1500
+   jev: 1400/1500
+   jev: 1500/1500
+   (jev: 0 errors; latency p50 72 ms, p95 141 ms; this run: 1500 calls, tokens in 3005187, out 1366755, model jev-1.13.0)
+  jev          accuracy  74.6% [lo 0.726]  macro-F1 0.599  (72.5 ms/item)  | near-synonym labels merged:  82.7%
+      answer only if p >= 0.5: coverage  94.4%  precision  77.5% [lo 0.756]
+      answer only if p >= 0.7: coverage  80.9%  precision  83.1% [lo 0.812]
+      answer only if p >= 0.9: coverage  65.8%  precision  89.3% [lo 0.875]
+      most confused (gold -> predicted): Withholdings -> Tax Withholdings ×18; Waivers -> No Waivers ×18; Remedies -> Specific Performance ×14; Disclosures -> Representations ×14; Definitions -> Defined Terms ×14; Applicable Laws -> Governing Laws ×11
+== cuad_clause stage 2: 37 classes, eval 2000 rows, train 20000 of 37616
+   eval rows with a type 1115, none 885
+   (tfidf: trained on 20000 rows in 56s)
+   (tfidf: threshold 0.6, picked on 2000 validation rows)
+  tfidf        micro P  74.0% R  62.5% F1 0.678  macro-F1 0.590  exact  66.7%  'none' rows kept empty 826/885  (0.1 ms/item)
+      weakest types (F1): Unlimited/All-You-Can-Eat-License 0.00, Most Favored Nation 0.00, Non-Disparagement 0.17, Volume Restriction 0.39, Post-Termination Services 0.40, Competitive Restriction Exception 0.46
+   jev: 0 cached, 2000 to call
+   jev: 100/2000
+   jev: 200/2000
+   jev: 300/2000
+   jev: 400/2000
+   jev: 500/2000
+   jev: 600/2000
+   jev: 700/2000
+   jev: 800/2000
+   jev: 900/2000
+   jev: 1000/2000
+   jev: 1100/2000
+   jev: 1200/2000
+   jev: 1300/2000
+   jev: 1400/2000
+   jev: 1500/2000
+   jev: 1600/2000
+   jev: 1700/2000
+   jev: 1800/2000
+   jev: 1900/2000
+   jev: 2000/2000
+   (cascade: 0 errors; latency p50 68 ms, p95 129 ms; this run: 2000 calls, tokens in 1436499, out 153140, model jev-1.13.0)
+  cascade      micro P  79.8% R  51.5% F1 0.626  macro-F1 0.504  exact  66.7%  'none' rows kept empty 781/885  (68.2 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  79.0%)
+      weakest types (F1): Unlimited/All-You-Can-Eat-License 0.00, Price Restrictions 0.00, Affiliate License-Licensor 0.09, Competitive Restriction Exception 0.09, Non-Transferable License 0.09, Uncapped Liability 0.12
+   jev: 500 cached, 1500 to call
+   jev: 100/1500
+   jev: 200/1500
+   jev: 300/1500
+   jev: 400/1500
+   jev: 500/1500
+   jev: 600/1500
+   jev: 700/1500
+   jev: 800/1500
+   jev: 900/1500
+   jev: 1000/1500
+   jev: 1100/1500
+   jev: 1200/1500
+   jev: 1300/1500
+   jev: 1400/1500
+   jev: 1500/1500
+   (jev: 0 errors; latency p50 71 ms, p95 123 ms; this run: 1500 calls, tokens in 3199232, out 647342, model jev-1.13.0)
+  jev          micro P  77.9% R  53.7% F1 0.636  macro-F1 0.535  exact  66.8%  'none' rows kept empty 757/885  (71.1 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  79.5%)
+      weakest types (F1): Affiliate License-Licensor 0.00, Price Restrictions 0.00, Non-Transferable License 0.04, Competitive Restriction Exception 0.09, Uncapped Liability 0.12, Unlimited/All-You-Can-Eat-License 0.18

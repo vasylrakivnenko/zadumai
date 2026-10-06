@@ -1,0 +1,20 @@
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 30900.08it/s]
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 16238.61it/s]
+  short_tune: 100/1500 (32s)
+  short_tune: 200/1500 (56s)
+  short_tune: 300/1500 (82s)
+  short_tune: 400/1500 (106s)
+  short_tune: 500/1500 (134s)
+  short_tune: 600/1500 (159s)
+  short_tune: 700/1500 (183s)
+  short_tune: 800/1500 (210s)
+  short_tune: 900/1500 (237s)
+  short_tune: 1000/1500 (269s)
+  short_tune: 1100/1500 (304s)
+  short_tune: 1200/1500 (328s)
+  short_tune: 1300/1500 (355s)
+  short_tune: 1400/1500 (377s)
+  short_tune: 1500/1500 (398s)
+done short_tune -> /root/zadumai_nli_proto/contract_map/typed/feats/short_tune_ft.jsonl (398s)

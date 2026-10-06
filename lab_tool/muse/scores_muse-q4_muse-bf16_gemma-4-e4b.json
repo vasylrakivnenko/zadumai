@@ -1,0 +1,98 @@
+{
+ "A muse-q4 test_plain": {
+  "native": [
+   0.092,
+   0.825,
+   0.459
+  ],
+  "decision": [
+   0.092,
+   0.825,
+   0.459
+  ]
+ },
+ "A muse-q4 test_gepa_native": {
+  "native": [
+   0.716,
+   0.96,
+   0.838
+  ],
+  "decision": [
+   0.716,
+   0.96,
+   0.838
+  ]
+ },
+ "B muse-q4 test_plain": [
+  0.3785,
+  0.0971
+ ],
+ "B muse-q4 test_gepa": [
+  0.4846,
+  0.1555
+ ],
+ "A muse-bf16 test_plain": {
+  "native": [
+   0.156,
+   0.786,
+   0.471
+  ],
+  "decision": [
+   0.156,
+   0.786,
+   0.471
+  ]
+ },
+ "A muse-bf16 test_gepa_native": {
+  "native": [
+   0.743,
+   0.96,
+   0.852
+  ],
+  "decision": [
+   0.743,
+   0.96,
+   0.852
+  ]
+ },
+ "B muse-bf16 test_plain": [
+  0.3428,
+  0.0782
+ ],
+ "B muse-bf16 test_gepa": [
+  0.4925,
+  0.1441
+ ],
+ "A gemma-4-e4b test_plain": {
+  "native": [
+   0.927,
+   0.627,
+   0.777
+  ],
+  "decision": [
+   0.927,
+   0.627,
+   0.777
+  ]
+ },
+ "A gemma-4-e4b test_gepa_native": {
+  "native": [
+   0.349,
+   1.0,
+   0.674
+  ],
+  "decision": [
+   0.835,
+   0.984,
+   0.909
+  ]
+ },
+ "B gemma-4-e4b test_plain": [
+  0.31,
+  0.1054
+ ],
+ "B gemma-4-e4b test_gepa": [
+  0.4536,
+  0.1812
+ ]
+}

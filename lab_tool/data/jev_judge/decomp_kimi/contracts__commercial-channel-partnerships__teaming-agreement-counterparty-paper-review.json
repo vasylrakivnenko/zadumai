@@ -1,0 +1,922 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the exclusivity provision (Article 3) as a HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft grants sole exclusivity for 24 months post-award or 18 months post-solicitation close if no award.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires co-exclusive only with a maximum 6 months post-proposal submission if no award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends revising exclusivity to co-exclusive status.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends capping the no-award exclusivity tail at 6 months post-proposal submission.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the draft's broad/lengthy exclusivity contradicts the parties' preliminary understanding of mutual exclusivity limited to the JTCP solicitation only (per the teaming discussion notes).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the non-compete provision (Article 4) as a HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft prohibits VDS from teaming on any 'tactical communications' opportunity with any other prime.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires limitation of the non-compete to solicitation W15QKN-25-R-0412 only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that broad market-based non-competes are playbook-designated walk-away terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends narrowing the non-compete scope to solicitation W15QKN-25-R-0412 only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the workshare commitment (Article 5) as a HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft uses 'commercially reasonable efforts' with no binding workshare percentage.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires a binding minimum workshare percentage with \u00b13% tolerance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends inserting a binding 28% workshare commitment.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends a \u00b13% tolerance on the binding workshare commitment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the foreground IP assignment (Article 8) as a HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft assigns all foreground IP developed 'in connection with' the teaming arrangement to Apex.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires jointly owned or developing-party owned IP with a license for contract performance only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends revising foreground IP to developing-party ownership with a performance-only license to the other party.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the background IP license (Article 8) as a HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that perpetual/irrevocable background IP licenses are playbook-designated walk-away terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft grants Apex a royalty-free, perpetual, irrevocable license to VDS background IP.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires a no-transfer, limited, revocable license for proposal preparation and contract performance only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo specifically addresses the risk to VDS's Spectra-Link SDR architecture in the background IP analysis.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes Spectra-Link is VDS's core competitive asset developed entirely at private expense.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes Spectra-Link carries limited rights/restricted rights DFARS classifications and/or pending patent applications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the parties previously discussed VDS retention of all Spectra-Link background IP with only a limited performance license to Apex, per the teaming discussion notes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the subcontract obligation (Article 7) as a HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft uses permissive 'may' language with no timing requirement and full flow-down without negotiation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires mandatory 'shall' language with a 60-day deadline and a pre-negotiated subcontract terms exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends revising Article 7 to mandatory 'shall' language with a 60-day post-award deadline.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends adding a pre-negotiated subcontract terms exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the termination for convenience clause (Article 12) as a HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft grants Apex-only termination on 10 days' notice with no reciprocal VDS right and no B&P cost reimbursement.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires a mutual right with 30 days' notice and documented B&P cost reimbursement if terminated pre-award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends making termination for convenience mutual.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends extending the termination notice period to 30 days.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends adding B&P cost reimbursement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the liability cap (Article 14) as a HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft caps liability at $250,000 per party.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires the greater of $2,000,000 or 2\u00d7 the workshare value under any issued task order.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that given VDS's estimated $45.27M workshare the $250K cap is grossly inadequate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends revising the liability cap to the greater of $2,000,000 or 2\u00d7 the task-order workshare value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the indemnification provision (Article 13) as a HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft imposes one-sided indemnification (VDS indemnifies Apex for all third-party IP claims, with no reciprocal indemnity).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires mutual and symmetrical IP infringement indemnification.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends revising indemnification to mutual and symmetrical.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the dispute resolution clause (Article 15) as a MEDIUM risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft provides binding arbitration under AAA rules with a single arbitrator in Reston, VA, with no injunctive relief carve-out.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook's escalation ladder (negotiation \u2192 mediation \u2192 litigation in E.D. Va.) with injunctive relief preserved.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends replacing binding arbitration with the playbook's negotiation \u2192 mediation \u2192 litigation (Eastern District of Virginia) escalation ladder.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends adding an injunctive relief carve-out.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the ITAR/export control provision (Article 10) as a MEDIUM or HIGH risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the draft places sole responsibility on VDS for all export control compliance.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires mutual obligation with each party responsible for its own data and a joint compliance protocol exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends revising Article 10 to mutual ITAR/export obligations.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends adding a joint compliance protocol exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the absence of a protest/award challenge cooperation clause as a MEDIUM risk missing protection.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires mutual cooperation if a GAO or COFC protest is filed.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends adding a protest/award challenge cooperation clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the absence of VDS key personnel protections as a MEDIUM risk missing protection.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes Exhibit C lists only Apex-designated key personnel.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires named VDS key personnel protected from reassignment without VDS consent.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends adding VDS key personnel to Exhibit C with consent-to-reassign protections.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the absence of a pre-negotiated subcontract terms exhibit as a MEDIUM risk missing protection.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo links the missing pre-negotiated subcontract terms exhibit to Article 7's permissive subcontract obligation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends attaching a pre-negotiated subcontract terms exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the absence of a joint ITAR/export compliance protocol exhibit as a missing protection.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends adding a joint ITAR/export compliance protocol exhibit consistent with the playbook and VDS standard form.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the draft's exclusivity deviates from the preliminary understanding of mutual exclusivity limited to the JTCP solicitation only (per teaming discussion notes).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo highlights this exclusivity deviation as negotiation leverage.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the draft's non-binding workshare deviates from the preliminary understanding that 28% workshare was discussed as a binding commitment.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo highlights this workshare deviation as negotiation leverage.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the draft's perpetual/irrevocable background IP license deviates from the preliminary understanding that VDS would retain Spectra-Link background IP with only a limited performance license.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the draft's permissive 'may' subcontract language deviates from the preliminary understanding that subcontract issuance would be mandatory upon award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes VDS's small business status.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the solicitation's \u226535% small business subcontracting goal.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that VDS's 28% workshare contributes significantly toward the \u226535% goal, strengthening VDS's negotiating position on the binding workshare commitment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo assigns a risk rating (High/Medium/Low) to every identified deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo's risk ratings follow the playbook methodology: High for walk-away or material financial/legal exposure items, Medium for significant deviations requiring negotiation, and Low for minor or cosmetic deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 3 revising exclusivity to co-exclusive.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline caps the no-award exclusivity tail at 6 months post-proposal submission.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 4 narrowing the non-compete to solicitation W15QKN-25-R-0412 only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 5 replacing 'commercially reasonable efforts' with a binding 28% workshare commitment.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline includes a \u00b13% tolerance for the workshare commitment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 8 (foreground IP) revising to developing-party ownership with a performance-only license.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 8 (background IP) replacing the perpetual/irrevocable license with a limited, revocable license for proposal preparation and contract performance only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 7 changing 'may' to 'shall'.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline adds a 60-day post-award deadline for subcontract issuance.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline references a pre-negotiated subcontract terms exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 12 making termination for convenience mutual.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline extends the termination notice period to 30 days.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline adds B&P cost reimbursement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 14 revising the liability cap from $250,000 to the greater of $2,000,000 or 2\u00d7 task-order workshare value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 13 making indemnification mutual and symmetrical.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 15 replacing binding arbitration with the playbook's escalation ladder (negotiation \u2192 mediation \u2192 litigation in E.D. Va.).",
+     "pass_if": true
+    },
+    {
+     "s": "The redline adds an injunctive relief carve-out.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes proposed markup language for Article 10 revising to mutual ITAR obligations.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline references a joint compliance protocol exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes a new provision for mutual protest/award challenge cooperation covering GAO or COFC protests.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds VDS key personnel to Exhibit C or the key personnel provisions with consent-to-reassign protections.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds or references a new exhibit for pre-negotiated subcontract terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline adds or references a new exhibit for a joint ITAR compliance protocol.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline adds or references a new exhibit for VDS key personnel protections.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Article 8's foreground IP clause uses the expansive phrase 'in connection with' the teaming arrangement.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the 'in connection with' phrase could sweep in pre-existing VDS developments and work outside the JTCP program.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends narrowing the foreground IP scope to IP developed solely in performance of the specific subcontract.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the 'in connection with' language risks capturing modifications or enhancements to Spectra-Link.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes Spectra-Link is used across multiple VDS programs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that VDS's Spectra-Link data qualifies as 'limited rights' technical data under DFARS 252.227-7013.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that VDS's Spectra-Link software qualifies as 'restricted rights' computer software under DFARS 252.227-7014.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that the draft's perpetual, irrevocable, royalty-free background IP license to Apex is inconsistent with these DFARS protections.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline markup of Article 8 (background IP) references or incorporates DFARS 252.227-7013 and/or -7014 protections for VDS's limited rights/restricted rights data.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed to Nathaniel R. Chu (General Counsel, VDS).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo references engagement number LHR-2025-0743.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references or is dated in relation to the July 18, 2025 deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the mutual consequential damages waiver (Article 14) could prevent VDS from recovering lost profits if Apex fails to issue a binding subcontract or terminates, putting the $45.27M workshare at risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends carving out lost workshare value from the consequential damages waiver or tying it to the revised liability cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each deviation entry in the memo identifies the specific article/section of the Apex draft.",
+     "pass_if": true
+    },
+    {
+     "s": "Each deviation entry states the corresponding playbook requirement.",
+     "pass_if": true
+    },
+    {
+     "s": "Each deviation entry describes the nature of the deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "Each deviation entry carries a risk rating (High/Medium/Low).",
+     "pass_if": true
+    },
+    {
+     "s": "Each deviation entry includes a recommended negotiation position with fallback options.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that Article 7 states full flow-down 'without negotiation'.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends pre-negotiated subcontract terms with appropriate tailoring.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo addresses the mixed FFP/CPFF task order structure of the IDIQ in connection with the flow-down/subcontract terms recommendation.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 4572,
+  "completion": 12507
+ }
+}

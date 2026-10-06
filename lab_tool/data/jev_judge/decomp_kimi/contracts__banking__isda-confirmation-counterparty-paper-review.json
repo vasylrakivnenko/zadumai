@@ -1,0 +1,767 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that Voss Bank AG is designated as sole Calculation Agent with no dispute mechanism.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the sole Calculation Agent issue as an Amber deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes a shared Calculation Agent.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline inserts a dispute resolution mechanism with escalation to independent dealer quotation within 3 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Voss Bank draft uses a bespoke 'Amended SOFR' fallback waterfall that does not incorporate the ISDA 2021 SOFR Fallback Supplement language.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the bespoke 'Amended SOFR' fallback as a Red deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline replaces the bespoke 'Amended SOFR' language with explicit incorporation of the ISDA 2021 Fallback Supplement.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline references the ISDA 2020 IBOR Fallbacks Protocol or Bilateral Amendment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes the disruption fallback waterfall in this order: Fallback Reference Price \u2192 Interpolation \u2192 ISDA Fallback Rate (SOFR) \u2192 Negotiation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the NAV Decline ATE is unilateral in favor of Voss Bank only.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies that the trigger is a 25% NAV decline.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes both deviate from the playbook, which requires the ATE to be bilateral or absent with a 30% threshold from most recent fiscal year-end NAV.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the NAV Decline ATE issue as Red.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes the NAV Decline ATE.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline makes the NAV Decline ATE bilateral and raises the threshold to 30%.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline proposes the playbook fallback position for the NAV Decline ATE.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Key Person ATE naming Rebecca Tsai and Jonathan Kriel.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook prohibits a Key Person ATE under any circumstances.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the Key Person ATE as Red requiring deletion.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes the Key Person ATE provision entirely.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Voss Bank draft does not include an optional early termination right for Meridian.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies that Voss Bank retains an optional termination right with 30 business days' notice.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the missing Meridian optional early termination right as a Red deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline inserts an optional early termination right for Meridian on 5 business days' notice with payment of Close-out Amount only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes Voss Bank's unilateral optional termination right.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline makes Voss Bank's optional termination right bilateral.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Swap Termination Fee (greater of Close-out Amount or 1.50% of remaining notional) as off-market.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo quantifies the minimum termination payment as $3,750,000 (1.50% \u00d7 $250,000,000 non-amortizing notional).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the Swap Termination Fee as Red.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes the 1.50% of remaining notional floor.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline limits the termination payment to Close-out Amount only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the unilateral set-off right for Voss Bank extending to all obligations including prime brokerage and custody accounts.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the unilateral broad set-off right as a Red deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes the set-off provision.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline limits the set-off provision so that broad set-off applies only with Meridian's consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Voss Bank draft specifies Swiss law with Zurich ICC arbitration.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes this conflicts with the executed 2002 ISDA Master Agreement (New York law, SDNY jurisdiction).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the governing law conflict as a Red deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline changes governing law to New York law.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline changes submission to jurisdiction to the courts of the State of New York and the U.S. District Court for the Southern District of New York.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Voss Bank draft omits Non-Reliance and Dodd-Frank business conduct representations.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the omission of Non-Reliance/DFA representations as a Red deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline inserts Dodd-Frank business conduct representations covering eligible contract participant status, no reliance, independent decision-making, assessment capability, and no advisory relationship.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Voss Bank draft contains a flat $250M notional with no amortization schedule or reduction mechanism.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the flat $250M notional with no amortization as an Amber deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo discusses a contemplated $50M voluntary prepayment in Q4 2025 that would drop the loan balance to approximately $220M against the $250M swap notional.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo quantifies the resulting over-hedge as approximately $30M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes a notional reduction mechanism or amortization schedule tied to the underlying Term Loan B balance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Voss Bank draft is silent on payment netting for shared payment dates (June 11 and December 11, where both fixed and floating legs share the same date).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the silence on payment netting as a Green deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline inserts explicit netting confirmation for overlapping payment dates (June 11 and December 11).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Voss Bank draft expands Meridian's Specified Entity for cross-default purposes to include all affiliates and the GP (Meridian Capital GP LLC).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes this deviates from the playbook and the executed Master Agreement Schedule, under which Specified Entity is Meridian Capital Partners LP only.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the expanded Specified Entity as Amber or Red.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline narrows the Specified Entity definition for Meridian to Meridian Capital Partners LP only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Voss Bank draft does not include a hedge ineffectiveness termination right for Meridian.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the playbook requires a right (not obligation) for Meridian to terminate if ASC 815 hedge accounting treatment is lost.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline inserts a provision granting Meridian the right (not obligation) to terminate upon loss of ASC 815 hedge accounting treatment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo confirms the Confirmation references the correct 2002 ISDA Master Agreement (reference 2002-MA-VB/MCP-0922, dated September 22, 2021).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo confirms the Confirmation is structured to supplement and form part of that Master Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo confirms the Confirmation references the correct 1994 ISDA CSA (NY Law) (reference CSA-NY-VB/MCP-0922, dated September 22, 2021).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo verifies Trade Date June 4, 2025; Effective Date June 11, 2025; Termination Date June 11, 2030.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo verifies the Notional Amount as $250,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo verifies the Fixed Rate as 3.875% per annum, semi-annual, 30/360 day count.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo verifies the Floating Rate as Term SOFR (CME, 3-month) + 42 bps, quarterly, Actual/360.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo verifies Business Days as New York and London.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo verifies Business Day Convention as Modified Following for both legs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo verifies Fixed Payment Dates as June 11 and December 11 (commencing December 11, 2025).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo verifies Floating Payment Dates as March 11, June 11, September 11, December 11 (commencing September 11, 2025).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a summary table of deviations organized by risk rating (Red, Amber, Green).",
+     "pass_if": true
+    },
+    {
+     "s": "The summary table has columns for at minimum: issue number, provision, Voss Bank draft position, Meridian playbook position, risk rating, and recommended action/fallback.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Red-rated items in the summary table or memo are clearly flagged as requiring correction before closing with escalation to General Counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Amber-rated items note that CFO (Rebecca Tsai) sign-off is required if unresolved.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo addresses the transfer/assignment provision, comparing the Voss Bank draft position against the playbook requirement (no assignment by either party without prior written consent, not to be unreasonably withheld).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo flags any deviation in the transfer/assignment provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline inserts or modifies the transfer/assignment language to require no assignment by either party without prior written consent (not to be unreasonably withheld).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo confirms the Voss Bank draft's transfer/assignment provision already complies and no redline change is needed.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the Voss Bank draft's expansion of Specified Entity to include all affiliates and Meridian Capital GP LLC is inconsistent with the Master Agreement Schedule (which defines Specified Entity for Party B as Meridian Capital Partners LP only).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo flags this as a potential enforceability concern because a Confirmation cannot unilaterally amend the Schedule without a formal amendment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the CSA threshold asymmetry (Meridian: $10,000,000; Voss Bank: $25,000,000).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo confirms whether the Confirmation does or does not attempt to modify CSA terms, flagging any modification if present.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed to Danielle Okonkwo (Senior Counsel, Capital Markets, Meridian Capital Partners LP).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo includes a CC to Jonathan Kriel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is from Marcus Hartwell and/or Priya Chandrasekaran at Hartwell Crane & Associates LLP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo references Meridian internal deal ID MCP-DRV-2025-0047.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo references Voss Bank Confirmation reference VB-IRS-2025-0611-MCP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo discusses the risk that a Confirmation governed by Swiss law with Zurich ICC arbitration creates an internal conflict with the 2002 ISDA Master Agreement governed by New York law with SDNY jurisdiction.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the risk of conflicting legal interpretations and enforceability issues, particularly in a close-out scenario.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo addresses the commercial priority flagged by Jonathan Kriel regarding the $50M voluntary prepayment in Q4 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo explains that the absence of a notional reduction mechanism would create an over-hedge of approximately $30M ($250M swap vs. approximately $220M loan balance).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the risk of jeopardizing ASC 815 hedge accounting treatment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends insertion of a provision allowing Meridian to reduce the swap notional upon prepayment of the underlying Term Loan B.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline is marked against the Voss Bank draft Confirmation (voss-bank-draft-confirmation.docx).",
+     "pass_if": true
+    },
+    {
+     "s": "The redline shows Meridian's proposed changes (insertions, deletions, and modifications) using tracked changes or clear redline formatting.",
+     "pass_if": true
+    },
+    {
+     "s": "Each change in the redline corresponds to an issue identified in the issues memo.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo lists at minimum 13 distinct deviations, including the missing hedge ineffectiveness termination right.",
+     "pass_if": true
+    },
+    {
+     "s": "Each listed issue has a unique issue number, description, Voss Bank position, Meridian/playbook position, risk rating, and recommended action.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 4987,
+  "completion": 7821
+ }
+}

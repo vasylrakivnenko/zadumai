@@ -1,0 +1,1116 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies the Assignor as Quillex Innovations, LLC, a Delaware limited liability company.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies the Assignee as Verdane Systems, Inc., a Virginia corporation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies the Escrow Agent as Atlantic Fiduciary Services, Inc., a New York corporation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Quillex Innovations, LLC signature block lists Dr. Priya Anand as Managing Member.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Verdane Systems, Inc. signature block lists Marcus Hale as General Counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states the total Purchase Price as $14,750,000.00 or $14,750,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states Cash at Closing as $12,362,500.00 or $12,362,500.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states the Holdback Amount as $2,387,500.00 or $2,387,500.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The agreement states Cash at Closing of $12,362,500, a Holdback Amount of $2,387,500, and a total Purchase Price of $14,750,000, and the two components add up to the total.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that the Holdback Amount is deposited with Atlantic Fiduciary Services, Inc. as escrow agent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that the holdback is released 12 months after Closing or on July 15, 2026, assuming a July 15, 2025 Closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement provides that holdback release is net of amounts subject to pending or unresolved indemnification claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement requires joint written instructions from both parties to the Escrow Agent for holdback release.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states the Escrow Agent fee is $17,500.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that the $17,500 Escrow Agent fee is split equally, with each party paying $8,750, or that each party bears 50% of the fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Schedule A lists all 8 granted US utility patents numbered US 11,234,001 through US 11,234,008.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Schedule A lists pending US patent applications with Serial Nos. 17/891,201, 17/891,202, and 17/891,203.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Schedule A lists PCT applications PCT/US2023/044710 and PCT/US2023/044711.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule A indicates that maintenance fees are current for the granted US patents.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule A flags a pending non-final rejection (obviousness) for application Serial No. 17/891,202.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule A states September 30, 2025 as the national-phase entry deadline for the PCT applications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule B lists QUILLEX SENSORFUSE, Registration No. 6,891,112, Class 9, and TTAB Opposition No. 91,278,455.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule B lists QUILLEX, Registration No. 6,712,330, Class 9.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule B lists FUSIONCORE, Registration No. 6,802,417, Classes 9 and 42.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule B lists the Q-SENSE design mark, Registration No. 6,950,221, Class 9.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Schedule E lists quillex.com, fusioncore.io, and qsense.tech.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Schedule E identifies DomainVault Registrar, LLC as the registrar for all three domain names.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Schedule C lists all 12 copyright registrations numbered TX 9-301-001 through TX 9-301-012.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule C identifies the subject matter as firmware source code versions 1.0 through 6.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule D describes the trade secrets as proprietary sensor-fusion calibration algorithms and associated training data sets.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule D references approximately 14 TB of data.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule D references the internal knowledge base designation 'Project Helix.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule F discloses TTAB Opposition No. 91,278,455, filed by Metrion Analytics Corp. on November 3, 2024, against QUILLEX SENSORFUSE (Reg. No. 6,891,112), and states that it is currently in the discovery phase.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Schedule F discloses the pending non-final office action on patent application Serial No. 17/891,202 and gives February 14, 2026 as the response deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Assignor's no-pending-or-threatened-litigation representation specifically carves out TTAB Opposition No. 91,278,455 and cross-references Schedule F.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement requires Quillex, after Closing, to assist Verdane in defending the QUILLEX SENSORFUSE mark in TTAB Opposition No. 91,278,455.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement requires Quillex, after Closing, to assist in prosecuting the pending patent applications, including responding to the office action on Serial No. 17/891,202 by February 14, 2026.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement requires Quillex, after Closing, to assist in entering national phase for the PCT applications by September 30, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement requires Assignor, before Closing, to maintain and prosecute all pending patent applications and PCT applications consistent with past practice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pre-closing covenant prohibits Assignor from abandoning any pending application without Assignee's prior written consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The indemnification cap for fraud is stated as $14,750,000 or 100% of the Purchase Price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The indemnification cap for all non-fraud breaches is stated as $7,375,000 or 50% of the Purchase Price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The indemnification basket is stated as $147,500 or 1% of the Purchase Price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The indemnification basket is a tipping basket, so once losses exceed the threshold, the indemnifying party is liable from dollar one for the full amount of losses.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The survival period for general representations and warranties is 24 months post-Closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The survival period for IP ownership and authority representations is 48 months post-Closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Fraud claims survive indefinitely, without a time limitation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The non-competition covenant lasts 3 years post-Closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The non-competition covenant is limited to sensor-fusion technology in the autonomous-vehicle vertical, or substantially equivalent scope.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The non-competition covenant is limited geographically to the United States and the European Union.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that it is governed by the laws of the State of Delaware.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The dispute resolution clause provides for binding arbitration under AAA Commercial Arbitration Rules.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that the arbitration is seated in Wilmington, Delaware.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies a three-arbitrator panel for claims exceeding $1,000,000 and a sole arbitrator for claims at or below $1,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states July 15, 2025 as the Closing Date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The assignment clause makes an outright, irrevocable transfer of all right, title, and interest in the Assigned IP, rather than a license or conditional transfer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The assignment clause covers patents, trademarks, copyrights, trade secrets, domain names, and associated goodwill.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Assignor represents that all employees and contractors who contributed to the Assigned IP executed valid IP assignment agreements in favor of Quillex, or substantially equivalent agreements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Assignor represents that no open-source code is incorporated into the firmware source code in a manner that imposes copyleft or similar obligations on the Assigned IP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Closing and Deliverables section lists a short-form patent assignment for USPTO recording and references Exhibit A.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Closing and Deliverables section lists a short-form trademark assignment for USPTO recording and references Exhibit B.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Closing and Deliverables section lists a short-form copyright assignment for USCO recording and references Exhibit C.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Closing and Deliverables section lists domain transfer authorization letter(s) to DomainVault Registrar, LLC and references Exhibit D.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes a trade-secret delivery protocol or covenant addressing transfer to Verdane, at or promptly following Closing, of approximately 14 TB of Project Helix calibration algorithms and training data sets.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Assignor represents that it owns and has valid title to all Assigned IP, free and clear of encumbrances except Permitted Encumbrances.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Assignor represents that the Assigned IP does not infringe third-party IP rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Assignor represents the validity and enforceability of the IP rights in the Assigned IP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Assignor represents that maintenance fees are current for all granted patents.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Assignor represents that the Assigned IP is sufficient for the business as conducted.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The agreement takes a Verdane-favorable Assignee/buyer posture, with broad Assignor representations and covenants, robust indemnification rights for Assignee, and protective provisions favoring the buyer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement represents that Assignee has authority to enter into it and that its execution does not conflict with Assignee's organizational documents or applicable law.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes an entire agreement clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes an amendment/waiver clause requiring written form.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes a severability clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes an assignment restrictions clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes a counterparts clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes a further assurances clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes a notices provision with addresses for both parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notice address for Quillex Innovations, LLC is 400 Innovation Drive, Suite 310, Wilmington, DE 19801.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notice address for Verdane Systems, Inc. is 8700 Westpark Boulevard, Suite 600, McLean, VA 22102.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-081",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Assigned IP' tailored to the Quillex/Verdane transaction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-082",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Patents.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-083",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Trademarks.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-084",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Copyrights.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-085",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Trade Secrets.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-086",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Domain Names.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-087",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Know-How.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-088",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Purchase Price.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-089",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Holdback Amount.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-090",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Escrow Agent.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-091",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Closing Date.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-092",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Definitions section includes a defined term for 'Permitted Encumbrances.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-093",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "No bracketed placeholders from the template remain in the deliverable.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-094",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "No template drafting notes or comments remain in the deliverable.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-095",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The trademark assignment expressly transfers goodwill together with the trademarks.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-096",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The escrow provisions cross-reference a separate Escrow Agreement executed concurrently with the IP Assignment Agreement, rather than setting out full escrow mechanics in-line.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-097",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The indemnification section states that indemnification is the exclusive remedy for breaches of representations and warranties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-098",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The exclusive-remedy provision carves out fraud and equitable relief.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-099",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals describe Verdane's acquisition of Quillex's entire IP portfolio as an asset-purchase transaction by outright assignment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-100",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals identify the IP as including patents, trademarks, copyrights, trade secrets, and domain names.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-101",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals reference the Purchase Price consideration as cash at closing and a holdback.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

@@ -1,0 +1,434 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline is labeled, titled, or designated as version 1.2 (v1.2) of the Teaming Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline deletes, rejects, or replaces Cerulean's proposed work-share range of 'not less than 28% and not more than 35%' of total contract value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline proposes a Cerulean work-share percentage ceiling of no more than 25% of total contract value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline deletes or rejects Cerulean's clause guaranteeing a minimum annual task-order value of $16,800,000, or replaces it with a non-guarantee obligation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The guaranteed minimum annual task-order value clause is entirely deleted with no replacement.",
+     "pass_if": true
+    },
+    {
+     "s": "Any replacement provision is expressly conditioned on actual government task-order issuance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The exclusivity provision binds both Vanguard and Cerulean.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn redline does not permit Cerulean to team with third parties on the ECS-III procurement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline binds both Vanguard and Cerulean not to team with competitors for Draft Solicitation No. 70CDCR-25-R-00004.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects or modifies Cerulean's reduction of the post-award Teaming Period from 18 months to 6 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline proposes a Teaming Period of at least 12 months after contract award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline restores joint Vanguard\u2013Cerulean ownership of all Foreground IP as in the original Section 7.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn redline proposes a structured fallback for Foreground IP that does not simply accept Cerulean's sole-ownership claim with only a limited, non-exclusive, non-sublicensable license back.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline restores full joint ownership of Foreground IP.",
+     "pass_if": true
+    },
+    {
+     "s": "If the counter-turn redline accepts Cerulean sole ownership of Foreground IP derived from Cerulean Background IP as a fallback, it expressly states that the license granted to Vanguard is irrevocable.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline restores full joint ownership of Foreground IP.",
+     "pass_if": true
+    },
+    {
+     "s": "If the counter-turn redline accepts Cerulean sole ownership of certain Foreground IP as a fallback, it expressly states that the license granted to Vanguard is sublicensable.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline deletes or rejects Cerulean's new Section 7.6 restricting Vanguard from filing any patent applications covering methods or processes performed using CeruleanShield\u2122.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects Cerulean's change removing the liability cap for Vanguard while retaining a 12-month cap for Cerulean.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline provides a mutual, capped liability regime that applies equally to Vanguard and Cerulean.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects Cerulean's deletion of the mutual waiver of consequential damages and its replacement with a unilateral waiver benefiting only Cerulean.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline provides a mutual waiver of consequential damages applying to both Vanguard and Cerulean, consistent with the original Section 10 of v1.0.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects Cerulean's expansion of Vanguard's indemnification obligation to cover 'any and all losses arising from the teaming arrangement or resulting contract performance.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline limits indemnification to specified categories, such as third-party IP infringement claims and/or breaches of confidentiality obligations, rather than unlimited 'any and all losses.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects Cerulean's change moving the seat of arbitration from Fairfax County, Virginia to Baltimore, Maryland.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline restores or maintains the seat of arbitration in Virginia.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects or modifies Cerulean's 30-day notice period for Cerulean and 180-day notice period for Vanguard, and proposes more balanced termination-for-convenience notice periods.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline proposes a termination-for-convenience notice period for Vanguard of no more than 120 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects or substantially reduces Cerulean's proposed Transition Fee of 6 months of Cerulean's average monthly billings under active task orders, payable upon Vanguard's termination for convenience.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline includes no Transition Fee.",
+     "pass_if": true
+    },
+    {
+     "s": "Any Transition Fee included in the counter-turn redline is capped at no more than 3 months of Cerulean's average monthly billings.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "A professional cover note is produced as a separate deliverable named cover-note.docx, distinct from the counter-turn redline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note is addressed to Alina M. Ferris, Cerulean's Vice President of Strategic Partnerships.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references and transmits the counter-turn redline of the Teaming Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note identifies or summarizes at least three distinct major open commercial or legal issues on which the parties' positions diverge.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline addresses and modifies Cerulean's added CeruleanShield\u2122 per-seat license fee provision of $1,150/user/year beyond the 500-seat initial deployment, rather than accepting it as-is.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline proposes an included-seat threshold above 500 seats before per-seat fees apply.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn redline proposes a per-seat fee below $1,150/user/year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline deletes Cerulean's B&P cost-sharing provision entirely.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn redline materially modifies Cerulean's proposed B&P cost-sharing provision of 50% reimbursement capped at $375,000 triggered by non-submission or non-award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline deletes the B&P cost-sharing provision entirely.",
+     "pass_if": true
+    },
+    {
+     "s": "If the B&P cost-sharing provision is retained, the reimbursement percentage is no more than 25% of Cerulean's B&P costs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline deletes the B&P cost-sharing provision entirely.",
+     "pass_if": true
+    },
+    {
+     "s": "If the B&P cost-sharing provision is retained, the reimbursement cap is no more than $200,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline deletes the B&P cost-sharing provision entirely.",
+     "pass_if": true
+    },
+    {
+     "s": "If the B&P cost-sharing provision is retained, reimbursement is triggered solely when Vanguard elects not to submit the proposal, and not when the proposal is submitted but the contract is not awarded.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

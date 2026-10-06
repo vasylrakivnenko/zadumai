@@ -1,0 +1,30 @@
+== combined vs separate, stage 3: train ledgar 60000, cuad_clause 37616, tos 5532, opp115 2658, contractnli 23399, lease 17472 | eval ledgar 10000, cuad_clause 8838, tos 1607, opp115 763, contractnli 7013, lease 8057
+   combined: 146 classes trained in 50s
+   separate ledgar: 23s
+   separate cuad_clause: 10s
+   separate tos: 1s
+   separate opp115: 1s
+   separate contractnli: 2s
+   separate lease: 3s
+
+   dataset                    separate               combined   change
+   ledgar                    acc 90.1%              acc 90.2%   +0.1 pts
+   cuad_clause    F1 0.590 (P 56 R 63)   F1 0.574 (P 53 R 63)   -0.016
+        U:assignment/successors                n  105  F1 0.73 -> 0.69
+        U:change of control                    n   52  F1 0.42 -> 0.37
+        U:governing law                        n   89  F1 0.89 -> 0.86
+        U:insurance                            n   59  F1 0.61 -> 0.47
+        U:limitation of liability              n  102  F1 0.69 -> 0.66
+        U:non-disparagement                    n   11  F1 0.17 -> 0.25
+        U:non-solicitation of employees        n   19  F1 0.68 -> 0.71
+        U:renewal/extension                    n   27  F1 0.74 -> 0.68
+        U:term of agreement                    n   80  F1 0.72 -> 0.71
+   tos            F1 0.739 (P 73 R 75)   F1 0.721 (P 71 R 73)   -0.017
+   opp115         F1 0.769 (P 79 R 75)   F1 0.768 (P 80 R 74)   -0.002
+        U:changes by the provider              n   45  F1 0.80 -> 0.73
+   contractnli    F1 0.682 (P 66 R 71)   F1 0.681 (P 67 R 70)   -0.002
+        U:non-solicitation of employees        n   82  F1 0.63 -> 0.64
+        U:survival                             n  144  F1 0.66 -> 0.66
+   lease          F1 0.213 (P 25 R 19)   F1 0.231 (P 20 R 28)   +0.018
+        U:payment terms                        n   58  F1 0.32 -> 0.26
+        U:renewal/extension                    n   10  F1 0.35 -> 0.26

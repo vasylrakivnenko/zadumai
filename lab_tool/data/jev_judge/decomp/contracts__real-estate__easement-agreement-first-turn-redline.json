@@ -1,0 +1,643 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline restores the easement width to 60 feet and rejects the Grantor's reduction to 40 feet.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline cites engineering necessity, regulatory requirements, utility separation standards, or the insufficiency of 40 feet for the full utility bundle as a basis for the 60-foot width.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the 'non-exclusive' qualifier in Change #3 and restores the easement as exclusive within the corridor, consistent with grantee-draft-easement-agreement.docx \u00a71.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 1.2 restores water, sewer, electric, telecom, and stormwater rights, rejects the deletion of utility rights in Change #4, and does not limit the purpose to vehicular access only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts the prohibition on above-ground structures in Change #5 but permits above-grade utility cabinets not exceeding 48 inches in height.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the Grantor's surveyor substitution and retains the Keystone Land Surveying ALTA/NSPS survey (Job No. KLS-2025-0417, Plat Book 2025, Page 312, Wake County Registry) as the controlling Exhibit A.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the 50-year term in Change #7 and restores a perpetual term under grantee-draft-easement-agreement.docx \u00a72.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 2.2 includes a development-commencement termination condition with a 7-year window, not the Grantor's 5-year window or any other period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline provides a pro-rata easement fee refund upon termination for non-development, calculated as $440,000 \u00d7 remaining years \u00f7 7.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the Grantor's $540,000 consideration in Change #9 and counters at $440,000 for the full 60-foot-wide corridor.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 3.2 accepts payment at execution under Change #10 rather than tying payment to recording.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 4.1 sets the advance construction notice requirement at 30 days, not 60 days or any other period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the Grantor's Mon-Fri 7am-5pm construction hours in Change #12 and counters with Mon-Sat 6am-8pm.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline prohibits construction work on Sundays and federal holidays.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts both the dust mitigation and the 70 dB noise cap at the property line in Change #13, \u00a74.3, without modifying either.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts the restoration escrow concept in Change #14, \u00a74.4, and caps it at $35,000/year rather than $75,000/year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline sets a cumulative cap on the restoration escrow of $175,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline provides for refund of unused restoration escrow amounts within 24 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 5.2 modifies the Grantor's 30-day self-help notice period in Change #16 to 45 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline gives the Grantee a right to contest charges incurred under the Grantor's self-help right.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the Grantor's $5M/$10M CGL limits in Change #17, \u00a76.1, and counters at $3,000,000 per occurrence / $6,000,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the Grantor's $15M umbrella limit in Change #18, \u00a76.2, and counters at $10,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts pollution liability insurance in Change #19 at $3,000,000, not $5,000,000 or another amount.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts Grantor as an additional insured under Change #20 in the General Insurance Provisions section (\u00a76.6(c) as renumbered in the Grantor markup).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts the waiver of subrogation under Change #21 in the General Insurance Provisions section (\u00a76.6(d) as renumbered in the Grantor markup).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects unilateral indemnity in Change #22, \u00a77.1, and restores mutual indemnity, with each party indemnifying for its own negligence or willful misconduct.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline includes an uncapped carve-out for the Grantee's obligation to indemnify for environmental contamination caused by the Grantee's activities.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the inclusion of consequential damages in Change #23, \u00a77.2, and expressly excludes consequential, special, and punitive damages.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the 10-year post-termination survival period in Change #24, \u00a77.3, and counters with a 3-year period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline requires Grantor consent for third-party assignments, provides that consent may not be unreasonably withheld, conditioned, or delayed, and deems consent granted if Grantor does not respond within 30 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline permits affiliate transfers without Grantor consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline permits collateral assignments to Pinnacle South Bank, N.A. (or any replacement lender) without Grantor consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the Change #26, \u00a78.2 provision that deems a change of control of the Grantee an assignment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the 60-day cure period in Change #27, \u00a79.1, and provides 120 days to cure, extendable to 180 days if the cure reasonably requires a longer period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the $1,000/day liquidated damages provision for unauthorized use in Change #28, \u00a79.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts the Phase I environmental requirement before construction in Change #29, \u00a710.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline modifies \u00a710.2 so the Grantee bears remediation costs only for contamination caused by the Grantee's activities, not all contamination within the easement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects Delaware governing law in Change #31, \u00a711.1, and restores North Carolina as the governing law.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts mandatory mediation as the first step of dispute resolution in \u00a711.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects binding AAA arbitration in Change #32 and provides for litigation in Wake County Superior Court as the post-mediation dispute resolution mechanism.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts mutual approval of the recorded form in Change #33, \u00a712.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects deletion of the lender SNDA requirement in Change #34 and restores the SNDA provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline names Pinnacle South Bank, N.A. as a third-party beneficiary of the easement, as required by pinnacle-lender-requirements-letter.docx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline requires Grantor to give Pinnacle South Bank at least 30 days' prior written notice of any termination, as required by pinnacle-lender-requirements-letter.docx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline grants Pinnacle South Bank (or its successors) an independent right to cure defaults on behalf of the Grantee, as required by pinnacle-lender-requirements-letter.docx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts the agricultural-preservation recital added by Grantor in Recitals \u00b6B (Change #1).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note is addressed from Hugh M. Stenger of Calloway, Stenger & Pratt LLP to Sandra K. Locke of Bridgewater & Locke, PLLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note summarizes the counter-positions on width, consideration, insurance, indemnity, assignment, termination, governing law, SNDA, and dispute resolution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note proposes a call the week of May 12, 2025 to discuss the counter-positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note identifies June 25, 2025 as the easement recording deadline and frames it as a hard constraint driving negotiation urgency.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note identifies June 30, 2025 as the construction loan closing date and frames it as a hard constraint driving negotiation urgency.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline explicitly accepts, rejects, or accepts with modification each of the Grantor's 34 tracked changes, leaving none unaddressed or unresolved.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts Grantee's sole responsibility for all maintenance within the easement area in Change #15, \u00a75.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note cites the Keystone survey data (for example, Job No. KLS-2025-0417) and/or the Wake County utility separation standards to support rejecting the reduction from 60 feet to 40 feet, and notes that 40 feet is insufficient for the full utility bundle, which requires a minimum of 55 ft and recommends 60 ft.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note supports the $440,000 consideration counter-position with comparable transaction data, stating that it implies approximately $149,153/acre within the $95,000\u2013$165,000/acre comparable range and that the Grantor's request at the reduced corridor exceeds market rates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline provides a perpetual term or a term extending at least 10 years beyond loan maturity, satisfying pinnacle-lender-requirements-letter.docx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline specifies CGL limits of $3M/$6M and an umbrella limit of $10M, meeting or exceeding the lender minimums of $2M/$5M CGL and $5M umbrella.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note references or addresses the Pinnacle South Bank lender requirements, including the SNDA, the lender collateral-assignment carve-out, and third-party beneficiary status.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

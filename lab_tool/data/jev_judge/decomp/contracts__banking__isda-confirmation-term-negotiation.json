@@ -1,0 +1,422 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Calculation Agent clause designates Tidemark National Bank as the sole Calculation Agent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Calculation Agent clause sets a dispute-escalation threshold above $1,000,000 and below $2,500,000.",
+     "pass_if": true
+    },
+    {
+     "s": "If the threshold is above $1,500,000, the rationale references the $250M notional and the $500K\u2013$5M market practice range.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Calculation Agent clause makes a dealer poll the first step in the dispute-escalation mechanic.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Calculation Agent clause specifies at least 3 polling dealers and does not require 4 or more as a minimum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Calculation Agent clause provides for an independent third-party valuation agent, such as Benchmark Valuation Services LLC or an equivalent, if the dealer poll does not resolve the dispute.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Fallback Rate clause designates Compounded SOFR in arrears (the ISDA Protocol Adjusted Reference Rate) as the primary fallback rate, not CME Term SOFR.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Fallback Rate clause includes CME Term SOFR plus the ISDA spread adjustment of 26.161 bps as a secondary or backup fallback in the waterfall.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Fallback Rate clause requires notice and good-faith consultation before the Calculation Agent implements Conforming Changes, without giving Greenleaf a veto or allowing unilateral Tidemark selection.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Fallback Rate clause states a specific notice period in business days or calendar days before the Calculation Agent implements Conforming Changes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise ATE clause requires a downgrade by at least two of the three rating agencies to trigger the ATE.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise ATE clause sets the rating trigger at BB+/Ba1, or the equivalent across agencies, two notches below Greenleaf Holdings' current BBB/Baa2 ratings.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ATE rationale explains that BBB-/Baa3 is 1 notch from current ratings and unacceptably close, BB/Ba2 is 3 notches away, and BB+/Ba1 at 2 notches is the natural midpoint.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise ATE clause designates Greenleaf Capital Partners LP and/or Greenleaf Holdings Inc. as Credit Support Provider as the sole Affected Party.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise ATE clause references S&P (Standard & Poor's), Moody's, and Fitch.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Close-out Amount clause requires the Determining Party to use \u201ccommercially reasonable efforts\u201d to obtain quotations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Close-out Amount clause requires quotations from at least 3 Reference Market-makers and does not set a minimum of 4 or more.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Close-out Amount clause provides that if fewer than 3 quotations are obtained, the Determining Party uses its own commercially reasonable valuation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Close-out Amount clause requires the mid-market average of the received quotations if 3 or more are obtained, rather than allowing the Determining Party to select among them.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ATE rationale addresses the risk that early swap termination triggered by a hair-trigger ATE could cause Greenleaf to breach the Pacific Ridge credit agreement's Section 6.12 requirement to maintain interest rate hedging on at least 75% of the term loan notional for the first 3 years.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Calculation Agent rationale explains why its compromise language is fair to both sides, commercially reasonable, and/or consistent with market practice.",
+     "pass_if": true
+    },
+    {
+     "s": "The Fallback Rate rationale explains why its compromise language is fair to both sides, commercially reasonable, and/or consistent with market practice.",
+     "pass_if": true
+    },
+    {
+     "s": "The ATE rationale explains why its compromise language is fair to both sides, commercially reasonable, and/or consistent with market practice.",
+     "pass_if": true
+    },
+    {
+     "s": "The Close-out Amount rationale explains why its compromise language is fair to both sides, commercially reasonable, and/or consistent with market practice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The compromise clauses reference or are consistent with the 2002 ISDA Master Agreement dated March 3, 2021, reference GCP-TNB-2021-001.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The compromise clauses reference Confirmation GCP-TNB-CONF-2025-0047 and are drafted as provisions for insertion into that Confirmation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The compromise clauses state how they supplement or override the Master Agreement or Schedule terms where applicable, including addressing the override of Schedule Section 6.8 for Calculation Agent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Calculation Agent rationale states that $1M is approximately 0.4% of the $250M notional and $2.5M is approximately 1.0%.",
+     "pass_if": true
+    },
+    {
+     "s": "The Calculation Agent rationale cites the Sable & Whitford market practice memo's $500K\u2013$5M range as support for the chosen compromise threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each of the four contested terms is presented as actual draft contractual language suitable for insertion into an ISDA Confirmation, with ISDA-style defined terms, section references, and operative language, rather than only as a summary or description.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Fallback Rate rationale explains that the transaction already uses Compounded SOFR in arrears as the Floating Rate, so using it as the primary fallback provides operational consistency.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Fallback Rate rationale explains that CME Term SOFR as a secondary fallback provides a simpler back-stop if Compounded SOFR becomes unavailable, for example because CME Term SOFR is a forward-looking term rate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise ATE clause includes a cure period and/or notice requirement before the ATE becomes effective, giving Greenleaf an opportunity to post additional collateral or arrange a replacement hedge.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise Close-out Amount clause references and supplements the 2002 ISDA Section 6(e) framework by adding quotation-seeking procedures to the Determining Party's Close-out Amount calculation, rather than replacing that framework.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable includes a compromise clause and rationale for Calculation Agent / dispute resolution.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable includes a compromise clause and rationale for Fallback Rate provisions.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable includes a compromise clause and rationale for the Additional Termination Event rating trigger.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable includes a compromise clause and rationale for the Close-out Amount valuation methodology.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Calculation Agent clause includes a dispute resolution mechanism.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Fallback Rate clause does not grant unilateral dealer selection of fallback methodology.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ATE clause does not use a single-agency BBB-/Baa3 trigger.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Close-out Amount clause requires the Determining Party to seek quotations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable is framed as a proposal from Rebecca Tsao of Sable & Whitford LLP, Greenleaf's outside counsel, to Jonathan Driscoll of Carothers Beale LLP, Tidemark's outside counsel.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

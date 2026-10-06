@@ -1,0 +1,764 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Ridgeline draft charges a management fee of 1.75% per annum, while the playbook ceiling is 1.50% per annum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Ridgeline draft calculates fees on committed capital, payable quarterly in advance, while the playbook requires fees on net invested capital, payable quarterly in arrears.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates both the management fee rate deviation and the fee basis deviation as High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a management fee of 1.50% per annum on net invested capital, payable quarterly in arrears.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references or quantifies an approximately $265,625 quarterly fee delta at full deployment, comparing Ridgeline draft fees of $1,859,375 with playbook fees of $1,593,750 on a $425M allocation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Ridgeline draft's 20% incentive allocation has no hurdle rate, while the playbook requires a 6% annualized hard hurdle.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Ridgeline draft has no high-water mark on the incentive allocation, while the playbook requires a perpetual high-water mark.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the absence of a hurdle rate and the absence of a high-water mark as High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends inserting a 6% annualized hard hurdle, a perpetual high-water mark, and a 100% catch-up provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references or quantifies an approximately $5,100,000 Year-1 incentive delta at 10% gross return, comparing $8.5M under the Ridgeline draft with approximately $3.4M under the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Ridgeline draft permits leverage up to 3.0x NAV versus the playbook's 2.0x NAV cap and rates this deviation High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends reducing maximum gross leverage to 2.0x NAV per the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline shows a tracked change modifying the leverage cap from 3.0x NAV to 2.0x NAV.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the single-issuer concentration limit deviation of Ridgeline 10% versus playbook 5% and rates it High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies single-issuer exposure as $42,500,000 at 10% versus $21,250,000 at 5%, a delta of $21,250,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends reducing the single-issuer concentration limit to 5% of allocated capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the absence of a key-person clause in the Ridgeline draft and rates it High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo names Jonathan K. Adebayo as the designated key person for the GOC strategy.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a key-person clause giving the Fund the right to suspend new allocations and/or terminate on 30 days' notice if Adebayo ceases to devote substantially all professional time to the GOC strategy.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of an annexed Investment Guidelines Schedule, notes that the draft uses only 'reasonable investment discretion consistent with the GOC strategy,' and rates the deficiency High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends annexing a completed Schedule A covering asset class limits, credit quality floors (minimum 30% B-/B3 or above), geographic limits (max 20% EM), currency hedging requirements (\u226575% non-USD hedged), and an ESG exclusion list.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the initial term deviation of Ridgeline 36 months versus playbook 12 months and rates it High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the auto-renewal period deviation of Ridgeline 24 months versus playbook 12 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the termination notice period deviation of Ridgeline 180 days versus playbook 90 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Ridgeline draft limits termination for cause to 'material fraud' only, while the playbook requires termination for material breach, including regulatory sanction, key-person departure, and compliance failure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the cure period deviation of Ridgeline 60 days versus playbook 30 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of an immediate termination right without cure for fraud, willful misconduct, or felony conviction as required by the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends conforming all term and termination provisions\u2014initial term, auto-renewal, notice period, cause triggers, cure period, and immediate termination\u2014to the playbook positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Ridgeline draft limits Manager liability to 'actual fraud' only, while the playbook requires liability for gross negligence, willful misconduct, bad faith, or material breach, and rates this deviation High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline shows tracked changes expanding the liability standard from 'actual fraud' only to include gross negligence, willful misconduct, bad faith, or material breach of the IMA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that indemnification is one-way (Fund-to-Manager only), rather than mutual as required by the playbook, and rates it High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Ridgeline draft requires the Fund to advance Manager defense costs regardless of outcome, while the playbook requires an undertaking to repay if indemnification is ultimately denied, and rates this High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of an indemnification cap in the Ridgeline draft, notes the playbook cap of two years' management fees ($12,750,000 based on $425M \u00d7 1.50% \u00d7 2), and rates this High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline shows tracked changes inserting mutual indemnification, a repayment undertaking for advanced defense costs, and an indemnification cap of two years' management fees / $12,750,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Ridgeline draft provides only quarterly summary reports, while the playbook requires monthly position-level transparency with a 5-business-day lag.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the Ridgeline draft's 45-business-day reporting delivery timeline as deviating from the playbook standard.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Ridgeline draft allows 180 days for delivery of annual audited financials, while the playbook requires 90 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of both position-level transparency and real-time risk dashboard access in the Ridgeline draft.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the reporting deficiencies High risk and recommends conforming to all playbook reporting standards.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of co-investment rights and rates it Medium or High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends inserting a pro rata co-investment rights provision for deals exceeding $50 million in notional per the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of an MFN (most-favored-nation) clause and rates it Medium or High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends inserting an MFN clause requiring Manager to disclose and offer any more favorable economic or governance terms granted to other SMA clients with equal or smaller allocations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Ridgeline draft specifies Connecticut law and exclusive Connecticut state court jurisdiction, versus the playbook's Delaware law and JAMS arbitration with a three-arbitrator panel seated in New York, and rates the deviation Medium or High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends Delaware law, binding JAMS arbitration with a three-arbitrator panel seated in New York, NY, and preservation of provisional injunctive relief.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Ridgeline draft provides Form ADV Part 2A only 'upon request' with no affirmative delivery obligation, while the playbook requires affirmative delivery of Form ADV Parts 1 & 2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Ridgeline draft contains no SOC 1 Type II or cybersecurity attestation requirements, while the playbook requires both.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the regulatory/compliance provision deficiencies Medium or High risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline shows tracked changes adding obligations for annual compliance certification, affirmative delivery of Form ADV Parts 1 & 2, an annual SOC 1 Type II report, and cybersecurity attestation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline contains tracked-changes insertions for a key-person clause, co-investment rights, an MFN clause, an investment guidelines schedule reference, and SOC 1/cybersecurity obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline shows tracked changes modifying management fees, incentive allocation terms, leverage cap, concentration limits, term/termination provisions, liability standard, indemnification provisions, reporting obligations, governing law/dispute resolution, and regulatory compliance to conform to playbook positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline presents changes in tracked-changes format, with insertions, deletions, and/or annotations clearly distinguished from original text.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Every deviation flagged in the memo has a High, Medium, or Low risk rating and a brief rationale justifying the rating.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Every deviation flagged in the memo includes an affirmative recommendation of what Granite Peak should demand or propose.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes fallback alternatives for at least some key deviations, such as fee rates, term length, or leverage cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed to Rebecca A. Stanton, Priya Nandakumar, Marcus D. Leung, or the Investment Committee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the May 12, 2025 Investment Committee meeting or the May 8, 2025 internal delivery deadline, or indicates that it is ready for IC presentation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "When quantifying the management fee economic impact, the memo references fee-comparison-analysis.xlsx or its substance and discusses deployment-level scenarios at 25%, 50%, 75%, and 100%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "When quantifying the incentive fee economic impact, the memo references fee-comparison-analysis.xlsx or its substance and discusses modeled gross return scenarios from among 5%, 8%, 10%, 12%, and 15%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes a tracked change inserting or referencing annexation of the completed Investment Guidelines Schedule (Schedule A) to the IMA in place of the vague 'reasonable investment discretion' language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Ridgeline's GOC strategy overview discloses historical leverage utilization of 1.5x\u20132.5x with peaks near 3.0x and uses this history to support the playbook's 2.0x cap as reflecting actual practice, not a hypothetical.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Meridian Fund Services, Inc. as the Fund Administrator responsible for NAV calculation, fee verification, and performance reporting, and recommends requiring Manager cooperation with Meridian on fee verification and NAV reconciliation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes an executive summary in table or chart format showing provision category, Ridgeline draft position, playbook position, risk rating, and recommended action.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Granite Peak Capital Partners, LP as the Fund or Client.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Granite Peak Capital GP LLC as the General Partner.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Ridgeline Asset Management LLC as the Manager or Sub-Adviser.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Fielding, Calder & Moss LLP as outside counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes Ridgeline's September 2023 SEC examination, with no deficiency letter issued, as a mitigating factor in the regulatory risk assessment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Despite noting the clean SEC exam, the memo recommends the full suite of playbook compliance obligations: annual compliance certification, affirmative delivery of ADV Parts 1 & 2, SOC 1 Type II, and cybersecurity attestation.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

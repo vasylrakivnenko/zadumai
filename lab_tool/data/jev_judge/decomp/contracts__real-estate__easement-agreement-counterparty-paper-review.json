@@ -1,0 +1,632 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo identifies the Grantor's unilateral right to terminate the easement as a deviation from the playbook or an issue requiring negotiation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the draft's 180-day written notice period for Grantor's termination of the easement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the draft's trigger that Grantee's parcel ceases to be used for commercial purposes for a continuous period of 12 months as a basis for Grantor termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states or contrasts that the playbook permits Grantor termination only for material uncured default, not for discretionary or use-based reasons.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's 15-day cure period for Grantee defaults as too short, materially shorter than the playbook's minimums, or otherwise a deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the playbook's required minimum cure period of 60 days for monetary defaults.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the playbook's required minimum cure period of 90 days for non-monetary defaults.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of reciprocal default and cure rights for Grantee against Grantor and notes that the playbook mandates those rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft allocates relocation costs 50% to Grantor and 50% to Grantee, while the playbook requires relocation to be at Grantor's sole cost (100%).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft gives Grantor unilateral discretion to relocate the easement without Grantee's prior written consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires Grantee's prior written consent for any relocation of the easement, which may not be unreasonably withheld.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires continuous access to be maintained during any relocation of the easement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft makes Grantee assume all environmental liability for pre-existing conditions within the easement area, contrary to the playbook's prohibition on accepting such liability.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft does not reference a baseline environmental assessment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires a Phase I ESA baseline prior to execution, with costs shared equally between the parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires an indemnity from Grantor (Hollenbeck Family Holdings) for pre-existing environmental contamination within the easement area.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft requires Grantor's prior written consent for any assignment of the easement and has no carve-outs for transfers to affiliates, lenders, or successors in title to the Dominant Estate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires the easement to be freely assignable without Grantor consent to successors in title to the Dominant Estate, affiliates, and Grantee's construction and permanent lenders.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of mortgagee notice and cure rights in the draft and notes that the playbook requires them.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of a non-disturbance and recognition agreement provision and notes that the playbook requires Grantor to provide such an agreement upon lender request.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of a Grantor covenant of quiet enjoyment and non-interference with Grantee's use of the easement and notes that the playbook makes this mandatory.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the draft's CGL requirements of $3,000,000 per occurrence / $5,000,000 aggregate exceed the playbook standard of $2,000,000 per occurrence / $4,000,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that CGL amounts exceeding the playbook standard require risk-management sign-off or equivalent internal approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags as a deviation that the draft's indemnification obligation runs only from Grantee to Grantor and applies regardless of fault.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires mutual indemnification and that neither party should assume liability for the other party's negligence or willful misconduct.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags as a deviation that the draft allows Grantor to withhold consent for all construction, alteration, or improvement\u2014including underground utility installation\u2014in Grantor's 'sole and absolute discretion.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires Grantor consent only for above-ground permanent structures, not for underground utility work.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires Grantor's consent for underground utility work to be 'not unreasonably withheld, conditioned, or delayed' or uses substantively equivalent language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires initial project utility plans to be deemed pre-approved as an exhibit to the easement agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of a force majeure clause in the draft and notes that the playbook requires a standard provision excusing performance delays outside a party's reasonable control.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags as a deviation that the draft restricts the easement's scope of use to Grantee's 'current planned mixed-use development,' limiting future use.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires the easement to permit any lawful commercial use of the Dominant Estate without project-specific limitations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft is silent on condemnation or eminent domain allocation of award proceeds.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires pro-rata sharing of any condemnation award based on diminution of value to each estate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook entitles Grantee to claim for its improvements in a condemnation proceeding.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft requires Grantee to pay any increase in Grantor's property taxes attributable to the easement improvements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook limits Grantee's tax responsibility to taxes on Grantee's own improvements within the easement area and excludes responsibility for increases to Grantor's parcel-level assessments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of a pro-rata refund provision for the $275,000 one-time easement consideration if early termination or condemnation occurs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires a pro-rata refund of the easement consideration if Grantor terminates the easement or condemnation renders it unusable within the first 15 years.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of a mutual waiver of consequential, special, and punitive damages and notes that the playbook requires such a waiver from both parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of an estoppel certificate provision in the draft.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires either party to deliver estoppel certificates within 15 business days of request.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags as a deviation that the draft's Grantor representations are limited to authority to execute the agreement, omitting other standard representations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires Grantor representations regarding title to the Servient Estate, absence of conflicting encumbrances, compliance with laws, and environmental condition of the easement area.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of mandatory mediation before litigation, noting that the draft provides only for Texas law and Dallas County court jurisdiction without pre-suit mediation, while the playbook requires mandatory mediation prior to litigation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft is silent on which party bears recording costs and notes that the playbook requires recording at Grantor's cost.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft does not specify a recording deadline and notes that the playbook requires recording within 10 business days of execution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags as a deviation that the draft makes Grantee solely responsible for all maintenance, repair, and replacement of the easement surface.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires shared surface maintenance at 60% Grantee / 40% Grantor if Grantor or Grantor's invitees also use the easement area.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes extending the cure period for monetary defaults from 15 days to at least 60 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes extending the cure period for non-monetary defaults from 15 days to at least 90 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes changing the approval standard for underground utility work from 'sole and absolute discretion' to 'not unreasonably withheld, conditioned, or delayed' or substantively equivalent language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes an assignment carve-out permitting transfer without Grantor consent to successors in title to the Dominant Estate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes an assignment carve-out permitting transfer without Grantor consent to Grantee's affiliates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes an assignment carve-out permitting transfer without Grantor consent to Grantee's construction and/or permanent lenders.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C056",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The issues/risk memo includes a risk rating or risk-level designation (such as high, medium, low, critical, or an equivalent severity label) for each identified deviation, missing protection, or off-market term.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo recommends attaching Ridgeline's preliminary utility installation plan as a pre-approved exhibit to the easement agreement.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

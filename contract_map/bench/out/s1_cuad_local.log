@@ -1,0 +1,41 @@
+== cuad_clause stage 1: 37 classes, eval 500 rows, train 6000 of 37616
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+   eval rows with a type 300, none 200
+   (tfidf: trained on 6000 rows in 51s)
+   (tfidf: threshold 0.6, picked on 2000 validation rows)
+  tfidf        micro P  74.8% R  55.6% F1 0.638  macro-F1 0.539  exact  61.4%  'none' rows kept empty 183/200  (0.3 ms/item)
+      weakest types (F1): Affiliate License-Licensor 0.00, Unlimited/All-You-Can-Eat-License 0.00, Non-Disparagement 0.00, Warranty Duration 0.00, Liquidated Damages 0.22, Volume Restriction 0.29
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10545.11it/s]
+   (emb: trained on 6000 rows in 450s)
+   (emb: threshold 0.9, picked on 2000 validation rows)
+  emb          micro P  62.0% R  46.0% F1 0.528  macro-F1 0.447  exact  55.6%  'none' rows kept empty 168/200  (63.7 ms/item)
+      weakest types (F1): Volume Restriction 0.00, Unlimited/All-You-Can-Eat-License 0.00, Warranty Duration 0.00, Non-Disparagement 0.00, Most Favored Nation 0.00, Liquidated Damages 0.20
+== cuad_type stage 1: 25 classes, eval 200 rows
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ -- view: head (first 4,000 chars, title included)
+  tfidf        accuracy  72.0% [lo 0.654]  macro-F1 0.639  (49.2 ms/item)
+      answer only if p >= 0.5: coverage  12.5%  precision 100.0% [lo 0.867]
+      answer only if p >= 0.7: coverage   5.0%  precision 100.0% [lo 0.722]
+      most confused (gold -> predicted): Collaboration Agreement -> Development Agreement ×3; Marketing Agreement -> Service Agreement ×3; Affiliate Agreement -> License Agreement ×2; Promotion Agreement -> Sponsorship Agreement ×2; Marketing Agreement -> Development Agreement ×2; Marketing Agreement -> Maintenance Agreement ×2
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 26344.30it/s]
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 3 members, which is less than n_splits=5.
+  warnings.warn(
+  emb          accuracy  66.5% [lo 0.597]  macro-F1 0.620  (907.0 ms/item)
+      answer only if p >= 0.5: coverage  11.0%  precision  95.5% [lo 0.782]
+      answer only if p >= 0.7: coverage   1.5%  precision 100.0% [lo 0.438]
+      most confused (gold -> predicted): Promotion Agreement -> Sponsorship Agreement ×3; Marketing Agreement -> Service Agreement ×3; Agency Agreement -> Marketing Agreement ×3; Collaboration Agreement -> Development Agreement ×2; Distributor Agreement -> Strategic Alliance Agreement ×2; Outsourcing Agreement -> Maintenance Agreement ×2
+ -- view: body (chars 2,000-6,000, no title)
+  tfidf        accuracy  52.0% [lo 0.451]  macro-F1 0.460  (80.5 ms/item)
+      answer only if p >= 0.5: coverage   6.5%  precision 100.0% [lo 0.772]
+      answer only if p >= 0.7: coverage   2.0%  precision 100.0% [lo 0.510]
+      most confused (gold -> predicted): Collaboration Agreement -> Development Agreement ×4; Outsourcing Agreement -> Maintenance Agreement ×3; Transportation Agreement -> Maintenance Agreement ×3; Marketing Agreement -> Maintenance Agreement ×3; Collaboration Agreement -> Strategic Alliance Agreement ×2; Hosting Agreement -> Strategic Alliance Agreement ×2
+  emb          accuracy  51.5% [lo 0.446]  macro-F1 0.443  (217.7 ms/item)
+      answer only if p >= 0.5: coverage   6.0%  precision  83.3% [lo 0.552]
+      answer only if p >= 0.7: coverage   0.5%  precision 100.0% [lo 0.207]
+      most confused (gold -> predicted): Endorsement Agreement -> Sponsorship Agreement ×4; Outsourcing Agreement -> Maintenance Agreement ×3; Consulting Agreement -> Service Agreement ×2; Collaboration Agreement -> Development Agreement ×2; Collaboration Agreement -> Strategic Alliance Agreement ×2; Hosting Agreement -> Strategic Alliance Agreement ×2

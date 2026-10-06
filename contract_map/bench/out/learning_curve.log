@@ -1,0 +1,17 @@
+== ledgar: eval 2000 rows; train sizes (1000, 3000, 6000, 20000, 60000)
+   train   1000: accuracy 70.0%, merged labels 75.2%; at p>=0.9: coverage 8.6% precision 95.9%  [11s]
+   train   3000: accuracy 77.3%, merged labels 82.2%; at p>=0.9: coverage 19.7% precision 97.5%  [25s]
+   train   6000: accuracy 81.2%, merged labels 86.1%; at p>=0.9: coverage 32.5% precision 97.2%  [45s]
+   train  20000: accuracy 84.7%, merged labels 89.4%; at p>=0.9: coverage 48.9% precision 97.5%  [118s]
+   train  60000: accuracy 87.9%, merged labels 91.8%; at p>=0.9: coverage 63.0% precision 97.9%  [311s]
+== cuad_clause: eval 2000 rows; train sizes (1500, 3000, 6000, 12000, 37616)
+   train   1500 (900 with a type): micro-F1 0.604 (threshold 0.4)  [53s]
+   train   3000 (1800 with a type): micro-F1 0.650 (threshold 0.4)  [60s]
+   train   6000 (3600 with a type): micro-F1 0.674 (threshold 0.6)  [71s]
+   train  12000 (4624 with a type): micro-F1 0.684 (threshold 0.6)  [84s]
+   train  37616 (4624 with a type): micro-F1 0.669 (threshold 0.6)  [87s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== tos: eval 1607 rows; train sizes (1000, 2500, 5532)
+   train   1000 (600 with a type): micro-F1 0.695 (threshold 0.8)  [2s]
+   train   2500 (630 with a type): micro-F1 0.723 (threshold 0.7)  [23s]
+   train   5532 (630 with a type): micro-F1 0.739 (threshold 0.6)  [21s]

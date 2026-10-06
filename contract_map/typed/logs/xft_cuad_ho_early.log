@@ -1,0 +1,16 @@
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 23265.86it/s]
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 15771.00it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 13939.68it/s]
+  cuad_ho: 100/950 (263s)
+  cuad_ho: 200/950 (622s)
+  cuad_ho: 300/950 (806s)
+  cuad_ho: 400/950 (1138s)
+  cuad_ho: 500/950 (1352s)
+  cuad_ho: 600/950 (1595s)
+  cuad_ho: 700/950 (1765s)
+  cuad_ho: 800/950 (2079s)
+  cuad_ho: 900/950 (2377s)
+done cuad_ho -> /root/zadumai_nli_proto/contract_map/typed/feats/cuad_ho_ft.jsonl (2464s)

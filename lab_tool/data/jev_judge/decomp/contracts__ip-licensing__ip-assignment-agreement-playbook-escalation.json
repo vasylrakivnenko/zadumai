@@ -1,0 +1,807 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is dated August 4, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Derek Holbrook as the author or sender.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives Derek Holbrook\u2019s title as Associate General Counsel \u2014 IP & Transactions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed to Margaret Tsui as General Counsel.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo is addressed to Rajiv Anand as CTO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo CCs Sienna Marsh as VP of Product Engineering.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo CCs Nathan Kellner as KPO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites Playbook \u00a7 7.3 or Section 7.3 as the escalation trigger provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Playbook Version 4.2.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives January 15, 2025 as the effective date of Playbook Version 4.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies five terms that each independently exceed fallback authority and require written escalation under the policy.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The summary table lists the retained license as an out-of-policy term.",
+     "pass_if": true
+    },
+    {
+     "s": "The summary table lists warranty survival as an out-of-policy term.",
+     "pass_if": true
+    },
+    {
+     "s": "The summary table lists the indemnification cap as an out-of-policy term.",
+     "pass_if": true
+    },
+    {
+     "s": "The summary table lists inventor cooperation as an out-of-policy term.",
+     "pass_if": true
+    },
+    {
+     "s": "The summary table lists non-compete scope as an out-of-policy term.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The summary table has a column or labeled field for term description.",
+     "pass_if": true
+    },
+    {
+     "s": "The summary table has a column or labeled field for the Playbook-approved position.",
+     "pass_if": true
+    },
+    {
+     "s": "The summary table has a column or labeled field for CDL\u2019s demand.",
+     "pass_if": true
+    },
+    {
+     "s": "The summary table has a column or labeled field for the gap.",
+     "pass_if": true
+    },
+    {
+     "s": "The summary table has a column or labeled field for risk rating.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies CDL\u2019s demand as a perpetual, irrevocable, royalty-free, non-exclusive license-back for internal R&D use.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Playbook-approved license-back fallback is time-limited up to 12 months for transition purposes only.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that a perpetual license-back is expressly out of scope.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies revenue displacement risk from the retained license at $8.2M.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo derives the $8.2M figure from $41M over 5 years as one year\u2019s projected Luminex ARR.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies CDL\u2019s demand as a 12-month IP rep & warranty survival period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Playbook requires a minimum 36-month IP-specific rep survival period.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the general minimum is 24 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites the KPO comparable-transaction analysis finding that 73% of third-party IP infringement claims surface between months 13 and 30 post-acquisition.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the KPO analysis is based on 42 comparable transactions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies CDL\u2019s proposed IP indemnification cap as 50% of the purchase price, or $3,375,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Playbook indemnification floor is 100% of the purchase price, or $6,750,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies the indemnity gap exposure at $3,375,000, calculated as $6.75M minus $3.375M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies CDL\u2019s demand as 12-month inventor cooperation for Dr. Priya Sundaram.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Playbook minimum for inventor cooperation is 36 months.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that there is no approved fallback below 24 months for inventor cooperation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the 12-month inventor cooperation window expires August 15, 2026.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the 12-month window does not cover the EPO first office action projected for Q4 2026.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the 12-month window does not cover the JPO first office action projected for Q1 2027.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the 12-month window covers the ISR response projected for Q1 2026.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the national-phase entry deadline is March 14, 2026.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that CTO concurrence is required for Term 4 inventor cooperation as a technology-scope term under the Playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies CDL\u2019s demand as an 18-month, U.S.-only non-compete.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Playbook minimum non-compete duration is 3 years.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the Playbook minimum non-compete applies worldwide.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the Playbook minimum non-compete is limited to the specific technology field.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies EMEA/APAC revenue exposure at $11.48M.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the $11.48M exposure is 28% of $41M projected Luminex revenue by FY2027.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that CTO concurrence is required for Term 5 non-compete scope as a technology-scope term under the Playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo prominently states that the exclusivity window expires August 8, 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that August 8, 2025 is 4 calendar days from the memo date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo requests a decision by August 6, 2025, to allow time to respond to CDL before exclusivity lapses.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that if Verdana does not reach agreement, CDL may negotiate with third parties if exclusivity lapses.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the acquired IP portfolio as the Luminex real-time data orchestration engine.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies 2 issued U.S. utility patents as assets.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies 1 pending PCT application as an asset.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies 14 copyright registrations as assets.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies trade secrets as assets.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the total purchase price is $6,750,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that $4,500,000 is payable at closing.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that $2,250,000 is deferred.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the deferred amount is payable in two equal installments of $1,125,000 each at months 9 and 18.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the target closing date is August 15, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo gives a specific accept, counter, or reject recommendation with rationale for each of the five out-of-policy terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo\u2019s recommendations refer to quantified risks such as $8.2M, $3.375M, or $11.48M, and/or diligence findings such as the KPO analysis or prosecution timeline to support their rationale.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a dedicated aggregate risk assessment section that synthesizes the combined exposure across all five out-of-policy terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The aggregate risk assessment synthesizes the $8.2M retained-license displacement, $3.375M indemnity gap, and $11.48M EMEA/APAC non-compete exposure as cumulative financial exposure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes an approval signature block or line for Margaret Tsui as General Counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes an approval or concurrence signature block or line for Rajiv Anand as CTO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo specifically states that CTO concurrence is required for Term 4 inventor cooperation as a technology-scope term.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo specifically states that CTO concurrence is required for Term 5 non-compete scope as a technology-scope term.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references a negotiation round on July 18, 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo references a negotiation round on July 25, 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo references a negotiation round on August 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that CDL\u2019s positions remain firm after three rounds.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies CDL\u2019s firm positions after three rounds as the factual basis for escalation rather than continued negotiation within existing authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Verdana Software Inc. as the legal entity.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Verdana Software Inc. as a Delaware corporation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Verdana Software Inc. as the Assignee/Purchaser.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Calloway Digital Labs LLC as the legal entity.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Calloway Digital Labs LLC as a Colorado limited liability company.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Calloway Digital Labs LLC as the Assignor/Seller.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the CDL redline received July 14, 2025, as the source of the five out-of-policy terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Verdana\u2019s first draft circulated June 24, 2025, as the baseline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites the IP Transaction Negotiation Playbook (v4.2) as a governing authority standard.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo cites the Fallback Authority Matrix as a governing authority standard.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that KPO recommends a minimum 24-month inventor cooperation window.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the EPO first OA projected for Q4 2026 and the JPO first OA projected for Q1 2027 fall within a 24-month window expiring August 15, 2027, but outside a 12-month window expiring August 15, 2026, from the August 15, 2025 closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a header block with the matter name, date, from, to, cc, and document reference.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo includes an executive summary section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a transaction overview section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a detailed risk analysis with financial quantification for each of the five terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a time constraints section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Lucas Calloway insists on a perpetual license-back to preserve CDL\u2019s R&D capabilities.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Erin Halverson characterizes 12-month warranty survival as market standard for sub-$10M deals.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that CDL resists extending Dr. Priya Sundaram\u2019s cooperation beyond 12 months because she plans to transition to a new venture.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that two other potential acquirers are known to be interested in the Luminex IP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo frames the interest of two other potential acquirers as a risk of losing the deal if Verdana walks away or lets exclusivity lapse, including that CDL may negotiate with third parties after August 8, 2025.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

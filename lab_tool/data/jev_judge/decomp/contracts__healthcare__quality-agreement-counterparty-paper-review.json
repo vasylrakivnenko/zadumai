@@ -1,0 +1,500 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that \u00a7 5.2 provides only 30 calendar days' advance notice for changes affecting product identity, strength, quality, purity, or potency, versus the playbook's mandatory 90 calendar days' advance notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the playbook's fallback of 60 calendar days' advance notice, acceptable only with VP Quality written exception, as an alternative to the mandatory 90-day position.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that \u00a7 5.2 uses a 'commercially reasonable efforts to accommodate comments' standard rather than requiring Ceritas's prior written approval before any change is implemented.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that \u00a7 6.1 provides 72 hours for critical deviation notification, versus the playbook's mandatory 24-hour window.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that \u00a7 6.1 reports major deviations only in a monthly quality summary, whereas the playbook requires notification within 5 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft contains no specified timelines for root-cause analysis (RCA) completion.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the playbook mandates RCA completion within 15 business days for critical deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the playbook mandates RCA completion within 30 business days for major deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that \u00a7 6.3 grants Pinnacle authority to approve and implement CAPA plans while limiting Ceritas to providing 'input,' whereas the playbook gives Ceritas sole authority to approve or reject CAPA plans for critical deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that \u00a7 7.1 splits final batch disposition authority by market, with Pinnacle's QP for EU and Ceritas for US, whereas the playbook requires Ceritas QP/QA to retain final batch disposition authority for all markets.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that \u00a7 7.1 provides raw data 'upon reasonable request' within 10 business days, whereas the playbook requires raw data packages upon request within 2 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 8.1 sets the APQR submission deadline at 90 calendar days after the close of each calendar year, versus the playbook's mandatory 60 calendar days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 9.1 caps GMP audits at one per calendar year, whereas the playbook mandates unlimited audit frequency.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 9.1 requires 20 business days' written notice for audits, whereas the playbook requires only 10 business days' notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 9.1 requires mutual agreement for additional for-cause audits, rather than allowing Ceritas to conduct audits at its sole discretion without frequency limits as the playbook mandates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 9.3 provides for notification within 5 business days of a regulatory inspection, whereas the playbook mandates notification within 24 hours.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 9.3 contains no provision granting Ceritas the right to participate in or observe regulatory inspections relating to Velorantib or its manufacturing line, whereas the playbook mandates this right.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that \u00a7 10.1 provides for recall decisions to be made 'jointly,' whereas the playbook mandates that Ceritas has sole decision-making authority over product recalls and field alerts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that \u00a7 10.1 allocates recall costs 50/50 unless 'willful misconduct' is shown, whereas the playbook requires the CDMO to bear recall costs to the extent the recall arises from the CDMO's failure to comply with cGMP, specifications, or the Quality Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 11.1 allows Pinnacle to subcontract testing to pre-approved laboratories and merely notify Ceritas within 15 business days after engagement of new subcontractors, whereas the playbook mandates Ceritas's prior written consent for any subcontracting of quality-critical activities.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 11.1 does not require subcontractors to be qualified through a Ceritas audit, whereas the playbook mandates that each subcontractor must be qualified by a Ceritas audit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 12.1 references only 21 CFR Part 11 compliance and does not require the broader data-integrity program mandated by the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires the CDMO's data-integrity program to be consistent with the FDA Data Integrity Guidance (2018), which the draft does not reference.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the playbook requires the CDMO's data-integrity program to be consistent with the MHRA GxP Data Integrity Guidance (2018), which the draft does not reference.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 12.3 specifies 7 years' records retention from batch release, whereas the playbook mandates the longer of 10 years from batch release or the period required by applicable law.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 13.2 describes stability protocols as 'mutually agreed' rather than Ceritas-approved as required by the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 13.2 reports stability results in quarterly summaries, whereas the playbook requires reporting within 5 business days of completion of each time-point analysis.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 4.3 provides only for an annual updated list of QPs with no advance notice of changes, whereas the playbook requires at least 30 calendar days' advance notice of any QP change.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 4.3 does not grant Ceritas the right to object to proposed QP changes, whereas the playbook reserves this right for Ceritas.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the draft's liability cap in \u00a7 14.1 (\u20ac2,000,000 per calendar year) as a deviation from the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the playbook's mandatory position that there must be no cap on liability for quality failures, regulatory non-compliance, IP infringement, and breaches of confidentiality.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the playbook's preferred fallback position that any liability cap must be no less than 200% of annual fees under the MSA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states or calculates that the preferred minimum liability cap is $16,800,000, equal to 200% of Year 1 annual MSA fees of $8,400,000, and that the draft's \u20ac2,000,000 cap is substantially below the playbook floor.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 16.1 specifies the laws of Germany, whereas the playbook's mandatory position is New York law with Delaware law as the fallback.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 16.1 provides for ICC arbitration seated in Frankfurt, whereas the playbook requires ICC arbitration to be seated in New York.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 14.3 relieves Pinnacle of all obligations during a force majeure event, whereas the playbook mandates that force majeure does not excuse quality or regulatory obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 14.3 contains no obligation for Pinnacle to maintain a business-continuity or disaster-recovery plan, whereas the playbook mandates a documented business-continuity plan.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the complete absence of any complaint-handling provision or annex in the draft and notes that the playbook mandates inclusion of a detailed complaint-handling annex.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the playbook requirement that the CDMO initiate investigation of product-quality complaints within 3 business days of receipt.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the playbook requirement that the CDMO provide preliminary findings within 10 business days of receipt of a product-quality complaint.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that \u00a7 15.1 provides a fixed 5-year term with automatic 2-year renewals, whereas the playbook mandates a term coterminous with the MSA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's survival clause covers records retention only, whereas the playbook mandates survival encompassing records retention, cooperation with recalls, and regulatory inspection support.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's survival period is 5 years post-termination, whereas the playbook mandates 10 years post-termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C044",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo assigns a risk rating using the internal risk-rating rubric or methodology to each identified deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's risk analysis explicitly accounts for or references Velorantib's Tier 1 \u2013 Critical Revenue Product classification when assessing or weighting risk ratings.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

@@ -1,0 +1,136 @@
+{
+ "1_cost": {
+  "tasks": 318,
+  "files": 3274,
+  "read_tokens_median": 109758,
+  "read_tokens_p90": 181725,
+  "read_tokens_max": 365361,
+  "tasks_over_100k": 192,
+  "tasks_over_200k": 20,
+  "read_tokens_by_ext": {
+   ".docx": 32504381,
+   ".xlsx": 2942853,
+   ".eml": 2439390,
+   ".txt": 57336,
+   ".pptx": 30304
+  },
+  "grep_visible_share": 0.0657,
+  "parse_errors": {},
+  "outline_tokens_median": 383,
+  "tasks_with_redline_docs": 181,
+  "parse_s_median": 0.28500000000000003,
+  "wall_s": 106
+ },
+ "2_redline": {
+  "docx_scanned": 1963,
+  "docx_with_tracked_changes": 248,
+  "read_change_marks": 0,
+  "changes_ours": 37445,
+  "pandoc_spans": 37468,
+  "ins_word_recall_vs_pandoc": 1.0,
+  "ins_word_precision": 1.0,
+  "del_word_recall_vs_pandoc": 1.0,
+  "del_word_precision": 1.0,
+  "deleted_words": 374812,
+  "inserted_words": 414566,
+  "read_words_covered_by_our_current_text": 0.9983
+ },
+ "3_compare": {
+  "docs": 248,
+  "ins_precision": 0.9764,
+  "ins_recall": 0.8502,
+  "del_precision": 0.9736,
+  "del_recall": 0.8345,
+  "changed_paragraphs_true": 17699,
+  "items_reported": 18492,
+  "compare_s_median": 0.02,
+  "wall_s": 42
+ },
+ "4_find": {
+  "tasks": 40,
+  "criteria": 2447,
+  "fact_bearing": 273,
+  "fact_bearing_in_redlined_text": 9,
+  "title_query_reach": 0.7582,
+  "read_all_tokens_per_task": 118090,
+  "find_s_per_query": 0.0555,
+  "build_s_median": 205.85,
+  "wall_s": 1266,
+  "gemma-4-e4b_guided_test_gepa": {
+   "tasks": 40,
+   "calls_per_task": 10.7,
+   "errors": 0,
+   "tool_reach": 0.1245,
+   "tool_tokens_per_task": 6587,
+   "read_named_reach": 0.8278,
+   "read_named_tokens_per_task": 96657
+  },
+  "muse-bf16_guided_test_gepa": {
+   "tasks": 40,
+   "calls_per_task": 10.5,
+   "errors": 0,
+   "tool_reach": 0.1099,
+   "tool_tokens_per_task": 6627,
+   "read_named_reach": 0.978,
+   "read_named_tokens_per_task": 104012
+  },
+  "muse-q4_guided_test_gepa": {
+   "tasks": 40,
+   "calls_per_task": 10.8,
+   "errors": 0,
+   "tool_reach": 0.1209,
+   "tool_tokens_per_task": 6723,
+   "read_named_reach": 0.9707,
+   "read_named_tokens_per_task": 104409
+  },
+  "gemma-4-e4b_guided_test_plain": {
+   "tasks": 40,
+   "calls_per_task": 6.8,
+   "errors": 0,
+   "tool_reach": 0.0696,
+   "tool_tokens_per_task": 3535,
+   "read_named_reach": 0.8828,
+   "read_named_tokens_per_task": 67041
+  },
+  "muse-bf16_guided_test_plain": {
+   "tasks": 40,
+   "calls_per_task": 6.6,
+   "errors": 0,
+   "tool_reach": 0.1282,
+   "tool_tokens_per_task": 3367,
+   "read_named_reach": 0.8059,
+   "read_named_tokens_per_task": 57198
+  }
+ },
+ "3_compare_paragraphs": {
+  "docs": 248,
+  "changed_paragraphs": 17677,
+  "flagged": 16785,
+  "recall": 0.9469,
+  "precision": 0.9973
+ },
+ "4_find_variants": {
+  "note": "analysis/find_variants.py, analysis/find_loose.py; reach of fact-bearing criteria (273)",
+  "strict_evidence": {
+   "gemma_gepa": {
+    "as_is": 0.125,
+    "k12": 0.194,
+    "all_docs": 0.095,
+    "split_unbudgeted": 0.172
+   },
+   "muse_bf16_gepa": {
+    "as_is": 0.11,
+    "k12": 0.139,
+    "all_docs": 0.103,
+    "split_unbudgeted": 0.304
+   }
+  },
+  "loose_evidence": {
+   "title_query": 0.78,
+   "gemma_gepa": 0.15,
+   "gemma_gepa_split": 0.205,
+   "muse_gepa": 0.132,
+   "muse_gepa_split": 0.344
+  }
+ }
+}

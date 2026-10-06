@@ -1,0 +1,19 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+router: 3294 docs, held-out 1156: 95.1%  (14s)
+tagger ledgar: 77 classes, threshold 0.5, test {'accuracy_answered': 0.9154, 'answered': 0.9744}  (65s)
+tagger cuad: 37 classes, threshold 0.7, test {'f1': 0.5998}  (24s)
+tagger contractnli: 17 classes, threshold 0.7, test {'f1': 0.6825}  (9s)
+tagger opp115: 9 classes, threshold 0.5, test {'f1': 0.7695}  (3s)
+tagger tos: 8 classes, threshold 0.6, test {'f1': 0.7388}  (2s)
+to the LLM: 35 of 37 CUAD types: ['Affiliate License-Licensee', 'Affiliate License-Licensor', 'Anti-Assignment', 'Audit Rights', 'Cap On Liability', 'Change Of Control', 'Competitive Restriction Exception', 'Covenant Not To Sue', 'Exclusivity', 'Insurance', 'Ip Ownership Assignment', 'Irrevocable Or Perpetual License', 'Joint Ip Ownership', 'License Grant', 'Liquidated Damages', 'Minimum Commitment', 'Most Favored Nation', 'No-Solicit Of Customers', 'No-Solicit Of Employees', 'Non-Compete', 'Non-Disparagement', 'Non-Transferable License', 'Notice Period To Terminate Renewal', 'Post-Termination Services', 'Price Restrictions', 'Renewal Term', 'Revenue/Profit Sharing', 'Rofr/Rofo/Rofn', 'Source Code Escrow', 'Termination For Convenience', 'Third Party Beneficiary', 'Uncapped Liability', 'Unlimited/All-You-Can-Eat-License', 'Volume Restriction', 'Warranty Duration']
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10661.47it/s]
+   [lease] step 1/1092 loss 0.7088  77 rows/s
+   [lease] step 201/1092 loss 0.2242  50 rows/s
+   [lease] step 401/1092 loss 0.1526  27 rows/s
+   [lease] step 601/1092 loss 0.1264  31 rows/s
+   [lease] step 801/1092 loss 0.0938  33 rows/s
+   [lease] step 1001/1092 loss 0.0947  35 rows/s
+   [lease] step 1092/1092 loss 0.0947  36 rows/s
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 36.46it/s]
+lease encoder: threshold 0.7, test F1 0.278 (all 8057 test paragraphs)
+done in 1149s

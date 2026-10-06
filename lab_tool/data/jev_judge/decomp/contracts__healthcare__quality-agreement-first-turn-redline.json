@@ -1,0 +1,520 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a74.3 redline rejects Pinnacle's proposed joint disposition in which the CMO QP signs the release certificate and Veridia countersigns within 5 business days, and retains Veridia's sole final disposition authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a74.3 redline specifies a countersignature period of 7 to 10 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a74.3 redline establishes Veridia's sole final disposition authority and provides a rationale in the margin comment or redline text explaining why joint disposition is not acceptable.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a77.1 redline rejects Pinnacle's 48-hour Critical deviation notification and retains or reinstates notification within 24 hours for Critical deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a77.1 redline rejects Pinnacle's 5 business days and counter-proposes Major deviation notification within 72 hours with an initial assessment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a77.1 redline rejects monthly-quality-report-only notification for Minor deviations and proposes notification within 10 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a79.2 redline rejects Pinnacle's cap of 3 for-cause audits per year and maintains unlimited for-cause audit rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a79.2 redline proposes at least 2 routine audits per year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a79.2 redline proposes a for-cause audit notice period of no more than 10 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a79.2 redline rejects Pinnacle's 30-business-day routine audit notice and proposes no more than 20 business days' notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a711.4 redline rejects Pinnacle's 30 calendar days and counter-proposes at least 45 calendar days' change control notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a711.4 redline requires Veridia's prior written approval for any change affecting process, facility, equipment, or product-contact materials.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a714.1 redline rejects Pinnacle's 60-calendar-day raw data timeline and counter-proposes raw APQR data within 45 calendar days of year-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a714.1 redline requires Pinnacle to provide a CMO-authored draft APQR report within 75 calendar days of year-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a716.3 redline rejects Pinnacle's proposal that Veridia bear 100% of inspection costs above $25,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a716.3 redline counter-proposes inspection cost sharing at 50/50 above $15,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The \u00a716.3 redline counter-proposes inspection cost sharing at 60/40 (Veridia/CMO) above $20,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a719.1 redline rejects Pinnacle's 1 stability batch per 10 manufactured and counter-proposes a minimum of 1 stability batch per 5 manufactured.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a719.1 redline accepts ICH Q1A bracketing/matrixing design as an acceptable approach and acknowledges it as a concession from 36-month real-time stability on every batch.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a722.6 redline rejects Pinnacle's recall liability cap of $2.0M or the lesser of $2.0M and trailing-12-month fees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a722.6 redline counter-proposes a recall liability cap of at least trailing-12-month MSA fees ($6.8M) for CMO-attributable manufacturing defects.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable states that Pinnacle's proposed $2.0M recall cap represents approximately 29% of annual MSA fees (~$6.8M).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a725.2 redline rejects Pinnacle's proposal for sole CMO discretion over supplier qualification and changes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a725.2 redline requires Veridia's prior written approval for any supplier change affecting product-contact materials.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a728.1 redline rejects deletion of the survival period and does not tie the QA term solely to the MSA term with no survival.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a728.1 redline counter-proposes a survival period of at least 18 months post-MSA termination for stability, complaint-handling, and regulatory support obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note is addressed to Dr. Ingrid Solheim, VP Quality Assurance, Pinnacle BioManufacturing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note states Veridia's accept, reject, or counter position, with supporting rationale, on each of \u00a7\u00a74.3, 7.1, 9.2, 11.4, 14.1, 16.3, 19.1, 22.6, 25.2, and 28.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note cites regulatory references, such as FDA 2016 guidance, 21 CFR citations, ICH guidelines, or EU GMP references, to support its positions on batch disposition, deviation notification, audit rights, and supplier qualification.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable cites the FDA November 2016 Guidance for Industry on Contract Manufacturing Arrangements for Drugs \u2014 Quality Agreements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable cites 21 CFR Parts 210/211 or a specific subsection such as 211.198 or 211.84.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable cites ICH Q10 (Pharmaceutical Quality System).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable cites EU GMP Annex 16.",
+     "pass_if": true
+    },
+    {
+     "s": "At least one deliverable cites EU GMP Chapter 7 (outsourced activities).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable acknowledges Veridia's parallel Phase 2 CTA filing with EMA (EudraCT pending) and notes that the QA provisions need to be consistent with EU GMP requirements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline addresses all 47 of Pinnacle's proposed changes across 28 sections.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline explicitly indicates that changes outside the 10 key disputed provisions have been reviewed and accepted, rejected, or countered as appropriate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note states that the accompanying redline addresses all 47 of Pinnacle's proposed changes.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note states that the accompanying redline addresses all changes across all sections, not solely the 10 key disputes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references the shared timeline objective of QA execution by July 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note mentions the first engineering batch date of July 21, 2025 as context for the timeline urgency.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note acknowledges or proposes the joint call the week of June 9, as suggested by Dr. Solheim.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a722.6 redline cross-references MSA Article 12 (indemnification and limitation of liability).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The \u00a728.1 redline cross-references MSA Article 14 (term, termination, and survival).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable states the FDA guidance principle that quality/GMP provisions belong in the QA and commercial/business terms belong in the commercial agreement (MSA), particularly when addressing recall liability or cost-sharing provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline identifies the product as VT-4012 (anti-PD-L3 monoclonal antibody), IND 182437, 20 mg/mL solution for injection in 10 mL single-use vials.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline identifies Veridia Therapeutics, Inc. as Sponsor and Pinnacle BioManufacturing, LLC as CMO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable states that trailing-12-month fees are $6.8M in the recall liability cap discussion.",
+     "pass_if": true
+    },
+    {
+     "s": "At least one deliverable states that trailing-24-month fees are approximately $13.6M in the recall liability cap discussion.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable notes the need to preserve alignment between quality obligations in the QA and financial/commercial liability in the MSA, and that the recall cap issue is partly commercial but must be addressed to avoid a gap.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

@@ -1,0 +1,33 @@
+== cuad_clause stage 1: 37 classes, eval 500 rows, train 6000 of 37616
+   eval rows with a type 300, none 200
+   jev: 0 cached, 500 to call
+   jev: 100/500
+   jev: 200/500
+   jev: 300/500
+   jev: 400/500
+   jev: 500/500
+   (jev: 0 errors; latency p50 74 ms, p95 121 ms; this run: 500 calls, tokens in 1074177, out 215856, model jev-1.13.0)
+  jev          micro P  79.1% R  50.7% F1 0.618  macro-F1 0.524  exact  62.6%  'none' rows kept empty 173/200  (73.6 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  77.8%)
+      weakest types (F1): Affiliate License-Licensor 0.00, Competitive Restriction Exception 0.00, Non-Transferable License 0.00, Unlimited/All-You-Can-Eat-License 0.00, Volume Restriction 0.00, Non-Disparagement 0.00
+== cuad_type stage 1: 25 classes, eval 200 rows
+ -- view: head (first 4,000 chars, title included)
+   jev: 0 cached, 200 to call
+   jev: 100/200
+   jev: 200/200
+   (jev: 0 errors; latency p50 72 ms, p95 132 ms; this run: 200 calls, tokens in 326451, out 51494, model jev-1.13.0)
+  jev          accuracy  89.5% [lo 0.845]  macro-F1 0.892  (71.7 ms/item)
+      answer only if p >= 0.5: coverage  97.5%  precision  91.3% [lo 0.865]
+      answer only if p >= 0.7: coverage  93.0%  precision  91.9% [lo 0.871]
+      answer only if p >= 0.9: coverage  86.0%  precision  93.6% [lo 0.889]
+      most confused (gold -> predicted): Joint Venture Agreement -> Collaboration Agreement ×3; Maintenance Agreement -> License Agreement ×3; Joint Venture Agreement -> Affiliate Agreement ×2; Development Agreement -> Collaboration Agreement ×2; Hosting Agreement -> License Agreement ×2; Service Agreement -> Consulting Agreement ×1
+ -- view: body (chars 2,000-6,000, no title)
+   jev: 0 cached, 200 to call
+   jev: 100/200
+   jev: 200/200
+   (jev: 0 errors; latency p50 70 ms, p95 119 ms; this run: 200 calls, tokens in 309619, out 51441, model jev-1.13.0)
+  jev          accuracy  65.0% [lo 0.582]  macro-F1 0.677  (69.9 ms/item)
+      answer only if p >= 0.5: coverage  93.5%  precision  67.4% [lo 0.604]
+      answer only if p >= 0.7: coverage  77.5%  precision  76.1% [lo 0.688]
+      answer only if p >= 0.9: coverage  62.0%  precision  82.3% [lo 0.746]
+      most confused (gold -> predicted): Endorsement Agreement -> License Agreement ×5; Joint Venture Agreement -> Service Agreement ×4; Collaboration Agreement -> Strategic Alliance Agreement ×3; Collaboration Agreement -> Development Agreement ×3; IP Agreement -> License Agreement ×3; Hosting Agreement -> License Agreement ×2

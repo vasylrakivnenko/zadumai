@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== tos stage 1: 8 classes, eval 500 rows, train 5532 of 5532
+   eval rows with a type 172, none 328
+   (tfidf: trained on 5532 rows in 14s)
+   (tfidf: threshold 0.6, picked on 2000 validation rows)
+  tfidf        micro P  83.8% R  75.3% F1 0.793  macro-F1 0.823  exact  87.8%  'none' rows kept empty 323/328  (0.1 ms/item)
+      weakest types (F1): Content removal 0.71, Unilateral change 0.72, Unilateral termination 0.72, Jurisdiction 0.83, Contract by using 0.84, Limitation of liability 0.85
+   jev: 0 cached, 500 to call
+   jev: 100/500
+   jev: 200/500
+   jev: 300/500
+   jev: 400/500
+   jev: 500/500
+   (cascade: 0 errors; latency p50 67 ms, p95 122 ms; this run: 500 calls, tokens in 234857, out 36640, model jev-1.13.0)
+  cascade      micro P  65.7% R  84.4% F1 0.739  macro-F1 0.742  exact  79.4%  'none' rows kept empty 254/328  (67.5 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  82.2%)
+      weakest types (F1): Arbitration 0.36, Contract by using 0.65, Limitation of liability 0.69, Content removal 0.77, Unilateral change 0.80, Unilateral termination 0.80
+   jev: 0 cached, 500 to call
+   jev: 100/500
+   jev: 200/500
+   jev: 300/500
+   jev: 400/500
+   jev: 500/500
+   (jev: 0 errors; latency p50 69 ms, p95 135 ms; this run: 500 calls, tokens in 268655, out 50694, model jev-1.13.0)
+  jev          micro P  63.2% R  82.3% F1 0.715  macro-F1 0.718  exact  78.6%  'none' rows kept empty 253/328  (69.0 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  81.2%)
+      weakest types (F1): Arbitration 0.34, Contract by using 0.61, Limitation of liability 0.70, Content removal 0.72, Unilateral termination 0.74, Unilateral change 0.76
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9441.82it/s]
+   (emb: trained on 5532 rows in 157s)
+   (emb: threshold 0.9, picked on 2000 validation rows)
+  emb          micro P  81.9% R  65.6% F1 0.728  macro-F1 0.736  exact  84.2%  'none' rows kept empty 318/328  (32.1 ms/item)
+      weakest types (F1): Limitation of liability 0.63, Arbitration 0.71, Content removal 0.73, Contract by using 0.75, Unilateral termination 0.75, Unilateral change 0.76

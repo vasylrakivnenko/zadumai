@@ -1,0 +1,742 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies the indemnification cap as a distinct out-of-policy or escalation item.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies the survival period as a distinct out-of-policy or escalation item.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies the basket/deductible structure as a distinct out-of-policy or escalation item.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies the escrow release schedule as a distinct out-of-policy or escalation item.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies the anti-sandbagging clause as a distinct out-of-policy or escalation item.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Playbook-approved fallback indemnification cap as 15% of equity purchase price ($29,460,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Seller's demanded indemnification cap as 8% of equity purchase price ($15,712,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the indemnification cap delta as a $13,748,000 reduction in Buyer's recovery ceiling.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Playbook-approved fallback survival period as 24 months post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Seller's demanded survival period as 15 months post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the survival period delta as a 9-month reduction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Playbook-approved fallback basket as a true deductible at 0.75% of equity purchase price ($1,473,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Seller's demanded basket as a tipping basket at 1.25% of equity purchase price ($2,455,000), with dollar-one recovery once the threshold is met.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the basket threshold delta as $982,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that with a true deductible Buyer absorbs losses below the threshold, while with a tipping basket Buyer recovers from dollar one once the threshold is met.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Playbook-approved escrow release as 100% retained for the full 24-month survival period with a single release.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Seller's demanded escrow release schedule as 50% ($9,820,000) at 9 months and 50% ($9,820,000) at 15 months post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies that $9,820,000 in indemnification security would be released 15 months earlier than policy permits.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Playbook requires an express pro-sandbagging clause under which Buyer's indemnification rights are unaffected by pre-closing knowledge of breach.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Seller demands an express anti-sandbagging clause precluding recovery for breaches known to Buyer's deal team prior to closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo articulates that the anti-sandbagging clause is a binary departure that eliminates indemnification for known issues and shifts diligence risk entirely to Buyer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Apex's preliminary binder flags the 15-month survival period as a term that may limit RWI coverage scope, require additional underwriting review, or require policy endorsements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Apex's preliminary binder flags the anti-sandbagging clause as a term that may limit RWI coverage scope, require additional underwriting review, or require policy endorsements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo states at least two of these three RWI details: policy limit ($25,000,000), retention ($2,455,000), and binder reference APEX-QT-2025-4418.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's addressees identify Catherine Lyle Marquardt as General Counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's addressees identify David Fenn Hollister as CFO and/or Investment Committee Chair.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's sender line identifies Kenneth Osei as VP, Corporate Development and/or Deal Team Lead.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes an executive summary section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a transaction overview section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a section that identifies each out-of-policy term and compares the Playbook position, Seller's position, and delta side by side.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each out-of-policy term, the memo's risk analysis covers financial exposure quantification, legal risk assessment, market context, and mitigants.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a section with a recommended course of action and alternative positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes an approval request section presenting the options approve as-is, approve with conditions, and reject/renegotiate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a signature/approval block for the General Counsel and Investment Committee Chair.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the SPA signing deadline as July 18, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the HSR filing deadline as August 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the expected closing date as September 15, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo frames the approval decision as urgent in light of the timeline, such as by noting only 7 days until signing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the enterprise value as $218,000,000 or $218M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states net debt payoff as $21,600,000 or $21.6M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the equity purchase price as $196,400,000 or $196.4M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states closing cash consideration as $176,760,000 or $176.76M, representing 90% of equity purchase price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the escrow/holdback as $19,640,000 or $19.64M, representing 10% of equity purchase price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the maximum earnout as up to $24,000,000 or $24M in two tranches of $12,000,000 or $12M each.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states total maximum consideration as $220,400,000 or $220.4M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo explains how the out-of-policy terms combine to diminish Buyer's practical indemnification recovery, rather than discussing each term solely in isolation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "In its aggregate exposure discussion, the memo references at least three of these deltas: indemnification cap delta ($13,748,000), basket threshold increase ($982,000), escrow early release ($9,820,000 at 9 months), and survival period reduction (9 months).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that RWI ($25M policy limit) partially mitigates aggregate exposure but has coverage uncertainty due to underwriter flags on survival and anti-sandbagging.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references outside counsel Aaron Calloway or Calloway Breck Stein LLP and incorporates his analysis.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes Calloway's assessment that the anti-sandbagging clause is the most significant departure from a risk standpoint.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo incorporates suggested compromise positions attributable to or informed by Calloway's analysis for at least three of the five out-of-policy terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo presents a recommended alternative or compromise position for each of the five out-of-policy terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo presents decision options for approve as-is, approve with conditions/counterproposals, and reject/renegotiate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references M&A Playbook Policy v.4.2 with reference number MHLD-Policy-MA-4.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the policy effective date is March 11, 2024.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites the Playbook as the authority defining the deal team's delegated negotiation authority and states that this authority has been exceeded.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the SPA under review as v.7, Seller's redline dated July 9, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the baseline SPA as v.6, Buyer's draft.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the internal deal code Project Polaris.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that after the first 50% escrow release at 9 months, only $9,820,000 in escrow security remains for the final 6 months of the 15-month survival period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that zero escrow security remains after month 15, when 100% is released, and that late-emerging claims would depend entirely on direct recovery from Sellers or RWI.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the RWI retention of $2,455,000 matches the Seller's proposed tipping basket amount of $2,455,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that Buyer self-insures up to $2,455,000, after which RWI responds.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that renegotiation of the basket structure may affect or require adjustment to the RWI mechanics/retention.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes an approval block or decision section for the General Counsel and Investment Committee Chair with clear options to approve as-is, approve with conditions, or reject/renegotiate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Priya Chandrasekaran as the Seller Representative and as Co-Founder & CEO of Luminos Data Systems.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that practical enforceability of indemnification recovery depends on the Seller Representative's cooperation and/or the financial capacity of the selling shareholders.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

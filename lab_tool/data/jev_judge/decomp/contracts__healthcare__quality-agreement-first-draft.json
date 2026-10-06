@@ -1,0 +1,1039 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document identifies the Sponsor as BioNovara Therapeutics, Inc. and states that it is a Delaware corporation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states the Sponsor's principal office address as 900 Innovation Parkway, Suite 400, Cambridge, MA 02142.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states the Sponsor's EIN as 84-3921057.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states the Sponsor's FEI as 3019847562.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document identifies the CMO as Pinnacle Sterile Manufacturing, LLC and states that it is an Indiana LLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states the CMO's principal office address as 7200 Lakeshore Industrial Boulevard, Bloomington, IN 47404.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states the CMO's EIN as 35-6847293.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states the CMO's FEI as 3007261948.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document identifies the product as LANREVA\u00ae (lanrecotide acetate injection, 50 mg/mL).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that the dosage form is a pre-filled syringe with a 1.0 mL fill volume.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that the route of administration is subcutaneous.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document references NDA #216-487 and an approval date of January 22, 2024.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states a 24-month shelf life at 2\u20138 \u00b0C.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document references DMF #035812 held by Pinnacle for its aseptic fill-finish process and facility.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document references DMF #031476 held by Kessler AG for the lanrecotide acetate drug substance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that the CMO performs QC testing and issues the Certificate of Analysis (CoA) and Certificate of Compliance (CoC).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that the Sponsor's QA independently reviews batch records, CoA, CoC, deviation reports, and environmental monitoring data, and issues final product release for commercial distribution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document explicitly states that the Sponsor retains final authority over batch disposition, referencing 21 CFR 211.22 or equivalent language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document assigns Phase I (laboratory) and Phase II (manufacturing) OOS investigations to the CMO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document reserves to the Sponsor oversight and approval authority before any reprocessing or batch disposition decision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document prohibits the CMO from unilaterally closing an OOS investigation or approving reprocessing without Sponsor approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document classifies Minor changes as Annual Reportable and allows CMO implementation after Sponsor written acknowledgment within a 10 business-day review period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document classifies Moderate changes as CBE-30, requires Sponsor approval before implementation, and requires 90 calendar days' advance notice from the CMO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document classifies Major changes as PAS, requires Sponsor approval with minimum 12 months' advance notice, and requires CMO cooperation with any required FDA supplement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document requires the CMO to obtain the Sponsor's prior written approval for any GMP-relevant change.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document explicitly includes supplier changes for critical components from Arvida Glass and/or Helios Elastomer within the scope of the change control provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document provides the Sponsor with up to 2 scheduled audits per calendar year, each up to 5 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document provides the Sponsor with unlimited for-cause audits upon 48 hours' notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document requires the CMO to prepare the draft Annual Product Quality Review within 60 calendar days after each calendar year-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document requires the Sponsor to review and finalize the APQR within 30 calendar days after receipt of the CMO draft.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that, when a batch failure is due to CMO manufacturing error, the CMO bears the cost of API replacement at the Sponsor's API transfer price of $3,420 per batch (2.1 kg \u00d7 $1,628.57/kg) plus re-manufacture at no charge, consistent with MSA \u00a7 7.3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that the Sponsor bears all costs when a batch failure is due to Sponsor-supplied API non-conformance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that disputed root cause triggers a joint investigation and that unresolved disputes are escalated to Hargrove Compliance Advisors, LLC within 45 calendar days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that the Sponsor makes all recall decisions exclusively.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that the CMO must cooperate in recalls and bears full costs when a recall is attributable to the CMO's manufacturing or testing failures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that recall costs for joint or indeterminate causation are shared 60% Sponsor / 40% CMO, consistent with MSA \u00a7 9.4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C or an equivalent key personnel section lists Dr. Priya Ramanathan, SVP Quality Assurance, BioNovara as Sponsor QA signatory or head of Quality Unit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C or an equivalent key personnel section lists Laura Chen-Whitfield, VP Regulatory Affairs, BioNovara as Sponsor regulatory affairs contact.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C or an equivalent key personnel section lists Michael Trent Ostrowski, VP Quality Operations, Pinnacle as CMO QA signatory or head of CMO Quality Unit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C or an equivalent key personnel section lists Sarah Nakamura-Davis, Director Site Quality Assurance, Pinnacle as CMO day-to-day quality contact.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document names Hargrove Compliance Advisors, LLC (Raleigh, NC) as the agreed independent cGMP expert for disputed root-cause investigations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document includes the escalation ladder in this order: Joint Quality Council \u2192 Independent cGMP Expert (Hargrove) \u2192 MSA arbitration clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The governing law section specifies the State of Delaware.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The dispute resolution section references binding arbitration under JAMS rules seated in New York, NY, consistent with MSA \u00a7 14.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document routes technical/scientific quality disputes through the Joint Quality Council and Independent cGMP Expert before MSA arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document references CMO minimum product liability coverage of $25,000,000 per occurrence / $50,000,000 aggregate, per MSA \u00a7 12.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document references Sponsor minimum product liability coverage of $50,000,000 per occurrence / $100,000,000 aggregate, per MSA \u00a7 12.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A includes an assay specification of 98.0\u2013102.0% label claim by HPLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A specifies related substances limits of individual impurity NMT 0.5% and total NMT 2.0%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A includes a pH specification of 4.0\u20135.0.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A includes sterility testing per USP <71>.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A specifies bacterial endotoxins NMT 5.0 EU/mL per USP <85>.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A includes container closure integrity per USP <1207>.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A specifies a fill volume of 1.00 \u00b1 0.05 mL.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A includes particulate matter testing per USP <788>.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A includes syringe functionality tests per ISO 11040-4 or equivalent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A includes an appearance test.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit D lists Arvida Glass Technologies, S.r.l. (Padova, Italy) for Type I borosilicate glass pre-filled syringe barrels (Ompi EZ-Fill\u00ae format, 1.0 mL long, with staked needle).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit D lists Helios Elastomer Solutions GmbH (Mannheim, Germany) for elastomeric plunger stoppers (bromobutyl rubber, FluroTec\u00ae coated).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit D identifies the CMO as the procuring party for these critical components per Sponsor-approved specifications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit B contains a RACI-style or comparable responsibility matrix covering cGMP obligations under 21 CFR Parts 210, 211, and 4 and ICH Q7/Q10, with responsibilities clearly allocated between Sponsor and CMO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Exhibit B's matrix covers all 18 required areas: incoming material testing and release, in-process controls, finished product QC testing, batch record review, batch disposition/release, environmental monitoring, stability program, change control, deviation/CAPA management, OOS investigations, APQR, complaint handling, recall execution, regulatory inspection hosting, supplier qualification, training, document retention, and pharmacovigilance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that the drug substance (lanrecotide acetate API) is Sponsor-supplied and manufactured by Kessler AG (Basel, Switzerland).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that primary packaging components (glass barrels and plunger stoppers) are CMO-procured from Sponsor-approved suppliers per Sponsor-approved specifications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document addresses incoming API testing and release by the CMO upon receipt.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document requires the CMO to promptly notify the Sponsor of any FDA or other regulatory inspection of the manufacturing site.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document provides the Sponsor the right to participate in or be represented during inspections related to the product.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document requires the CMO to share inspection observations (e.g., FDA Form 483) and proposed responses with the Sponsor for review before submission.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document describes the CMO facility as having an ISO Class 5 (Grade A) isolator-based filling environment on Line 3 within an ISO Class 7 (Grade B) background.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document references the CMO's current EU GMP Certificate IT/2024/GMP/00487, issued by AIFA and valid through June 4, 2027.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document references the CMO's FDA inspection of August 12\u201323, 2024 with an NAI outcome.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document requires the CMO to notify the Sponsor within defined timelines of product quality complaints that may involve adverse events.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document identifies the Sponsor, as NDA holder, as responsible for pharmacovigilance and regulatory filings.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that the Quality Agreement's effective date is March 14, 2025 and its initial term runs through March 13, 2030, aligned with or co-extensive with the MSA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document includes two 2-year renewal options, with the latest expiration on March 13, 2034, aligned with the MSA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document requires amendment by mutual written agreement of both parties' Quality heads or equivalent senior quality officials.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature block designates Dr. Priya Ramanathan, SVP Quality Assurance, BioNovara Therapeutics, Inc. as the Sponsor signatory and includes lines for signature, printed name, title, and date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature block designates Michael Trent Ostrowski, VP Quality Operations, Pinnacle Sterile Manufacturing, LLC as the CMO signatory and includes lines for signature, printed name, title, and date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document explicitly states that, in the event of a conflict between the Quality Agreement and the MSA, the Quality Agreement controls with respect to cGMP and quality-related matters.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document explicitly states that, in the event of a conflict, the MSA controls with respect to purely commercial matters.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-081",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals or introductory sections reference 21 CFR Parts 210, 211, and 4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-082",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals or introductory sections reference ICH Q7 and ICH Q10.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-083",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals or introductory sections reference the FDA Guidance for Industry on Contract Manufacturing Arrangements for Drugs: Quality Agreements (September 2016).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-084",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit E is populated with the three-tier change control classification system using the negotiated timelines\u2014Minor: 10 business-day review; Moderate: 90 calendar days' advance notice; Major: 12 months' advance notice\u2014and these match the instruction email values, not template defaults.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-085",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A (Product Description and Specifications) is present and populated with deal-specific LANREVA\u00ae product specifications, not left as a placeholder.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-086",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit B (Responsibility Matrix) is present and populated with deal-specific RACI allocations, not left as a placeholder.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-087",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C (Key Personnel and Contact List) is present and populated with named individuals, not left as a placeholder.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-088",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit D (Approved Suppliers of Critical Components) is present and populated with specific supplier names and materials, not left as a placeholder.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-089",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit E (Change Control Classification and Notification Timelines) is present and populated with the three-tier system and timelines, not left as a placeholder.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-090",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit F (Batch Disposition and Release Workflow) is present and populated with the dual-release workflow, not left as a placeholder.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-091",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document specifies that the CMO performs stability storage at 2\u20138 \u00b0C and testing per the approved protocol.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-092",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document specifies that the Sponsor reviews stability data and makes decisions regarding shelf-life extensions or changes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-093",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Quality Agreement body does not include unit pricing ($14.85/PFS), payment terms, or other purely commercial terms, and commercial figures appear only as cross-references to specific MSA sections.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-094",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Quality Agreement cross-references MSA \u00a7 7.3 for batch liability, MSA \u00a7 9.4 for recall cost-sharing, and MSA \u00a7 12.1 for insurance in the relevant cost allocation provisions.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

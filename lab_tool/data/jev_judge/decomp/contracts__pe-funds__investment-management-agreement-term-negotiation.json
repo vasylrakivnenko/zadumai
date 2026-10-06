@@ -1,0 +1,302 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise language or substantive discussion addressing the management fee offset provision, including the percentage of portfolio company fees offset against the management fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise language or substantive discussion addressing the Key Person Event and Remedies provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise language or substantive discussion addressing the Removal for Cause Standard and Process provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise language or substantive discussion addressing the limitation of liability and/or indemnification carve-outs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise language or substantive discussion addressing no-fault divorce (removal of the GP without cause).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed management fee offset percentage is at least 80%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The fee offset provision includes at least one portfolio company fee category beyond monitoring fees, transaction fees, and break-up fees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The fee offset provision addresses the GP Threshold\u2014the annual de minimis dollar amount below which portfolio company fees are not offset\u2014and proposes a specific resolution of it.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed GP Threshold is a specific amount greater than $0 and less than $250,000 per calendar year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Key Person provision identifies Magnus Ehrenfeld by name as a designated Key Person.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Key Person provision identifies Sienna Tsao by name as a designated Key Person.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Key Person provision states the business-time commitment threshold as a specific numerical percentage.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Key Person remedy provides a management fee reduction or adjustment mechanism that applies during any Key Person suspension period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Removal for Cause LP vote threshold is greater than 60% and less than 75% in interest of Limited Partners.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed definition of Cause for removal of the GP includes material breach of the IMA or LPA as a ground for removal.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The material breach ground for Cause is coupled with a written-notice-and-cure mechanism that specifies a cure period in a defined number of days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a proposed no-fault divorce provision permitting Limited Partners to remove the GP without cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The no-fault divorce provision specifies a supermajority vote of LPs in interest to remove the GP without cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The no-fault divorce provision includes a wind-down or transition period between the LP vote and the effective date of the GP's removal.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The no-fault divorce provision includes a tail fee, carried interest protection, or other continuing economic arrangement protecting the GP financially after removal without cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The indemnification carve-outs include material breach of the IMA in addition to the GP's baseline carve-outs of fraud, willful misconduct, and gross negligence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo addresses Meridian PERS's objection to the GP's liability cap at aggregate management fees received by proposing a modification or discussing a compromise to that cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo provides a negotiation rationale or justification explaining why the proposed management fee offset compromise represents an appropriate resolution of the parties' competing positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo provides a negotiation rationale or justification explaining why the proposed Key Person Event and Remedies compromise represents an appropriate resolution of the parties' competing positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo provides a negotiation rationale or justification explaining why the proposed Removal for Cause compromise represents an appropriate resolution of the parties' competing positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo provides a negotiation rationale or justification explaining why the proposed limitation of liability and indemnification carve-outs compromise represents an appropriate resolution of the parties' competing positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo provides a negotiation rationale or justification explaining why the proposed no-fault divorce compromise represents an appropriate resolution of the parties' competing positions.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

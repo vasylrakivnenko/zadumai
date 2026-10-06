@@ -1,0 +1,65 @@
+[
+ {
+  "task": "non-disclosure-agreement-first-turn-redline",
+  "base": 0.647,
+  "ivo": 0.88,
+  "DeepSeek LAB tools": 0.88,
+  "DeepSeek + tool": 0.84,
+  "Gemma26B LAB tools": 0.06,
+  "Gemma26B + tool": 0.68
+ },
+ {
+  "task": "non-disclosure-agreement-counterparty-paper-review",
+  "base": 0.09,
+  "ivo": 0.936,
+  "DeepSeek LAB tools": 0.937,
+  "DeepSeek + tool": 0.905,
+  "Gemma26B LAB tools": 0.0,
+  "Gemma26B + tool": 0.508
+ },
+ {
+  "task": "easement-agreement-counterparty-paper-review",
+  "base": 0.0,
+  "ivo": 1.0,
+  "DeepSeek LAB tools": 1.0,
+  "DeepSeek + tool": 0.982,
+  "Gemma26B LAB tools": 0.175,
+  "Gemma26B + tool": 0.0
+ },
+ {
+  "task": "quality-agreement-counterparty-paper-review",
+  "base": 0.296,
+  "ivo": 0.0,
+  "DeepSeek LAB tools": 1.0,
+  "DeepSeek + tool": 1.0,
+  "Gemma26B LAB tools": 0.244,
+  "Gemma26B + tool": 0.0
+ },
+ {
+  "task": "isda-confirmation-counterparty-paper-review",
+  "base": 0.0,
+  "ivo": 0.931,
+  "DeepSeek LAB tools": 0.925,
+  "DeepSeek + tool": 0.887,
+  "Gemma26B LAB tools": 0.34,
+  "Gemma26B + tool": 0.0
+ },
+ {
+  "task": "cyber-insurance-policy-counterparty-paper-review",
+  "base": 1.0,
+  "ivo": 0.968,
+  "DeepSeek LAB tools": 0.968,
+  "DeepSeek + tool": 0.968,
+  "Gemma26B LAB tools": 0.0,
+  "Gemma26B + tool": 0.0
+ },
+ {
+  "task": "easement-agreement-first-turn-redline",
+  "base": 0.0,
+  "ivo": 0.552,
+  "DeepSeek LAB tools": 0.931,
+  "DeepSeek + tool": 0.966,
+  "Gemma26B LAB tools": 0.0,
+  "Gemma26B + tool": 0.0
+ }
+]

@@ -1,0 +1,559 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition retains Corrigan\u2019s carve-out for information independently developed \u201cwithout reference to\u201d Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes or rejects the carve-out for information \u201cgenerally available within the data analytics industry.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition retains, intact and unaltered, the exclusion for information that \u201cis or becomes generally available to the public other than as a result of a disclosure by the Receiving Party or any of its Representatives in breach of this Agreement.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Representatives definition includes affiliates and their respective officers, directors, employees, accountants, counsel, financial advisors, and consultants.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds language making each party responsible for breaches by its Representatives, including affiliates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Permitted Purpose is \u201cevaluating a potential acquisition by Velantis of the Data Analytics Division of Corrigan,\u201d or uses substantively identical language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The confidentiality term is 2 years from the date of the agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores a residuals clause allowing the Receiving Party to use \u201cresidual knowledge\u201d retained in the unaided memory of its personnel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The residuals clause excludes trade secrets and information identified in writing as \u201cHighly Confidential \u2014 No Residuals.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes or rejects Corrigan\u2019s \u201chighest degree of care\u201d standard.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores a standard substantially equivalent to \u201creasonable care, and in no event less than the same degree of care the Receiving Party uses to protect its own confidential information of a similar nature.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes or rejects language requiring the Disclosing Party to bear all costs of seeking a protective order.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline provides that each party bears its own costs and that the Receiving Party uses commercially reasonable efforts to cooperate, or uses substantially equivalent language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The return/destruction window is 10 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds a carve-out for electronically archived copies retained under bona fide document-retention policies and keeps those copies subject to confidentiality obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The non-solicitation period is 18 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes Corrigan\u2019s $150,000 liquidated damages provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline provides equitable relief, including an injunction, as a remedy for a non-solicitation breach.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline retains any standstill or don't-ask-don't-waive (DADW) language.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note presents a 6-month standstill with a fall-away upon any third-party bid and no don't-ask-don't-waive (DADW) provision as a negotiating concession only if Corrigan insists on a standstill.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores Delaware as the governing law and rejects Corrigan\u2019s change to Virginia.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes or rejects binding JAMS arbitration in Richmond, Virginia.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores exclusive jurisdiction in the Delaware Court of Chancery or, if unavailable, the U.S. District Court for the District of Delaware.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline retains or includes language stating that neither party is obligated to consummate a transaction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline deletes or rejects Corrigan\u2019s language stating there is no obligation to continue discussions or negotiate in good faith.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes \u201cNothing herein shall obligate either party to consummate any transaction,\u201d or substantively equivalent language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects the $500,000 bond requirement and provides for injunctive relief \u201cwithout bond\u201d or \u201cwithout the necessity of posting bond.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note is from David Orenbach of Kirkner Pratt LLP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note is addressed to Nina Vasquez of Threlkeld & Aaronson PLLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note\u2019s cc line includes both Rachel Sung and Marcus Leeland.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note addresses all 14 substantive changes in the Corrigan markup and distinguishes which changes are accepted, partially accepted, and rejected.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note identifies May 30, 2025, as the target NDA execution date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note identifies June 2, 2025, as the diligence commencement date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note uses the May 30 execution date and June 2 diligence date to communicate urgency for a prompt response.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline uses the project code name \u201cProject Lantern\u201d consistently throughout.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline identifies \u201cVelantis Technologies, Inc.\u201d as a Delaware corporation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline identifies \u201cCorrigan Systems Group, LLC\u201d as a Virginia limited liability company.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note explains that the standstill is inappropriate for a consensual, buy-side-initiated process.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note presents a 6-month standstill, a fall-away upon a third-party bid, and no DADW as a fallback concession available only if Corrigan insists, not as an affirmative offer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable is structured or described as a Microsoft Word Track Changes document against Corrigan\u2019s first markup, \u201ccorrigan-first-markup-nda.docx,\u201d showing Velantis\u2019s counter-positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note explains that \u201chighest degree of care\u201d is above market standard and that \u201creasonable care / no less than own standard\u201d is appropriate for M&A NDAs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note explains that \u201cwithout bond\u201d is standard for M&A NDAs or consistent with Delaware Court of Chancery practice as the reason for rejecting the $500,000 bond requirement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note addresses customer lists, proprietary algorithms, and employee compensation data, and explains that the qualified residuals clause and confidentiality obligations adequately address those concerns.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note identifies the residuals clause\u2019s exclusions for trade secrets and information marked \u201cHighly Confidential \u2014 No Residuals.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note explains that injunctive relief provisions are better served by court jurisdiction in the Delaware Court of Chancery than by JAMS arbitration in Richmond, Virginia.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note mentions or discloses the estimated enterprise value of Corrigan DAD as $215 million.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note mentions or discloses an implied revenue figure of $43 million for Corrigan DAD.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note names Haldane Ridgeway & Co. as Velantis\u2019s financial advisor.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note states that the Corrigan markup contains 14 substantive changes or addresses exactly 14 substantive items.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note or redline states that the Corrigan markup contains approximately six (6) conforming or typographical edits, or six such edits, and acknowledges that they are accepted.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts, without rejecting or modifying, the 6 conforming or typographical edits from Corrigan\u2019s markup.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

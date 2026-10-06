@@ -1,0 +1,39 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== encoder combined, stage 1: train ledgar 3000, cuad_clause 3000, tos 3000, opp115 2138, contractnli 3000, lease 3000, 1 epoch(s)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 5778.51it/s]
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 1/536 loss 0.8229  21 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 201/536 loss 0.3903  32 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 401/536 loss 0.2994  13 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 536/536 loss 0.2649  12 rows/s
+   ledgar       acc 55.2%
+   cuad_clause  F1 0.408 (P 44 R 38)
+   tos          F1 0.617 (P 55 R 71)
+   opp115       F1 0.619 (P 60 R 64)
+   contractnli  F1 0.593 (P 52 R 68)
+   lease        F1 0.516 (P 72 R 40)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== encoder separate, stage 1: train ledgar 3000, cuad_clause 3000, tos 3000, opp115 2138, contractnli 3000, lease 3000, 1 epoch(s)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 42122.98it/s]
+   [ledgar] step 1/94 loss 0.7528  6 rows/s
+   [ledgar] step 94/94 loss 0.4057  16 rows/s
+   ledgar       acc 18.6%
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 11057.42it/s]
+   [cuad_clause] step 1/94 loss 0.7559  90 rows/s
+   [cuad_clause] step 94/94 loss 0.4527  20 rows/s
+   cuad_clause  F1 0.159 (P 9 R 55)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10294.61it/s]
+   [tos] step 1/94 loss 0.6910  107 rows/s
+   [tos] step 94/94 loss 0.4251  73 rows/s
+   tos          F1 0.562 (P 58 R 55)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 11752.59it/s]
+   [opp115] step 1/67 loss 0.8071  22 rows/s
+   [opp115] step 67/67 loss 0.5920  30 rows/s
+   opp115       F1 0.608 (P 60 R 62)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10329.32it/s]
+   [contractnli] step 1/94 loss 0.7889  105 rows/s
+   [contractnli] step 94/94 loss 0.4983  64 rows/s
+   contractnli  F1 0.471 (P 41 R 55)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 12177.62it/s]
+   [lease] step 1/94 loss 0.8179  101 rows/s
+   [lease] step 94/94 loss 0.4404  41 rows/s
+   lease        F1 0.502 (P 59 R 43)

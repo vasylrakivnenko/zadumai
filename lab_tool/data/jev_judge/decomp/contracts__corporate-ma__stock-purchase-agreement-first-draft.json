@@ -1,0 +1,896 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA preamble identifies Verdantis Holdings, Inc. as a Delaware corporation and designates it as the Buyer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA preamble identifies Calyx Biomedical Systems, Inc. as a California corporation and designates it as the Company.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA preamble identifies Dr. Maren E. Solberg as an individual and as a Seller.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA preamble identifies Pinecrest Venture Fund III, L.P. as a Delaware limited partnership and as a Seller.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA preamble identifies Thornfield Family Trust u/a/d 03/15/2018 as a California irrevocable trust, names Gerald R. Thornfield as Trustee, and designates the trust as a Seller.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Purchase and Sale article states an Aggregate Purchase Price of $187,500,000 payable entirely in cash at Closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA states a per-share price of $18.75 on an as-converted basis and references 10,000,000 total shares on an as-converted basis.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA allocates to Dr. Maren E. Solberg 4,500,000 shares of Common Stock with gross proceeds of $84,375,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA allocates to Pinecrest Venture Fund III, L.P. 3,800,000 shares of Series B Preferred Stock with gross proceeds of $71,250,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA allocates to Thornfield Family Trust 1,700,000 shares of Series A Preferred Stock with gross proceeds of $31,875,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA provides for a General Indemnity Escrow of $18,750,000, equal to 10% of the Aggregate Purchase Price, withheld pro rata from each Seller's proceeds at Closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA provides that 50% of the General Indemnity Escrow is released on the 12-month anniversary of Closing and the remaining 50% on the 18-month anniversary of Closing, each net of pending claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA provides for a separate Special Tax Indemnity Escrow of $5,625,000, equal to 3% of the Aggregate Purchase Price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA provides that 100% of the Tax Indemnity Escrow is released on the 24-month anniversary of Closing, net of pending claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA identifies Continental Fiduciary Trust Company as Escrow Agent for both escrow accounts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The working capital adjustment provisions set the Net Working Capital Target at $14,200,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA provides for a \u00b1$250,000 collar, with no adjustment for a variance within \u00b1$250,000 and a dollar-for-dollar adjustment for amounts beyond the collar.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA requires Sellers to deliver an Estimated Closing NWC statement at least 3 business days prior to Closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA gives Buyer 90 calendar days after Closing to deliver the final Closing NWC statement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA provides the Sellers' Representative a 30-day review period after receiving the final Closing NWC statement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA designates BDO Alder & Co. LLP as the Independent Accounting Firm for NWC disputes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The indemnification article provides that general representations survive for 18 months from Closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA provides that Fundamental Representations survive for 36 months from Closing and defines them to include Organization, Authorization, Capitalization, Tax, and Brokers.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA provides that claims based on fraud or willful misconduct survive indefinitely and are not subject to any cap on liability.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA sets the General Indemnity Basket at $1,875,000 (1% of $187,500,000) and structures it as a true deductible, not a tipping or first-dollar basket.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA sets the General Indemnity Cap at $18,750,000 (10% of the Aggregate Purchase Price).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA sets the Fundamental Representation Cap at $93,750,000 (50% of the Aggregate Purchase Price).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA provides that the Tax Indemnity Cap equals the Special Tax Escrow amount of $5,625,000 for 24 months from Closing and then reduces to $0.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA includes an exclusive remedy provision for indemnification claims with express carve-outs for fraud, willful misconduct, equitable relief, and purchase price adjustments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA designates Dr. Maren E. Solberg as the Sellers' Representative.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA grants the Sellers' Representative authority to bind all Sellers on post-closing indemnification claims, escrow releases, working capital adjustment disputes, and all other post-closing matters.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The capitalization representation recites 22,000,000 authorized shares: 12,000,000 Common, 5,000,000 Series A Preferred, and 5,000,000 Series B Preferred.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The capitalization representation states that Dr. Solberg holds 4,500,000 outstanding Common shares, Thornfield Trust holds 1,700,000 outstanding Series A Preferred shares with a 1:1 conversion ratio, and Pinecrest holds 3,800,000 outstanding Series B Preferred shares with a 1:1 conversion ratio.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The capitalization representation affirmatively states that no options, warrants, convertible securities, or treasury shares are outstanding.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA states that the 2019 Equity Incentive Plan was terminated effective December 31, 2024, with all options exercised or cancelled.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Buyer's conditions to Closing include receipt of consent from Pacific Ridge Bank, N.A. under the Credit Agreement's change-of-control provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Buyer's conditions to Closing include receipt of consent from Medara Health Network, Inc. under the Master Supply Agreement dated January 15, 2023, pursuant to its anti-assignment clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Buyer's conditions to Closing include receipt of consent from Ridgeline Commercial Properties, LP, as landlord, for the Irvine facility lease pursuant to its anti-assignment clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA requires payoff of the $6,800,000 Pacific Ridge Bank indebtedness at Closing from Sellers' proceeds.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "A condition to Buyer's obligation to close requires execution and delivery of Dr. Solberg's post-closing employment agreement, with a 2-year term as President of the Calyx Biomedical Systems division, base salary of $475,000/year, and a sign-on equity grant of 50,000 restricted shares of Verdantis common stock.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "A separate condition to Buyer's obligation to close requires Dr. Solberg to execute a 2-year non-competition and non-solicitation agreement covering the medical diagnostic device field in the United States.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA includes a post-closing covenant requiring Buyer to obtain or maintain a 6-year D&O tail insurance policy for Calyx's pre-closing directors and officers, at Buyer's cost and capped at $385,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The closing conditions include an HSR Act filing or HSR waiting-period expiration requirement.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA includes a comprehensive representation on FDA/regulatory compliance that references or preserves 510(k) clearances.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP representation or a related disclosure schedule references 7 issued U.S. utility patents and 3 pending patent applications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP representation or a related disclosure schedule references 4 registered U.S. trademarks, including CALYX and RAPIDFLEX.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP representation references trade secrets, including proprietary spectral analysis algorithms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP representation states that there are no known IP litigation or infringement claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The material contracts representation, directly or by cross-reference to disclosure schedules, covers the Medara MSA, Kaelum OEM Agreement, Pacific Ridge Credit Agreement, Ridgeline facility lease, and Ariston software license.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA defines the Sellers' knowledge qualifier as limited to actual knowledge and imposes a duty of reasonable inquiry only on Dr. Solberg, not on other Sellers.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA states that the Company's transaction expenses, estimated at $2,150,000, are borne by Sellers through either deduction from Sellers' proceeds at Closing or a Seller obligation to cause the Company to pay all transaction expenses prior to Closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA's governing law clause specifies the laws of the State of Delaware.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA's dispute resolution clause provides for exclusive jurisdiction in the Delaware Court of Chancery.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Escrow Agreement exhibit or Form of Escrow Agreement attached to the SPA is governed by New York law.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The termination article includes an Outside Date of October 31, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA references a Closing Date of August 29, 2025 (or 45 calendar days post-signing), or an earlier date when all conditions are satisfied or waived.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA references July 15, 2025 as the date of execution or as the date of the agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notice provisions list Verdantis Holdings, Inc. at 200 Innovation Drive, Suite 1400, King of Prussia, PA 19406.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notice provisions list Calyx Biomedical Systems, Inc. at 4700 Spectrum Center Drive, Suite 300, Irvine, CA 92618.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notice provisions list Pinecrest Venture Fund III, L.P. at 1500 Sand Hill Road, Suite 210, Menlo Park, CA 94025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notice provisions list Thornfield Family Trust (Gerald R. Thornfield, Trustee) at 891 Bayside Terrace, Newport Beach, CA 92660.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notice provisions include a copy to Mercer & Halston LLP, 1700 Market Street, Suite 3200, Philadelphia, PA 19103, for Buyer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notice provisions include a copy to Whitfield Dey & Associates, P.C., 355 South Grand Avenue, Suite 4100, Los Angeles, CA 90071, for Sellers.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature block for Verdantis Holdings, Inc. lists Nathan R. Calloway as signatory with the title SVP Corporate Development or Senior Vice President, Corporate Development.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature blocks include Dr. Maren E. Solberg signing in her individual capacity as a Seller and as Sellers' Representative.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature block for Pinecrest Venture Fund III, L.P. lists David K. Oshiro as signatory with the title Managing Partner of its general partner.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature block for Thornfield Family Trust u/a/d 03/15/2018 lists Gerald R. Thornfield as signatory in the capacity of Trustee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature block for Calyx Biomedical Systems, Inc. lists Dr. Maren E. Solberg as signatory with the title CEO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA references and includes as an exhibit or attachment a Form of Escrow Agreement naming Continental Fiduciary Trust Company as Escrow Agent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA references and includes as an exhibit or attachment a Form of Non-Competition Agreement for Dr. Solberg with a 2-year restricted period covering the medical diagnostic device field in the United States.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA references a Form of Employment Agreement for Dr. Solberg as an exhibit or attachment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA references a Disclosure Schedules framework, whether as a separate exhibit, attachment, or defined term with schedule references throughout.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals state that the transaction is structured as a stock purchase to preserve Calyx's 510(k) clearances and/or key customer contracts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The material contracts representation or a disclosure schedule references the Medara Health Network Master Supply Agreement dated January 15, 2023, approximately $22M in annual revenue, and that consent is required.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The material contracts representation or a disclosure schedule references the Kaelum OEM Manufacturing Agreement dated March 1, 2021, as amended June 12, 2024, for sole-source sensor arrays.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The material contracts representation or a disclosure schedule references the Pacific Ridge Bank Credit Agreement dated September 8, 2022 (reference CFA-2022-09085), with $6,800,000 outstanding and a change-of-control provision requiring consent and payoff.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The material contracts representation or a disclosure schedule references the Ridgeline Commercial Properties facility lease dated April 1, 2020, expiring March 31, 2028, at $67,500/month, and requiring landlord consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The material contracts representation or a disclosure schedule references the Ariston software license agreement dated November 1, 2023, at $840,000/year and auto-renewing January 1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The financial statements representation references Calyx's fiscal year 2024 audited financials for the year ended December 31, 2024, with revenue of $62,500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The financial statements representation references Calyx total assets of $22,300,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-081",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The SPA includes an absence of changes or absence of certain changes representation covering the period from December 31, 2024 through the Closing Date.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

@@ -1,0 +1,28 @@
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 20284.17it/s]
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 19534.48it/s]
+  short_ho: 100/2321 (26s)
+  short_ho: 200/2321 (48s)
+  short_ho: 300/2321 (74s)
+  short_ho: 400/2321 (101s)
+  short_ho: 500/2321 (132s)
+  short_ho: 600/2321 (164s)
+  short_ho: 700/2321 (188s)
+  short_ho: 800/2321 (213s)
+  short_ho: 900/2321 (239s)
+  short_ho: 1000/2321 (266s)
+  short_ho: 1100/2321 (288s)
+  short_ho: 1200/2321 (309s)
+  short_ho: 1300/2321 (334s)
+  short_ho: 1400/2321 (361s)
+  short_ho: 1500/2321 (388s)
+  short_ho: 1600/2321 (405s)
+  short_ho: 1700/2321 (420s)
+  short_ho: 1800/2321 (437s)
+  short_ho: 1900/2321 (455s)
+  short_ho: 2000/2321 (478s)
+  short_ho: 2100/2321 (495s)
+  short_ho: 2200/2321 (511s)
+  short_ho: 2300/2321 (528s)
+done short_ho -> /root/zadumai_nli_proto/contract_map/typed/feats/short_ho_ft.jsonl (532s)

@@ -1,0 +1,25 @@
+{
+ "luna_vs_kimi": {
+  "n": 876,
+  "agreement": 0.9418,
+  "kappa": 0.682,
+  "luna_pass_rate": 0.871,
+  "kimi_pass_rate": 0.927
+ },
+ "recorded_random": {
+  "n": 587,
+  "luna_agreement": 0.9727,
+  "luna_kappa": 0.654,
+  "one_recorded_pass_agreement": 0.9932,
+  "one_recorded_pass_kappa": 0.879
+ },
+ "recorded_uncertain": {
+  "n": 255,
+  "luna_agreement": 0.8275,
+  "luna_kappa": 0.636,
+  "one_recorded_pass_agreement": 0.9608,
+  "one_recorded_pass_kappa": 0.911
+ },
+ "luna_cost_usd": 4.29,
+ "errors": 21
+}

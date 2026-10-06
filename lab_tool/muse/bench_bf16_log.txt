@@ -1,0 +1,8 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+A accounts/fireworks/models/muse-glimmer-30b#accounts/vasyl-r/deployments/qb2ybwxg: 235 asked, file /root/zadumai_nli_proto/lab_tool/data/out_A_muse-bf16_guided_test_plain.jsonl
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+A accounts/fireworks/models/muse-glimmer-30b#accounts/vasyl-r/deployments/qb2ybwxg: 235 asked, file /root/zadumai_nli_proto/lab_tool/data/out_A_muse-bf16_guided_test_gepa_native.jsonl
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+B accounts/fireworks/models/muse-glimmer-30b#accounts/vasyl-r/deployments/qb2ybwxg: 40 asked, file /root/zadumai_nli_proto/lab_tool/data/out_B_muse-bf16_guided_test_plain.jsonl
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+B accounts/fireworks/models/muse-glimmer-30b#accounts/vasyl-r/deployments/qb2ybwxg: 40 asked, file /root/zadumai_nli_proto/lab_tool/data/out_B_muse-bf16_guided_test_gepa.jsonl

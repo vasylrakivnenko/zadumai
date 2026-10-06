@@ -1,0 +1,561 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline or cover note explicitly rejects SWIB Tarvinia's proposed reduction of the investment-period management fee from 1.75% to 1.50% per annum on committed capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn reflects an investment-period management fee of 1.75% per annum on committed capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn proposes a post-investment-period management fee strictly below 1.50% per annum on invested capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn proposes a post-investment-period management fee strictly above 1.25% per annum on invested capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn proposes an approximately 80% management fee offset for transaction fees, monitoring fees, and director fees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn explicitly excludes broken-deal expenses from the management fee offset.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn maintains the preferred return at 8% per annum.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn rejects SWIB Tarvinia's proposed increase of the preferred return to 9%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn offers or accepts quarterly compounding of the preferred return while maintaining the 8% rate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn maintains the GP catch-up split at 80% to the General Partner and 20% to the Limited Partners.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn rejects SWIB Tarvinia's proposed 50/50 GP catch-up split.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn maintains net-of-tax treatment for the carried interest clawback.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn rejects SWIB Tarvinia's proposal for a gross clawback with no tax gross-down.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn proposes, discusses, or references a carried interest escrow mechanism as a security measure alongside or in lieu of expanding guarantees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn limits carried interest clawback personal guarantees to Henrik J\u00f8rgensen and Amara Osei.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn rejects extending joint-and-several personal guarantees to all partners holding more than 5% of the GP's carry allocation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn grants SWIB Tarvinia a permanent, non-rotational seat on the LP Advisory Committee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn rejects SWIB Tarvinia's proposal that LPs holding at least 25% of commitments elect a majority of LPAC members.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn preserves the GP's authority to select the LPAC members other than SWIB Tarvinia's permanent seat.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn proposes a quarterly unaudited financial statement delivery deadline of approximately 50 calendar days after quarter-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn sets the annual audited financial statement delivery deadline above 90 calendar days.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn includes an extension provision or carve-out for portfolios with complex Level 3 fair-value determinations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn offers SWIB Tarvinia a preferential co-investment allocation right, such as a first-look or priority allocation on larger deals.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn rejects mandatory pro-rata co-investment rights on all deals exceeding 15% of aggregate commitments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn rejects SWIB Tarvinia's proposal that co-investments be offered on a no-fee, no-carry basis.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn accepts annual ESG reporting consistent with the UNPRI framework in Section 7.9.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn rejects or pushes back on requiring SFDR Article 8 classification in Section 7.9.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn or cover note states that SFDR Article 8 classification does not apply to Fund IV because it is a US-domiciled fund and SFDR is a European regulatory framework.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn rejects a Key Person Event trigger based on the departure of either Henrik J\u00f8rgensen or Amara Osei individually.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn includes the departure or incapacity of both Henrik J\u00f8rgensen and Amara Osei as one Key Person Event trigger limb.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn proposes a Key Person Event trigger based on one founding partner departing together with at least two of Lena Marchetti, David Quon, and Sofia Radic.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn proposes a GP removal without cause voting threshold of approximately 80% in interest.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Manager's standard of care, exculpation, and indemnification provisions do not add gross negligence as a liability trigger.",
+     "pass_if": true
+    },
+    {
+     "s": "The Manager's liability triggers remain limited to fraud, willful misconduct, and bad faith.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn maintains the Most Favored Nation commitment threshold at $100 million.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn retains two one-year fund term extension options.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The first one-year fund term extension remains exercisable at the GP's discretion.",
+     "pass_if": true
+    },
+    {
+     "s": "The second one-year fund term extension is conditioned on LPAC approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn accepts in principle a confidentiality carve-out for disclosures required under the Tarvinian Public Records Act (TPRA), acknowledging SWIB Tarvinia's regulatory disclosure obligations under Section 13.4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The TPRA confidentiality carve-out requires SWIB Tarvinia to give Carthage advance written notice before making any disclosure under the Tarvinian Public Records Act.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The TPRA confidentiality carve-out gives Carthage an opportunity to seek confidential or protective treatment before SWIB Tarvinia discloses the information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn accepts in principle a restriction on Carthage raising or managing a successor fund or a fund with a substantially similar strategy until a specified percentage of Fund IV's committed capital has been invested or reserved for follow-on investments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn proposes a successor fund exclusivity threshold of approximately 65% of Fund IV's committed capital invested or reserved for follow-on investments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C037",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note has distinct sections or headings for fees, governance/reporting, key person/removal, liability/indemnification, exclusivity/MFN, and confidentiality.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note discusses fee provisions in IMA Sections 4\u20135, including SWIB Tarvinia's changes to management fee rates, fee offset, carried interest, preferred return, GP catch-up, or clawback terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note discusses governance and reporting provisions in IMA Section 7, including SWIB Tarvinia's changes to LPAC composition, financial reporting deadlines, co-investment rights, or ESG reporting.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note discusses key person and removal provisions in IMA Section 8, including SWIB Tarvinia's changes to the Key Person Event trigger, GP removal for cause, or GP removal without cause thresholds.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note discusses liability and indemnification provisions in IMA Section 10, including SWIB Tarvinia's changes to the standard of care, Manager indemnification, or LP indemnification.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note discusses exclusivity and/or Most Favored Nation provisions in IMA Section 11, including SWIB Tarvinia's changes to successor fund exclusivity or the MFN commitment threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note discusses confidentiality provisions in IMA Section 13 and SWIB Tarvinia's proposed TPRA carve-out in Section 13.4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C044",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each substantive markup change proposed by SWIB Tarvinia, the cover note clearly designates Carthage's position as accept, reject, or counter.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C045",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each substantive markup change proposed by SWIB Tarvinia, the cover note gives supporting reasoning or rationale for Carthage's position.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note or redline identifies that quarterly compounding of the preferred return in the IMA requires a conforming amendment to the Fund IV LPA, which currently specifies annual compounding in its distribution waterfall.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note or redline identifies that granting SWIB Tarvinia a permanent LPAC seat in the IMA requires a conforming amendment to the Fund IV LPA, which currently specifies that all five LPAC members are selected by the General Partner.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note or redline identifies that conditioning the second fund term extension on LPAC approval in the IMA requires a conforming amendment to the Fund IV LPA, which currently provides both extensions at the General Partner's sole discretion.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

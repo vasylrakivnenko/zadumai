@@ -1,0 +1,313 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise contract language for the Teaming Agreement's work-share allocation provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise contract language for the Teaming Agreement's exclusivity/non-compete provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise contract language for the Teaming Agreement's intellectual property rights in proposal materials provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise contract language for the Teaming Agreement's termination-for-convenience provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed work-share compromise sets a minimum percentage for Phalanx of approximately 22\u201333%, around the 25\u201330% cost-model range.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed IP clause explicitly states that each party retains ownership of its pre-existing intellectual property developed or owned prior to or independent of the teaming effort.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed IP clause or its accompanying rationale names PhalanxShield\u2122 as Phalanx's pre-existing intellectual property and states that it is preserved or protected.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable references U.S. Copyright Registration No. TX-9-384-221 in connection with PhalanxShield\u2122.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed IP clause or its accompanying rationale names CascadeConnect\u2122 as Cascade's pre-existing intellectual property and states that it is preserved or protected.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The exclusivity/non-compete clause or its rationale acknowledges that DLA may award up to three IDIQ contracts under solicitation SP4701-25-R-0040.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The exclusivity/non-compete compromise uses the up-to-three-contract multi-award IDIQ structure under the same solicitation to define, limit, or shape the scope or duration of post-award restrictions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The termination-for-convenience clause sets different termination terms for before proposal submission and after proposal submission.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The termination-for-convenience clause imposes more restrictive termination conditions after proposal submission than before it.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The termination-for-convenience compromise requires the terminating party to reimburse the non-terminating party for documented bid and proposal (B&P) costs upon termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The termination clause sets a maximum B&P cost reimbursement cap greater than $0 and less than $2,500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo flags that Greystone Capital Partners, Phalanx's majority private equity investor, holds approval rights over teaming agreements exceeding $50,000,000 in anticipated subcontract value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo states or shows that Phalanx's anticipated subcontract value exceeds the $50,000,000 Greystone board approval threshold at every contemplated work-share percentage, including $72,000,000 at the lowest proposed share of 15% of the $480,000,000 contract ceiling.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The work-share compromise provides a task-order allocation mechanism between Cascade's 'sole discretion' and Phalanx's 'right of first refusal on all cybersecurity-scoped task orders,' such as consultation, preferential consideration, a defined cybersecurity scope carve-out, or a notice-and-opportunity process.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The exclusivity/non-compete compromise imposes a post-award restriction on competing work, particularly Phalanx's competing DLA cybersecurity engagements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The post-award non-compete restriction expires sooner than 36 months following contract completion, including by lasting only during active performance or another shorter defined period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo provides a written negotiation rationale for the work-share compromise that justifies the middle-ground position and explains why it should be acceptable to both Cascade and Phalanx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo provides a written negotiation rationale for the exclusivity/non-compete compromise that justifies the middle-ground position and explains why it should be acceptable to both Cascade and Phalanx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo provides a written negotiation rationale for the IP rights compromise that justifies the middle-ground position and explains why it should be acceptable to both Cascade and Phalanx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo provides a written negotiation rationale for the termination-for-convenience compromise that justifies the middle-ground position and explains why it should be acceptable to both Cascade and Phalanx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP compromise clause addresses ownership or usage rights for proposal materials jointly developed by Cascade and Phalanx during the teaming effort.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP clause provides a framework for jointly developed proposal materials other than sole ownership by Cascade, such as joint ownership or shared rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP clause limits at least one party's use of jointly developed proposal materials or requires accounting to the other party.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP clause imposes at least one specific, defined limitation on using jointly developed proposal materials, such as a restriction on competing proposals, a consent requirement, confidentiality duties, or limits on disclosure to third parties.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

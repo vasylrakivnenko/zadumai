@@ -1,0 +1,836 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed to David Okonkwo.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies David Okonkwo as Deputy General Counsel, Litigation & Disputes, or gives him a substantially equivalent title.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo lists Connor Bledsoe as a cc recipient.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Connor Bledsoe as Chief Legal Officer or CLO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo lists Priya Mahajan as a cc recipient.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Priya Mahajan as VP, Infrastructure Services and the deal sponsor.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Rachel Tsang as its author or drafter.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Rachel Tsang\u2019s title as Senior Commercial Counsel, Infrastructure Division.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Deviation 1 as Seat/Governing Law and references MSA \u00a7 14.2 and Playbook \u00a7 9.1.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo classifies Deviation 1 as Level 3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Deviation 2 as Institution/Rules and references MSA \u00a7 14.3 and Playbook \u00a7 9.2.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo classifies Deviation 2 as Level 3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Deviation 3 as Mediation Period and references MSA \u00a7 14.1(b) and Playbook \u00a7 9.3.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo classifies Deviation 3 as Level 3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Deviation 4 as Consequential-Damages Carve-Outs and references MSA \u00a7 12.4(c) and Playbook \u00a7 9.5.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo classifies Deviation 4 as Level 4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Deviation 5 as Consolidation and references MSA \u00a7 14.6 and Playbook \u00a7 9.6.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo classifies Deviation 5 as Level 4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Total Contract Value (TCV) as $78,000,000 or $78M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Annualized Contract Value (ACV) as $13,000,000 or $13M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the contract term is 6 years, from January 1, 2026 through December 31, 2031.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that the $13M ACV exceeds the Playbook \u00a7 1.4 mandatory escalation threshold of $5M ACV, triggering mandatory Level 3+ review of non-standard dispute-resolution terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Playbook-approved position for Seat/Governing Law is a New York seat with New York governing law.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Level 2 fallback allows any U.S. city where Meridian has an office\u2014Charlotte, Atlanta, Denver, or New York\u2014with the law of the seat state governing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Castlebridge demands a Houston, TX seat with Texas governing law.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that the Houston, TX deviation exceeds Level 2 because Meridian has no office in Houston, TX.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The risk analysis addresses uncertainty under Texas law about enforcing limitation-of-liability and/or indemnity provisions drafted to New York precedent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Playbook-approved institution and rules are AAA Commercial Arbitration Rules with Large Complex Case Procedures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Level 2 fallback is JAMS Comprehensive Arbitration Rules.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Castlebridge demands ICDR International Arbitration Rules.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The risk analysis discusses ICDR\u2019s materially different discovery limitations, specifically Tribunal-directed document exchange under Article 22.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The risk analysis addresses ICDR expedited-procedure thresholds that may automatically apply to counterclaims under $500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The risk analysis addresses differences in ICDR\u2019s default confidentiality scope compared with AAA/JAMS.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Playbook-approved mediation period is 60 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Level 2 fallback mediation period is 45 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Castlebridge demands a 30-day mediation period and that either party may file an arbitration demand if no mediator is appointed within 15 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies estimated settlement-savings loss as $2,860,000, derived from $13,000,000 ACV \u00d7 22% average mediation-settlement discount.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo lists the Playbook-approved consequential-damages waiver carve-outs as (a) willful misconduct, (b) breach of confidentiality, and (c) IP infringement indemnity.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Level 2 fallback adds (d) data-breach notification costs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Castlebridge\u2019s additional carve-out (e) as delay damages, liquidated or unliquidated.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Castlebridge\u2019s additional carve-out (f) as third-party bodily-injury claims arising from Meridian\u2019s services.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies maximum delay-damages exposure at $25,200,000, calculated as $4,200,000/month \u00d7 6-month overrun.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags a coverage-gap risk under Meridian\u2019s $10,000,000 professional-liability policy for bodily-injury claims that could exceed the aggregate limit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Playbook-approved position as an absolute waiver of class, collective, and consolidated arbitrations, with no joinder without mutual written consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Level 2 fallback permits joinder of project-specific subcontractors with all-party consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Castlebridge demands the right to consolidate any related arbitration involving its subcontractors or affiliates without Meridian\u2019s consent, with the Tribunal having discretion to order consolidation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references 14 active subcontractors on the Gulf Corridor program.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies incremental defense cost exposure as $1,050,000\u2013$1,650,000, derived from a $750,000 solo baseline versus $1,800,000\u2013$2,400,000 for consolidated multi-party proceedings.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states total quantifiable tail-risk exposure of approximately $29,710,000, or a reasonable rounding such as $29.7M, combining mediation-discount loss (~$2,860,000), delay damages ($25,200,000), midpoint incremental defense costs (~$1,350,000), and ~$300,000 of additional incremental or indirect items.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo applies a 12% dispute-probability factor for infrastructure engagements \u2265 $5M ACV.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states probability-weighted expected loss of approximately $3,565,200, or a reasonable rounding such as ~$3.57M, calculated as ~$29,710,000 \u00d7 12%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo explicitly requests David Okonkwo\u2019s approval for all five deviations.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo cites David Okonkwo\u2019s Level 3\u20134 approval authority under the Delegation of Authority Matrix.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo asks whether Deviation 4 \u2013 Consequential-Damages Carve-Outs and/or Deviation 5 \u2013 Consolidation should be further escalated to Connor Bledsoe as Level 5/red-line items.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo proposes a recommended counter-position or counter-term for each of the five deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recommended counter-positions acknowledge Castlebridge\u2019s known hard ask of a Houston seat as a board-driven priority.",
+     "pass_if": true
+    },
+    {
+     "s": "The recommended counter-positions acknowledge Castlebridge\u2019s known hard ask of ICDR rules as a board-driven priority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recommended counter-positions reference or account for the July 18, 2025 signing deadline, identified as Castlebridge\u2019s board meeting deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a matter identification and parties section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a deal summary and financial parameters section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a playbook deviation summary table with columns for deviation description, playbook-approved position, counterparty demand, deviation level, and risk category.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each of the five deviations, the memo includes a detailed risk analysis covering legal risk, quantified financial exposure, probability-weighted expected loss, and strategic or reputational considerations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes an aggregate risk summary section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a recommended positions and proposed counter-terms section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a specific approval request section that cites the authority level.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a signature/approval block.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the matter number as INF-2025-0443.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references MSA Redline v.7.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that MSA Redline v.7 was circulated June 27, 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Martin Cahill of Whitfield, Rosner & Cahill LLP as the person who circulated MSA Redline v.7.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Commercial Contracting Playbook v.4.1 with an effective date of September 1, 2024.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each of the five deviations, the memo explains why Castlebridge\u2019s demand exceeds the Level 2 fallback position, Rachel Tsang\u2019s maximum delegated authority, rather than merely differing from the Playbook-approved position.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states or implies that Rachel Tsang, as Senior Commercial Counsel, holds Level 1\u20132 authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the insurance carrier as Hargrove Mutual Insurance Co.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies the insurance policy number as PLI-2024-08831.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo discusses how Castlebridge\u2019s carve-out (f) for third-party bodily-injury claims could expose Meridian to damages exceeding the $10,000,000 per-occurrence and aggregate limit of its professional-liability policy.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the strategic importance of the Gulf Corridor Expansion Program deal to Meridian\u2019s infrastructure division.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes Priya Mahajan\u2019s strong preference to close on schedule.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo acknowledges that the business team supports legal\u2019s risk-management and escalation process.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo specifically requests approval or guidance by July 10, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that the July 10 deadline allows sufficient time to prepare and circulate a counter-redline before the July 18, 2025 signing deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deviation-summary table includes a row for each of the five deviations: Seat/Governing Law, Institution/Rules, Mediation Period, Consequential-Damages Carve-Outs, and Consolidation.",
+     "pass_if": true
+    },
+    {
+     "s": "The deviation-summary table includes columns for deviation description, Playbook-approved position, counterparty demand, deviation level, and risk category.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the risk that consolidation without consent could force Meridian to defend against cross-claims from Castlebridge\u2019s subcontractors or affiliates with whom Meridian has no contractual relationship, creating joint-and-several liability risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Meridian Dynamics, Inc. as a Delaware corporation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Castlebridge Infrastructure Group, LLC as a Texas LLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the agreement as a Master Services Agreement for civil-engineering consulting services on the Gulf Corridor Expansion Program.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

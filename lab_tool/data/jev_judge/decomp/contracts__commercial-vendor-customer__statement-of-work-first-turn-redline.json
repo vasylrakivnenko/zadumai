@@ -1,0 +1,811 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects Prismara's T&M conversion for Phase 2.",
+     "pass_if": true
+    },
+    {
+     "s": "Phase 2 pricing is restored to a fixed fee of $1,820,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline specifies a 10% Phase 2 change-order buffer of $182,000 on top of the $1,820,000 fixed fee.",
+     "pass_if": true
+    },
+    {
+     "s": "The Phase 2 not-to-exceed amount is $2,002,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects Prismara's 4% annual Phase 3 escalator.",
+     "pass_if": true
+    },
+    {
+     "s": "The Phase 3 counter-proposal is CPI-linked and capped at 3%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The CPI-linked escalator capped at 3% begins at Month 13 of Phase 3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline restores an expense cap for Phases 1\u20132 at $75,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The payment term is Net 30 from the later of the invoice date or acceptance of the corresponding milestone.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline rejects Prismara's Net 15 from invoice date irrespective of acceptance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The liability cap is the greater of total fees paid or payable under the SOW or $3,835,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline rejects Prismara's trailing-12-month liability-cap formulation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The consequential-damages waiver includes a carve-out for data breach.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The consequential-damages waiver includes a carve-out for gross negligence/willful misconduct.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The consequential-damages waiver includes a carve-out for IP infringement.",
+     "pass_if": true
+    },
+    {
+     "s": "The consequential-damages waiver includes a carve-out for data breach.",
+     "pass_if": true
+    },
+    {
+     "s": "The consequential-damages waiver includes a carve-out for confidentiality breach.",
+     "pass_if": true
+    },
+    {
+     "s": "The consequential-damages waiver includes a carve-out for gross negligence/willful misconduct.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline accepts an exception to IP-infringement indemnification for infringement caused by Helios-furnished materials or specifications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline requires Prismara to have conducted IP clearance on its own components.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline requires Prismara to bear the burden of proving infringement arose solely from Helios-furnished materials or specifications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The acceptance period is 10 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Deemed-acceptance applies only if Helios fails to respond within 10 business days and Prismara sends a separate 5-business-day reminder notice that goes unanswered.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline retains two cure cycles for deliverable deficiencies.",
+     "pass_if": true
+    },
+    {
+     "s": "Each cure cycle for deliverable deficiencies is 10 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Developed Tools created during the engagement, including build scripts and automation frameworks, remain deliverables owned by Helios as works-made-for-hire.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline rejects classifying Developed Tools as Prismara pre-existing IP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The license to Prismara's pre-existing IP is perpetual and irrevocable.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The license to Prismara's pre-existing IP is royalty-free.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The license to Prismara's pre-existing IP is sublicensable to Helios affiliates and successor entities.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The license to Prismara's pre-existing IP survives termination of the SOW/MSA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline requires Prismara to identify all pre-existing IP in Exhibit C before the Phase 1 kickoff, before April 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline states that any IP not listed in Exhibit C is deemed a deliverable owned by Helios.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline requires 10 business days' prior written notice for any key-personnel substitution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Any key-personnel substitution requires Helios's written consent, not to be unreasonably withheld.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline requires any replacement key personnel to possess equivalent certifications and experience to the departing key personnel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Unauthorized removal of Key Personnel entitles Helios to terminate for cause upon 30 days' notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline rejects Prismara's 15% early-termination fee on remaining unpaid fees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds a 90-day transition-assistance obligation at Prismara's then-current rates.",
+     "pass_if": true
+    },
+    {
+     "s": "The 90-day transition-assistance obligation survives termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cure period for non-payment is 30 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cure period for service-level failures is 20 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cure period for security incidents is 10 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The uptime SLA is 99.9% monthly availability.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Service credits are 5% of the monthly fee for each 0.1% below 99.9% availability.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Service credits are capped at 30% of the monthly fee.",
+     "pass_if": true
+    },
+    {
+     "s": "The service-credit cap is stated as $38,250/month based on a $127,500 monthly fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The P1 incident-response time is 15 minutes.",
+     "pass_if": true
+    },
+    {
+     "s": "The P2 incident-response time is 1 hour.",
+     "pass_if": true
+    },
+    {
+     "s": "The P3 incident-response time is 4 hours.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline states that 3 P1 SLA breaches in a rolling 30-day period constitute a material breach.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The governing law is Delaware.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The dispute-resolution clause requires a 30-day executive escalation step before arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The dispute-resolution clause specifies binding arbitration under AAA Commercial Rules.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The arbitration panel consists of three arbitrators seated in Wilmington, Delaware.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The dispute-resolution clause allows either party to seek injunctive relief in any court of competent jurisdiction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline maintains the MSA order of precedence: the MSA controls over SOWs except where an SOW expressly states otherwise.",
+     "pass_if": true
+    },
+    {
+     "s": "Where the SOW departs from MSA baseline provisions, including liability, IP, or termination, it expressly invokes the MSA override mechanism.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note identifies Ashford Beck & Lyle LLP through firm letterhead or another firm identification.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note follows a professional AB&L standard template format.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note is addressed to Terrence Ng at Ridgeline Park LLP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note's re-line identifies SOW-2025-003 and MSA-HDSv.Prismara-2025-001.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note includes an introductory paragraph referencing the enclosed or attached counter-turn redline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note summarizes key changes organized by topic.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note includes a section identifying items reserved for further discussion.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note includes reservation-of-rights language stating that Helios reserves all rights not expressly waived.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note includes Maren Calloway's signature block identifying her as Partner at Ashford Beck & Lyle LLP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note summary addresses pricing, escalator, expenses, payment terms, liability cap, consequential damages, indemnification, acceptance criteria, IP ownership/licensing, key personnel, termination/transition, cure periods, SLAs, and governing law/dispute resolution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each topic in the cover note summary, the stated disposition\u2014accepted, rejected, or counter-proposed\u2014matches the redline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note does not mention $4.1M, any other board-approved spend ceiling figure, or any other privileged Helios negotiation strategy.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline does not mention $4.1M, any other board-approved ceiling figure, or any other privileged Helios negotiation strategy.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline is presented as a new layer of tracked changes on top of Prismara's first markup, preserving all three turns of negotiation history.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Phase 2 Exhibit A milestone-based fee installments are retained.",
+     "pass_if": true
+    },
+    {
+     "s": "The Phase 2 Exhibit A milestone-based fixed-fee installments sum to $1,820,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Phase 1 pricing remains a $485,000 fixed fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references AB&L matter number 10342.00019.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references Helios internal matter number HDS-LEGAL-2025-0047.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note identifies the SOW by the full reference number SOW-2025-003.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note identifies the MSA by the full reference number MSA-HDSv.Prismara-2025-001.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The dispute-resolution clause makes a 30-day executive escalation step a mandatory prerequisite before any party may commence arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Phase 3 monthly fee is $127,500/month.",
+     "pass_if": true
+    },
+    {
+     "s": "The Phase 3 CPI-linked escalator capped at 3% applies only beginning Month 13, leaving the first 12 months at the base rate of $127,500/month.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline explicitly accepts, rejects, or counter-proposes each of Prismara's 14 tracked-change categories: (1) Phase 2 T&M conversion, (2) Phase 3 escalator, (3) expense cap removal, (4) payment terms, (5) liability cap, (6) data-breach carve-out removal, (7) IP indemnification exception, (8) acceptance period/deemed-acceptance/cure cycles, (9) Developed Tools reclassification, (10) license narrowing, (11) key-personnel substitution, (12) early-termination fee, (13) cure period extension, and (14) SLA/response-time relaxation and governing law/dispute resolution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The termination-for-convenience provision retains 60 days' written notice.",
+     "pass_if": true
+    },
+    {
+     "s": "The termination-for-convenience provision provides for payment for work completed through the effective date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The termination-for-convenience provision includes 90-day transition assistance at Prismara's then-current rates, alongside rejection of the 15% termination fee.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

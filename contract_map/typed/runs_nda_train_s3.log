@@ -1,0 +1,26 @@
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 11711.88it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 12669.31it/s]
+  100/1700 (43s)
+  200/1700 (81s)
+  300/1700 (134s)
+  400/1700 (178s)
+  500/1700 (222s)
+  600/1700 (264s)
+  700/1700 (311s)
+  800/1700 (351s)
+  900/1700 (401s)
+  1000/1700 (456s)
+  1100/1700 (506s)
+  1200/1700 (542s)
+  1300/1700 (587s)
+  1400/1700 (633s)
+  1500/1700 (676s)
+  1600/1700 (726s)
+  1700/1700 (777s)
+today     answered 188/1700 = 11.1%, right 182/188 = 96.8% [lo 0.932]
+pipeline  answered 488/1700 = 28.7%, right 426/488 = 87.3% [lo 0.840]
+  by path: {'pt0': '182/188', 'net-located': '228/283', 'pt0-located': '16/17'}
+  gold: {'not_stated': 679, 'no': 285, 'yes': 736}

@@ -1,0 +1,26 @@
+== lease stage 2: 8 classes, eval 2000 rows, train 17472 of 17472
+   eval rows with a type 310, none 1690
+   (tfidf: trained on 17472 rows in 31s)
+   (tfidf: threshold 0.8, picked on 2000 validation rows)
+  tfidf        micro P  52.6% R  18.6% F1 0.275  macro-F1 0.250  exact  84.7%  'none' rows kept empty 1639/1690  (0.3 ms/item)
+      weakest types (F1): indexation_rent 0.00, notice_period 0.00, vat 0.24, redflag 0.24, designated_use 0.27, leased_space 0.38
+   jev: 500 cached, 1500 to call
+   jev: 100/1500
+   jev: 200/1500
+   jev: 300/1500
+   jev: 400/1500
+   jev: 500/1500
+   jev: 600/1500
+   jev: 700/1500
+   jev: 800/1500
+   jev: 900/1500
+   jev: 1000/1500
+   jev: 1100/1500
+   jev: 1200/1500
+   jev: 1300/1500
+   jev: 1400/1500
+   jev: 1500/1500
+   (jev: 0 errors; latency p50 70 ms, p95 137 ms; this run: 1500 calls, tokens in 776511, out 140300, model jev-1.13.0)
+  jev          micro P  21.8% R  45.5% F1 0.295  macro-F1 0.328  exact  67.8%  'none' rows kept empty 1216/1690  (70.5 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  68.2%)
+      weakest types (F1): notice_period 0.13, redflag 0.26, indexation_rent 0.29, term_of_payment 0.32, leased_space 0.35, designated_use 0.39

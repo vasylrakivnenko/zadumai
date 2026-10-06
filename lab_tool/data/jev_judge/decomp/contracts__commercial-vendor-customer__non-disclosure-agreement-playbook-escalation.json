@@ -1,0 +1,603 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies exactly four out-of-policy deviations: confidentiality term/survival, permitted disclosees/affiliate scope, residuals clause, and injunctive relief/governing law/jurisdiction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo treats each of the four deviations as a separate escalation item and states or implies that each requires GC-level or GC + CTO approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the VAS playbook standard confidentiality survival is 3 years from the date of disclosure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the VAS approved fallback confidentiality survival is up to 5 years from the date of disclosure with Associate GC sign-off.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that KBI requests a 7-year confidentiality term from the Effective Date.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that KBI requests perpetual survival for trade-secret-designated information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the 2-year excess beyond the 5-year fallback as a risk dimension.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the shift in the confidentiality measurement date from the date of disclosure to the Effective Date as a separate risk dimension.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the uncapped perpetual survival tail for trade-secret-designated information as a separate risk dimension.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the VAS playbook standard limits permitted disclosees to employees and individual contractors with need-to-know.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the VAS approved fallback extends permitted disclosees to wholly-owned subsidiaries (\u2265100% ownership) upon written notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that KBI proposes a 20% equity-interest threshold for 'Affiliates.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that KBI's proposal includes unnamed external technical advisors/consultants as permitted disclosees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that 14 Brenner Holding AG minority-stake portfolio entities would become permitted disclosees under KBI's 20% threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that external technical advisors/consultants are not contemplated by the VAS playbook at all.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the VAS playbook permits no residuals clause.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that including any residuals clause requires GC-level approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo describes KBI's proposed Section 5.3 Residual Information clause as permitting unrestricted use of ideas, concepts, know-how, or techniques retained in unaided memory without reference to written/recorded Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that a skilled engineer could reconstruct Project Helios proprietary separator-membrane formulations, including polymer-blend ratios and processing temperatures, from memory after a technical deep-dive session.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that KBI deleted the injunctive-relief clause entirely.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the playbook requires an express irreparable-harm acknowledgment and entitlement to seek injunctive relief without bond.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that deleting the injunctive-relief clause is a hard 'no' without GC approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that VAS's standard governing law/jurisdiction is Delaware (Court of Chancery or D. Del.).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the approved fallback is New York law and New York courts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that KBI replaced Delaware governing law with German law.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that KBI replaced Delaware courts with ICC International Court of Arbitration in Paris.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that KBI's proposed ICC arbitration uses three arbitrators and English proceedings.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that German law is entirely outside the VAS playbook matrix.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that ICC arbitration is entirely outside the VAS playbook matrix.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the outside counsel cost estimate of \u20ac180,000\u2013\u20ac350,000 for a mid-complexity NDA dispute in ICC arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the 18\u201324 month timeline to award in ICC arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the need for German-law qualified counsel and the associated additional cost exposure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes limitations on interim injunctive relief absent an emergency-arbitrator application.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed to Catherine R. Underwood, General Counsel.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo is addressed to Dr. Marcus Ellison, Chief Technology Officer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is from Priya Narasimhan, Associate General Counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the projected joint-development program value is $22.5 million over 3 years ($7.5M ACV).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the net book value of VAS's contributing IP is $6.8 million (Q1 2025).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the KBI markup was received on June 3, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the business-requested execution target is June 20, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the first technical deep-dive requiring the NDA to be in place is June 30, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is dated no later than June 6, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each of the four deviations, the memo recommends accepting, countering with a specific proposed counter-position, or rejecting the term, and gives reasoning for that recommendation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each of the four deviations, the memo explicitly requests approval authority from the GC (Catherine R. Underwood) and CTO (Dr. Marcus Ellison) for any recommended acceptance or counter-position that exceeds the Associate GC's delegated authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags competitive-adjacency risk by referencing the Brenner Holding AG corporate structure and noting that some of the 14 minority-stake entities operate in fields competitive with or adjacent to VAS's technology areas, creating a specific IP-leakage vector.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the VAS NDA Playbook version 4.1 dated February 12, 2025 as the governing authority for standard and fallback positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites the KBI markup received June 3, 2025 as the source of the deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that VAS measures confidentiality survival from the date of each disclosure while KBI measures it from the Effective Date of the NDA.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that information disclosed near the end of the NDA term would receive significantly less protection under KBI's approach.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo connects the absence of interim injunctive relief under ICC arbitration, absent an emergency-arbitrator application, to an enforcement gap for protecting Project Helios IP.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that IP disclosure is irreversible.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the residuals-clause risk compounds the ICC arbitration enforcement gap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo contains a header block identifying the matter, parties, date, author, and addressees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes an executive summary section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a deviation-by-deviation analysis for each of the four deviations, and each analysis contains the playbook position, KBI position, delta, risk assessment, and recommendation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes an approval/decision section with a clear, specific ask for each of the four deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The confidentiality recommendation either accepts or rejects KBI's requested term, or counters with a term of at least 5 years and specifies whether the measurement basis is the date of disclosure or the Effective Date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies KBI's outside counsel, Reinhardt Partnerschaft von Rechtsanw\u00e4lten mbB, as the preparer of the KBI markup.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Aldridge, Park & Sullivan LLP as the source of the ICC arbitration cost estimate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo uses the internal project codename 'Project Helios' when describing the VAS proprietary IP at risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo clearly identifies Vanguard Applied Sciences, Inc. as VAS and Kessler-Brandt Industrietechnik GmbH as KBI, and uses those short names consistently throughout.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that KBI's residuals clause and broad affiliate-scope definition create compounding risks: the residuals clause allows KBI's representatives to freely use memorized know-how, and the expanded affiliate scope multiplies the number of individuals who could acquire and exploit such residual knowledge across 14+ affiliated entities.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

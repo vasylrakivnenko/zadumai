@@ -1,0 +1,378 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise language specifically addressing Clause 1 \u2014 Definition of Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise language specifically addressing Clause 2 \u2014 Term and Survival of Confidentiality Obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise language specifically addressing Clause 3 \u2014 Permitted Disclosures / Compelled Disclosure Carve-Out.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes proposed compromise language specifically addressing Clause 4 \u2014 Remedies, covering both injunctive relief and limitation of liability.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise definition requires written or tangible materials to be marked or designated as confidential to qualify as Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise definition establishes a distinct procedure for oral and visual disclosures, separate from the marking requirement for written materials.",
+     "pass_if": true
+    },
+    {
+     "s": "The procedure requires oral and visual disclosures to be identified as confidential at or around the time of disclosure.",
+     "pass_if": true
+    },
+    {
+     "s": "The procedure requires written confirmation of oral and visual disclosures within a specified period after disclosure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise definition requires marking, designation, or identification for information to qualify as Confidential Information, rather than treating all information disclosed in connection with the discussions as automatically confidential.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise definition explicitly references or clearly encompasses oral and visual disclosures during lab demonstrations, whiteboard sessions, or similar technical settings as capable of qualifying as Confidential Information under the identification-and-confirmation procedure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise proposes a written confirmation window of exactly 15 business days for oral or visual disclosures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The term and survival compromise provides that information qualifying as a trade secret under applicable law remains protected for as long as it retains trade-secret status, with no fixed expiration date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise provides 5 years after termination or expiration of the NDA for non-trade-secret Confidential Information, distinct from and shorter than the indefinite trade-secret survival period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compelled disclosure compromise uses flexible timing language for notice, such as \u201cprompt written notice\u201d or \u201cas soon as reasonably practicable,\u201d without imposing a fixed minimum number of days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise requires the receiving party to provide written notice to the disclosing party before making any compelled disclosure, using mandatory language such as \u201cshall provide\u201d or \u201cmust provide.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The baseline written-notice duty is mandatory and is not solely qualified by \u201cto the extent legally permitted\u201d or equivalent hedging; any exception is limited to situations where applicable law expressly prohibits notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compelled disclosure compromise allocates the costs of seeking a protective order to the disclosing party whose Confidential Information is being compelled.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise requires the receiving party to provide reasonable cooperation with the disclosing party\u2019s efforts to obtain a protective order.",
+     "pass_if": true
+    },
+    {
+     "s": "The compromise provides that the disclosing party bears the expense of the receiving party\u2019s cooperation with protective-order efforts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise requires the receiving party to consult with the disclosing party about the scope of compelled production before disclosing Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "After consultation, the compromise permits the receiving party to use its own reasonable judgment to determine the minimum information legally required to be disclosed, without requiring the disclosing party\u2019s approval or joint determination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The remedies compromise does not waive, eliminate, or consent in advance to dispensing with any bond or security requirement for injunctive or equitable relief.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The remedies compromise proposes a mutual aggregate liability cap of at least $5,000,000 that applies to both parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed liability cap explicitly excludes claims arising from willful or intentional breach of the NDA from the cap\u2019s limit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed liability cap explicitly excludes claims for trade secret misappropriation from the aggregate cap\u2019s limit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a written negotiation rationale for the Clause 1 Confidential Information definition compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains Meridian\u2019s concern that oral and visual disclosures in technical settings such as lab demonstrations and whiteboard sessions must be protected.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains Caspian\u2019s concern that an overbroad \u201call information\u201d definition creates unmanageable compliance risk and potential disputes given its small legal team.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains why the Clause 1 proposal is a commercially reasonable middle ground.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a written negotiation rationale for the Term and Survival compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains Meridian\u2019s concern that its sensor-calibration trade secrets have economic value well beyond a short survival period and that short expiration effectively grants a free license.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains Caspian\u2019s concern that indefinite or very long-tailed obligations create perpetual compliance burdens, especially if Caspian is acquired or pivots its business.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains why the Term and Survival proposal is a commercially reasonable middle ground.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a written negotiation rationale for the Compelled Disclosure compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains Meridian\u2019s concern that without a fixed notice period and input on scope, the receiving party could effectively waive protections unilaterally.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains Caspian\u2019s concern that a rigid 10-business-day notice requirement may be impossible to satisfy for certain regulatory subpoenas and court orders, and that bearing its own cooperation costs is disproportionate for a smaller company.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains why the Compelled Disclosure proposal is a commercially reasonable middle ground.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a written negotiation rationale for the Remedies compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains Meridian\u2019s concern that trade-secret misappropriation is difficult to prove in dollar terms and that a liability cap could be treated as a cost of doing business.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains Caspian\u2019s concern that unlimited liability exposure is disproportionate to the early-stage exploratory nature of the discussions and could threaten its solvency.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains Caspian\u2019s concern that advance bond waivers are judicially disfavored in Virginia.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale explains why the Remedies proposal is a commercially reasonable middle ground.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable contains actual proposed NDA contract text for Clause 1 \u2014 Definition of Confidential Information, drafted with contractual language and operative provisions ready for insertion into the agreement.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable contains actual proposed NDA contract text for Clause 2 \u2014 Term and Survival of Confidentiality Obligations, drafted with contractual language and operative provisions ready for insertion into the agreement.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable contains actual proposed NDA contract text for Clause 3 \u2014 Permitted Disclosures / Compelled Disclosure Carve-Out, drafted with contractual language and operative provisions ready for insertion into the agreement.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable contains actual proposed NDA contract text for Clause 4 \u2014 Remedies, drafted with contractual language and operative provisions ready for insertion into the agreement.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

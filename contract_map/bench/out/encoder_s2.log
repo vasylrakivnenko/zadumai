@@ -1,0 +1,65 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== encoder combined, stage 2: train ledgar 10000, cuad_clause 10000, tos 5532, opp115 2658, contractnli 10000, lease 10000, 2 epoch(s)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 11563.22it/s]
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 1/3012 loss 0.7781  53 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 201/3012 loss 0.4350  34 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 401/3012 loss 0.3207  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 601/3012 loss 0.2285  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 801/3012 loss 0.1881  36 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 1001/3012 loss 0.1708  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 1201/3012 loss 0.1434  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 1401/3012 loss 0.1474  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 1601/3012 loss 0.1351  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 1801/3012 loss 0.1452  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 2001/3012 loss 0.1162  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 2201/3012 loss 0.1351  34 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 2401/3012 loss 0.1201  34 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 2601/3012 loss 0.1179  34 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 2801/3012 loss 0.1264  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 3001/3012 loss 0.1038  35 rows/s
+   [ledgar+cuad_clause+tos+opp115+contractnli+lease] step 3012/3012 loss 0.1077  35 rows/s
+   ledgar       acc 82.5%
+   cuad_clause  F1 0.559 (P 64 R 50)
+   tos          F1 0.675 (P 64 R 72)
+   opp115       F1 0.746 (P 77 R 72)
+   contractnli  F1 0.747 (P 74 R 76)
+   lease        F1 0.384 (P 39 R 38)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== encoder separate, stage 2: train ledgar 10000, cuad_clause 10000, tos 5532, opp115 2658, contractnli 10000, lease 10000, 2 epoch(s)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10373.96it/s]
+   [ledgar] step 1/626 loss 0.7512  35 rows/s
+   [ledgar] step 201/626 loss 0.2226  21 rows/s
+   [ledgar] step 401/626 loss 0.1064  20 rows/s
+   [ledgar] step 601/626 loss 0.0846  20 rows/s
+   [ledgar] step 626/626 loss 0.0824  20 rows/s
+   ledgar       acc 81.8%
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 12334.08it/s]
+   [cuad_clause] step 1/626 loss 0.7935  57 rows/s
+   [cuad_clause] step 201/626 loss 0.3322  23 rows/s
+   [cuad_clause] step 401/626 loss 0.2192  23 rows/s
+   [cuad_clause] step 601/626 loss 0.1973  23 rows/s
+   [cuad_clause] step 626/626 loss 0.1911  23 rows/s
+   cuad_clause  F1 0.501 (P 55 R 46)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10542.31it/s]
+   [tos] step 1/346 loss 0.9804  90 rows/s
+   [tos] step 201/346 loss 0.2141  73 rows/s
+   [tos] step 346/346 loss 0.1222  78 rows/s
+   tos          F1 0.597 (P 48 R 78)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10558.54it/s]
+   [opp115] step 1/168 loss 0.7880  117 rows/s
+   [opp115] step 168/168 loss 0.3373  31 rows/s
+   opp115       F1 0.745 (P 73 R 76)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10910.25it/s]
+   [contractnli] step 1/626 loss 0.7814  78 rows/s
+   [contractnli] step 201/626 loss 0.2763  70 rows/s
+   [contractnli] step 401/626 loss 0.1843  67 rows/s
+   [contractnli] step 601/626 loss 0.1435  69 rows/s
+   [contractnli] step 626/626 loss 0.1454  69 rows/s
+   contractnli  F1 0.730 (P 80 R 67)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9930.43it/s]
+   [lease] step 1/626 loss 0.6800  82 rows/s
+   [lease] step 201/626 loss 0.3124  46 rows/s
+   [lease] step 401/626 loss 0.2037  44 rows/s
+   [lease] step 601/626 loss 0.1341  46 rows/s
+   [lease] step 626/626 loss 0.1637  46 rows/s
+   lease        F1 0.399 (P 43 R 37)

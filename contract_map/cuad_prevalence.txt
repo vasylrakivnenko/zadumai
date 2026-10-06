@@ -1,0 +1,43 @@
+contracts 510 types {'distributor': 35, 'maintenance': 34, 'strategic alliance': 32, 'other': 31, 'sponsorship': 31, 'development': 28, 'service': 26, 'license': 26, 'endorsement': 24, 'co-branding': 23, 'ip': 21, 'hosting': 20, 'outsourcing': 18, 'manufacturing': 18, 'supply': 17, 'marketing': 15, 'franchise': 15, 'agency': 13, 'reseller': 13, 'transportation': 13, 'collaboration': 12, 'consulting': 11, 'promotion': 11, 'joint venture': 10, 'affiliate': 10, 'non-compete': 3}
+median chars 33425
+Document Name                          all  100%  types>=50%: 25/25  >=20%: 25/25  top distributor 100%, supply 100%, hosting 100%  low transportation 100%
+Parties                                all  100%  types>=50%: 25/25  >=20%: 25/25  top distributor 100%, supply 100%, hosting 100%  low franchise 93%
+Agreement Date                         all   92%  types>=50%: 25/25  >=20%: 25/25  top consulting 100%, promotion 100%, ip 100%  low franchise 60%
+Governing Law                          all   86%  types>=50%: 24/25  >=20%: 25/25  top consulting 100%, promotion 100%, collaboration 100%  low other 48%
+Expiration Date                        all   81%  types>=50%: 23/25  >=20%: 25/25  top consulting 100%, transportation 100%, sponsorship 97%  low agency 31%
+Effective Date                         all   76%  types>=50%: 23/25  >=20%: 25/25  top joint venture 100%, reseller 100%, transportation 100%  low other 35%
+Anti-Assignment                        all   73%  types>=50%: 23/25  >=20%: 25/25  top collaboration 100%, co-branding 91%, sponsorship 90%  low agency 31%
+Cap On Liability                       all   54%  types>=50%: 16/25  >=20%: 21/25  top collaboration 100%, reseller 92%, co-branding 87%  low joint venture 10%
+License Grant                          all   50%  types>=50%: 13/25  >=20%: 21/25  top collaboration 92%, ip 90%, license 88%  low transportation 0%
+Audit Rights                           all   42%  types>=50%: 11/25  >=20%: 22/25  top collaboration 75%, promotion 73%, manufacturing 72%  low consulting 0%
+Termination For Convenience            all   36%  types>=50%:  8/25  >=20%: 19/25  top consulting 82%, collaboration 67%, reseller 62%  low other 10%
+Post-Termination Services              all   36%  types>=50%:  8/25  >=20%: 21/25  top collaboration 83%, reseller 62%, distributor 57%  low sponsorship 6%
+Exclusivity                            all   35%  types>=50%:  7/25  >=20%: 18/25  top collaboration 75%, distributor 66%, promotion 64%  low maintenance 3%
+Renewal Term                           all   35%  types>=50%:  6/25  >=20%: 19/25  top distributor 69%, reseller 62%, transportation 62%  low ip 0%
+Revenue/Profit Sharing                 all   33%  types>=50%:  8/25  >=20%: 16/25  top promotion 91%, agency 77%, franchise 67%  low ip 5%
+Insurance                              all   33%  types>=50%:  8/25  >=20%: 18/25  top supply 76%, franchise 67%, collaboration 67%  low other 3%
+Minimum Commitment                     all   32%  types>=50%:  7/25  >=20%: 20/25  top supply 65%, manufacturing 61%, promotion 55%  low consulting 0%
+Non-Transferable License               all   27%  types>=50%:  3/25  >=20%: 16/25  top ip 71%, reseller 62%, co-branding 61%  low transportation 0%
+Ip Ownership Assignment                all   24%  types>=50%:  5/25  >=20%: 13/25  top ip 81%, collaboration 75%, consulting 64%  low transportation 0%
+Change Of Control                      all   24%  types>=50%:  2/25  >=20%: 16/25  top co-branding 57%, franchise 53%, ip 48%  low service 4%
+Non-Compete                            all   23%  types>=50%:  2/25  >=20%: 13/25  top franchise 67%, co-branding 57%, development 46%  low outsourcing 0%
+Uncapped Liability                     all   22%  types>=50%:  2/25  >=20%: 13/25  top co-branding 57%, collaboration 50%, reseller 46%  low agency 0%
+Notice Period To Terminate Renewal     all   22%  types>=50%:  1/25  >=20%: 13/25  top transportation 62%, hosting 45%, outsourcing 44%  low collaboration 0%
+Covenant Not To Sue                    all   20%  types>=50%:  2/25  >=20%: 10/25  top ip 62%, franchise 60%, distributor 40%  low agency 0%
+Rofr/Rofo/Rofn                         all   17%  types>=50%:  1/25  >=20%:  9/25  top franchise 53%, collaboration 42%, development 39%  low consulting 0%
+Volume Restriction                     all   16%  types>=50%:  2/25  >=20%:  8/25  top transportation 77%, endorsement 62%, co-branding 39%  low agency 0%
+Competitive Restriction Exception      all   15%  types>=50%:  1/25  >=20%:  8/25  top franchise 53%, co-branding 43%, collaboration 42%  low outsourcing 0%
+Warranty Duration                      all   15%  types>=50%:  2/25  >=20%:  6/25  top distributor 60%, supply 59%, manufacturing 44%  low co-branding 0%
+Irrevocable Or Perpetual License       all   14%  types>=50%:  1/25  >=20%:  5/25  top collaboration 67%, ip 48%, development 32%  low transportation 0%
+Liquidated Damages                     all   12%  types>=50%:  0/25  >=20%:  5/25  top hosting 40%, franchise 40%, outsourcing 39%  low ip 0%
+No-Solicit Of Employees                all   12%  types>=50%:  2/25  >=20%:  4/25  top consulting 55%, franchise 53%, strategic alliance 44%  low transportation 0%
+Affiliate License-Licensee             all   12%  types>=50%:  1/25  >=20%:  5/25  top ip 67%, promotion 36%, development 29%  low transportation 0%
+Joint Ip Ownership                     all    9%  types>=50%:  1/25  >=20%:  4/25  top collaboration 58%, co-branding 43%, development 39%  low transportation 0%
+Non-Disparagement                      all    7%  types>=50%:  0/25  >=20%:  2/25  top franchise 33%, affiliate 20%, endorsement 17%  low transportation 0%
+No-Solicit Of Customers                all    7%  types>=50%:  0/25  >=20%:  3/25  top franchise 47%, affiliate 30%, consulting 27%  low outsourcing 0%
+Third Party Beneficiary                all    6%  types>=50%:  0/25  >=20%:  1/25  top franchise 33%, reseller 15%, ip 14%  low transportation 0%
+Most Favored Nation                    all    5%  types>=50%:  0/25  >=20%:  1/25  top collaboration 25%, strategic alliance 16%, co-branding 13%  low manufacturing 0%
+Affiliate License-Licensor             all    5%  types>=50%:  0/25  >=20%:  2/25  top ip 38%, collaboration 25%, development 11%  low transportation 0%
+Unlimited/All-You-Can-Eat-License      all    3%  types>=50%:  0/25  >=20%:  0/25  top endorsement 17%, reseller 15%, license 12%  low transportation 0%
+Price Restrictions                     all    3%  types>=50%:  0/25  >=20%:  0/25  top outsourcing 17%, manufacturing 11%, hosting 10%  low development 0%
+Source Code Escrow                     all    3%  types>=50%:  0/25  >=20%:  1/25  top hosting 25%, reseller 15%, maintenance 12%  low transportation 0%

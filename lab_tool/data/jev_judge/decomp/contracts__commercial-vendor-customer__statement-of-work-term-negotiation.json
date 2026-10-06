@@ -1,0 +1,555 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed limitation-of-liability cap is stated as a specific dollar amount or formula that does not exceed $5,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed limitation-of-liability cap is at least $3,630,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed limitation-of-liability cap is no greater than $5,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-liability compromise states a specific dollar figure or a clear percentage formula for the cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable shows an arithmetic derivation of the limitation-of-liability cap from the SOW #4 fee figures, such as a percentage of the $7,260,000 total SOW fee or $7,260,000 \u00f7 1.5 = $4,840,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed acceptance-testing period is specifically stated as longer than 10 business days and shorter than 45 calendar days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The acceptance-testing clause provides a middle-ground deemed-acceptance mechanism, such as deemed acceptance after a defined period with a structured rejection or cure process, rather than automatic acceptance on silence alone or affirmative sign-off only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The liquidated-damages clause calculates damages using the $1,210,000 per-milestone payment amount rather than the $7,260,000 total SOW value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The liquidated-damages clause sets an aggregate cap on total liquidated damages payable for any single milestone.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rationale explains why uncapped liquidated damages would be disproportionate.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale discusses cumulative liquidated-damages exposure across delay-duration scenarios, such as 1-week, 4-week, 8-week, or 12-week delays.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP clause expressly identifies PredictaCore\u2122 Engine as Verdantis pre-existing IP that is not assigned or transferred to Crestline.",
+     "pass_if": true
+    },
+    {
+     "s": "The IP clause references Copyright Registration TX-9-214-558.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP clause treats pre-existing IP as a distinct category retained by Verdantis and licensed to Crestline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP clause treats custom algorithms or deliverables created specifically for Crestline under SOW #4 as a distinct category.",
+     "pass_if": true
+    },
+    {
+     "s": "The IP clause proposes an intermediate ownership or licensing structure for those custom algorithms or deliverables, rather than full Verdantis retention with a narrow license or full work-for-hire assignment to Crestline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP clause addresses derivative works or improvements to pre-existing IP as a distinct category and specifies their ownership or licensing treatment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-liability rationale explicitly states that the proposed cap falls within the playbook's walk-away parameters.",
+     "pass_if": true
+    },
+    {
+     "s": "The limitation-of-liability rationale explains how the proposed cap complies with the playbook's walk-away parameters.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The acceptance-testing rationale explicitly states that the proposed terms fall within the playbook's walk-away parameters.",
+     "pass_if": true
+    },
+    {
+     "s": "The acceptance-testing rationale explains how the proposed terms comply with the playbook's walk-away parameters.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The liquidated-damages rationale explicitly states that the proposed terms fall within the playbook's walk-away parameters.",
+     "pass_if": true
+    },
+    {
+     "s": "The liquidated-damages rationale explains how the proposed terms comply with the playbook's walk-away parameters.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP rationale explicitly states that the proposed terms fall within the playbook's walk-away parameters.",
+     "pass_if": true
+    },
+    {
+     "s": "The IP rationale explains how the proposed terms comply with the playbook's walk-away parameters.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable addresses limitation of liability, acceptance testing, liquidated damages, and IP ownership.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each of the four contested terms\u2014limitation of liability, acceptance testing, liquidated damages, and IP ownership\u2014includes proposed compromise language drafted as contract-ready clauses rather than only bullet points or summaries.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each of the four contested terms includes a supporting negotiation rationale explaining why the compromise is commercially reasonable.",
+     "pass_if": true
+    },
+    {
+     "s": "Each of the four contested terms includes a supporting negotiation rationale explaining how the compromise addresses Crestline's concerns and protects Verdantis's core interests.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise liquidated-damages rate is greater than 0.5% of per-milestone value per week.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The liquidated-damages rate is applied to the $1,210,000 per-milestone payment amount, not the $7,260,000 total SOW value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The liquidated-damages rationale explains why calculating damages on the $1,210,000 per-milestone basis is more proportionate than calculating them on the $7,260,000 total SOW value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-liability rationale references the MSA default cap of 100% of fees paid in the 12 months preceding the claim and its approximate $4,840,000 run-rate value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-liability rationale references Verdantis's $5,000,000 E&O per-occurrence limit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-liability rationale identifies Verdantis's SOW #4 position as $3,630,000, or 50% of SOW fees.",
+     "pass_if": true
+    },
+    {
+     "s": "The limitation-of-liability rationale identifies Crestline's SOW #4 position as $14,520,000, or 200% of SOW fees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-liability rationale references the SOW #3 precedent cap of 100% of SOW #3 fees and explains how the SOW #4 compromise departs from or tracks that precedent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The acceptance-testing rationale references the SOW #3 precedent of 20 business days with deemed acceptance and explains how the SOW #4 compromise relates to it.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The liquidated-damages rationale references the SOW #3 service-credit precedent of 0.5% per week capped at 10% per milestone and explains how the SOW #4 compromise departs from or tracks it.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP rationale references the SOW #3 precedent of Verdantis retaining IP with a license to Crestline and explains how the SOW #4 compromise relates to it.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP clause grants Crestline a license to PredictaCore\u2122-based pre-existing IP that is perpetual, non-exclusive, royalty-free, and for internal use.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP clause explicitly states whether the pre-existing IP license is limited to Plant 1/Breckton, Plant 2/Tremaine, and Plant 3/Whetstone or extends to additional Crestline facilities.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The proposed compromise clauses use defined terms consistent with the MSA and SOW drafts, such as 'Service Provider,' 'Customer,' 'Deliverable,' 'Milestone,' 'SOW Fees,' 'Pre-Existing IP,' or 'Custom Deliverables,' or substantially equivalent terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The acceptance-testing rationale addresses Crestline's argument that plant-floor integration complexity and production-cycle validation require longer testing windows.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The acceptance-testing rationale explains how the proposed period balances Crestline's need for adequate testing against Verdantis's interest in avoiding payment delays caused by extended testing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-liability clause includes or addresses a mutual exclusion of consequential, indirect, and/or punitive damages.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-liability rationale notes that the E&O policy excludes consequential and punitive damages and explains how the contractual exclusion aligns with insurance coverage.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable references the August 15, 2025 board-imposed execution deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable references the July 28, 2025 internal review deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The negotiation rationale uses both parties' mutual time pressure, including their work toward the same deadlines, as a reason supporting compromise.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise liquidated-damages clause uses the term 'liquidated damages,' rather than referring only to 'service credits.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The liquidated-damages clause states that the liquidated-damages amount is a genuine pre-estimate of loss.",
+     "pass_if": true
+    },
+    {
+     "s": "The liquidated-damages clause states that actual damages would be difficult to ascertain.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The stated limitation-of-liability cap dollar amount is arithmetically correct when the stated percentage or formula is applied to the $7,260,000 total SOW #4 fixed fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The acceptance-testing compromise retains a deemed-acceptance mechanism.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The acceptance-testing clause requires written notice before the deemed-acceptance clock starts.",
+     "pass_if": true
+    },
+    {
+     "s": "The acceptance-testing clause requires Verdantis to provide a detailed test report with each deliverable submission.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

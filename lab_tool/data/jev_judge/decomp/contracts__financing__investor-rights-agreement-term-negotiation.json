@@ -1,0 +1,578 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The demand registration compromise clause specifies exactly two (2) demand registrations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The demand registration clause states a minimum gross-proceeds or minimum aggregate offering amount threshold of at least $10,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The demand registration clause provides that failed, withdrawn, or not-declared-effective registrations do not count against the two-demand cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The demand registration eligibility trigger is set at approximately 4 years post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The demand registration eligibility trigger includes an alternative of 180 days post-Qualified IPO, whichever is earlier than the 4-year trigger.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The demand registration initiating-holder threshold is above 30.95% and at or below 38.10% of Registrable Securities, approximately 35%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rationale measures the initiating-holder threshold against all then-outstanding Registrable Securities and explains that Crestline's 2,666,667 shares (38.10% of 7,000,000) let it initiate alone while Pinehurst's 2,166,667 shares (30.95%) do not.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The demand registration clause gives the Company a deferral or postponement right capped at approximately 90 days.",
+     "pass_if": true
+    },
+    {
+     "s": "The Company may exercise the demand registration deferral or postponement right no more than once per 12-month period.",
+     "pass_if": true
+    },
+    {
+     "s": "The demand registration deferral or postponement right requires a good-faith board determination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The S-3 or shelf registration compromise proposes a frequency of approximately 3 per 12-month period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The S-3 or shelf registration minimum offering size is approximately $3,000,000, within the $2,000,000-to-$4,000,000 range.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The S-3 compromise rationale says that S-3 or shelf filings impose a lower administrative burden on the Company than full S-1 demand registrations and uses that distinction to justify a more permissive frequency.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Major Investor threshold for information rights is between 250,000 and 500,000 shares, approximately 350,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rationale shows the dollar amount represented by the Major Investor threshold at the Series B price of $12.00 per share.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale identifies which investors qualify or are excluded based on the capitalization table.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The information rights clause gives monthly management reports only to holders above a higher threshold, such as holders of at least 1,000,000 shares.",
+     "pass_if": true
+    },
+    {
+     "s": "The information rights clause gives standard quarterly and annual deliverables to all Major Investors at the lower threshold of approximately 350,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The board observer rights threshold is between 250,000 and 1,000,000 shares, approximately 500,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The board observer clause gives the Company a narrowly tailored right to exclude the observer for attorney-client privilege or competitive conflicts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pro rata rights clause covers priced equity rounds.",
+     "pass_if": true
+    },
+    {
+     "s": "The pro rata rights clause covers convertible instruments above a specified threshold of approximately $5,000,000, within the $4,000,000-to-$6,000,000 range.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pro rata rights clause excludes option pool increases from the definition of \u201cNew Securities.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pro rata rights clause requires a governance safeguard, such as board approval including at least one Series B director, for option pool increases or other sensitive carve-outs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise clause retains pay-to-play.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pay-to-play provision requires an investor to participate for at least 50% of its pro rata share.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pay-to-play penalty converts a non-participating investor's shares to shadow preferred stock rather than common stock.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rationale explains why full conversion to common stock is disproportionate compared with conversion to shadow preferred stock.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pay-to-play \u201cQualified Financing\u201d trigger specifies a dollar threshold of at least $5,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pay-to-play clause includes an exception for a down round, such as a financing priced below a specified percentage of the $12.00-per-share Series B OIP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The shadow preferred conversion clause identifies anti-dilution adjustment as a stripped right.",
+     "pass_if": true
+    },
+    {
+     "s": "The shadow preferred conversion clause identifies right of first offer or pro rata rights as a stripped right.",
+     "pass_if": true
+    },
+    {
+     "s": "The shadow preferred conversion clause identifies board designation and observer rights as stripped rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The shadow preferred conversion clause specifies that the retained liquidation preference is 1x non-participating.",
+     "pass_if": true
+    },
+    {
+     "s": "The shadow preferred conversion clause specifies that retained dividend rights are 8% non-cumulative.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rationale explains that shadow preferred conversion is more balanced than full conversion to common because it strips governance and protective rights while retaining economic preferences.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The MFN provision uses a notice-and-election mechanic rather than an automatic ratchet.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The MFN covers only an enumerated list of core economic rights, such as liquidation preference, dividends, anti-dilution, redemption, and registration rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The MFN provision expressly excludes governance rights, such as board seats, voting rights, and protective provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The MFN sunset is approximately 48 months or upon a Qualified IPO, whichever is earlier.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rationale explains how the approximately 48-month MFN sunset aligns with the expected 2028-2029 IPO window, including that May 2025 plus 48 months is May 2029.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The MFN provision excludes a down round, such as a future distressed financing priced below the $12.00-per-share Series B OIP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rationale explains the economic inequity of applying the MFN in down-round scenarios, where new investors accept distressed pricing risk that existing holders do not bear.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The MFN clause lets holders of a majority of outstanding Series B Preferred waive the MFN for a specific transaction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable includes a concession map or summary table showing approximately how many points land closer to the Company, closer to investors, and at genuine midpoints or novel compromises.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable preserves or expressly notes compatibility with Pinehurst's existing Series A rights: 1 demand registration, 2 S-3/year, a 500,000-share Major Investor threshold, board observer rights as lead Series A investor, and pro rata rights on priced rounds, with no pay-to-play or MFN.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Every compromise clause with a share-based threshold, including the Major Investor, board observer, and monthly reporting thresholds, includes anti-dilution adjustment language for stock splits, stock dividends, combinations, recapitalizations, or similar events.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pro rata rights clause includes an employee equity plan carve-out.",
+     "pass_if": true
+    },
+    {
+     "s": "The pro rata rights clause includes a strategic acquisition carve-out.",
+     "pass_if": true
+    },
+    {
+     "s": "The pro rata rights clause includes an equipment financing carve-out.",
+     "pass_if": true
+    },
+    {
+     "s": "The pro rata rights clause includes an IPO issuance carve-out.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable provides contract-ready clause language for registration rights, including demand and S-3 rights.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable provides contract-ready clause language for information and observer rights.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable provides contract-ready clause language for pro rata and pay-to-play rights.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable provides contract-ready clause language for the MFN.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each of the four provisions, the deliverable gives a negotiation rationale that identifies both parties' opening positions, explains the concession logic, and justifies the landing point.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The MFN \u201cSubsequent Financing\u201d trigger covers both equity securities and convertible instruments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pay-to-play clause lets a Non-Participating Investor regain Major Investor status by participating at a sufficient level in a later Qualified Financing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The pay-to-play clause states that regaining Major Investor status does not reverse the investor's prior shadow preferred conversion.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable either proposes a compromise for dispute resolution between JAMS San Francisco and Delaware Court of Chancery or explicitly flags dispute resolution for separate negotiation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The board observer rights clause explicitly states whether observers may attend committee meetings.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

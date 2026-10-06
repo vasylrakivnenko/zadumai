@@ -1,0 +1,22 @@
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 8896.78it/s]
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 10375.46it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 13547.80it/s]
+  cuad_tune: 100/1558 (291s)
+  cuad_tune: 200/1558 (473s)
+  cuad_tune: 300/1558 (656s)
+  cuad_tune: 400/1558 (902s)
+  cuad_tune: 500/1558 (1142s)
+  cuad_tune: 600/1558 (1341s)
+  cuad_tune: 700/1558 (1658s)
+  cuad_tune: 800/1558 (1774s)
+  cuad_tune: 900/1558 (1875s)
+  cuad_tune: 1000/1558 (2017s)
+  cuad_tune: 1100/1558 (2111s)
+  cuad_tune: 1200/1558 (2536s)
+  cuad_tune: 1300/1558 (2749s)
+  cuad_tune: 1400/1558 (3024s)
+  cuad_tune: 1500/1558 (3273s)
+done cuad_tune -> /root/zadumai_nli_proto/contract_map/typed/feats/cuad_tune_ft.jsonl (3377s)

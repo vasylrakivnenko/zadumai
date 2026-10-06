@@ -1,0 +1,16 @@
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 20338.22it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 22409.56it/s]
+  nda_ho: 100/1020 (246s)
+  nda_ho: 200/1020 (430s)
+  nda_ho: 300/1020 (610s)
+  nda_ho: 400/1020 (783s)
+  nda_ho: 500/1020 (973s)
+  nda_ho: 600/1020 (1145s)
+  nda_ho: 700/1020 (1316s)
+  nda_ho: 800/1020 (1508s)
+  nda_ho: 900/1020 (1723s)
+  nda_ho: 1000/1020 (1994s)
+done nda_ho -> /root/zadumai_nli_proto/contract_map/typed/feats/nda_ho.jsonl (2072s)

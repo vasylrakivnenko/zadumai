@@ -1,0 +1,907 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft's demand registration provision does not specify a minimum aggregate offering amount.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes a $10 million (or $10,000,000) minimum aggregate offering amount for demand registrations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft permits unlimited S-3/shelf registration requests per year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes limiting S-3/shelf registration requests to no more than two per 12-month period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft does not specify a minimum requested amount for S-3/shelf registrations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes a $5 million (or $5,000,000) minimum requested amount for each S-3/shelf registration request.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft's piggyback registration provision gives full piggyback rights without stating a cutback priority or order among selling holders.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes that the company's offering be cut back last in any piggyback registration cutback, giving the company first priority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes that, after the company receives priority, selling holders be cut back pro rata among themselves.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft's 180-day post-IPO lock-up permits transfers to affiliates during the lock-up period without underwriter consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes either removing the affiliate-transfer carve-out from the lock-up provision or conditioning affiliate transfers during the lock-up on underwriter consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft caps selling-holder counsel fees at $75,000 per registration, above the company playbook's $35,000 cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes reducing the selling-holder counsel fee cap from $75,000 to $35,000 per registration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft terminates registration rights five years post-IPO as one of two termination triggers and flags this as a deviation from the company playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes reducing the post-IPO registration rights termination period from five years to three years.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft requires annual audited financials within 90 days of fiscal year-end, compared with the playbook's 120-day deadline, and identifies the 90-day deadline as too aggressive.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes extending the annual audited financials delivery deadline from 90 days to 120 days post-fiscal-year-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft requires quarterly unaudited financials within 30 days of quarter-end, compared with the playbook's 45-day deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes extending the quarterly unaudited financials delivery deadline from 30 days to 45 days post-quarter-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft requires monthly management reports within 20 days of month-end, compared with the playbook's 30-day deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes extending the monthly management report delivery deadline from 20 days to 30 days post-month-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft's monthly management report requirement includes cash-runway data alongside ARR and churn.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable recommends excluding or removing cash-runway data from the standard monthly management reports.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft sets the board observation rights threshold at 3% of outstanding preferred stock, below the company playbook's 8% threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes raising the board observation rights threshold from 3% to 8% of outstanding preferred stock.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft allows information rights to extend or transfer to any transferee of Registrable Securities without company consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes requiring the company's prior written consent for any transfer of information rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft sets the Major Investor threshold at 500,000 shares of preferred stock, below the playbook's 1,000,000-share threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes raising the Major Investor threshold from 500,000 to 1,000,000 shares of preferred stock.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft extends pro-rata participation rights to all equity and equity-linked securities, including convertible debt, SAFEs, and warrant issuances, beyond the playbook's equity-only scope.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes narrowing the pro-rata participation right to equity securities only and expressly excluding convertible debt and SAFEs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft's pro-rata exercise period is 10 business days from company notice, compared with the playbook's 15 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes extending the pro-rata exercise period from 10 to 15 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft excludes only shares issued under the company's equity incentive plan up to the current reserved pool from pro-rata rights, with no additional carve-outs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes adding a pro-rata right exclusion for strategic-partnership issuances up to 2% of fully diluted capitalization.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes adding a pro-rata right exclusion for debt-financing warrants up to 1% of fully diluted capitalization.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft requires consent of a majority of Series C Preferred voting as a separate class for protective provisions, rather than all preferred stock voting together.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes that protective-provision consent come from a majority of all preferred stock voting together as a single class, not Series C voting separately.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft's investor consent threshold for incurrence of indebtedness is $250,000, below the playbook's $1,000,000 threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes raising the debt/indebtedness consent threshold from $250,000 to $1,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft's investor consent threshold for single capital expenditures is $150,000, below the playbook's $500,000 threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes raising the single capital expenditure consent threshold from $150,000 to $500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft makes hiring or termination of C-suite officers a matter requiring investor consent under the protective provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes removing C-suite hiring and termination from investor consent items and treating those decisions as board-level matters.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft requires investor consent for any ESOP pool increase, with no de minimis threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes limiting the ESOP pool increase consent requirement to increases exceeding 1% of fully diluted shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft's protective provisions have no IPO sunset or fall-away mechanism and therefore persist indefinitely post-IPO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes that all protective provisions fall away or terminate upon completion of a Qualified IPO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable specifies that the Qualified IPO trigger for protective-provision fall-away requires a minimum offering size of $75 million.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft eliminates the existing Series B holders' separate-class protective-provision vote by collapsing it into the Series C vote, with no separate consent required from Series A or Series B holders.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable recommends preserving the Series A and Series B protective provisions as separately negotiated in earlier rounds, rather than collapsing them into the Series C vote.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft limits investor confidentiality obligations to one year from receipt of information and flags that term as inadequate or a deviation from the company playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes replacing the one-year confidentiality term with a perpetual confidentiality obligation that has no fixed expiration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes that disclosures to limited partners of investor funds be permitted only with 10 business days' prior written notice to the company.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes adding a 'Highly Confidential' classification tier or equivalent enhanced-confidentiality designation for sensitive materials such as board-level financial projections and M&A-related information, with more restrictive handling requirements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues memo identifies the covenant restricting Vectris from investing in or acquiring any business that competes with any portfolio company of Granite Peak Ventures without Granite Peak's prior written consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues memo rates or classifies the company non-compete restriction as a high-risk, red-line, or deal-breaker item\u2014the highest severity tier used in the memo.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes deleting or striking the non-compete restriction that prohibits the company from investing in or acquiring businesses competing with Granite Peak portfolio companies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft fixes the board at seven directors, compared with the company playbook's maximum of five directors.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft provides two Series C investor-elected board seats, compared with the playbook's position of only one lead-investor-elected seat.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes a five-director board with two common-elected directors, one lead-investor-elected director, one prior-investor-elected director, and one independent director.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft requires only $5 million in aggregate D&O insurance coverage, below the playbook's $10 million minimum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes increasing the D&O insurance minimum from $5 million to $10 million in aggregate coverage.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft's most-favored-nation clause automatically grants Series C investors any more-favorable rights given to future investors, including governance rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes limiting the MFN clause to economic rights only and excluding governance rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes giving the company the right to offer equivalent rights instead of automatically adopting more-favorable rights for Series C investors under the MFN clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft requires consent of holders of 60% of Registrable Securities for amendment or waiver, above the playbook's simple-majority (>50%) threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes reducing the amendment/waiver consent threshold from 60% to a simple majority (greater than 50%) of Registrable Securities.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft gives Granite Peak Ventures a separate veto over any amendment that 'adversely affects' Series C investors, in addition to the general consent threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes eliminating Granite Peak's single-investor veto right over IRA amendments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft does not define 'adverse effect' or 'adversely affects' as the trigger for Granite Peak's veto right.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes defining 'adverse effect' or 'adversely affects' in the agreement if the term is retained in any provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft does not include a market-standard standstill provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes adding a mutual standstill provision to the IRA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies that the counterparty draft does not include an MNPI wall or Regulation FD cleansing/safe-harbor mechanism.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes adding an MNPI wall, a Regulation FD cleansing mechanism, or a safe-harbor provision to the IRA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C077",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The issues memo assigns a risk rating or equivalent severity classification to each material deviation or issue it identifies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C078",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The issues memo provides a recommended negotiating position, proposed resolution, or recommended course of action for each deviation it identifies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C079",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft allows annual inspection of company books by investor-designated auditors at the company's expense.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C080",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable proposes that the annual inspection of company books be conducted at the investor's own expense.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C081",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable flags that the counterparty draft allows Major Investors to elect to purchase unsubscribed shares on a further pro-rata basis among electing Major Investors.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C082",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable states the company's preference against an over-allotment right or recommends removing the over-allotment provision.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

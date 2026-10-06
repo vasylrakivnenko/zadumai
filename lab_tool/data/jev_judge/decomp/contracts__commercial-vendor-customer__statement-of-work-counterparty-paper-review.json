@@ -1,0 +1,630 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates SOW \u00a77.2's outright assignment of custom-deliverable IP to Helios as a High Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends that Verdantis retain all background IP.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends granting Helios a perpetual, non-exclusive license to custom deliverables, consistent with the playbook standard.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that IP ownership is a 'must-win' issue per Priya Nandakumar / client instructions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the liability cap in SOW \u00a79 as a High Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the SOW liability cap is $1,132,500 (6 \u00d7 $188,750).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the playbook cap is the greater of 12 months' fees ($2,265,000) or $3,000,000, yielding $3,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies the liability-cap gap as $1,867,500 ($3,000,000 \u2212 $1,132,500).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends raising the liability cap to at least $3,000,000 (the greater of 12 months' fees or $3M).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a79's one-way consequential-damages exclusion, which applies only to Helios and leaves Verdantis exposed, as a High Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a mutual exclusion of consequential, incidental, and punitive damages applicable to both parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a75's uncapped SLA penalties, starting at 15% of monthly fees per incident, as a High Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends capping aggregate SLA credits at 10% of monthly fees per month, consistent with the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a711's one-way termination for convenience (Helios only, 30 days' notice, no wind-down fees, and no Verdantis T-for-C right) as a High Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends mutual termination-for-convenience rights.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends 90 days' written notice for termination for convenience.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends wind-down fees for termination for convenience.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a714's undefined 'minor scope adjustments' change-order carve-out as a High Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends that all scope changes require a mutual written change order with pricing adjustment.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends defining 'minor scope adjustments' with a dollar and/or hours threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a78's one-way indemnification, under which Verdantis indemnifies Helios with no reciprocal obligation, as a High Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends making indemnification mutual.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends that each party indemnify for its own negligence and IP infringement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a710's 12-month warranty period as a Medium Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends reducing the warranty to 90 days post-acceptance per deliverable, consistent with the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a713's insurance requirements as a Medium Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the CGL gap as $2M current vs. $5M demanded.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the umbrella gap as $5M current vs. $10M demanded.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the E&O gap as $3M current vs. $10M demanded.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends aligning insurance requirements with playbook minimums ($2M CGL / $5M umbrella / $3M E&O) or at most Verdantis's current policy limits.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a76's acceptance-testing provision as a Medium Risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that SOW \u00a76 provides 45 calendar days rather than 15 business days for acceptance testing.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that rejection under SOW \u00a76 is in 'sole discretion.'",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that SOW \u00a76 allows unlimited re-performance cycles.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends 15 business days per milestone for acceptance testing.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends deemed acceptance absent written objection.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends objective acceptance criteria.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a74's Net 60 payment terms as a Medium Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends Net 30 as the primary payment position.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends Net 45 as an acceptable payment compromise/fallback.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a712's data-security provision as a deviation and notes that the DPA is missing.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that SOW \u00a712 specifies no encryption standard.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that SOW \u00a712 uses vague 'industry-standard security' language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends replacing vague security language with a specific SOC 2 Type II requirement.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends replacing vague security language with an AES-256 encryption-at-rest requirement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends attaching the Verdantis standard DPA template as an exhibit to the SOW.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a716's Virginia law / Fairfax County Circuit Court provision as a Low Risk deviation from the playbook (Delaware law / Court of Chancery).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends Delaware law as the primary governing-law position.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends Virginia law with federal court venue as an acceptable fallback.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags SOW \u00a715's audit-rights provision as a Low Risk deviation and notes unlimited audits, 10 days' notice, and undefined 'material deficiency' cost-shifting.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends limiting audits to once per 12-month period.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends 30 days' notice for audits.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends that audits be at the auditing party's expense.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends guardrails to protect proprietary cost data.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the absence of a non-solicitation provision as a Low Risk deviation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends adding a mutual 12-month non-solicit of personnel engaged in the SOW.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the prior history of Helios recruiting Verdantis engineers mid-project.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies the 14 playbook-enumerated risk-tiered deviations as 7 High Risk items, 4 Medium Risk items, and 3 Low Risk items; it does not count the separately flagged \u00a712 data-security / missing-DPA item as a 15th item or assign it a High/Medium rating.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline shows tracked-changes revisions to all 14 risk-tiered deviating provisions of the Helios SOW, implementing Verdantis's preferred positions or, where the client has indicated flexibility, acceptable fallback positions; the \u00a712 data-security / DPA markup is not counted among these 14 provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that any High Risk playbook deviation requires General Counsel Sandra Yoo's personal sign-off before it can be accepted, per the playbook escalation procedure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo discusses the MSA (VS-HFS-2024-0011) order-of-precedence clause, under which the MSA controls unless the SOW expressly states otherwise.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies specific SOW provisions that may conflict with or attempt to override MSA-level protections without express language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Total Contract Value (TCV) as $6,480,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Annual Contract Value (ACV) as $3,240,000/year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Phase 1 fixed fee as $1,950,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the Phase 1 milestone amounts as $585,000, $780,000, and $585,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the Phase 2 monthly fee as $188,750/month for 24 months, totaling $4,530,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Helios has potential for approximately $8M in additional SOWs in FY2026.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies IP, liability cap, and consequential damages as must-win issues and distinguishes them from concession candidates such as payment terms/Net 45 and governing law/Virginia.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes adding the Verdantis standard DPA template as a new exhibit to the SOW.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline replaces or supplements the vague 'industry-standard security' language in \u00a712 with a specific reference to SOC 2 Type II compliance.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline replaces or supplements the vague 'industry-standard security' language in \u00a712 with a specific reference to AES-256 encryption at rest.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "At least one deliverable references or is dated/addressed for delivery by June 6, 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "At least one deliverable references the June 16, 2025 negotiation session with Helios.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

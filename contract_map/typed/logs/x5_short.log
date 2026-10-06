@@ -1,0 +1,10 @@
+learned parser vs the grammar (5-fold CV, 3062 typed questions): asks 82.4%, action 87.5%; sure (both p >= 0.8) on 52.0%, both right there 90.7%
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 20070.34it/s]
+done short_tune: 896 untyped questions (118s)
+done short_ho: 428 untyped questions (55s)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 20577.55it/s]
+done wc1_open: 7 untyped questions (8s)
+done wc1_sealed: 19 untyped questions (32s)

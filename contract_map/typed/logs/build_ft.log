@@ -1,0 +1,19 @@
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 4152.21it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 45416.61it/s]
+  NDAs 50/284: 2566 rows
+  NDAs 100/284: 5035 rows
+  NDAs 150/284: 7481 rows
+  NDAs 200/284: 9919 rows
+  NDAs 250/284: 12391 rows
+  CUAD 20/160: 15809 rows
+  CUAD 40/160: 17592 rows
+  CUAD 60/160: 19364 rows
+  CUAD 80/160: 21223 rows
+  CUAD 100/160: 22996 rows
+  CUAD 120/160: 24703 rows
+  CUAD 140/160: 26516 rows
+  CUAD 160/160: 28334 rows
+rows: 40334 Counter({('ft_cuad', 2): 12105, ('ft_cnli', 2): 9520, ('old', 2): 7349, ('ft_cnli', 1): 3440, ('old', 1): 2632, ('ft_cuad', 1): 2164, ('old', 0): 2019, ('ft_cnli', 0): 1105})

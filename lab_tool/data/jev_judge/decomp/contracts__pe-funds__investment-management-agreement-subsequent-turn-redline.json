@@ -1,0 +1,739 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline states that the management fee during the Investment Period is 1.85% per annum on committed capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline states that the post-Investment Period management fee is 1.35% per annum on invested capital at cost.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline provides for a step-down to 1.20% on invested capital at cost beginning in Year 8, on March 14, 2032.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline specifies that management fees are calculated quarterly in arrears.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline provides for a 100% Management Fee Offset covering all transaction, monitoring, and directors' fees received by the Manager or its affiliates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline sets the concentration limit at 17.5% of aggregate commitments, measured at cost at the time of investment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline sets the acquisition leverage cap at 5.5\u00d7 EBITDA at the close of acquisition.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline sets a separate add-on/follow-on leverage cap at 6.0\u00d7 EBITDA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline specifies U.S. and Canada as the investment geography, with up to 10% of aggregate commitments investable in Mexico and other USMCA jurisdictions subject to prior LPAC consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline sets a 120-day limit on bridge financing without LPAC consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline grants co-investment first-look rights to LPs with commitments of $100M or more.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline states that the co-investment first-look applies to deals where the Fund's equity check exceeds $125M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline specifies that co-investment is offered pro rata by commitment size with a 5-business-day response window.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline provides that no management fee or carried interest applies to co-invest vehicles.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline states that the Manager retains discretion to allocate remaining co-investment after the first-look period expires.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline requires LPAC consent for affiliate co-investment by other Granite Peak funds if aggregate affiliated co-investment exceeds 25% of equity in any single deal.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline specifies that co-invest vehicles are structured as separate limited partnerships without fee or carry.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline names Marcus J. Calloway, Priya S. Nair, and David T. Lundgren as the three Key Persons.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline requires at least two of the three Key Persons to devote 60% or more of their professional time to Fund IV.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline provides for automatic Investment Period Suspension if fewer than two Key Persons satisfy the time threshold for 60 consecutive days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline sets the Key Person cure period at 120 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline provides that, if the Key Person event is not cured, the LPAC may call an LP vote on (a) termination of the Investment Period or (b) termination of the IMA for Cause, with a threshold of 50% in interest of LPs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline Cause definition includes gross negligence, fraud, willful misconduct, and material breach uncured for 90 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline expressly limits No-Fault Termination to the period after the end of the Investment Period.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline permits No-Fault Termination during the Investment Period.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline requires a 75% LP vote measured by interest for No-Fault Termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline provides for a 12-month management fee tail as a consequence of No-Fault Termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline provides for continued carry on existing investments at the termination date as a consequence of No-Fault Termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline standard of care covers gross negligence, fraud, willful misconduct, bad faith, and material violation of the IMA or applicable law.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline sets the indemnification cap at the greater of (x) aggregate management fees received to date and (y) a $20M floor.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline provides that the indemnification cap shall in no event exceed 50% of aggregate commitments and specifies recalculation at final close.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline excludes from indemnification matters arising from conduct meeting the for-Cause standard.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline requires quarterly portfolio company operating summaries and unaudited financial statements within 45 days of each portfolio company's quarter-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline grants LPAC members only the right to request board observation rights on a deal-by-deal basis, subject to a confidentiality agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline grants real-time access to portfolio company board materials.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline restricts the Manager from commencing fundraising for a successor fund until the earlier of (a) 70% of aggregate commitments being invested or committed to signed LOIs or (b) the fourth anniversary of the first close, March 14, 2029.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline expressly excludes continuation vehicles and structured secondaries from the definition of successor fund.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline requires disclosure to the LPAC within 15 business days of personal investments by Key Persons exceeding $250,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline is formatted as tracked changes against the Mark 2 LPAC Redline (ima-mark-2-lpac-redline.docx as base), with insertions and deletions showing the changes from Mark 2 to Mark 3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The updated issues list contains all eight negotiation issues: Management Fee, Investment Restrictions, Co-Investment, Reporting, Conflicts, Key Person, Termination, and Standard of Care/Indemnification.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "All eight issues in the issues list are marked 'Resolved'.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The issues list includes a 'Mark 3 Resolution' column or equivalent that notes specific compromise terms for each of the eight issues.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline cross-references LPA \u00a73.1 for the Hard Cap ($1.50B) and Final Close provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline cross-references LPA \u00a78.4 for Clawback.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline cross-references LPA \u00a712.3 for Fund Term Extensions subject to LPAC Consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Every LPA cross-reference in the Mark 3 redline uses a correct, current section number per fund-iv-lpa-excerpts.docx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline includes an arbitration clause in the dispute resolution section (Art. XIII or Miscellaneous) naming AAA (American Arbitration Association) as the arbitration forum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline specifies Boston, MA as the venue for AAA arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline includes Meridian-specific regulatory carve-out language in the representations article accommodating Bermuda Monetary Authority requirements and recognizing Meridian Insurance Group, Ltd.'s Bermuda domicile.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Applied to first-close committed capital, the IMA fee formula of 1.85% on committed capital, quarterly in arrears, yields an annual management fee of $13.69M ($740M \u00d7 1.85%) and a quarterly installment of $3.4225M ($13.69M \u00f7 4), consistent with management-fee-schedule.xlsx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline identifies the Fund as Granite Peak Capital Partners IV, L.P.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline identifies the General Partner as Granite Peak Capital GP IV, LLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline identifies the Investment Manager as Granite Peak Capital Advisors, LLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline includes these EINs: Fund IV 93-4471582, GP IV 93-4390217, and GPCA 84-2917453.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline includes the Manager's SEC registration as File No. 801-88234.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline states the shared principal office address as 200 Clarendon Street, Suite 3400, Boston, MA 02116.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline specifies Delaware as the governing law.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline uses 'invested capital at cost' or equivalent as the basis for post-Investment Period fees.",
+     "pass_if": true
+    },
+    {
+     "s": "The Mark 3 redline uses 'net of write-downs' or similar language allowing write-down adjustments as the post-Investment Period fee basis.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline cross-references LPA \u00a78.1\u20138.4 for carried interest without independently restating or modifying the 20% carry, 8% preferred return compounded annually, 80/20 catch-up, or clawback per \u00a78.4 economics.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline clearly makes the 12-month management fee tail and continued carry on existing investments conditions or consequences of No-Fault Termination only, not for-Cause termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues list reflects 1.85% as the Investment Period management fee compromise rate and does not indicate room for further LP concession below that rate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline reflects a 1.85% Investment Period management fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline is dated May 9, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline defines the Investment Period as 5 years from the first close, specifically March 14, 2025 to March 14, 2030.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline defines the Fund Term as 10 years from the first close, specifically March 14, 2025 to March 14, 2035.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Mark 3 redline provides for two 1-year extensions by GP election subject to LPAC consent per LPA \u00a712.3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Throughout the Mark 3 redline, the Investment Period ends March 14, 2030, the Fund Term ends March 14, 2035, and the Year 8 step-down date is March 14, 2032, with no conflicting dates.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

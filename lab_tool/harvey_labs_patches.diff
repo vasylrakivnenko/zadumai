@@ -1,0 +1,266 @@
+diff --git a/evaluation/judge.py b/evaluation/judge.py
+index 4f97e0c2..d6fa4f4b 100644
+--- a/evaluation/judge.py
++++ b/evaluation/judge.py
+@@ -32,6 +32,8 @@ _VERDICT_SCHEMA = {
+ def _detect_provider(model: str) -> str:
+     """Return 'anthropic', 'google', 'openai', or 'mistral' from the model name."""
+     name = model.lower()
++    if name.startswith(("accounts/fireworks/", "fireworks/")):  # Zadum pilot
++        return "fireworks"
+     if name.startswith("claude"):
+         return "anthropic"
+     if name.startswith("gemini"):
+@@ -54,7 +56,10 @@ class Judge:
+         """
+         self.model = model
+         self.provider = _detect_provider(model)
+-        if self.provider == "anthropic":
++        if self.provider == "fireworks":
++            self.client = openai.OpenAI(api_key=os.environ["FIREWORKS_API_KEY"], base_url="https://api.fireworks.ai/inference/v1", max_retries=6)
++            self.model = model.removeprefix("fireworks/")
++        elif self.provider == "anthropic":
+             self.client = anthropic.Anthropic(max_retries=1)
+         elif self.provider == "google":
+             self.client = genai.Client()
+@@ -86,6 +91,8 @@ class Judge:
+             return self._evaluate_google(prompt, temperature, _retries)
+         if self.provider == "openai":
+             return self._evaluate_openai(prompt, temperature, _retries)
++        if self.provider == "fireworks":
++            return self._evaluate_fireworks(prompt, temperature, _retries)
+         return self._evaluate_mistral(prompt, temperature, _retries)
+ 
+     def _evaluate_anthropic(self, prompt: str, temperature: float, _retries: int) -> dict:
+@@ -192,6 +199,29 @@ class Judge:
+             f"Judge returned unparseable response after {_retries} attempts: {last_err}"
+         )
+ 
++    def _evaluate_fireworks(self, prompt: str, temperature: float, _retries: int) -> dict:
++        last_err: Exception | None = None
++        for attempt in range(_retries):
++            kwargs = {"model": self.model, "messages": [{"role": "user", "content": prompt}], "temperature": temperature, "max_tokens": 16384}
++            if attempt < _retries - 1:
++                kwargs["response_format"] = {"type": "json_object"}
++            try:
++                response = self.client.chat.completions.create(**kwargs)
++            except Exception as e:
++                last_err = e
++                continue
++            text = response.choices[0].message.content or ""
++            u = response.usage  # Zadum pilot: log usage for the cost report
++            if u:
++                cached = getattr(getattr(u, "prompt_tokens_details", None), "cached_tokens", 0) or 0
++                with open(os.environ.get("LAB_JUDGE_USAGE", "/root/zadumai_nli_proto/lab_tool/runs/pilot/judge_usage.jsonl"), "a") as f:
++                    f.write(json.dumps({"model": self.model, "prompt": u.prompt_tokens, "cached": cached, "completion": u.completion_tokens}) + "\n")
++            try:
++                return self._parse_json(text)
++            except (ValueError, json.JSONDecodeError) as e:
++                last_err = e
++        raise ValueError(f"Judge returned unparseable response after {_retries} attempts: {last_err}")
++
+     def _evaluate_mistral(self, prompt: str, temperature: float, _retries: int) -> dict:
+         last_err: Exception | None = None
+         for attempt in range(_retries):
+diff --git a/harness/adapters/fireworks.py b/harness/adapters/fireworks.py
+index 35efcbd6..094ceece 100644
+--- a/harness/adapters/fireworks.py
++++ b/harness/adapters/fireworks.py
+@@ -27,7 +27,10 @@ class FireworksAdapter(ModelAdapter):
+             self.model = f"accounts/fireworks/models/{self.model}"
+         # Explicit key: openai.OpenAI(api_key=None) silently falls back to
+         # OPENAI_API_KEY, which would then be sent to Fireworks.
++        # Zadum pilot: a hung or runaway call failed only after 3 x 600 s (client default); bound it instead.
++        if os.environ.get("LAB_MAX_OUTPUT"): self.max_tokens = int(os.environ["LAB_MAX_OUTPUT"])
+         self.client = openai.OpenAI(
++            timeout=float(os.environ.get("LAB_CALL_TIMEOUT", "600")), max_retries=0,
+             api_key=os.environ["FIREWORKS_API_KEY"],
+             base_url=os.environ.get(
+                 "FIREWORKS_API_BASE",
+@@ -36,6 +39,15 @@ class FireworksAdapter(ModelAdapter):
+         )
+ 
+     def chat(self, messages: list[dict], tools: list[dict]) -> ModelResponse:
++        # Zadum pilot: DeepSeek V4.1 Flash has a 1M window on Fireworks; the recorded V4 Flash runs overflowed at ~256k.
++        # Estimate this prompt from the last one's measured size + the new messages (chars / 3) and refuse past the cap.
++        cap = int(os.environ.get("LAB_CONTEXT_CAP", "0"))
++        if cap:
++            import json as _json
++            n_new = len(messages) - getattr(self, "_n_msgs", 0)
++            est = getattr(self, "_last_prompt", 0) + sum(len(_json.dumps(m, default=str)) for m in messages[-n_new:]) // 3 if n_new > 0 else 0
++            if est + 8192 > cap:
++                raise RuntimeError(f"context_length_exceeded: emulated {cap}-token window (estimated prompt {est:,})")
+         response = None
+         last_error = None
+         kwargs = {}
+@@ -45,26 +57,52 @@ class FireworksAdapter(ModelAdapter):
+             kwargs["extra_body"] = {"reasoning_effort": self.reasoning_effort}
+         else:
+             kwargs["temperature"] = self.temperature
+-        for attempt in range(_MAX_RETRIES):
+-            try:
+-                response = self.client.chat.completions.create(
+-                    model=self.model,
+-                    messages=messages,
+-                    tools=[self._translate_tool(t) for t in tools],
+-                    max_tokens=self.max_tokens,
+-                    **kwargs,
+-                )
++        resamples = int(os.environ.get("LAB_RESAMPLE_LENGTH", "0"))
++        for draw in range(resamples + 1):  # Zadum pilot: a reasoning loop that hits the output limit without a tool call is redrawn
++            response = None
++            for attempt in range(_MAX_RETRIES):
++                try:
++                    response = self.client.chat.completions.create(
++                        model=self.model,
++                        messages=messages,
++                        tools=[self._translate_tool(t) for t in tools],
++                        max_tokens=self.max_tokens,
++                        **kwargs,
++                    )
++                    break
++                except (openai.RateLimitError, openai.APIConnectionError, openai.InternalServerError) as e:  # Zadum pilot: connection errors too (client retries off)
++                    if "Context size has been exceeded" in str(e):  # llama.cpp's overflow: end the episode as LAB does
++                        raise RuntimeError(f"context_length_exceeded: {e}")
++                    if "Failed to parse tool call arguments" in str(e):  # llama.cpp: a tool call cut off at the output limit
++                        response = "unparsable"; break
++                    last_error = e
++                    if attempt < _MAX_RETRIES - 1:
++                        time.sleep(min(60, 15 * (attempt + 1)))
++
++            if response is None:
++                raise last_error
++            if response == "unparsable":  # redraw it like a looping response; the last draw ends the episode as truncated
++                self.length_redraws = getattr(self, "length_redraws", 0) + 1
++                if draw < resamples: continue
++                raise RuntimeError("context_length_exceeded: tool call cut off at the output limit (llama.cpp could not parse it)")
++
++            choice = response.choices[0]
++            message_obj = choice.message
++            if choice.finish_reason == "length" and os.environ.get("LAB_DEBUG_DIR"):  # Zadum pilot: what runs away?
++                import json as _json, time as _time
++                os.makedirs(os.environ["LAB_DEBUG_DIR"], exist_ok=True)
++                with open(os.path.join(os.environ["LAB_DEBUG_DIR"], f"length_{int(_time.time())}_draw{draw}.json"), "w") as f:
++                    _json.dump(message_obj.model_dump(exclude_none=True), f)
++            u = response.usage  # Zadum pilot: every draw's usage, cached tokens included, for the cost report
++            if u and os.environ.get("LAB_USAGE_LOG"):
++                import json as _json
++                cached = getattr(getattr(u, "prompt_tokens_details", None), "cached_tokens", 0) or 0
++                with open(os.environ["LAB_USAGE_LOG"], "a") as f:
++                    f.write(_json.dumps({"prompt": u.prompt_tokens, "cached": cached, "completion": u.completion_tokens, "finish": choice.finish_reason}) + "\n")
++            self.length_redraws = getattr(self, "length_redraws", 0)
++            if not (choice.finish_reason == "length" and not message_obj.tool_calls) or draw == resamples:
+                 break
+-            except (openai.RateLimitError, openai.APITimeoutError, openai.InternalServerError) as e:
+-                last_error = e
+-                if attempt < _MAX_RETRIES - 1:
+-                    time.sleep(min(60, 15 * (attempt + 1)))
+-
+-        if response is None:
+-            raise last_error
+-
+-        choice = response.choices[0]
+-        message_obj = choice.message
++            self.length_redraws += 1
+         message = message_obj.model_dump(exclude_none=True)
+ 
+         tool_calls = []
+@@ -78,6 +116,8 @@ class FireworksAdapter(ModelAdapter):
+             )
+ 
+         usage = response.usage
++        self._last_prompt = (usage.prompt_tokens + usage.completion_tokens) if usage else 0
++        self._n_msgs = len(messages) + 1  # + the assistant message the loop appends
+         return ModelResponse(
+             message=message,
+             tool_calls=tool_calls,
+diff --git a/harness/run.py b/harness/run.py
+index f306576e..a409222e 100644
+--- a/harness/run.py
++++ b/harness/run.py
+@@ -337,6 +337,10 @@ def main(args):
+         skills_text = load_skills(skill_names)
+         system_prompt += skills_text
+         setup_skill_scripts(skill_names, workspace_dir)
++    if os.environ.get("LAB_CONTRACT_TOOL"):  # Zadum pilot: the 7th tool, described in general terms
++        system_prompt += ("\n\n## contract_tool\n\nUse `contract_tool` to find, check and compare information in the source "
++                          "documents without reading them whole (outline, find, show, changes, compare). It also shows tracked "
++                          "changes, which `read` does not display. Use `read` when you need a whole document.")
+     user_prompt = task["instructions"]
+ 
+     # Run the agent
+diff --git a/harness/tools.py b/harness/tools.py
+index 67e2b2e5..81234cd4 100644
+--- a/harness/tools.py
++++ b/harness/tools.py
+@@ -24,6 +24,7 @@ Architecture:
+ """
+ 
+ import json
++import os
+ import re
+ import shlex
+ from pathlib import Path
+@@ -195,9 +196,36 @@ TOOL_DEFINITIONS = [
+ ]
+ 
+ 
++# Zadum pilot (2026-10-05): our contract tool as a 7th tool, only when LAB_CONTRACT_TOOL (the tool server's URL) is set.
++CONTRACT_TOOL_DEFINITION = {
++    "name": "contract_tool",
++    "description": (
++        "Works on the source documents in documents/ (.docx, .xlsx, .pptx, .eml, .pdf, .txt) without loading them whole. "
++        "action=outline: every document with its size and title (no document), or one document's headings and clause "
++        "numbers. action=find: the passages most relevant to `query` (all documents, or `document`), each with its "
++        "document, section, clause number and paragraph id (¶). action=show: paragraphs of `document` in full; `query` = "
++        "a clause number (4.2) or a ¶ range (62-73). action=changes: the tracked changes (insertions / deletions) in "
++        "`document`, clause by clause; `query` puts the relevant ones first. action=compare: two versions of an agreement "
++        "aligned paragraph by paragraph (`document` = older, `against` = newer), word-level differences. Long answers "
++        "page with `offset`."
++    ),
++    "parameters": {
++        "type": "object",
++        "properties": {
++            "action": {"type": "string", "enum": ["outline", "find", "show", "changes", "compare"]},
++            "query": {"type": "string", "description": "find: a question, topic, clause, fact or defined term; show: a clause number or ¶ range"},
++            "document": {"type": "string", "description": "a file name in documents/"},
++            "against": {"type": "string", "description": "compare: the newer version"},
++            "offset": {"type": "integer", "description": "changes / compare: where to continue"},
++        },
++        "required": ["action"],
++    },
++}
++
++
+ def get_all_tool_definitions() -> list[dict]:
+     """Get all tool definitions."""
+-    return list(TOOL_DEFINITIONS)
++    return list(TOOL_DEFINITIONS) + ([CONTRACT_TOOL_DEFINITION] if os.environ.get("LAB_CONTRACT_TOOL") else [])
+ 
+ 
+ # ── Tool Executor ──────────────────────────────────────────────────────
+@@ -364,6 +392,8 @@ class ToolExecutor:
+                     arguments.get("pattern", ""),
+                     arguments.get("path"),
+                 )
++            elif tool_name == "contract_tool" and os.environ.get("LAB_CONTRACT_TOOL"):
++                return self._contract_tool(arguments)
+             elif tool_name == "grep":
+                 return self._grep(
+                     arguments.get("pattern", ""),
+@@ -497,6 +527,15 @@ class ToolExecutor:
+             return self.workspace_dir / rel
+         raise ValueError(f"unmapped sandbox path: {sb_path}")
+ 
++    def _contract_tool(self, args: dict) -> str:
++        """Runs on the host against the documents mount, like grep (Zadum pilot)."""
++        import urllib.request
++        self.contract_tool_count = getattr(self, "contract_tool_count", 0) + 1
++        body = json.dumps({"docs_dir": str(self._sandbox_to_host_path(DOCUMENTS_PATH)), **{k: args.get(k) for k in ("action", "query", "document", "against", "offset")}}).encode()
++        req = urllib.request.Request(os.environ["LAB_CONTRACT_TOOL"], data=body, headers={"Content-Type": "application/json"})
++        with urllib.request.urlopen(req, timeout=600) as r:
++            return json.loads(r.read())["text"]
++
+     def _write(self, file_path: str, content: str) -> str:
+         if not file_path:
+             return "Error: file_path is required"

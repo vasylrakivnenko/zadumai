@@ -1,0 +1,6 @@
+ledgar       n 1000: TF-IDF 91.0% | Jev 82.7% | p<0.5→Jev: 91.0% (Jev 2%) | p<0.7→Jev: 91.1% (Jev 4%) | p<0.9→Jev: 90.8% (Jev 8%)
+cuad_clause  n 1000: TF-IDF F1 0.673 | Jev 0.633 | unsure [0.4,0.8)→Jev: 0.689 (Jev 11%) | unsure [0.3,1.0)→Jev: 0.616 (Jev 50%)
+tos          n 1000: TF-IDF F1 0.723 | Jev 0.437 | unsure [0.4,0.8)→Jev: 0.741 (Jev 5%) | unsure [0.3,1.0)→Jev: 0.698 (Jev 16%)
+opp115       n 763: TF-IDF F1 0.769 | Jev 0.741 | unsure [0.3,0.7)→Jev: 0.786 (Jev 16%) | unsure [0.2,1.0)→Jev: 0.742 (Jev 97%)
+contractnli  n 1000: TF-IDF F1 0.734 | Jev 0.592 | unsure [0.5,0.9)→Jev: 0.732 (Jev 9%) | unsure [0.4,1.0)→Jev: 0.577 (Jev 56%)
+lease        n 1000: TF-IDF F1 0.265 | Jev 0.309 | unsure [0.6,1.0)→Jev: 0.245 (Jev 8%) | unsure [0.5,1.0)→Jev: 0.264 (Jev 9%)

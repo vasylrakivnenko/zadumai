@@ -1,0 +1,72 @@
+{
+ "band": {
+  "lo": 0.1,
+  "hi": 0.9400000000000004,
+  "target": 0.9886399495108867
+ },
+ "pass_to_pass": 0.9824750930260472,
+ "test_records": {
+  "criteria": 2385,
+  "episodes": 43,
+  "label_pass_rate": 0.942,
+  "jev_alone_agreement": 0.9652,
+  "jev_alone_kappa": 0.678,
+  "decided_by_jev": 0.883,
+  "agreement_when_decided": 0.9914,
+  "hybrid_agreement": 0.9883,
+  "hybrid_kappa": 0.895,
+  "one_llm_pass_agreement": 0.9933,
+  "one_llm_pass_kappa": 0.94,
+  "task_score_mae_hybrid": 0.0094,
+  "task_score_mae_one_llm_pass": 0.0059,
+  "task_score_mae_jev_alone": 0.0222
+ },
+ "kimi_runs": {
+  "criteria": 884,
+  "episodes": 16,
+  "label_pass_rate": 0.928,
+  "jev_alone_agreement": 0.9717,
+  "jev_alone_kappa": 0.8,
+  "decided_by_jev": 0.822,
+  "agreement_when_decided": 0.9986,
+  "hybrid_agreement": 0.9989,
+  "hybrid_kappa": 0.992,
+  "one_llm_pass_agreement": 1.0,
+  "one_llm_pass_kappa": 1.0,
+  "task_score_mae_hybrid": 0.0011,
+  "task_score_mae_one_llm_pass": 0.0,
+  "task_score_mae_jev_alone": 0.0192
+ },
+ "test_whole-document criteria": {
+  "criteria": 275,
+  "episodes": 43,
+  "label_pass_rate": 0.902,
+  "jev_alone_agreement": 0.96,
+  "jev_alone_kappa": 0.745,
+  "decided_by_jev": 0.818,
+  "agreement_when_decided": 0.9867,
+  "hybrid_agreement": 0.9818,
+  "hybrid_kappa": 0.896,
+  "one_llm_pass_agreement": 0.9818,
+  "one_llm_pass_kappa": 0.899,
+  "task_score_mae_hybrid": 0.0142,
+  "task_score_mae_one_llm_pass": 0.0129,
+  "task_score_mae_jev_alone": 0.0337
+ },
+ "test_retrieved passages": {
+  "criteria": 1380,
+  "episodes": 22,
+  "label_pass_rate": 0.935,
+  "jev_alone_agreement": 0.963,
+  "jev_alone_kappa": 0.705,
+  "decided_by_jev": 0.893,
+  "agreement_when_decided": 0.9878,
+  "hybrid_agreement": 0.9833,
+  "hybrid_kappa": 0.868,
+  "one_llm_pass_agreement": 0.9913,
+  "one_llm_pass_kappa": 0.93,
+  "task_score_mae_hybrid": 0.0178,
+  "task_score_mae_one_llm_pass": 0.009,
+  "task_score_mae_jev_alone": 0.0255
+ }
+}

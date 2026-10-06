@@ -1,0 +1,1048 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation includes the reference number CONF-2025-IRS-00417 in its header or recitals section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation includes the USI 1030549300-7ZKR-20250604-001 in its header or recitals section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation recites that it supplements, forms part of, and is subject to the 2002 ISDA Master Agreement.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states the Master Agreement is dated as of March 12, 2021.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation identifies Meridian Bancorp N.A. as Party A to the Master Agreement.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation identifies Thornfield Capital Partners LP as Party B to the Master Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation references the Master Agreement by the internal reference number ISDA-MA-2021-0312-MBNATHCP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation identifies Party A as Meridian Bancorp N.A.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states Party A's entity type as National Banking Association.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party A's LEI as 5493007ZKR2T4XBQ9W61.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party A's registered address as 200 Harborview Plaza, 14th Floor, Wilmington, Delaware 19801.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation designates Party A (Meridian Bancorp N.A.) as the Fixed Rate Payer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation identifies Party B as Thornfield Capital Partners LP.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states Party B's entity type as Delaware Limited Partnership.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party B's LEI as 2549003HFGL8RT5YVN44.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party B's address as 440 Lexington Avenue, Suite 3200, New York, New York 10017.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation designates Party B (Thornfield Capital Partners LP) as the Floating Rate Payer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Trade Date as June 4, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Effective Date as June 16, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Termination Date as June 16, 2030.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the initial Notional Amount as USD 175,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Confirmation includes a notional amortization schedule (inline table or annex) showing five periods.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The amortization schedule shows a Period 2 notional of $157,500,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The amortization schedule shows the Period 2 step-down effective June 16, 2026.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The amortization schedule shows a Period 3 notional of $140,000,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The amortization schedule shows the Period 3 step-down effective June 16, 2027.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The amortization schedule shows a Period 4 notional of $122,500,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The amortization schedule shows the Period 4 step-down effective June 16, 2028.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The amortization schedule shows a Period 5 notional of $105,000,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The amortization schedule shows the Period 5 step-down effective June 16, 2029.",
+     "pass_if": true
+    },
+    {
+     "s": "The amortization schedule shows the $105,000,000 Period 5 notional remaining in effect through the Termination Date June 16, 2030.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The amortization schedule reflects annual step-downs of $17,500,000 on each June 16 from 2026 through 2029.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Fixed Rate as 3.875% per annum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Fixed Leg Day Count Fraction as 30/360.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Fixed Leg Payment Frequency as semi-annual.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states the Fixed Leg Payment Dates as June 16 and December 16 of each year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the First Fixed Payment Date as December 16, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Fixed Leg Business Day Convention as Modified Following (adjusted).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Floating Rate Option as USD-SOFR-OIS Compound.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation references the 2021 ISDA Interest Rate Derivatives Definitions for the Floating Rate Option.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Floating Spread as +1.45% (or 145 basis points).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Floating Leg Day Count Fraction as Actual/360.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Floating Leg Payment Frequency as quarterly.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states the Floating Leg Payment Dates as March 16, June 16, September 16, and December 16.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the First Floating Payment Date as September 16, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation specifies compounding in arrears for the Floating Rate.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation specifies a 2-Business-Day lookback.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states that Observation Shift is Not Applicable (or uses equivalent wording making clear no observation shift applies).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Reset Dates as the first day of each Calculation Period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Floating Leg Business Day Convention as Modified Following (adjusted).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states that Payment Netting is applicable on each date that both a Fixed Amount and a Floating Amount are due.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation identifies the overlapping payment dates as June 16 and December 16 of each year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation designates Meridian Bancorp N.A. (Party A) as the Calculation Agent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation includes a dispute resolution fallback triggered under or referencing Section 5(b)(iv) of the Master Agreement.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states that, upon such a dispute, the parties will appoint an independent Calculation Agent from the ISDA Determination Panel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Additional Termination Event is triggered when Party B's Total Net Leverage Ratio exceeds 5.50:1.00.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states the Total Net Leverage Ratio is measured as of the last day of any fiscal quarter.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ATE provision defines Total Net Leverage Ratio by reference to the Term Loan B Credit Agreement dated April 3, 2023.",
+     "pass_if": true
+    },
+    {
+     "s": "The Credit Agreement reference identifies Thornfield Capital Partners LP, Pinnacle Trust Company as Administrative Agent, and the Lenders party thereto.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ATE provision references the Compliance Certificate delivered under Section 7.02(a) of the Credit Agreement as the reporting mechanism.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ATE provision designates Party B (Thornfield Capital Partners LP) as the Affected Party.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ATE provision includes a 30-calendar-day cure period.",
+     "pass_if": true
+    },
+    {
+     "s": "The ATE provision states the cure period runs from delivery of the applicable Compliance Certificate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The ATE provision states that Party A may designate an Early Termination Date under Section 6(b) of the Master Agreement if the ATE is continuing after the cure period.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states a remedy other than Party A's right to designate an Early Termination Date under Section 6(b) as the primary remedy for the ATE.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation cross-references the Credit Support Annex (Bilateral \u2014 Transfer) dated March 12, 2021.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states the Credit Support Annex was amended by Amendment No. 1 dated June 4, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party A's (Meridian's) Threshold as infinity (or uses equivalent language indicating no posting obligation).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party B's (Thornfield's) Threshold as $7,500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party B's Minimum Transfer Amount as $500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party B's Independent Amount as $5,250,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Eligible Collateral includes Cash (USD).",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states Eligible Collateral includes U.S. Treasury Securities with a remaining maturity of 5 years or less.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states a Valuation Percentage of 98% for the U.S. Treasury Securities.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Valuation Dates as each Wednesday (or the next Business Day).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states that Cross-Default under the Master Agreement is applicable to Party B.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Cross-Default Threshold Amount as $10,000,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states the Threshold Amount is aggregated across all Specified Indebtedness.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation specifies Business Days as New York.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states the Business Day Convention as Modified Following.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states Modified Following applies to all Payment Dates, Period End Dates, and Reset Dates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party A's Office as New York (667 Fifth Avenue, 30th Floor, New York, NY 10022).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Party B's Office as New York (440 Lexington Avenue, Suite 3200, New York, NY 10017).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states that neither party is a Multibranch Party (Not Applicable to both parties or equivalent).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation represents that Party A is a U.S. person for purposes of Section 7701(a)(30) of the Internal Revenue Code.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states Party A furnishes Form W-9.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation represents that Party B is a U.S. partnership.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states Party B furnishes Form W-9.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation notes that all allocations of Party B's income are subject to partner-level reporting.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Meridian's DTCC Participant ID as MBNAUS33.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Thornfield's DTCC Participant ID as THCP0044.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation references MarkitSERV for electronic matching/affirmation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation's Party A notice information names Vanessa Chu, VP \u2014 Derivatives Documentation.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation's Party A notice information states Tel: (302) 555-0147.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation's Party A notice information states Email: v.chu@meridianbancorp.com.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation's Party B notice information names Marcus Devereaux, Managing Director \u2014 Treasury & Hedging.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation's Party B notice information states Tel: (212) 555-0283.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation's Party B notice information states Email: m.devereaux@thornfieldcap.com.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states it is governed by the laws of the State of New York.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states the governing law applies without regard to conflict-of-laws principles.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation includes a signature block for an authorized officer of Meridian Bancorp N.A.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation includes a signature block for Thornfield Capital Partners LP.",
+     "pass_if": true
+    },
+    {
+     "s": "The signature block states Thornfield Capital Partners LP acts by its general partner Thornfield Capital GP LLC.",
+     "pass_if": true
+    },
+    {
+     "s": "The signature block identifies Marcus Devereaux (Managing Director \u2014 Treasury & Hedging) or another authorized signatory.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation designates Meridian Bancorp N.A. as the CFTC Reporting Party (as SD registrant).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Meridian's NFA/CFTC SD Registration No. as SD-0472.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Meridian's EIN as 51-0386291.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation states Thornfield's EIN as 83-2954017.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation identifies the Transaction Type as a USD fixed-for-floating Interest Rate Swap (or Rate Swap Transaction).",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states the Transaction is under the 2021 ISDA Interest Rate Derivatives Definitions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation identifies the hedged obligation as the Senior Secured Floating-Rate Term Loan B.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation identifies Pinnacle Trust Company as Administrative Agent for the hedged obligation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Confirmation notes that the $5,250,000 Independent Amount applicable to Party B may be adjusted if the notional is reduced by more than 25%.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation attributes this Independent Amount adjustment trigger to CSA Amendment No. 1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Confirmation contains no brackets or placeholder text (e.g., '[insert]', 'TBD', '[\u25cf]').",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation contains no template footnotes or drafting notes from the original template.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Confirmation consistently follows ISDA-standard defined-term capitalization throughout (e.g., Effective Date, Notional Amount, Fixed Rate, Floating Rate Option, Business Day are capitalized as defined terms).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Confirmation states the Year 1 semi-annual fixed payment amount as $3,390,625.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation includes no illustrative fixed payment amount, while stating the notional ($175,000,000), Fixed Rate (3.875%), and Day Count Fraction (30/360) so that the $3,390,625 amount is derivable.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confirmation states an illustrative Year 1 semi-annual fixed payment amount other than $3,390,625.",
+     "pass_if": false
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 4599,
+  "completion": 13964
+ }
+}

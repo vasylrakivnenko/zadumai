@@ -1,0 +1,34 @@
+{
+ "A muse-bf16 test_plain": {
+  "native": [
+   0.156,
+   0.786,
+   0.471
+  ],
+  "decision": [
+   0.156,
+   0.786,
+   0.471
+  ]
+ },
+ "A muse-bf16 test_gepa_native": {
+  "native": [
+   0.743,
+   0.96,
+   0.852
+  ],
+  "decision": [
+   0.743,
+   0.96,
+   0.852
+  ]
+ },
+ "B muse-bf16 test_plain": [
+  0.3428,
+  0.0782
+ ],
+ "B muse-bf16 test_gepa": [
+  0.4925,
+  0.1441
+ ]
+}

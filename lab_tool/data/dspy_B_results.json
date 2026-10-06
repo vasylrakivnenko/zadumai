@@ -1,0 +1,34 @@
+{
+ "dspy_start": {
+  "coverage": 0.4176,
+  "floor": 0.123,
+  "lift": 0.2947,
+  "queries_median": 9,
+  "failed_plans": 0,
+  "n": 40
+ },
+ "dspy_gepa": {
+  "coverage": 0.4789,
+  "floor": 0.1574,
+  "lift": 0.3215,
+  "queries_median": 12,
+  "failed_plans": 0,
+  "n": 40
+ },
+ "deploy_test_plain": {
+  "coverage": 0.31,
+  "floor": 0.1054,
+  "lift": 0.2046,
+  "queries_median": 7,
+  "failed_plans": 0,
+  "n": 40
+ },
+ "deploy_test_gepa": {
+  "coverage": 0.4536,
+  "floor": 0.1812,
+  "lift": 0.2724,
+  "queries_median": 12,
+  "failed_plans": 0,
+  "n": 40
+ }
+}

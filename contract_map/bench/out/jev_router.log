@@ -1,0 +1,6 @@
+   jev: 0 cached, 500 to call
+router, 500 test documents: TF-IDF 94.4% | Jev 92.6% (errors 0, p50 68 ms)
+   hybrid: TF-IDF if p >= 0.7, else Jev: 95.4% (Jev reads 7%)
+   hybrid: TF-IDF if p >= 0.9, else Jev: 95.0% (Jev reads 26%)
+   hybrid: TF-IDF if p >= 0.95, else Jev: 93.8% (Jev reads 44%)
+   Jev confusions: commercial -> not a contract ×18; terms of service -> privacy policy ×9; nda -> commercial ×2; lease -> not a contract ×2; not a contract -> commercial ×2; lease -> commercial ×1

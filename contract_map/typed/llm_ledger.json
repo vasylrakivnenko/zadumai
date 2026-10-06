@@ -1,0 +1,28 @@
+[
+ {
+  "t": "2026-10-03 19:07:46",
+  "name": "wc1 write (gpt-oss-120b)",
+  "calls": 45
+ },
+ {
+  "t": "2026-10-03 19:13:48",
+  "name": "wc1 blind check (kimi-k3)",
+  "calls": 44
+ },
+ {
+  "t": "2026-10-03 20:16:24",
+  "name": "wc1 write (gpt-oss-120b)",
+  "calls": 0
+ },
+ {
+  "t": "2026-10-03 20:16:24",
+  "name": "wc1 blind check (kimi-k3)",
+  "calls": 23
+ },
+ {
+  "t": "2026-10-03 20:16",
+  "name": "ACCOUNTING NOTE: 23 kimi checks timed out client-side (120 s) and reader_net/llm.py retried each up to 6x: up to 138 requests sent without a response (billing unknown); a retry run with a 600 s timeout was killed after ~1 min (up to 8 requests in flight). Responses received: 66 (45 gpt-oss + 21 kimi). No more LLM calls in this task.",
+  "calls": 0,
+  "unconfirmed_requests": 146
+ }
+]

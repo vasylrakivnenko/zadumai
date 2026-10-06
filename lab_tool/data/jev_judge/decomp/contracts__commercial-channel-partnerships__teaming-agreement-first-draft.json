@@ -1,0 +1,987 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The preamble identifies Vantage as 'Vantage Defense Systems, LLC,' a Delaware limited liability company.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The preamble states Vantage's principal office is at 8200 Dominion Ridge Parkway, Suite 600, McLean, VA 22102.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The preamble identifies Meridian as 'Meridian Cyber Solutions, Inc.,' a Virginia corporation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The preamble states Meridian's principal office is at 1455 Sentry Commons Drive, Suite 310, Reston, VA 20190.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes Vantage's CAGE code 7V2K8 in the recitals or a relevant exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes Meridian's CAGE code 3M9F1 in the recitals or a relevant exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes Vantage's UEI number J4M7RKL2XNB3 in the recitals or a relevant exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes Meridian's UEI number R8P3TWY6QAD5 in the recitals or a relevant exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Identification of Procurement section references RFP No. HC1028-25-R-0042.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies the program as the Sentinel Shield Enterprise Cybersecurity Program.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies the issuing agency as DISA (Defense Information Systems Agency).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies the anticipated contract type as Cost-Plus-Fixed-Fee (CPFF) with an IDIQ task-order structure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states the estimated total contract value is $215,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Roles and Responsibilities article designates Vantage as Prime Contractor / Team Lead.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Roles and Responsibilities article designates Meridian as Subcontractor / Teammate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement notes Meridian's small-business status under NAICS 541512 with an SBA $34M revenue threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement notes Vantage's other-than-small business status.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Workshare and Revenue Allocation article or Exhibit A reflects Vantage at 62% ($133,300,000) of the $215M estimated TCV.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Workshare and Revenue Allocation article or Exhibit A reflects Meridian at 38% ($81,700,000) of the $215M estimated TCV.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The workshare or revenue allocation covers the 5-year base period.",
+     "pass_if": true
+    },
+    {
+     "s": "The workshare or revenue allocation covers three 1-year option periods.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states a target fixed-fee rate of 7.5% on estimated costs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The financial provisions or Exhibit A reference Meridian's estimated cost base of approximately $76,000,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The financial provisions or Exhibit A reference Meridian's estimated fee of approximately $5,700,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Exclusivity and Non-Compete article limits exclusivity to solicitation HC1028-25-R-0042 only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Exclusivity and Non-Compete article provides that, if no award is made, exclusivity terminates 12 months after proposal submission (June 20, 2026 or an equivalent description).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Exclusivity and Non-Compete article provides that exclusivity terminates 60 days after formal agency cancellation of the solicitation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The B&P Cost Sharing article or Exhibit B states total estimated B&P costs of $1,800,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states Vantage's B&P share is 65% ($1,170,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states Meridian's B&P share is 35% ($630,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that each party's B&P costs are non-refundable regardless of outcome.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP article preserves each party's sole ownership of its background or pre-existing IP.",
+     "pass_if": true
+    },
+    {
+     "s": "The IP article grants a non-exclusive, royalty-free license to background or pre-existing IP limited to proposal preparation and contract performance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP article assigns foreground IP to the party that develops it.",
+     "pass_if": true
+    },
+    {
+     "s": "The IP article grants the other party a cross-license to foreground IP solely for Government contract performance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP article references DFARS 252.227-7014 (Rights in Other Than Commercial Computer Software and Other Than Commercial Computer Software Documentation) for Government rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IP article references DFARS 252.227-7018 (Rights in Other Than Commercial Technical Data and Computer Software \u2014 Small Business Innovation Research (SBIR) Program) for Government rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The OCI Mitigation article or Exhibit D discloses Meridian's existing DISA SETI-II Task Order D4017.",
+     "pass_if": true
+    },
+    {
+     "s": "The disclosure states that SETI-II Task Order D4017 has a value of $6,200,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The disclosure states that SETI-II Task Order D4017 has a PoP through December 31, 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "The disclosure states that SETI-II Task Order D4017 performs advisory cybersecurity assessments for the same DISA program office.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement requires Meridian to establish a firewall segregating SETI-II advisory personnel from Sentinel Shield teams.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that Meridian will not seek an extension of SETI-II Task Order D4017.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies BridgePoint Consulting Group, LLC as the independent OCI mitigation auditor.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Insurance Requirements article or Exhibit C specifies Meridian CGL at $2,000,000 per occurrence.",
+     "pass_if": true
+    },
+    {
+     "s": "The Insurance Requirements article or Exhibit C specifies Meridian CGL at $5,000,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies Meridian Professional Liability (E&O) at $10,000,000 per claim.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement specifies Meridian Professional Liability (E&O) at $10,000,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies Meridian Cyber Liability at $5,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies Vantage CGL at $5,000,000 per occurrence.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement specifies Vantage CGL at $10,000,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies Vantage Professional Liability (E&O) at $10,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies Vantage Cyber Liability at $10,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Indemnification article caps Meridian's indemnification to Vantage at the lesser of $81,700,000 (Meridian's workshare value) or 1\u00d7 aggregate subcontract value invoiced to date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Indemnification article caps Vantage's indemnification to Meridian at 1\u00d7 aggregate payments made to Meridian to date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement carves IP infringement out from the indemnification caps and makes it uncapped.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement carves willful misconduct out from the indemnification caps and makes it uncapped.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Termination article allows either party to terminate for convenience before award upon 30 days' written notice if no Government contract has been awarded.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Termination article allows post-award termination for cause upon material breach with a 30-day cure period.",
+     "pass_if": true
+    },
+    {
+     "s": "The Termination article permits immediate termination if the material breach is not cured within the 30-day cure period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement permits either party to terminate if the other undergoes a >50% ownership transfer without prior written consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Dispute Resolution article requires mandatory senior-executive negotiation for 30 calendar days as a condition precedent to arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies binding arbitration under AAA Commercial Arbitration Rules.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies Fairfax County, Virginia, as the arbitration venue.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies a panel of 3 arbitrators.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Governing Law provision specifies the Commonwealth of Virginia without regard to conflicts-of-law principles.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Notices provision lists Vantage's address as 8200 Dominion Ridge Parkway, Suite 600, McLean, VA 22102.",
+     "pass_if": true
+    },
+    {
+     "s": "The Notices provision lists Vantage's attention line as Attn: Col. (Ret.) Dennis W. Hargrove, VP, Contracts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Notices provision lists Meridian's address as 1455 Sentry Commons Drive, Suite 310, Reston, VA 20190.",
+     "pass_if": true
+    },
+    {
+     "s": "The Notices provision lists Meridian's attention line as Attn: Rachel S. Feinberg, Director of Contracts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement references the RFP release date of March 14, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement references the proposal due date of June 20, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement references the anticipated award date of October 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states the base period is October 1, 2025 through September 30, 2030.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states the option period end date is September 30, 2033.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Post-Award Subcontract Obligations article states Vantage's obligation to negotiate in good faith a definitive subcontract with Meridian consistent with the workshare, revenue allocation, and other terms of the Teaming Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Post-Award Subcontract Obligations article references Exhibit E (Form of Subcontract Term Sheet).",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement includes Exhibit E (Form of Subcontract Term Sheet).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Post-Award Subcontract Obligations article or a standalone flow-down section includes FAR/DFARS flow-down provisions referencing DFARS 252.227-7014 and DFARS 252.227-7018.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Vantage signature block names Garrett P. Landon as the authorized representative.",
+     "pass_if": true
+    },
+    {
+     "s": "The Vantage signature block gives Garrett P. Landon's title as SVP, Strategic Captures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Meridian signature block names Dr. Priya N. Chakravarti as the authorized representative.",
+     "pass_if": true
+    },
+    {
+     "s": "The Meridian signature block gives Dr. Priya N. Chakravarti's title as Chief Growth Officer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement references the target execution date of April 11, 2025, in the preamble, effective date line, or signature block.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "No unresolved template fill-ins remain: blank fill-in lines and unselected parenthetical option-pickers have been replaced with deal-specific information or accompanied by a drafting note explaining what is needed.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes a Confidentiality and Non-Disclosure article protecting proprietary and competition-sensitive information.",
+     "pass_if": true
+    },
+    {
+     "s": "The Confidentiality and Non-Disclosure article restricts disclosure to personnel with a need to know.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The General Provisions include a provision prohibiting assignment without consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The General Provisions include a severability provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The General Provisions include an entire agreement provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The General Provisions require amendments to be in writing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The General Provisions include a counterparts provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Exhibit A (Workshare Matrix) reflects functional workshare by capability area for SOC operations, threat intelligence, network resilience engineering, and program management.",
+     "pass_if": true
+    },
+    {
+     "s": "Exhibit A's percentages and dollar allocations total to the 62%/38% split.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C includes a carrier rating requirement of A.M. Best A- VII or better.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C includes additional-insured obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C includes waiver-of-subrogation obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C includes certificate-of-insurance delivery timelines as specified in the insurance requirements summary.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states three separate 1-year option periods, not a single 3-year option.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement states a maximum total period of 8 years ending September 30, 2033.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-081",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit D (OCI Mitigation Plan) identifies BridgePoint Consulting Group, LLC as the independent auditor who will verify compliance with the firewall and personnel-segregation measures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-082",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit D includes Meridian's commitment not to seek an extension of SETI-II Task Order D4017 beyond its December 31, 2025 expiration.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

@@ -1,0 +1,830 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The NDA is structured as a mutual agreement, with each party designated as both a Discloser and a Recipient throughout the operative provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The defined terms Discloser, Recipient, and Confidential Information consistently apply to both parties throughout the NDA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA identifies Verdana Holdings, Inc. as a corporation organized under the laws of Delaware or as a Delaware corporation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA identifies Castellan Data Systems, LLC as a limited liability company organized under the laws of Delaware or as a Delaware limited liability company.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA gives Verdana's principal office address as 400 Ridgeview Plaza, Suite 1200, Wilmington, DE 19801.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA gives Castellan's principal office address as 8550 Meridian Park Drive, 4th Floor, Reston, VA 20190.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals describe the Transaction as Verdana's potential acquisition of a 72% membership-interest stake in Castellan.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The recitals do not state an enterprise value of $385,000,000 or any other financial terms, including equity value, revenue, EBITDA, or multiples.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition of Confidential Information specifically enumerates financial statements and projections or financial forecasts.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition of Confidential Information specifically enumerates both source code and algorithms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition of Confidential Information specifically enumerates trade secrets.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition of Confidential Information specifically enumerates customer lists and/or supplier lists.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition of Confidential Information specifically enumerates employee data, employee information, or personnel data.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition of Confidential Information specifically enumerates government-contract terms and references ITAR/EAR-controlled technical data.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition of Confidential Information specifically enumerates deal-related communications, deal communications, transaction-related correspondence, or substantially equivalent language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA excludes information that is or becomes publicly available through no fault of the Recipient from Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA excludes information already known to the Recipient without restriction before disclosure from Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA excludes information independently developed by the Recipient without use of the Discloser's Confidential Information from Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA excludes information received from a third party not under an obligation of confidentiality, or received without breach, from Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA specifies that confidentiality obligations survive for 3 years measured from the date of disclosure of each item of Confidential Information.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA includes a standstill provision with an 18-month period from NDA execution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The standstill provision restricts Verdana from acquiring Castellan securities or membership interests outside the negotiated Transaction without Castellan board or member consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA includes a mutual non-solicitation of employees provision with a 24-month period from NDA execution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The non-solicitation provision is limited to employees introduced or identified through the due-diligence process.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA defines Permitted Disclosees or Representatives to include directors, officers, employees, and advisors who have a need to know.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA requires each Permitted Disclosee to be bound by confidentiality obligations at least as protective as, or no less restrictive than, those in the NDA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compelled-disclosure section permits disclosure required by law, regulation, or legal process, subject to prompt written notice to the Discloser where legally permitted.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compelled-disclosure section requires cooperation to obtain a protective order or other appropriate remedy.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA requires return or destruction of Confidential Information within 15 business days of written request or termination of discussions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The return/destruction provision requires an officer certification of destruction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The return/destruction provision permits retention of archival or compliance copies held by legal counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA includes a specific covenant barring each Recipient from using the other party's Confidential Information for competitive purposes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The anti-competitive-use covenant addresses competitive use and references or reflects the parties' overlapping predictive-analytics business or competitive overlap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA includes a covenant against re-export of ITAR-controlled technical data that references ITAR (22 CFR \u00a7\u00a7 120\u2013130).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA includes a covenant against re-export of EAR-controlled technical data that references EAR (15 CFR \u00a7\u00a7 730\u2013774).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA's ITAR/EAR provisions reflect that Castellan holds active U.S. Department of Defense contracts, or otherwise make the defense or government-contract context evident.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA expressly states that neither party is obligated by the NDA to proceed with the Transaction or any other transaction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The remedies section acknowledges that a breach may cause irreparable harm or injury not adequately compensable by monetary damages.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The remedies section entitles the non-breaching party to seek injunctive relief without posting a bond or other security.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The remedies section preserves all other remedies available at law or equity, stating that injunctive relief is in addition to rather than in lieu of those remedies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-damages clause excludes consequential, incidental, and punitive damages.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The limitation-of-damages clause expressly restores the availability of excluded damage categories in cases of willful, intentional, or deliberate breach.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA specifies the State of Delaware as governing law without regard to its conflicts-of-law principles or choice-of-law rules.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA provides for exclusive jurisdiction in the Delaware Court of Chancery as the primary forum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA provides for the U.S. District Court for the District of Delaware as a fallback if the Court of Chancery declines jurisdiction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section designates Priya Narasimhan, SVP Corporate Development, at 400 Ridgeview Plaza, Suite 1200, Wilmington, DE 19801 as Verdana's notice contact.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section designates David Harlowe, General Counsel, at 8550 Meridian Park Drive, 4th Floor, Reston, VA 20190 as Castellan's notice contact.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex A identifies Infolock VDR Services, Inc. or Infolock VDR Services as the virtual data room provider.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex A includes the VDR Room ID PRP-2025-0714.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex A caps clean-team membership at 8 members per side or per party.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex A identifies both source code and government-classified contract annexes as restricted information categories.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex A requires both access logging and watermarking of data-room materials.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex A requires clean-team members accessing ITAR/EAR-controlled materials to be U.S. persons.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature block for Verdana Holdings, Inc. designates Priya Narasimhan as signatory with the title SVP, Corporate Development or Senior Vice President, Corporate Development.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature block for Castellan Data Systems, LLC designates David Harlowe as signatory with the title General Counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals or defined-term section references Project Parapet as the project code name.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA requires amendments to be in writing and signed by both parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA states that failure to exercise a right does not constitute a waiver.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA includes a severability provision stating that the remainder continues in effect if a provision is held invalid.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA includes an entire agreement or integration clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA includes a counterparts provision that recognizes electronic signatures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The NDA body and annexes do not contain the enterprise value figure $385,000,000, $385M, or an equivalent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The NDA body and annexes do not contain the implied equity value figure $277,200,000, $277.2M, or an equivalent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The NDA body and annexes do not contain Castellan's revenue figure $117,500,000, $117.5M, or an equivalent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The NDA body and annexes do not contain Castellan's EBITDA figure $31,400,000, $31.4M, or an equivalent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA body incorporates Annex A by reference and states that Annex A forms an integral part of the NDA, or uses substantially equivalent language such as 'attached hereto and incorporated herein'.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA states an effective date of July 14, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex A addresses downloading, printing, and taking screenshots as prohibited actions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex A specifies a time period within which breaches of the protocol must be reported.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Annex A requires clean-team members or their principals to certify compliance with the protocol.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section includes a Verdana copy-to-counsel provision listing Marcus Adeyemi at Linden & Pace LLP, 51 West 52nd Street, 37th Floor, New York, NY 10019.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section includes a Castellan copy-to-counsel provision listing Elena Tsai at Brevard Shaw & Koh LLP, 1401 K Street NW, Suite 800, Washington, DC 20005.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The defined term Transaction describes Verdana Holdings, Inc.'s contemplated acquisition of a 72% membership-interest stake in Castellan Data Systems, LLC without specific financial terms such as enterprise value, equity value, revenue, EBITDA, or multiples.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "No unresolved bracketed placeholders, placeholder text such as '[\u25cf]', '[Insert]', or '[TBD]', or unfilled fields remain anywhere in the NDA body or Annex A.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The NDA includes within Confidential Information the existence of the Transaction, the fact that the parties are in discussions, or the terms under discussion.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

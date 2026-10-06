@@ -1,0 +1,570 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo identifies that the draft SPA contains no escrow holdback, holdback reserve, or deferred consideration, and states that the full $218,000,000 purchase price is payable at closing in cash via wire transfer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a minimum escrow holdback of $21,800,000, or 10% of the $218,000,000 purchase price, for indemnification claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends that the escrow be held for at least 18 months post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's 'Knowledge of the Company' definition is limited to the actual knowledge of Walter R. Kessler alone, with no obligation of independent investigation or inquiry.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends replacing the draft's actual-knowledge-only standard with a constructive knowledge standard requiring actual knowledge after reasonable investigation and inquiry.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends that the knowledge qualifier include a defined list of at least 5 named knowledge holders, rather than Walter R. Kessler alone.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the draft SPA contains no standalone or freestanding environmental representation and that environmental matters are addressed only within a general 'Compliance with Laws' representation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends adding a freestanding, detailed Environmental Representation covering environmental permits, remediation obligations, Hazardous Substances, underground storage tanks, and environmental litigation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the Ohio EPA Notice of Violation issued to Altorea, identified by reference number OAC-ENV-2024-08871 and/or the date September 14, 2024.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the EPA Region 5 CERCLA \u00a7 104(e) Information Request issued to Altorea, identified by reference number CERCLA-05-2025-0034 and/or the date January 22, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo presents the two pending environmental enforcement actions as heightening the risk associated with both the missing standalone environmental representation and the inadequate indemnification protections in the draft SPA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's aggregate indemnification cap for general representations is 10% of the purchase price (approximately $21,800,000), below the playbook's required minimum of 15% (approximately $32,700,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the playbook requires Fundamental Representations to be subject to uncapped indemnity, not the aggregate indemnification cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft uses a true deductible basket, under which claims below the basket are not recoverable, and identifies or recommends the playbook's tipping basket, which provides first-dollar recovery once the threshold is met.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's $2,180,000 basket and compares it with the playbook maximum of 0.75% of the purchase price (approximately $1,635,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's 18-month survival period for general representations is shorter than the playbook's required 24-month period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo confirms that the draft SPA enumerates Seller Fundamental Representations in Sections 4.1, 4.2, 4.3, 4.5, and 4.20, and Buyer Fundamental Representations in Sections 5.1, 5.2, and 5.5.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the playbook requires Fundamental Representations to survive for 6 years post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo specifies that the required Fundamental Representations must include Organization & Authority, Capitalization, Title to Shares, No Brokers, and Tax Matters.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's Material Contracts representation uses a $500,000 annual contract value disclosure threshold, above the playbook's required $150,000 annual value threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the draft SPA contains no representation regarding cybersecurity, data privacy, or IT systems.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends adding a Technology & Data Privacy representation covering data protection compliance, security incidents in the past 3 years, and material IT system failures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's non-competition covenant in Section 6.6(a) is limited to businesses competing with the business of the Company as conducted as of the Closing Date, rather than the broader specialty chemicals industry required by the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the draft's non-competition covenant in Section 6.6(a) applies only to geographic areas in which the Company conducts business as of the Closing Date, while the playbook requires nationwide United States scope.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends that the non-competition covenant specifically cover the specialty chemicals industry.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends that the non-competition covenant bind both the Seller (the Kessler Family Trust) and all of its controlled affiliates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the draft SPA does not include a closing condition relating to HSR Act clearance or other regulatory approvals.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the transaction's $218,000,000 enterprise value exceeds the playbook's $50,000,000 threshold for requiring an HSR filing condition.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's MAE definition carve-out for 'changes in the Target's industry' lacks a disproportionate-impact qualifier and should not apply unless industry changes disproportionately affect the Target relative to comparable companies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's MAE definition lacks a quantitative threshold and recommends a threshold tied to a decline of 15% or more in trailing-twelve-month EBITDA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft specifies Ohio governing law, while the playbook requires Delaware governing law.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft provides for exclusive jurisdiction in state and federal courts in Summit County, Ohio, while the playbook requires binding arbitration under AAA Commercial Arbitration Rules seated in Allegheny County, Pennsylvania.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's anti-reliance language in Section 5.9 (Independent Investigation), Section 4.23 (No Other Representations or Warranties \u2014 Seller), and Section 5.10 (No Other Representations or Warranties \u2014 Buyer), and states whether these provisions bar claims against the Company or other parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends that the non-recourse provision preserve the Buyer's right to assert fraud claims against any party.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends carving out claims under ancillary agreements, such as employment agreements and/or transition services agreements, from the non-recourse provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that 8 of the 14 referenced disclosure schedules remain marked 'To Be Provided' and have not been delivered in populated form.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends that all disclosure schedules be delivered in final, populated form at least 10 business days prior to signing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft's October 31, 2025 outside (drop-dead) date is approximately 5 months from anticipated signing around May/June 2025, less than the playbook's required minimum of 6 months from signing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends an extension right of an additional 90 days to the outside date if regulatory approvals remain pending.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the draft contains approximately 13-14 categories of restricted actions during the interim period in Sections 6.1(b)(i)-(xiv), below the playbook's required minimum of 16 specified categories.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends adding an interim operating restriction prohibiting capital expenditures above $75,000 individually or $200,000 in the aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends adding an interim operating restriction on hiring employees with base compensation above $120,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends adding an interim operating restriction prohibiting the settlement of any litigation, without Buyer consent or at all.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the draft SPA does not contain a prevailing-party attorneys' fees provision and recommends adding one.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the draft already contains a jury trial waiver, providing context for the missing attorneys' fees provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C046",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo assigns a risk rating or severity classification, such as high/medium/low or critical/major/minor, to each identified deviation or issue.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes adding a new escrow holdback provision within or near the purchase price and payment mechanics section of the SPA, providing for a portion of the purchase price to be deposited into escrow for indemnification claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C048",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline names Ridgeline National Bank, N.A. as the escrow agent.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline references a separate escrow agreement to be entered into with Ridgeline National Bank, N.A.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Altorea operates in chemical manufacturing, including industrial solvents and/or specialty coating agents, as a factor underscoring the critical importance of a standalone environmental representation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Altorea's 7 active EPA permits and 3 state-level Ohio EPA environmental permits as environmental context supporting the need for a standalone environmental representation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Altorea's 4-facility footprint: 3 manufacturing facilities in Ohio (Akron, Canton, and/or Youngstown) and 1 warehouse/distribution facility in West Virginia (Parkersburg), as environmental context.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

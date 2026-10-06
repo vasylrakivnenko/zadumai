@@ -1,0 +1,3227 @@
+[
+ {
+  "id": "U:amendments",
+  "name": "amendments",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Amendments",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Modifications",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1722
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R7UiQA8gafbU8G6XKu27y62",
+   "label": "Amendment Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:arbitration",
+  "name": "arbitration",
+  "shared": true,
+  "families": [
+   "commercial",
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Arbitration",
+    "kind": "eq"
+   },
+   {
+    "dataset": "tos",
+    "label": "Arbitration",
+    "kind": "sub"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 385,
+   "tos": 28
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RWQW185M6gqosVVQA1GE0A",
+   "label": "Arbitration Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:assignment/successors",
+  "name": "assignment/successors",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Assignments",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Assigns",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Binding Effects",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Successors",
+    "kind": "eq"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Anti-Assignment",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 2390,
+   "cuad_clause": 374
+  },
+  "folio": null
+ },
+ {
+  "id": "U:change of control",
+  "name": "change of control",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Change In Control",
+    "kind": "eq"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Change Of Control",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 349,
+   "cuad_clause": 151
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/Rx73OtOSnOdjzb248cqESZ",
+   "label": "Change in Control Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:changes by the provider",
+  "name": "changes by the provider",
+  "shared": true,
+  "families": [
+   "privacy policy",
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "tos",
+    "label": "Unilateral change",
+    "kind": "sub"
+   },
+   {
+    "dataset": "opp115",
+    "label": "Policy Change",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "tos": 122,
+   "opp115": 123
+  },
+  "folio": null
+ },
+ {
+  "id": "U:consents",
+  "name": "consents",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Approvals",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Authorizations",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Consents",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1242
+  },
+  "folio": null
+ },
+ {
+  "id": "U:costs",
+  "name": "costs",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Costs",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Expenses",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Fees",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1970
+  },
+  "folio": null
+ },
+ {
+  "id": "U:definitions",
+  "name": "definitions",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Defined Terms",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Definitions",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 920
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RDDa8ngJbSPv26v4Bx8K2sP",
+   "label": "Defined Terms Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:effectiveness",
+  "name": "effectiveness",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Effective Dates",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Effectiveness",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 691
+  },
+  "folio": null
+ },
+ {
+  "id": "U:entire agreement",
+  "name": "entire agreement",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Entire Agreements",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Integration",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 2644
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R906atF1FPFvNXecNuVymyC",
+   "label": "Entire Agreement Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:governing law",
+  "name": "governing law",
+  "shared": true,
+  "families": [
+   "commercial",
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Applicable Laws",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Governing Laws",
+    "kind": "eq"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Governing Law",
+    "kind": "eq"
+   },
+   {
+    "dataset": "tos",
+    "label": "Choice of law",
+    "kind": "sub"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 3519,
+   "cuad_clause": 332,
+   "tos": 39
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RCinm0jvGGkzcHth7AnasRI",
+   "label": "Governing Law Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:indemnity",
+  "name": "indemnity",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Indemnifications",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Indemnity",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1207
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R9oz08cWJcI23x0nYU1h0it",
+   "label": "Indemnification Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:insurance",
+  "name": "insurance",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Insurances",
+    "kind": "eq"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Insurance",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1104,
+   "cuad_clause": 281
+  },
+  "folio": null
+ },
+ {
+  "id": "U:intellectual property",
+  "name": "intellectual property",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Intellectual Property",
+    "kind": "eq"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Ip Ownership Assignment",
+    "kind": "sub"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Joint Ip Ownership",
+    "kind": "sub"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 473,
+   "cuad_clause": 226
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R7srq5nkC3xCo34ztMFdKZj",
+   "label": "Intellectual Property Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:interpretation",
+  "name": "interpretation",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Construction",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Headings",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Interpretations",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1379
+  },
+  "folio": null
+ },
+ {
+  "id": "U:jurisdiction/venue",
+  "name": "jurisdiction/venue",
+  "shared": true,
+  "families": [
+   "commercial",
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Consent To Jurisdiction",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Jurisdictions",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Submission To Jurisdiction",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Venues",
+    "kind": "eq"
+   },
+   {
+    "dataset": "tos",
+    "label": "Jurisdiction",
+    "kind": "sub"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 746,
+   "tos": 34
+  },
+  "folio": null
+ },
+ {
+  "id": "U:limitation of liability",
+  "name": "limitation of liability",
+  "shared": true,
+  "families": [
+   "commercial",
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Cap On Liability",
+    "kind": "eq"
+   },
+   {
+    "dataset": "tos",
+    "label": "Limitation of liability",
+    "kind": "sub"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 405,
+   "tos": 191
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RBukB9MGGdY4Kwx3b6itiwi",
+   "label": "Limitation of Liability Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:miscellaneous",
+  "name": "miscellaneous",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "General",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Miscellaneous",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1455
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RDnI8TS5UbaKbjNAqTqlbcX",
+   "label": "Miscellaneous Provisions Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:non-disparagement",
+  "name": "non-disparagement",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Non-Disparagement",
+    "kind": "eq"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Non-Disparagement",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 363,
+   "cuad_clause": 40
+  },
+  "folio": null
+ },
+ {
+  "id": "U:non-solicitation of employees",
+  "name": "non-solicitation of employees",
+  "shared": true,
+  "families": [
+   "commercial",
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "No-Solicit Of Employees",
+    "kind": "eq"
+   },
+   {
+    "dataset": "contractnli",
+    "label": "No solicitation",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 57,
+   "contractnli": 194
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RBPNQSqdDfSS0uPPJ8pfxVL",
+   "label": "Non Solicitation Agreement Clause",
+   "match": "approximate"
+  }
+ },
+ {
+  "id": "U:organization",
+  "name": "organization",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Existence",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Organizations",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 667
+  },
+  "folio": null
+ },
+ {
+  "id": "U:payment terms",
+  "name": "payment terms",
+  "shared": true,
+  "families": [
+   "commercial",
+   "lease"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Payments",
+    "kind": "eq"
+   },
+   {
+    "dataset": "lease",
+    "label": "term_of_payment",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 856,
+   "lease": 235
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R7Q8Ra8XyYj14cKvu35plq",
+   "label": "Payment Terms Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:remedies",
+  "name": "remedies",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Remedies",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Specific Performance",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 990
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RBhmDmdZWNMpZfSRDHWVP2v",
+   "label": "Remedies Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:renewal/extension",
+  "name": "renewal/extension",
+  "shared": true,
+  "families": [
+   "commercial",
+   "lease"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Renewal Term",
+    "kind": "eq"
+   },
+   {
+    "dataset": "lease",
+    "label": "extension_period",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 165,
+   "lease": 53
+  },
+  "folio": null
+ },
+ {
+  "id": "U:survival",
+  "name": "survival",
+  "shared": true,
+  "families": [
+   "commercial",
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Survival",
+    "kind": "eq"
+   },
+   {
+    "dataset": "contractnli",
+    "label": "Survival of obligations",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1469,
+   "contractnli": 500
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R97IAAj73aQDTLnBU1eL5zB",
+   "label": "Survival Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:taxes",
+  "name": "taxes",
+  "shared": true,
+  "families": [
+   "commercial",
+   "lease"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Taxes",
+    "kind": "eq"
+   },
+   {
+    "dataset": "lease",
+    "label": "vat",
+    "kind": "sub"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1089,
+   "lease": 87
+  },
+  "folio": null
+ },
+ {
+  "id": "U:term of agreement",
+  "name": "term of agreement",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Terms",
+    "kind": "eq"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Expiration Date",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1166,
+   "cuad_clause": 338
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R9pWPPfpEDTgIvTXaMFPbCh",
+   "label": "Term of Agreement Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:termination",
+  "name": "termination",
+  "shared": true,
+  "families": [
+   "commercial",
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Terminations",
+    "kind": "eq"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Termination For Convenience",
+    "kind": "sub"
+   },
+   {
+    "dataset": "tos",
+    "label": "Unilateral termination",
+    "kind": "sub"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1112,
+   "cuad_clause": 164,
+   "tos": 139
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R355Le1zLujnXiHMmYqQNM",
+   "label": "Termination Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:waivers",
+  "name": "waivers",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "No Waivers",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Waivers",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1323
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/Ryu5LoAUzP13SyODG4jLLN",
+   "label": "Waiver Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:warranties",
+  "name": "warranties",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Warranties",
+    "kind": "eq"
+   },
+   {
+    "dataset": "cuad_clause",
+    "label": "Warranty Duration",
+    "kind": "sub"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 499,
+   "cuad_clause": 114
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R819RNz2UNTDhwmdljqZlHN",
+   "label": "No Warranties Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "U:withholding",
+  "name": "withholding",
+  "shared": true,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Tax Withholdings",
+    "kind": "eq"
+   },
+   {
+    "dataset": "ledgar",
+    "label": "Withholdings",
+    "kind": "eq"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 897
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Confidentiality of Agreement",
+  "name": "Confidentiality of Agreement",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Confidentiality of Agreement",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 297
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RDOq8HJJl8YdcwBdCZmjlOW",
+   "label": "Confidentiality Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "contractnli:Explicit identification",
+  "name": "Explicit identification",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Explicit identification",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 453
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Inclusion of verbally conveyed information",
+  "name": "Inclusion of verbally conveyed information",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Inclusion of verbally conveyed information",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 453
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Limited use",
+  "name": "Limited use",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Limited use",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 648
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:No licensing",
+  "name": "No licensing",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "No licensing",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 599
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:No reverse engineering",
+  "name": "No reverse engineering",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "No reverse engineering",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 75
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:None-inclusion of non-technical information",
+  "name": "None-inclusion of non-technical information",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "None-inclusion of non-technical information",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 655
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Notice on compelled disclosure",
+  "name": "Notice on compelled disclosure",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Notice on compelled disclosure",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 477
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Permissible acquirement of similar information",
+  "name": "Permissible acquirement of similar information",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Permissible acquirement of similar information",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 722
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Permissible copy",
+  "name": "Permissible copy",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Permissible copy",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 233
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Permissible development of similar information",
+  "name": "Permissible development of similar information",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Permissible development of similar information",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 629
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Permissible post-agreement possession",
+  "name": "Permissible post-agreement possession",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Permissible post-agreement possession",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 499
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Return of confidential information",
+  "name": "Return of confidential information",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Return of confidential information",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 293
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R85xOKeaAOua1e71kPgc7Ez",
+   "label": "Confidential Information Clause",
+   "match": "approximate"
+  }
+ },
+ {
+  "id": "contractnli:Sharing with employees",
+  "name": "Sharing with employees",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Sharing with employees",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 637
+  },
+  "folio": null
+ },
+ {
+  "id": "contractnli:Sharing with third-parties",
+  "name": "Sharing with third-parties",
+  "shared": false,
+  "families": [
+   "nda"
+  ],
+  "sources": [
+   {
+    "dataset": "contractnli",
+    "label": "Sharing with third-parties",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "contractnli": 695
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Affiliate License-Licensee",
+  "name": "Affiliate License-Licensee",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Affiliate License-Licensee",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 91
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Affiliate License-Licensor",
+  "name": "Affiliate License-Licensor",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Affiliate License-Licensor",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 55
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Audit Rights",
+  "name": "Audit Rights",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Audit Rights",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 344
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/Rbjf6IGvMubNB3VG6OHa2J",
+   "label": "Right to Audit Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "cuad_clause:Competitive Restriction Exception",
+  "name": "Competitive Restriction Exception",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Competitive Restriction Exception",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 85
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Covenant Not To Sue",
+  "name": "Covenant Not To Sue",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Covenant Not To Sue",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 106
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R94pSFT1Es8tKlSxnokNvMR",
+   "label": "Covenant Not to Sue Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "cuad_clause:Exclusivity",
+  "name": "Exclusivity",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Exclusivity",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 244
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RDgEiiX23zftUP0Mggfc68n",
+   "label": "Exclusivity Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "cuad_clause:Ip Ownership Assignment",
+  "name": "Ip Ownership Assignment",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Ip Ownership Assignment",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 179
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Irrevocable Or Perpetual License",
+  "name": "Irrevocable Or Perpetual License",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Irrevocable Or Perpetual License",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 127
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Joint Ip Ownership",
+  "name": "Joint Ip Ownership",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Joint Ip Ownership",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 58
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:License Grant",
+  "name": "License Grant",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "License Grant",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 529
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RTAn3dDVBaCFjkv1YPDhbA",
+   "label": "License Grant Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "cuad_clause:Liquidated Damages",
+  "name": "Liquidated Damages",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Liquidated Damages",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 75
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R8gVw3PYPaZJ9kce3wE60ag",
+   "label": "Liquidated Damages Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "cuad_clause:Minimum Commitment",
+  "name": "Minimum Commitment",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Minimum Commitment",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 298
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Most Favored Nation",
+  "name": "Most Favored Nation",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Most Favored Nation",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 27
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R5XoB2Y1jvuHNnUMNI8pUE",
+   "label": "Most Favored Nation Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "cuad_clause:No-Solicit Of Customers",
+  "name": "No-Solicit Of Customers",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "No-Solicit Of Customers",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 38
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Non-Compete",
+  "name": "Non-Compete",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Non-Compete",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 183
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Non-Transferable License",
+  "name": "Non-Transferable License",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Non-Transferable License",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 235
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Notice Period To Terminate Renewal",
+  "name": "Notice Period To Terminate Renewal",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Notice Period To Terminate Renewal",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 93
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Post-Termination Services",
+  "name": "Post-Termination Services",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Post-Termination Services",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 323
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RDnrnreSiKWtQ7CGtMqQ6Pg",
+   "label": "Termination of Service Agreement Clause",
+   "match": "approximate"
+  }
+ },
+ {
+  "id": "cuad_clause:Price Restrictions",
+  "name": "Price Restrictions",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Price Restrictions",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 21
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Revenue/Profit Sharing",
+  "name": "Revenue/Profit Sharing",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Revenue/Profit Sharing",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 302
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Rofr/Rofo/Rofn",
+  "name": "Rofr/Rofo/Rofn",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Rofr/Rofo/Rofn",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 154
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Source Code Escrow",
+  "name": "Source Code Escrow",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Source Code Escrow",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 67
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Termination For Convenience",
+  "name": "Termination For Convenience",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Termination For Convenience",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 164
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R8aLlxwrKd3TAt3HJptCrRF",
+   "label": "Termination for Convenience Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "cuad_clause:Third Party Beneficiary",
+  "name": "Third Party Beneficiary",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Third Party Beneficiary",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 23
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R97DdQGgeUgH9OJAvTnJreN",
+   "label": "Third Party Beneficiary Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "cuad_clause:Uncapped Liability",
+  "name": "Uncapped Liability",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Uncapped Liability",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 124
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Unlimited/All-You-Can-Eat-License",
+  "name": "Unlimited/All-You-Can-Eat-License",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Unlimited/All-You-Can-Eat-License",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 29
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Volume Restriction",
+  "name": "Volume Restriction",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Volume Restriction",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 104
+  },
+  "folio": null
+ },
+ {
+  "id": "cuad_clause:Warranty Duration",
+  "name": "Warranty Duration",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "cuad_clause",
+    "label": "Warranty Duration",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "cuad_clause": 114
+  },
+  "folio": null
+ },
+ {
+  "id": "lease:designated_use",
+  "name": "designated_use",
+  "shared": false,
+  "families": [
+   "lease"
+  ],
+  "sources": [
+   {
+    "dataset": "lease",
+    "label": "designated_use",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "lease": 95
+  },
+  "folio": null
+ },
+ {
+  "id": "lease:indexation_rent",
+  "name": "indexation_rent",
+  "shared": false,
+  "families": [
+   "lease"
+  ],
+  "sources": [
+   {
+    "dataset": "lease",
+    "label": "indexation_rent",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "lease": 41
+  },
+  "folio": null
+ },
+ {
+  "id": "lease:leased_space",
+  "name": "leased_space",
+  "shared": false,
+  "families": [
+   "lease"
+  ],
+  "sources": [
+   {
+    "dataset": "lease",
+    "label": "leased_space",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "lease": 121
+  },
+  "folio": null
+ },
+ {
+  "id": "lease:notice_period",
+  "name": "notice_period",
+  "shared": false,
+  "families": [
+   "lease"
+  ],
+  "sources": [
+   {
+    "dataset": "lease",
+    "label": "notice_period",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "lease": 44
+  },
+  "folio": null
+ },
+ {
+  "id": "lease:redflag",
+  "name": "redflag",
+  "shared": false,
+  "families": [
+   "lease"
+  ],
+  "sources": [
+   {
+    "dataset": "lease",
+    "label": "redflag",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "lease": 895
+  },
+  "folio": null
+ },
+ {
+  "id": "lease:vat",
+  "name": "vat",
+  "shared": false,
+  "families": [
+   "lease"
+  ],
+  "sources": [
+   {
+    "dataset": "lease",
+    "label": "vat",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "lease": 87
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Adjustments",
+  "name": "Adjustments",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Adjustments",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 326
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Agreements",
+  "name": "Agreements",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Agreements",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 252
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Anti-Corruption Laws",
+  "name": "Anti-Corruption Laws",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Anti-Corruption Laws",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 106
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RCwdfkXKaGBhSVTr5qr7vDy",
+   "label": "Anti-Corruption Clause",
+   "match": "approximate"
+  }
+ },
+ {
+  "id": "ledgar:Authority",
+  "name": "Authority",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Authority",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 549
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Base Salary",
+  "name": "Base Salary",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Base Salary",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 656
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Benefits",
+  "name": "Benefits",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Benefits",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 397
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Books",
+  "name": "Books",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Books",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 23
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Brokers",
+  "name": "Brokers",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Brokers",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 389
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Capitalization",
+  "name": "Capitalization",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Capitalization",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 434
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Closings",
+  "name": "Closings",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Closings",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 541
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Compliance With Laws",
+  "name": "Compliance With Laws",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Compliance With Laws",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 960
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R8r3hX4cDNhyDTmzgm9BOfo",
+   "label": "Compliance with Law Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Confidentiality",
+  "name": "Confidentiality",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Confidentiality",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1012
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RDOq8HJJl8YdcwBdCZmjlOW",
+   "label": "Confidentiality Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Cooperation",
+  "name": "Cooperation",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Cooperation",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 469
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R6l5lTCtgGrwOQRlYXtGit",
+   "label": "Cooperation Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Counterparts",
+  "name": "Counterparts",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Counterparts",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 2427
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R7OF55qIq9P3iOXGnNfVTuP",
+   "label": "Counterpart Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Death",
+  "name": "Death",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Death",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 278
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RD3bd7cR1Bts9PPsYe8AyFi",
+   "label": "Death Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Disability",
+  "name": "Disability",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Disability",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 263
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Disclosures",
+  "name": "Disclosures",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Disclosures",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 590
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Duties",
+  "name": "Duties",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Duties",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 354
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Employment",
+  "name": "Employment",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Employment",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 308
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Enforceability",
+  "name": "Enforceability",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Enforceability",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 244
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Enforcements",
+  "name": "Enforcements",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Enforcements",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 201
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Erisa",
+  "name": "Erisa",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Erisa",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 324
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Financial Statements",
+  "name": "Financial Statements",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Financial Statements",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 677
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Forfeitures",
+  "name": "Forfeitures",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Forfeitures",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 300
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R7alL3ThuE851s7NQLQmXZX",
+   "label": "Forfeiture Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Further Assurances",
+  "name": "Further Assurances",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Further Assurances",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1009
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RB0qcDlxdvDFw4nnhlhPhg3",
+   "label": "Further Assurances Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Interests",
+  "name": "Interests",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Interests",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 366
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Liens",
+  "name": "Liens",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Liens",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 313
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RBF8uUZ4p08orUeuKLXuVCo",
+   "label": "No Liens Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Litigations",
+  "name": "Litigations",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Litigations",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1034
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:No Conflicts",
+  "name": "No Conflicts",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "No Conflicts",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 741
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:No Defaults",
+  "name": "No Defaults",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "No Defaults",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 327
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R8XxCPX0obhOk013uLpX58K",
+   "label": "Default Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Notices",
+  "name": "Notices",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Notices",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 2493
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R9sy70TmYoM9eLAjF7rfva2",
+   "label": "Notices Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Participations",
+  "name": "Participations",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Participations",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 459
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Positions",
+  "name": "Positions",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Positions",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 190
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Powers",
+  "name": "Powers",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Powers",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 125
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Publicity",
+  "name": "Publicity",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Publicity",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 345
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R82mGnEayAviMiF6MSe5DdJ",
+   "label": "Publicity Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Qualifications",
+  "name": "Qualifications",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Qualifications",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 47
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Records",
+  "name": "Records",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Records",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 323
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Releases",
+  "name": "Releases",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Releases",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 621
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RRFcZz27hGaD8sjoUEZQ79",
+   "label": "Release Agreement Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Representations",
+  "name": "Representations",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Representations",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 569
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Sales",
+  "name": "Sales",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Sales",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 327
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Sanctions",
+  "name": "Sanctions",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Sanctions",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 118
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Severability",
+  "name": "Severability",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Severability",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 1808
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R9JMX7niGHsR9tG8mfIMzOS",
+   "label": "Severability Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Solvency",
+  "name": "Solvency",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Solvency",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 419
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Subsidiaries",
+  "name": "Subsidiaries",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Subsidiaries",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 563
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Titles",
+  "name": "Titles",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Titles",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 317
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Transactions With Affiliates",
+  "name": "Transactions With Affiliates",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Transactions With Affiliates",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 353
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Use Of Proceeds",
+  "name": "Use Of Proceeds",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Use Of Proceeds",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 866
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RDhXPkOAHznKvU1lxwLTqZw",
+   "label": "Use of Proceeds Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "ledgar:Vacations",
+  "name": "Vacations",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Vacations",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 341
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Vesting",
+  "name": "Vesting",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Vesting",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 451
+  },
+  "folio": null
+ },
+ {
+  "id": "ledgar:Waiver Of Jury Trials",
+  "name": "Waiver Of Jury Trials",
+  "shared": false,
+  "families": [
+   "commercial"
+  ],
+  "sources": [
+   {
+    "dataset": "ledgar",
+    "label": "Waiver Of Jury Trials",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "ledgar": 768
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RBMP3a3Y68abx6FeTqmEPFk",
+   "label": "Waiver of Jury Trial Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "opp115:Data Retention",
+  "name": "opp115:Data Retention",
+  "shared": false,
+  "families": [
+   "privacy policy"
+  ],
+  "sources": [
+   {
+    "dataset": "opp115",
+    "label": "Data Retention",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "opp115": 109
+  },
+  "folio": null
+ },
+ {
+  "id": "opp115:Data Security",
+  "name": "opp115:Data Security",
+  "shared": false,
+  "families": [
+   "privacy policy"
+  ],
+  "sources": [
+   {
+    "dataset": "opp115",
+    "label": "Data Security",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "opp115": 280
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R7xjtdjCK8LoDNrx5EwqIJa",
+   "label": "Data Security Clause",
+   "match": "approximate"
+  }
+ },
+ {
+  "id": "opp115:Do Not Track",
+  "name": "opp115:Do Not Track",
+  "shared": false,
+  "families": [
+   "privacy policy"
+  ],
+  "sources": [
+   {
+    "dataset": "opp115",
+    "label": "Do Not Track",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "opp115": 24
+  },
+  "folio": null
+ },
+ {
+  "id": "opp115:First Party Collection/Use",
+  "name": "opp115:First Party Collection/Use",
+  "shared": false,
+  "families": [
+   "privacy policy"
+  ],
+  "sources": [
+   {
+    "dataset": "opp115",
+    "label": "First Party Collection/Use",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "opp115": 1111
+  },
+  "folio": null
+ },
+ {
+  "id": "opp115:International and Specific Audiences",
+  "name": "opp115:International and Specific Audiences",
+  "shared": false,
+  "families": [
+   "privacy policy"
+  ],
+  "sources": [
+   {
+    "dataset": "opp115",
+    "label": "International and Specific Audiences",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "opp115": 250
+  },
+  "folio": null
+ },
+ {
+  "id": "opp115:Third Party Sharing/Collection",
+  "name": "opp115:Third Party Sharing/Collection",
+  "shared": false,
+  "families": [
+   "privacy policy"
+  ],
+  "sources": [
+   {
+    "dataset": "opp115",
+    "label": "Third Party Sharing/Collection",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "opp115": 826
+  },
+  "folio": null
+ },
+ {
+  "id": "opp115:User Access, Edit and Deletion",
+  "name": "opp115:User Access, Edit and Deletion",
+  "shared": false,
+  "families": [
+   "privacy policy"
+  ],
+  "sources": [
+   {
+    "dataset": "opp115",
+    "label": "User Access, Edit and Deletion",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "opp115": 166
+  },
+  "folio": null
+ },
+ {
+  "id": "opp115:User Choice/Control",
+  "name": "opp115:User Choice/Control",
+  "shared": false,
+  "families": [
+   "privacy policy"
+  ],
+  "sources": [
+   {
+    "dataset": "opp115",
+    "label": "User Choice/Control",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "opp115": 457
+  },
+  "folio": null
+ },
+ {
+  "id": "tos:Arbitration",
+  "name": "Arbitration",
+  "shared": false,
+  "families": [
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "tos",
+    "label": "Arbitration",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "tos": 28
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RWQW185M6gqosVVQA1GE0A",
+   "label": "Arbitration Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "tos:Choice of law",
+  "name": "Choice of law",
+  "shared": false,
+  "families": [
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "tos",
+    "label": "Choice of law",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "tos": 39
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/R8jp9mAfFHSfJBbsZRlBjBM",
+   "label": "Choice of Law Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "tos:Content removal",
+  "name": "Content removal",
+  "shared": false,
+  "families": [
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "tos",
+    "label": "Content removal",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "tos": 73
+  },
+  "folio": null
+ },
+ {
+  "id": "tos:Contract by using",
+  "name": "Contract by using",
+  "shared": false,
+  "families": [
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "tos",
+    "label": "Contract by using",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "tos": 76
+  },
+  "folio": null
+ },
+ {
+  "id": "tos:Jurisdiction",
+  "name": "Jurisdiction",
+  "shared": false,
+  "families": [
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "tos",
+    "label": "Jurisdiction",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "tos": 34
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RBZ5IuV0gTh73KJm144lOoR",
+   "label": "Jurisdiction Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "tos:Limitation of liability",
+  "name": "Limitation of liability",
+  "shared": false,
+  "families": [
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "tos",
+    "label": "Limitation of liability",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "tos": 191
+  },
+  "folio": {
+   "iri": "https://folio.openlegalstandard.org/RBukB9MGGdY4Kwx3b6itiwi",
+   "label": "Limitation of Liability Clause",
+   "match": "exact name"
+  }
+ },
+ {
+  "id": "tos:Unilateral change",
+  "name": "Unilateral change",
+  "shared": false,
+  "families": [
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "tos",
+    "label": "Unilateral change",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "tos": 122
+  },
+  "folio": null
+ },
+ {
+  "id": "tos:Unilateral termination",
+  "name": "Unilateral termination",
+  "shared": false,
+  "families": [
+   "terms of service"
+  ],
+  "sources": [
+   {
+    "dataset": "tos",
+    "label": "Unilateral termination",
+    "kind": "own"
+   }
+  ],
+  "train_positives": {
+   "tos": 139
+  },
+  "folio": null
+ }
+]

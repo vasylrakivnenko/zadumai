@@ -1,0 +1,28 @@
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 9752.51it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 12194.17it/s]
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 10750.53it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11427.53it/s]
+  nda_tune: 100/1700 (169s)
+  nda_tune: 200/1700 (315s)
+  nda_tune: 300/1700 (547s)
+  nda_tune: 400/1700 (852s)
+  nda_tune: 500/1700 (1042s)
+  nda_tune: 600/1700 (1297s)
+  nda_tune: 700/1700 (1525s)
+  nda_tune: 800/1700 (1800s)
+  nda_tune: 900/1700 (2080s)
+  nda_tune: 1000/1700 (2335s)
+  nda_tune: 1100/1700 (2543s)
+  nda_tune: 1200/1700 (2723s)
+  nda_tune: 1300/1700 (2896s)
+  nda_tune: 1400/1700 (3073s)
+  nda_tune: 1500/1700 (3260s)
+  nda_tune: 1600/1700 (3554s)
+  nda_tune: 1700/1700 (3750s)
+done nda_tune -> /root/zadumai_nli_proto/contract_map/typed/feats/nda_tune.jsonl (3750s)

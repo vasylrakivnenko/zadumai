@@ -1,0 +1,30 @@
+== combined vs separate, stage 1: train ledgar 6000, cuad_clause 6000, tos 5532, opp115 2658, contractnli 6000, lease 6000 | eval ledgar 500, cuad_clause 500, tos 500, opp115 393, contractnli 500, lease 500
+   unified classes shared by 2+ datasets: ['U:amendments', 'U:arbitration', 'U:assignment/successors', 'U:change of control', 'U:changes by the provider', 'U:consents', 'U:costs', 'U:definitions', 'U:effectiveness', 'U:entire agreement', 'U:governing law', 'U:indemnity', 'U:insurance', 'U:intellectual property', 'U:interpretation', 'U:jurisdiction/venue', 'U:limitation of liability', 'U:miscellaneous', 'U:non-disparagement', 'U:non-solicitation of employees', 'U:organization', 'U:payment terms', 'U:remedies', 'U:renewal/extension', 'U:survival', 'U:taxes', 'U:term of agreement', 'U:termination', 'U:waivers', 'U:warranties', 'U:withholding']
+   combined: 146 classes trained in 11s
+   separate ledgar: 3s
+   separate cuad_clause: 2s
+   separate tos: 1s
+   separate opp115: 1s
+   separate contractnli: 1s
+   separate lease: 1s
+   dataset                    separate               combined   change
+   ledgar                    acc 88.6%              acc 88.2%   -0.4 pts
+   cuad_clause    F1 0.638 (P 75 R 56)   F1 0.630 (P 73 R 55)   -0.008
+        U:assignment/successors                n   27  F1 0.74 -> 0.70
+        U:change of control                    n   15  F1 0.36 -> 0.50
+        U:governing law                        n   24  F1 0.90 -> 0.94
+        U:insurance                            n   21  F1 0.77 -> 0.75
+        U:limitation of liability              n   25  F1 0.76 -> 0.74
+        U:non-disparagement                    n    4  F1 0.00 -> 0.00
+        U:non-solicitation of employees        n    4  F1 0.75 -> 0.60
+        U:renewal/extension                    n    5  F1 0.50 -> 0.62
+        U:term of agreement                    n   18  F1 0.81 -> 0.82
+   tos            F1 0.793 (P 84 R 75)   F1 0.773 (P 82 R 73)   -0.020
+   opp115         F1 0.751 (P 74 R 76)   F1 0.741 (P 74 R 75)   -0.011
+        U:changes by the provider              n   14  F1 0.76 -> 0.67
+   contractnli    F1 0.747 (P 76 R 74)   F1 0.753 (P 78 R 73)   +0.005
+        U:non-solicitation of employees        n   10  F1 0.64 -> 0.64
+        U:survival                             n   22  F1 0.68 -> 0.72
+   lease          F1 0.443 (P 82 R 30)   F1 0.439 (P 82 R 30)   -0.004
+        U:payment terms                        n   55  F1 0.52 -> 0.55
+        U:renewal/extension                    n   10  F1 0.53 -> 0.50

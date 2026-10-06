@@ -1,0 +1,72 @@
+[
+ {
+  "task": "teaming-agreement-counterparty-paper-review",
+  "base": {
+   "crit": 0.0,
+   "all_pass": false,
+   "input_tok": 5020754,
+   "turns": 31,
+   "overflow": true,
+   "wall_min": 17.0
+  },
+  "ivo": {
+   "crit": 0.966,
+   "all_pass": false,
+   "input_tok": 8762268,
+   "turns": 51,
+   "overflow": true,
+   "wall_min": 51.3
+  },
+  "plain": {
+   "crit": 0.948,
+   "all_pass": false,
+   "input_tok": 8264891,
+   "turns": 48,
+   "overflow": null,
+   "wall_min": 80.5
+  },
+  "tool": {
+   "crit": 0.0,
+   "all_pass": false,
+   "input_tok": 5144018,
+   "turns": 36,
+   "overflow": null,
+   "wall_min": 61.6
+  }
+ },
+ {
+  "task": "quality-agreement-first-turn-redline",
+  "base": {
+   "crit": 0.0,
+   "all_pass": false,
+   "input_tok": 4975658,
+   "turns": 30,
+   "overflow": false,
+   "wall_min": 16.8
+  },
+  "ivo": {
+   "crit": 0.978,
+   "all_pass": false,
+   "input_tok": 14112110,
+   "turns": 71,
+   "overflow": false,
+   "wall_min": 51.8
+  },
+  "plain": {
+   "crit": 0.0,
+   "all_pass": false,
+   "input_tok": 923408,
+   "turns": 11,
+   "overflow": null,
+   "wall_min": 21.3
+  },
+  "tool": {
+   "crit": 0.0,
+   "all_pass": false,
+   "input_tok": 5990783,
+   "turns": 47,
+   "overflow": null,
+   "wall_min": 28.4
+  }
+ }
+]

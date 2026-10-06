@@ -1,0 +1,445 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the one-time easement payment (per-rod rate) in the Drennan counter-draft as exceeding the company's delegated fallback negotiation authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the crop-loss and damages payment provisions (administrative surcharge and/or per-occurrence cap) in the Drennan counter-draft as exceeding fallback authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the restoration standard (including timeline and/or performance metric) in the Drennan counter-draft as exceeding fallback authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the indemnification scope (breadth of coverage and/or cap) in the Drennan counter-draft as exceeding fallback authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the assignment and/or change-of-control consent requirement in the Drennan counter-draft as exceeding fallback authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the term/reversionary interest provision (non-use reversion) in the Drennan counter-draft as exceeding fallback authority.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix maximum for the one-time easement payment is $12,500 per rod of centerline length.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan Trust counter-proposal sets the one-time easement payment at $16,750 per rod of centerline length.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix authorizes a crop-loss administrative surcharge of 15% of actual documented loss.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix includes a per-occurrence cap of $275,000 on crop-loss and damages payments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal increases the crop-loss administrative surcharge to 30% of actual documented loss.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal removes or eliminates the per-occurrence cap on crop-loss and damages payments (i.e., no cap).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix requires restoration to 'substantially similar' pre-construction condition, or words to that effect.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix requires restoration within 18 months of construction completion.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal requires restoration to 'original agricultural productivity' measured by the three-year pre-construction average yield per acre and/or certified by a mutually agreed independent agronomist.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal shortens the restoration timeline to 12 months from the fallback's 18 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal includes liquidated damages of $1,500 per acre per month triggered by failure to meet the restoration standard or timeline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix limits Meridian's indemnity obligation to third-party claims arising from Meridian's negligence or willful misconduct.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix sets an aggregate indemnification liability cap equal to 200% of the one-time easement payment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal imposes a broad-form indemnity covering all claims 'arising out of or related to' the easement, including the Grantor's own concurrent negligence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal eliminates or removes the aggregate cap on indemnification liability (i.e., no aggregate cap).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix permits Meridian to freely assign the easement to any affiliate or project lender without grantor consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix requires only 30 days' prior written notice for assignment to an unaffiliated third party, with no grantor consent right.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal requires the Grantor's prior written consent, not to be unreasonably withheld, for any assignment or change of control, whether direct or indirect.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal imposes a $50,000 'transfer processing fee' upon any assignment or change of control.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Fallback Authority Matrix provides for a perpetual easement that can be extinguished only by a recorded release (i.e., no reversion trigger).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the Drennan counter-proposal includes automatic reversion of the easement to the Grantor if the easement is not used for its stated utility purpose for any continuous 24-month period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references July 15, 2025 as the deadline by which all interconnection-route easements must be fully executed.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the July 15, 2025 easement execution deadline as a requirement of the project-finance term sheet with Great Plains Infrastructure Lenders, LP (GPIL).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the easement corridor across the Drennan Trust parcel is the only technically and environmentally viable interconnection route for the Tallgrass Solar Project.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that rerouting around the Drennan parcel would require a new environmental review estimated at 9 to 14 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed, directed, or sent to the Meridian Prairie Energy LLC Investment Committee (IC) and/or its chair, CFO Dana Okonkwo.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Nathan Xu (Senior Counsel \u2013 Project Development, Meridian) as its author or sender.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo specifically references the Fallback Authority Matrix by version number, v.4.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references March 3, 2025 as the approval date of the Fallback Authority Matrix by the Investment Committee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo uses an approximate corridor length of 2.1 miles and/or approximately 672 rods when calculating the incremental one-time easement payment exposure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies or uses the per-rod price differential of approximately $4,250 ($16,750 counter-proposal minus $12,500 fallback maximum) when calculating the incremental exposure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the approximate aggregate incremental one-time easement payment exposure above fallback authority is approximately $2.85 million, or roughly $2.8M to $2.9M.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Drennan counter-proposal's assignment/change-of-control consent requirement could impede Meridian's ability to assign or pledge the easement to its project-finance lender, Great Plains Infrastructure Lenders, LP (GPIL), and notes that the fallback authority contemplates free assignment to project lenders.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo makes a clear, specific request to the Meridian Investment Committee to authorize negotiation authority beyond the Fallback Authority Matrix for the identified out-of-policy terms on the Drennan Trust easement.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

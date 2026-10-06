@@ -1,0 +1,324 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable gives a negotiation rationale explaining why the proposed Section 2.01 compromise on the scope of assigned IP is reasonable or balanced.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable gives a negotiation rationale supporting the proposed Section 3.04 compromise on representations and warranties regarding third-party encumbrances.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable gives a negotiation rationale supporting the proposed Section 5.02 compromise on the inventor cooperation obligation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable gives a negotiation rationale supporting the proposed Section 7.03 compromise on the post-closing indemnification cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 2.01 compromise identifies Schedule 2.01 as the primary listing or catalogue of the assigned intellectual property.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 2.01 compromise includes supplemental language capturing intellectual property used in, related to, or necessary for the business that may not be specifically listed on Schedule 2.01.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 2.01 compromise includes a carve-out for intellectual property developed by employees of Vectral Systems outside the scope of their employment and/or intellectual property predating the formation of Vectral Systems.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 3.04 compromise or its rationale addresses the non-exclusive license to Meridian Manufacturing Corp. for Patent No. US 10,442,317 under the Joint Development Agreement dated March 8, 2021, as a disclosed encumbrance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 3.04 compromise or its rationale addresses the Apache 2.0 open-source license obligation embedded in the VX-Core Runtime v.3.2 module as a disclosed encumbrance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 3.04 compromise or its rationale addresses the Peninsula National Bank lien securing Vectral's $2,750,000 revolving credit facility as a disclosed encumbrance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 3.04 compromise modifies, qualifies, or makes an exception to Korvus's representation that the Assigned IP is free and clear of all liens, encumbrances, licenses, covenants, and restrictions \u201cof any kind whatsoever.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 3.04 compromise does not use \u201cto the Knowledge of Assignor\u201d as a blanket knowledge qualifier across the entire encumbrance representation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 3.04 compromise includes an exception for Permitted Encumbrances or a functionally equivalent category of scheduled or disclosed encumbrances, and references Schedule 3.04.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 3.04 compromise or its rationale treats the Peninsula National Bank lien distinctly from the Meridian Manufacturing Corp. non-exclusive license and the Apache 2.0 open-source obligation, recognizing the lien as a financing or security interest on IP assets.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 3.04 compromise or its rationale provides for the Peninsula National Bank lien to be released, discharged, paid off, or otherwise removed at or before closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 5.02 compromise specifies an inventor cooperation term longer than 2 years and shorter than 10 years.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 5.02 compromise addresses compensation, expense reimbursement, or another form of payment for Dr. Reznik's or the named inventors' post-closing cooperation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 5.02 compromise or its rationale references or accommodates Dr. Reznik's existing 12-month post-closing consulting agreement at a $22,500 per month retainer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 7.03 compromise sets an aggregate indemnification cap for IP representation breaches greater than $1,500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 7.03 compromise sets a specific aggregate cap or ceiling on indemnification liability.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rationale for the proposed Section 7.03 cap discusses its amount in relation to the $38,400,000 purchase price and/or the $3,840,000 escrow.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 7.03 compromise specifies an IP-specific representation and warranty survival period of at least 24 months and no more than 36 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable distinguishes the proposed IP-specific survival period from the Asset Purchase Agreement's 18-month general survival period and makes clear that the IP representations have a longer survival window.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 2.01 compromise is drafted as operative contract language suitable for insertion into the IP Assignment Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 3.04 compromise is drafted as operative contract language suitable for insertion into the IP Assignment Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 5.02 compromise is drafted as operative contract language suitable for insertion into the IP Assignment Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Section 7.03 compromise is drafted as operative contract language suitable for insertion into the IP Assignment Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable consistently identifies Vectral Systems, Inc. as the Assignor in the proposed compromise language and supporting rationale.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable consistently identifies Korvus Industrial Technologies, Ltd. as the Assignee in the proposed compromise language and supporting rationale.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

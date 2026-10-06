@@ -1,0 +1,39 @@
+== doctype stage 1: 7 classes, eval 500 rows, train 1773 of 1773
+ -- view: head (first 4,000 chars, title included)
+   (tfidf: trained on 1773 rows in 35s)
+  tfidf        accuracy  93.2% [lo 0.906]  macro-F1 0.919  (2.7 ms/item)
+      answer only if p >= 0.5: coverage  94.4%  precision  96.0% [lo 0.938]
+      answer only if p >= 0.7: coverage  86.4%  precision  97.0% [lo 0.949]
+      answer only if p >= 0.9: coverage  60.2%  precision  99.0% [lo 0.971]
+      most confused (gold -> predicted): terms of service -> cookie policy ×7; cookie policy -> privacy policy ×5; lease -> commercial agreement ×5; privacy policy -> cookie policy ×4; software licence / EULA -> terms of service ×3; non-disclosure agreement -> commercial agreement ×2
+   jev: 0 cached, 500 to call
+   jev: 100/500
+   jev: 200/500
+   jev: 300/500
+   jev: 400/500
+   jev: 500/500
+   (jev: 0 errors; latency p50 69 ms, p95 123 ms; this run: 500 calls, tokens in 626777, out 40434, model jev-1.13.0)
+  jev          accuracy  93.8% [lo 0.913]  macro-F1 0.928  (68.9 ms/item)
+      answer only if p >= 0.5: coverage  99.8%  precision  94.0% [lo 0.915]
+      answer only if p >= 0.7: coverage  98.4%  precision  94.5% [lo 0.921]
+      answer only if p >= 0.9: coverage  95.6%  precision  95.8% [lo 0.936]
+      most confused (gold -> predicted): lease -> commercial agreement ×11; cookie policy -> privacy policy ×5; commercial agreement -> software licence / EULA ×3; terms of service -> cookie policy ×3; privacy policy -> terms of service ×3; privacy policy -> cookie policy ×2
+ -- view: body (chars 2,000-6,000, no title)
+   (tfidf: trained on 1773 rows in 9s)
+  tfidf        accuracy  88.6% [lo 0.855]  macro-F1 0.852  (0.5 ms/item)
+      answer only if p >= 0.5: coverage  87.2%  precision  94.7% [lo 0.922]
+      answer only if p >= 0.7: coverage  79.2%  precision  96.7% [lo 0.945]
+      answer only if p >= 0.9: coverage  52.8%  precision  98.9% [lo 0.967]
+      most confused (gold -> predicted): cookie policy -> privacy policy ×12; software licence / EULA -> terms of service ×7; lease -> commercial agreement ×7; commercial agreement -> privacy policy ×4; privacy policy -> cookie policy ×4; terms of service -> privacy policy ×3
+   jev: 0 cached, 500 to call
+   jev: 100/500
+   jev: 200/500
+   jev: 300/500
+   jev: 400/500
+   jev: 500/500
+   (jev: 0 errors; latency p50 73 ms, p95 130 ms; this run: 500 calls, tokens in 579384, out 40412, model jev-1.13.0)
+  jev          accuracy  88.2% [lo 0.851]  macro-F1 0.872  (73.5 ms/item)
+      answer only if p >= 0.5: coverage  97.8%  precision  90.0% [lo 0.870]
+      answer only if p >= 0.7: coverage  92.6%  precision  93.1% [lo 0.904]
+      answer only if p >= 0.9: coverage  88.2%  precision  94.1% [lo 0.915]
+      most confused (gold -> predicted): lease -> commercial agreement ×13; cookie policy -> privacy policy ×8; cookie policy -> commercial agreement ×7; non-disclosure agreement -> commercial agreement ×7; privacy policy -> commercial agreement ×6; privacy policy -> cookie policy ×2

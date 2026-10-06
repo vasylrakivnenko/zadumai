@@ -1,0 +1,841 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Calyx draft's definition of Confidential Information is missing the independent-development exclusion.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo references Playbook \u00a73.1's requirement for five standard exclusions (public domain, prior possession, independent development, third-party lawful receipt, compelled disclosure).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo assigns the missing independent-development exclusion a High Risk rating.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the missing independent-development exclusion (High Risk) requires approval of GC (Priya N. Ramaswamy) and VP Corporate Development (Eamon J. Prescott).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Calyx draft limits Permitted Disclosees to officers, directors, and employees only.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes this narrow scope excludes legal, financial, and accounting advisors, potential lenders, and co-investors required by Playbook \u00a73.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes expanding the Permitted Disclosees/Representatives definition to include legal, financial, and accounting advisors, potential lenders, and co-investors per Playbook \u00a73.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Ridgeline Partners LLC (financial advisor) would be excluded under the Calyx draft's narrow Permitted Disclosees definition.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that Thorncastle Whitfield LLP (outside counsel) would be excluded under the Calyx draft's narrow Permitted Disclosees definition.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Calyx draft's 18-month non-solicitation period (Section 8) as a deviation from the Playbook \u00a76.3 maximum of 12 months.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the 18-month non-solicitation period as High Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the $150,000 per-breach liquidated damages provision in the Calyx draft.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends striking the liquidated damages provision in favor of an actual-damages standard per Playbook \u00a76.3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends reducing the non-solicitation period from 18 months to 12 months per Playbook \u00a76.3.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends limiting the non-solicitation scope to personnel introduced in diligence per Playbook \u00a76.3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Calyx draft's 18-month standstill (Section 9) as a High Risk deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that the standstill has no fall-away provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states Verdantis's preferred/ideal position on the standstill is no standstill accepted, per Playbook \u00a77.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the acceptable fallback is a 12-month standstill with mandatory fall-away upon third-party definitive agreement or public auction, per Playbook \u00a77.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that acceptance of any standstill terms requires board-level notification per the playbook authority matrix.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Calyx draft's 5-year survival period (Section 12) as a deviation from the playbook's 2-year standard / 3-year maximum (Playbook \u00a74.1).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the 5-year survival period as Medium Risk or High Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends reducing the survival period to 2 years as the preferred position per Playbook \u00a74.1.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends 3 years as the fallback survival period per Playbook \u00a74.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo designates the approval authority for the 5-year survival deviation as GC (Priya N. Ramaswamy) if rated Medium Risk, or GC (Ramaswamy) and VP Corporate Development (Eamon J. Prescott) jointly if rated High Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the absence of a residuals clause in the Calyx draft as a Medium Risk deviation from Playbook \u00a74.3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends inserting a residuals clause permitting use of general knowledge retained in unaided memory, consistent with Playbook \u00a74.3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Calyx draft's 5-business-day return/destruction requirement (Section 7) with no retention carve-outs as a Medium Risk deviation from Playbook \u00a75.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends extending the return/destruction deadline from 5 business days to 15 business days per Playbook \u00a75.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends adding a carve-out for regulatory/legal holds per Playbook \u00a75.2.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends adding a carve-out for electronically archived copies per Playbook \u00a75.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Calyx draft's New York governing law and New York County Supreme Court jurisdiction as a Low Risk deviation from the playbook's preferred Delaware law / Court of Chancery (Playbook \u00a79.1).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo designates the governing law/forum deviation as approvable by Associate General Counsel (Lena F. Castellano).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the stipulated-injunction clause (waiving bond and requiring no showing of irreparable harm) as a High Risk deviation from Playbook \u00a78.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends revising the injunction clause to acknowledge equitable relief is appropriate but require court determination of irreparable harm, per Playbook \u00a78.2.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends striking the bond waiver, per Playbook \u00a78.2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the non-disclosure-of-discussions clause's lack of a securities-law carve-out as a High Risk deviation from Playbook \u00a76.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Verdantis is a Nasdaq-listed public company.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes Verdantis's ticker is VRDS.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes Verdantis has disclosure obligations under securities laws.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a mandatory carve-out for disclosures required under securities laws, stock-exchange rules, or in response to a subpoena or court order, per Playbook \u00a76.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags that the Calyx draft's warranty disclaimer does not include a fraud/intentional-misrepresentation savings clause.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends adding a fraud/intentional-misrepresentation savings clause per Playbook \u00a73.5.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the warranty disclaimer / missing savings clause deviation as Low Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo categorizes the standstill with no fall-away as High Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo categorizes the missing securities-law carve-out as High Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo categorizes the 18-month non-solicit with liquidated damages as High Risk (as one bundled item or as separately-enumerated components of duration, scope, and liquidated damages).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo categorizes the stipulated injunction, the missing independent-development exclusion, and the narrow Permitted Disclosees as High Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo classifies as High Risk an item the playbook does not classify as High Risk (other than the 5-year survival period).",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo categorizes the return/destruction timeline and missing retention carve-outs as Medium Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo categorizes the absence of a residuals clause as Medium Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo categorizes the 5-year survival period as Medium Risk or High Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo classifies as Medium Risk an item the playbook does not classify as Medium Risk.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo categorizes governing law/forum as Low Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo categorizes warranty disclaimer breadth (missing fraud/intentional-misrepresentation savings clause) as Low Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo classifies additional items beyond governing law/forum and warranty disclaimer breadth as Low Risk.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies and analyzes all six High Risk deviations: missing independent-development exclusion, narrow Permitted Disclosees, 18-month non-solicit with liquidated damages, 18-month standstill with no fall-away, missing securities-law carve-out, and stipulated injunction.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies and analyzes all three Medium Risk deviations: 5-year survival, return/destruction timeline with missing carve-outs, and no residuals clause.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies and analyzes both Low Risk deviations: governing law/forum and warranty-disclaimer breadth.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each of the ten identified deviations, the memo states Verdantis's preferred/ideal position drawn from the playbook.",
+     "pass_if": true
+    },
+    {
+     "s": "For each of the ten identified deviations, the memo states the acceptable fallback position drawn from the playbook (or notes the playbook supplies no distinct fallback for that topic).",
+     "pass_if": true
+    },
+    {
+     "s": "For each of the ten identified deviations, the memo states the walk-away position drawn from the playbook (or notes the playbook supplies no distinct walk-away for that topic).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline is structured as a markup of the Calyx draft NDA (calyx-draft-nda.docx), retaining the Calyx draft's structure and proposing changes to it.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline is a rewrite from or primarily based on the Verdantis standard form NDA.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline proposes specific language changes (insertions, deletions, substitutions) for each of the ten identified deviations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the approval authority for Low Risk deviations as Associate General Counsel (Lena F. Castellano).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the approval authority for Medium Risk deviations as General Counsel (Priya N. Ramaswamy).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the approval authority for High Risk deviations as GC (Priya N. Ramaswamy) and VP Corporate Development (Eamon J. Prescott).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo specifically notes that acceptance of standstill terms requires board-level notification in addition to GC + VP Corp Dev approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that the Calyx draft describes itself as mutual but contains provisions that disproportionately favor Calyx as the disclosing party, reflecting the predominantly one-way disclosure anticipated during due diligence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Thorncastle matter number 2025-04217.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline references Thorncastle matter number 2025-04217.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references document ID TWL-2025-04217-001.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline references document ID TWL-2025-04217-001.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo uses the project code name 'Canopy' consistently throughout.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo uses the target's real name without the code name 'Canopy'.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline uses the project code name 'Canopy'.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the deliverable deadline of July 18, 2025 for both the redline and issues/risk memo.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the target NDA execution date of August 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the due diligence commencement date of August 4, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline inserts or verifies the public domain exclusion in the Confidential Information definition per Playbook \u00a73.1.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline inserts or verifies the prior possession exclusion in the Confidential Information definition per Playbook \u00a73.1.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline inserts the independent development exclusion in the Confidential Information definition per Playbook \u00a73.1.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline inserts or verifies the third-party lawful receipt exclusion in the Confidential Information definition per Playbook \u00a73.1.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline inserts or verifies the compelled disclosure exclusion in the Confidential Information definition per Playbook \u00a73.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed from Thorncastle Whitfield LLP (Helen K. Lindquist and/or Marcus W. Cavanaugh).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo is addressed to the Verdantis in-house team (Priya N. Ramaswamy and Lena F. Castellano).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a copy (cc) to Eamon J. Prescott (VP Corporate Development).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is marked as privileged and confidential (e.g., 'Privileged and Confidential' or 'Attorney-Client Privileged').",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes the Calyx draft's non-solicitation covers 'any Target employee contacted during diligence' which is broader than the playbook's standard of 'personnel introduced in diligence.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes narrowing the non-solicitation scope from 'any Target employee contacted during diligence' to 'personnel introduced in diligence' (or substantially equivalent narrowing language).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the Calyx draft's standstill bars Verdantis from acquiring Target securities for 18 months.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies that the Calyx draft's standstill bars Verdantis from making public proposals for 18 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that the absence of a fall-away provision means Verdantis would remain restricted even if Calyx enters a definitive agreement with a third party or initiates a public auction, creating a significant competitive disadvantage.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a clearly identified executive summary section.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo includes a summary risk matrix table listing all deviations with their risk ratings.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a section discussing deal-timeline implications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline includes marginal comments (or inline annotations) for each proposed change that cite the relevant playbook section reference and risk rating.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 4872,
+  "completion": 10070
+ }
+}

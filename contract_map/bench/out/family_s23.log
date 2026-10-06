@@ -1,0 +1,52 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== family.py stage 2: eval ledgar 2000, cuad_clause 2000, tos 1607, opp115 763, contractnli 2000, lease 2000
+   router: train 3294 docs, test 1156: accuracy 95.1% (18s); at p >= 0.9: 99.1% on 75%
+   router confusions: not a contract -> commercial ×21; privacy policy -> terms of service ×11; terms of service -> privacy policy ×9; lease -> commercial ×4; commercial -> not a contract ×4; commercial -> lease ×3
+   router by source: contractnli 98.4% (n 123), cuad_clause 99.0% (n 102), lease 97.1% (n 35), mcc 94.6% (n 577), opp115 100.0% (n 23), tosdr 92.6% (n 296)
+   commercial: borrowed U:non-solicitation of employees +194 (had 57)
+   nda: borrowed nothing (no rare class has a source)
+   privacy policy: borrowed nothing (no rare class has a source)
+   terms of service: borrowed tos:Arbitration +125 (had 28), tos:Choice of law +300 (had 39), tos:Jurisdiction +242 (had 34)
+   lease: borrowed U:renewal/extension +165 (had 53), lease:vat +300 (had 87)
+
+   dataset         own model     per kind  kind+borrow   routed e2e  rows routed right
+   ledgar          acc 89.5%    acc 89.6%    acc 89.6%            —  
+   cuad_clause      F1 0.678     F1 0.684     F1 0.668     F1 0.668  99.7%
+   tos              F1 0.739     F1 0.739     F1 0.737            —  
+   opp115           F1 0.769     F1 0.769     F1 0.769     F1 0.769  100.0%
+   contractnli      F1 0.744     F1 0.744     F1 0.744     F1 0.739  98.2%
+   lease            F1 0.275     F1 0.275     F1 0.272     F1 0.271  88.5%
+      cuad_clause  U:non-solicitation of employees      n   19  F1 0.72 -> 0.69
+      cuad_clause  U:renewal/extension                  n   27  F1 0.72 -> 0.65
+      tos          tos:Arbitration                      n    7  F1 0.93 -> 0.71
+      tos          tos:Choice of law                    n   13  F1 0.89 -> 0.88
+      tos          tos:Jurisdiction                     n   16  F1 0.80 -> 0.77
+      contractnli  U:non-solicitation of employees      n   59  F1 0.73 -> 0.73
+      lease        U:renewal/extension                  n   10  F1 0.44 -> 0.47
+      lease        lease:vat                            n   18  F1 0.24 -> 0.28
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== family.py stage 3: eval ledgar 10000, cuad_clause 8838, tos 1607, opp115 763, contractnli 7013, lease 8057
+   router: train 3294 docs, test 1156: accuracy 95.1% (18s); at p >= 0.9: 99.1% on 75%
+   router confusions: not a contract -> commercial ×21; privacy policy -> terms of service ×11; terms of service -> privacy policy ×9; lease -> commercial ×4; commercial -> not a contract ×4; commercial -> lease ×3
+   router by source: contractnli 98.4% (n 123), cuad_clause 99.0% (n 102), lease 97.1% (n 35), mcc 94.6% (n 577), opp115 100.0% (n 23), tosdr 92.6% (n 296)
+   commercial: borrowed U:non-solicitation of employees +194 (had 57)
+   nda: borrowed nothing (no rare class has a source)
+   privacy policy: borrowed nothing (no rare class has a source)
+   terms of service: borrowed tos:Arbitration +300 (had 28), tos:Choice of law +300 (had 39), tos:Jurisdiction +300 (had 34)
+   lease: borrowed U:renewal/extension +165 (had 53), lease:vat +300 (had 87)
+
+   dataset         own model     per kind  kind+borrow   routed e2e  rows routed right
+   ledgar          acc 90.1%    acc 90.3%    acc 90.2%            —  
+   cuad_clause      F1 0.590     F1 0.562     F1 0.560     F1 0.560  99.6%
+   tos              F1 0.739     F1 0.739     F1 0.740            —  
+   opp115           F1 0.769     F1 0.769     F1 0.769     F1 0.769  100.0%
+   contractnli      F1 0.682     F1 0.682     F1 0.682     F1 0.679  97.5%
+   lease            F1 0.213     F1 0.213     F1 0.234     F1 0.237  86.8%
+      cuad_clause  U:non-solicitation of employees      n   19  F1 0.65 -> 0.65
+      cuad_clause  U:renewal/extension                  n   27  F1 0.71 -> 0.71
+      tos          tos:Arbitration                      n    7  F1 0.93 -> 0.74
+      tos          tos:Choice of law                    n   13  F1 0.89 -> 0.88
+      tos          tos:Jurisdiction                     n   16  F1 0.80 -> 0.77
+      contractnli  U:non-solicitation of employees      n   82  F1 0.63 -> 0.63
+      lease        U:renewal/extension                  n   10  F1 0.35 -> 0.25
+      lease        lease:vat                            n   18  F1 0.17 -> 0.26

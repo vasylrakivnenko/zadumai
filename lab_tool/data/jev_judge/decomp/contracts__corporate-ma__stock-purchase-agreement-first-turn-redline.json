@@ -1,0 +1,567 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline maintains the general indemnification cap at 10% of the purchase price ($6,200,000) and rejects Seller's reduction to 7% ($4,340,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline maintains the escrow holdback at $6,200,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline retains a tipping basket structure and rejects Seller's conversion to a true deductible.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline sets the basket at 1.25% of the purchase price ($775,000), rejecting Seller's 1.5% ($930,000) and moving from Buyer's original 1% ($620,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline counters fundamental rep survival at 48 months, rejecting Seller's reduction from 60 to 36 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline sets general rep survival at 15 months, rejecting Seller's 12 months and moving from Buyer's 18 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline sets the capex consent threshold at $50,000, splitting the difference between Buyer's $25,000 and Seller's $75,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts Seller's deletion of the financing condition.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts the reverse break fee concept and counters at 2% of the purchase price ($1,240,000), rejecting Seller's 3% ($1,860,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects Seller's 7.0% seller note interest rate and counters at 6.0% per annum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable cites the Pinnacle West commitment letter's 6.5% cap on seller note interest, or the senior lender constraint, as the basis for rejecting the 7.0% proposal.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts Seller's change-of-control acceleration right on the seller note in concept.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline narrows 'change of control' to a direct sale of all or substantially all equity or assets and excludes indirect transfers and fund-level changes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects limiting the non-compete to OR/WA/ID and retains nationwide scope.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline sets the non-compete duration at 4 years, as a compromise between Buyer's 5 years and Seller's 3 years.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable cites Meridian revenue-concentration data to support nationwide non-compete scope, identifying a material share of revenue from customers outside the Pacific Northwest, such as approximately 35% in CA/TX/AZ or approximately 45% outside OR/WA/ID in total.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts MAE carve-outs for general economic conditions, pandemic/epidemic, changes in law, and effects of transaction announcement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the unqualified industry-wide changes MAE carve-out and adds a 'disproportionate impact' qualifier.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn redline rejects the unqualified industry-wide changes MAE carve-out pending a 'disproportionate impact' qualifier.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the SPA compliance MAE carve-out as too broad.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects Seller's narrowing of the knowledge qualifier and retains the constructive knowledge standard (actual + constructive knowledge).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The knowledge qualifier personnel list includes at least 5 named individuals from Nolan, Herrera, Cheung, Yee, Polk, Dominguez, and Bredesen.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects Seller's switch from weighted-average cost to FIFO for working capital inventory valuation and retains weighted-average cost.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline retains Buyer's right to select the independent accounting firm for working capital dispute resolution.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn redline proposes mutual selection of the independent accounting firm via AAA appointment as a fallback.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable references the approximately $185,000 average NWC inflation under FIFO versus weighted-average cost as reasoning for rejecting the methodology switch.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts all 19 identified non-substantive changes outright, including conforming edits, typographical corrections, defined-term clean-ups, and schedule formatting.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline marks 8 items as 'under review' or reserved: employment-related reps, environmental reps, certain disclosure schedule updates, and the customer concentration rep qualifier.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note flags the 8 items under internal review as reserved and states they will be addressed in a subsequent turn.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note is addressed to Elaine Whitfield at Whitfield & Pryce LLP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note identifies Cascadia Industrial Holdings, LLC as the client on whose behalf it is sent, or identifies Ochsner Bellamy & Kato LLP as sending it on behalf of Cascadia.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note organizes its summary under at least these topics: indemnification, covenants, closing conditions, reps & warranties, non-compete, purchase price mechanics, MAE definition, and seller note terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "All references to the aggregate purchase price are consistent at $62,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Where referenced, cash at closing is stated as $49,600,000 (80% of $62M).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Where referenced, the seller note is stated as $6,200,000 (10% of $62M).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "All percentage-based dollar amounts are arithmetically consistent with a $62,000,000 base, including 1% = $620,000, 1.25% = $775,000, 2% = $1,240,000, and 10% = $6,200,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references the target signing date of June 16, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references the Pinnacle West commitment expiration date of August 15, 2025 as a timing constraint.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note conveys urgency given the transaction timeline and proposes scheduling a call or follow-up session to resolve open items.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The seller note interest rate in the counter-turn redline does not exceed 6.5% per annum, the Pinnacle West cap; the authorized counter is 6.0%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable references the LOI as establishing a 5-year, nationwide non-compete as among the customary terms for the transaction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable references the LOI as establishing that escrow equals the indemnification cap, supporting the $6,200,000 escrow position.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverables include both a counter-turn redline document and a cover note or transmittal letter.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline addresses all 47 of Seller's tracked changes: accepting 19, rejecting 11, counter-proposing on 9, and reserving 8.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline rejects the 11 identified substantive changes, including the indemnification cap reduction, basket conversion to a true deductible, knowledge narrowing, fundamental rep survival reduction, non-compete geographic limitation, working capital methodology switch, deletion of Buyer's right to select the accountant, seller note rate increase, and the two overreaching MAE carve-outs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The counter-turn redline proposes compromise positions on 9 items, including the capex threshold, general rep survival, basket amount, non-compete duration, seller note acceleration, reverse break fee, certain MAE carve-outs, financing condition, and knowledge personnel list.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline accepts the industry-wide changes MAE carve-out subject to a 'disproportionate impact' qualifier, so it does not apply to the extent the changes disproportionately affect the Company relative to other industry participants.",
+     "pass_if": true
+    },
+    {
+     "s": "The counter-turn redline rejects the industry-wide changes MAE carve-out as drafted and identifies a 'disproportionate impact' qualifier as the basis on which Buyer would accept it.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline maintains tax rep survival at the full statute of limitations plus 60 days, unchanged from Buyer's draft.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline maintains the mini-basket (de minimis threshold per claim) at $25,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The counter-turn redline maintains the fundamental rep indemnification cap at $62,000,000 (100% of the purchase price).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The escrow release schedule provides for release of 50% ($3,100,000) at 12 months post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The escrow release schedule provides for release of the remaining $3,100,000 at 18 months post-closing.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

@@ -1,0 +1,220 @@
+{
+  "step": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "task": "Identify Tax Issues in IRS Summary Judgment Brief on Management Fee Waiver Recharacterization\nReview the government's summary judgment brief and all supporting/opposing materials for errors, inconsistencies, and strategic vulnerabilities; prepare a detailed memo.\n\nOutput: `issue-memorandum.docx`.",
+        "documents": "briggs-assignment-email.eml, fee-waiver-elections.docx, govt-summary-judgment-brief.docx, quillen-declaration.docx",
+        "history": "[you]  -> bash(ls -la $WORKSPACE_DIR && echo \"---\" && ls -la $DOCUMENTS_DIR 2>/dev/null || echo \"no documents dir\"), glob(**/*)\n[bash result] total 0\ndrwxr-xr-x  5 root root    160 Sep  7 22:33 .\ndr-xr-xr-x. 1 root root     28 Sep  7 22:33 ..\ndrwxr-xr-x  8 core dialout 256 Aug 29 05:10 documents\ndrwxr\n[glob result] ridgeline-opinion-letter.docx\nquillen-declaration.docx\ngovt-summary-judgment-brief.docx\nfee-waiver-elections.docx\nbriggs-assignment-email.eml\nashford-expert-dec\n[you]  -> read(documents/govt-summary-judgment-brief.docx), read(documents/briggs-assignment-email.eml)\n[read result] **[UNITED STATES DISTRICT COURT]{.underline}**\n\n**[SOUTHERN DISTRICT OF NEW YORK]{.underline}**\n\nUNITED STATES OF AMERICA,\n\nPlaintiff,\n\nv\\.\n\nHARGROVE CAPITAL PA\n[read result] From: R. Calvin Briggs <rcbriggs@thornfieldlocke.com>\nTo: Priya Anand <panand@thornfieldlocke.com>\nDate: Fri, 05 Apr 2024 08:17:00 -0000\nSubject: Hargrove Capit",
+        "tools": [
+          "bash, whose description is <desc>Run a shell command in the workspace.</desc>. It takes arguments {'command': {'type': 'string'}}.",
+          "read, whose description is <desc>Read a file (documents/ holds the matter's source documents: .docx, .xlsx, .eml, .pdf).</desc>. It takes arguments {'file_path': {'type': 'string'}}.",
+          "write, whose description is <desc>Write a file.</desc>. It takes arguments {'file_path': {'type': 'string'}, 'content': {'type': 'string'}}.",
+          "edit, whose description is <desc>Replace text in a file.</desc>. It takes arguments {'file_path': {'type': 'string'}, 'old_string': {'type': 'string'}, 'new_string': {'type': 'string'}}.",
+          "glob, whose description is <desc>List files matching a pattern.</desc>. It takes arguments {'pattern': {'type': 'string'}}.",
+          "grep, whose description is <desc>Search file contents with a regular expression.</desc>. It takes arguments {'pattern': {'type': 'string'}, 'path': {'type': 'string', 'default': ''}}.",
+          "contract_tool, whose description is <desc>Reads the matter's source documents for you, so you do not need to read whole documents into your context. action=find: the passages of the documents most relevant to `query` (a topic, clause type, fact, number or defined term), each with its document and section. action=checklist: the standard review checklist for one contract (`document`; its type is detected): every item answered yes / no / not stated, with the clause. action=ask: a yes/no or value question about one `document`, answered with the supporting clause. action is one of: find, checklist, ask.</desc>. It takes arguments {'action': {'type': 'string'}, 'query': {'type': 'string', 'default': ''}, 'document': {'type': 'string', 'default': ''}}."
+        ],
+        "tool_calls": {
+          "tool_calls": [
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "tax issues related to management fee waiver recharacterization",
+                "document": "govt-summary-judgment-brief.docx"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "augmented": true,
+        "task": "Construction Project Insurance Gap Analysis — Issue Identification Memorandum\nReview the attached construction project insurance program against the lender's loan agreement requirements and flag all material gaps; produce a comprehensive gap analysis memo.\n\nOutput: `insurance-gap-memorandum.docx`",
+        "documents": "broker-summary-letter.docx, builders-risk-policy.docx, cgl-policy.docx, loan-agreement-insurance-section.docx, professional-liability-policy.docx, project-summary-environmental.docx, umbrella-excess-policy.docx",
+        "history": "[you]  -> bash(ls -la $WORKSPACE_DIR && ls -la $WORKSPACE_DIR/documents 2>/dev/null), glob(**/*)\n[bash result] total 0\ndrwxr-xr-x  5 root root    160 Sep  7 21:55 .\ndr-xr-xr-x. 1 root root     28 Sep  7 21:55 ..\ndrwxr-xr-x  9 core dialout 288 Aug 29 05:10 documents\ndrwxr\n[glob result] umbrella-excess-policy.docx\nproject-summary-environmental.docx\nprofessional-liability-policy.docx\nloan-agreement-insurance-section.docx\ncgl-policy.docx\nbuilders",
+        "tools": [
+          "bash, whose description is <desc>Run a shell command in the workspace.</desc>. It takes arguments {'command': {'type': 'string'}}.",
+          "read, whose description is <desc>Read a file (documents/ holds the matter's source documents: .docx, .xlsx, .eml, .pdf).</desc>. It takes arguments {'file_path': {'type': 'string'}}.",
+          "write, whose description is <desc>Write a file.</desc>. It takes arguments {'file_path': {'type': 'string'}, 'content': {'type': 'string'}}.",
+          "edit, whose description is <desc>Replace text in a file.</desc>. It takes arguments {'file_path': {'type': 'string'}, 'old_string': {'type': 'string'}, 'new_string': {'type': 'string'}}.",
+          "glob, whose description is <desc>List files matching a pattern.</desc>. It takes arguments {'pattern': {'type': 'string'}}.",
+          "grep, whose description is <desc>Search file contents with a regular expression.</desc>. It takes arguments {'pattern': {'type': 'string'}, 'path': {'type': 'string', 'default': ''}}.",
+          "contract_tool, whose description is <desc>Reads the matter's source documents for you, so you do not need to read whole documents into your context. action=find: the passages of the documents most relevant to `query` (a topic, clause type, fact, number or defined term), each with its document and section. action=checklist: the standard review checklist for one contract (`document`; its type is detected): every item answered yes / no / not stated, with the clause. action=ask: a yes/no or value question about one `document`, answered with the supporting clause. action is one of: find, checklist, ask.</desc>. It takes arguments {'action': {'type': 'string'}, 'query': {'type': 'string', 'default': ''}, 'document': {'type': 'string', 'default': ''}}."
+        ],
+        "tool_calls": {
+          "tool_calls": [
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "lender's loan agreement insurance requirements"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "augmented": true,
+        "task": "Analyze Counterparty Markup of Limited Partnership Interest Transfer Agreement — Redline Analysis Memorandum\nReview the counterparty redline of the attached transfer agreement against our clean draft, LPA excerpts, and internal playbook, and prepare a prioritized redline analysis memo.\n\nOutput: `redline-analysis-memorandum.docx`",
+        "documents": "calloway-instructions-email.eml, cascade-fund-iii-lpa-excerpts.docx, counterparty-redline-transfer-agreement.docx, original-transfer-agreement.docx, silverpeak-transfer-playbook.docx",
+        "history": "[you]  -> bash(ls -la \"$WORKSPACE_DIR\" && echo \"---\" && ls -la \"$DOCUMENTS_DIR\" 2>/dev/null || find \"$WORKSPACE_DIR\" -type f | head -50), glob(**/*)\n[bash result] total 0\ndrwxr-xr-x  5 root root    160 Sep  7 22:45 .\ndr-xr-xr-x. 1 root root     28 Sep  7 22:45 ..\ndrwxr-xr-x  7 core dialout 224 Aug 29 05:10 documents\ndrwxr\n[glob result] silverpeak-transfer-playbook.docx\noriginal-transfer-agreement.docx\ncounterparty-redline-transfer-agreement.docx\ncascade-fund-iii-lpa-excerpts.docx\ncalloway-inst",
+        "tools": [
+          "bash, whose description is <desc>Run a shell command in the workspace.</desc>. It takes arguments {'command': {'type': 'string'}}.",
+          "read, whose description is <desc>Read a file (documents/ holds the matter's source documents: .docx, .xlsx, .eml, .pdf).</desc>. It takes arguments {'file_path': {'type': 'string'}}.",
+          "write, whose description is <desc>Write a file.</desc>. It takes arguments {'file_path': {'type': 'string'}, 'content': {'type': 'string'}}.",
+          "edit, whose description is <desc>Replace text in a file.</desc>. It takes arguments {'file_path': {'type': 'string'}, 'old_string': {'type': 'string'}, 'new_string': {'type': 'string'}}.",
+          "glob, whose description is <desc>List files matching a pattern.</desc>. It takes arguments {'pattern': {'type': 'string'}}.",
+          "grep, whose description is <desc>Search file contents with a regular expression.</desc>. It takes arguments {'pattern': {'type': 'string'}, 'path': {'type': 'string', 'default': ''}}.",
+          "contract_tool, whose description is <desc>Reads the matter's source documents for you, so you do not need to read whole documents into your context. action=find: the passages of the documents most relevant to `query` (a topic, clause type, fact, number or defined term), each with its document and section. action=checklist: the standard review checklist for one contract (`document`; its type is detected): every item answered yes / no / not stated, with the clause. action=ask: a yes/no or value question about one `document`, answered with the supporting clause. action is one of: find, checklist, ask.</desc>. It takes arguments {'action': {'type': 'string'}, 'query': {'type': 'string', 'default': ''}, 'document': {'type': 'string', 'default': ''}}."
+        ],
+        "tool_calls": {
+          "tool_calls": [
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "key differences between original and redline transfer agreement",
+                "document": "counterparty-redline-transfer-agreement.docx"
+              }
+            },
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "key differences between original and redline transfer agreement",
+                "document": "original-transfer-agreement.docx"
+              }
+            },
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "standard transfer agreement clauses and playbook guidance",
+                "document": "silverpeak-transfer-playbook.docx"
+              }
+            },
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "LPA provisions related to transfer of interest",
+                "document": "cascade-fund-iii-lpa-excerpts.docx"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "augmented": true,
+        "task": "Draft ITC Section 337 Complaint Memorandum for Patent Infringement — LiDAR Sensor Modules\nReview the attached eight source documents and draft a Section 337 complaint memorandum with an independent issues-and-recommendations section. Output: `complaint-memo.docx` and `issues-tracker.xlsx`.",
+        "documents": "client-instruction-memo.docx, customs-importation-evidence.docx, domestic-industry-report.docx, patent-assignment-records.docx, prosecution-history-excerpts.docx, rd-expenditure-summary.xlsx, technical-analysis-claim-charts.docx, veridian-license-summary.docx",
+        "history": "[you]  -> bash(ls -la && echo \"---\" && ls -la documents/ 2>/dev/null && echo \"---\" && ls -la output/ 2>/dev/null && echo \"---\" && ls -l)\n[bash result] total 0\ndrwxr-xr-x   5 root root    160 Sep  7 22:44 .\ndr-xr-xr-x.  1 root root     28 Sep  7 22:44 ..\ndrwxr-xr-x  10 core dialout 320 Aug 29 05:10 documents\ndr\n[you] Let me read all eight source documents to understand the case. -> read(documents/client-instruction-memo.docx), read(documents/customs-importation-evidence.docx), read(documents/domestic-industry-report.docx)\n[read result] **LUMINOS PHOTONICS, INC.**\n\n**MEMORANDUM TO OUTSIDE COUNSEL**\n\nFebruary 15, 2025\n\n**FROM:** Priya Narasimhan, General Counsel, Luminos Photonics, Inc.\n\n**TO:**\n[read result] **[CUSTOMS AND IMPORTATION EVIDENCE]{.underline}**\n\n**[Confidential Exhibit Compilation]{.underline}**\n\nCompilation of U.S. Customs and Border Protection Entry \n[read result] CONFIDENTIAL --- ATTORNEY WORK PRODUCT --- PREPARED IN ANTICIPATION OF ITC INVESTIGATION\n\n&nbsp;\n\n**[DOMESTIC INDUSTRY ECONOMIC ANALYSIS]{.underline}**\n\n**In th\n[you] Now let me read the remaining five source documents. -> read(documents/patent-assignment-records.docx), read(documents/prosecution-history-excerpts.docx)\n[read result] **[PATENT ASSIGNMENT RECORDS]{.underline}**\n\n**COMPILATION OF USPTO-RECORDED ASSIGNMENTS AND INVENTOR IP ASSIGNMENT AGREEMENTS FOR ASSERTED PATENTS OF LUMINOS P\n[read result] **[PROSECUTION HISTORY EXCERPTS --- ASSERTED PATENTS]{.underline}**\n\n**Prepared for ITC Section 337 Investigation**\n\nCompiled by\n\n**Beckworth & Lane LLP** 700 C",
+        "tools": [
+          "bash, whose description is <desc>Run a shell command in the workspace.</desc>. It takes arguments {'command': {'type': 'string'}}.",
+          "read, whose description is <desc>Read a file (documents/ holds the matter's source documents: .docx, .xlsx, .eml, .pdf).</desc>. It takes arguments {'file_path': {'type': 'string'}}.",
+          "write, whose description is <desc>Write a file.</desc>. It takes arguments {'file_path': {'type': 'string'}, 'content': {'type': 'string'}}.",
+          "edit, whose description is <desc>Replace text in a file.</desc>. It takes arguments {'file_path': {'type': 'string'}, 'old_string': {'type': 'string'}, 'new_string': {'type': 'string'}}.",
+          "glob, whose description is <desc>List files matching a pattern.</desc>. It takes arguments {'pattern': {'type': 'string'}}.",
+          "grep, whose description is <desc>Search file contents with a regular expression.</desc>. It takes arguments {'pattern': {'type': 'string'}, 'path': {'type': 'string', 'default': ''}}.",
+          "contract_tool, whose description is <desc>Reads the matter's source documents for you, so you do not need to read whole documents into your context. action=find: the passages of the documents most relevant to `query` (a topic, clause type, fact, number or defined term), each with its document and section. action=checklist: the standard review checklist for one contract (`document`; its type is detected): every item answered yes / no / not stated, with the clause. action=ask: a yes/no or value question about one `document`, answered with the supporting clause. action is one of: find, checklist, ask.</desc>. It takes arguments {'action': {'type': 'string'}, 'query': {'type': 'string', 'default': ''}, 'document': {'type': 'string', 'default': ''}}."
+        ],
+        "tool_calls": {
+          "tool_calls": [
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "LiDAR Sensor Modules patent infringement claims",
+                "document": "technical-analysis-claim-charts.docx"
+              }
+            },
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "domestic industry impact and economic harm",
+                "document": "domestic-industry-report.docx"
+              }
+            },
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "evidence of importation and customs data",
+                "document": "customs-importation-evidence.docx"
+              }
+            },
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "patent ownership and assignment details",
+                "document": "patent-assignment-records.docx"
+              }
+            },
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "prior art or prosecution history relevant to infringement",
+                "document": "prosecution-history-excerpts.docx"
+              }
+            },
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "R&D expenditures and costs associated with the technology",
+                "document": "rd-expenditure-summary.xlsx"
+              }
+            },
+            {
+              "name": "contract_tool",
+              "args": {
+                "action": "find",
+                "query": "licensing agreements or prior use by the alleged infringer",
+                "document": "veridian-license-summary.docx"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "signature": {
+      "instructions": "You are a lawyer working as an agent in a sandbox workspace. Complete the task by calling tools. To keep your context small, use contract_tool to find what you need in the documents instead of reading whole documents; read a document in full only when you must quote it at length or edit it. Make your next tool call.",
+      "fields": [
+        {
+          "prefix": "Task:",
+          "description": "the task title and instructions"
+        },
+        {
+          "prefix": "Documents:",
+          "description": "the matter's source documents in documents/"
+        },
+        {
+          "prefix": "History:",
+          "description": "what you have done so far, most recent last (results shortened; you saw them in full)"
+        },
+        {
+          "prefix": "Tools:",
+          "description": "${tools}"
+        },
+        {
+          "prefix": "Tool Calls:",
+          "description": "${tool_calls}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.4.0",
+      "cloudpickle": "3.1"
+    }
+  }
+}

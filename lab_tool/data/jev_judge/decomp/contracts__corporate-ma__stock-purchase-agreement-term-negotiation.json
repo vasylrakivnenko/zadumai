@@ -1,0 +1,354 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains why the proposed indemnification cap compromise is appropriate, referencing Buyer\u2019s 25% position, Seller\u2019s 8% position, or market practice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains why the proposed survival period compromise is appropriate, referencing the parties\u2019 respective positions or market practice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains why the proposed Material Adverse Effect definition compromise is appropriate, referencing the parties\u2019 respective positions or market practice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains why the proposed escrow arrangement compromise is appropriate, referencing the parties\u2019 respective positions or market practice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed general representation indemnification cap is a specific percentage greater than 8% and less than 25% of the $118,500,000 aggregate purchase price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states a dollar amount for the proposed indemnification cap that equals the stated percentage of the $118,500,000 aggregate purchase price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed survival period for general representations and warranties is a specific period longer than 12 months and shorter than 36 months post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable states a separate survival period for Fundamental Representations (title to shares, authorization, capitalization, brokers) that is longer than the proposed general representation and warranty survival period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Fundamental Representation survival period is defined, longer than 36 months, and not indefinite.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable treats tax representations as a separate survival category with their own survival period, distinct from general representations and Fundamental Representations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed survival period for tax representations references or is tied to the applicable statute of limitations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Material Adverse Effect definition excludes changes arising from general economic conditions from constituting a Material Adverse Effect standing alone.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Material Adverse Effect definition excludes industry-wide conditions affecting the specialty chemicals, oil-and-gas, or agricultural sectors generally.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Material Adverse Effect definition excludes changes in applicable law or accounting standards, such as GAAP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed Material Adverse Effect definition provides that the loss of significant customers is excluded from the benefit of the MAE carve-outs and can still count toward a Material Adverse Effect.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The customer-concentration exception in the proposed Material Adverse Effect definition specifies a percentage-of-annual-revenue threshold for identifying a significant customer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed escrow deposit is a specific percentage greater than 7.5% and less than 20% of the $118,500,000 aggregate purchase price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states a dollar amount for the proposed escrow deposit that equals the stated percentage of the $118,500,000 aggregate purchase price.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed escrow period is a specific duration of at least 12 months and no more than 24 months post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed escrow arrangement provides for partial or staged release of escrow funds before the escrow period fully expires.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The rationale cites the ABA Private Target M&A Deal Points Study or an equivalent identifiable market benchmark study to justify at least one proposed compromise position.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable acknowledges or provides that Fundamental Representations (title to shares, authorization, capitalization, brokers) have a separate indemnification cap higher than the proposed general representation cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed compromise states that the escrow is the Buyer\u2019s sole and exclusive remedy for indemnification claims under general representations and warranties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The sole-and-exclusive-remedy limitation expressly carves out Fundamental Representations from the escrow-only limitation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The sole-and-exclusive-remedy limitation expressly carves out claims of fraud from the escrow-only limitation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable includes proposed indemnification cap provision text written in a style and format suitable for insertion into a Stock Purchase Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable includes proposed survival period provision text written in a style and format suitable for insertion into a Stock Purchase Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable includes proposed Material Adverse Effect definition text written in a style and format suitable for insertion into a Stock Purchase Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable includes proposed escrow arrangement text written in a style and format suitable for insertion into a Stock Purchase Agreement or escrow agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable acknowledges the Buyer\u2019s demand for a quantitative MAE trigger based on any revenue or EBITDA decline exceeding 10% measured against the trailing twelve-month period, where TTM EBITDA is $19,750,000, and takes a position on that demand.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable incorporates the quantitative MAE trigger at a threshold different from the Buyer\u2019s 10%.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable treats the quantitative MAE trigger as a non-exclusive indicator of a potential MAE rather than an automatic trigger.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable rejects the quantitative MAE trigger with rationale grounded in market practice or the ABA Deal Points Study data.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

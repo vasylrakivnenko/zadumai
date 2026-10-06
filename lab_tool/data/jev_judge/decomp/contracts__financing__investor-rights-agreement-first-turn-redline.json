@@ -1,0 +1,705 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline changes the demand registration trigger to 4 years post-closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline retains the alternative demand registration trigger of 180 days after IPO, so demand registration is available at the earlier of 4 years post-closing or 180 days after IPO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline accepts 3 demand registrations without further modification.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes an S-3 short-form demand registration right.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline sets the minimum aggregate offering price for S-3 demand registrations at $5,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline sets the delivery period for annual audited financials at 120 days after fiscal year-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline sets the delivery period for quarterly unaudited financials at 45 days after quarter-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes a requirement to deliver monthly unaudited financials.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline sets the delivery deadline for monthly unaudited financials at 30 days after month-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline sets the information rights qualifying threshold at 400,000 shares of Preferred (as-converted).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline requires 10 business days' notice to exercise the inspection/books-and-records right.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline requires the inspecting holder to execute a confidentiality undertaking before inspection.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline sets the board observer qualifying threshold at \u22654,000,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline gives the Company the right to exclude the board observer from portions of meetings involving attorney-client privileged matters.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline gives the Company the right to exclude the board observer from portions of meetings involving conflicts of interest.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline requires the board observer to sign a non-disclosure agreement (NDA) as a condition to exercising observer rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline sets the Major Investor threshold for pro rata/preemptive rights at 750,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline deletes Verdana's super pro rata / overallotment right to purchase unsubscribed shares before the Company offers them to third parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note explains that the super pro rata / overallotment right is rejected because it creates an effective right of first refusal that would chill future fundraising.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline sets the pro rata exercise period at 20 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline limits ROFR/co-sale to the Key Holders listed on Exhibit A: Dr. Elaine Matsuda, Dr. Rajiv Anand, and Marcus Teller.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes a drag-along provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline requires both a majority of Common and 70% of Preferred to approve a drag-along transaction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline limits the 180-day post-IPO lock-up to Key Holders and directors only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline carves out sales under Rule 10b5-1 plans established before the IPO from the lock-up provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline provides for early release of locked-up holders if the underwriter releases any other locked-up holder.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Series B-specific veto over new indebtedness applies to indebtedness exceeding $3,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline deletes Verdana's Series B-specific veto over any single capital expenditure exceeding $500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note characterizes the capital expenditure veto as operational micromanagement or as an inappropriate level of investor control over day-to-day operations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Series B-specific hiring/termination veto is limited to the CEO and CFO only.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Series B-specific veto over related-party transactions applies only to transactions exceeding $120,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline limits the option pool veto to increases exceeding 5% of fully diluted shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note is from Rebecca Whitfield of Whitfield, Sabo & Crane LLP to Daniel Okoro of Blackridge Stein LLP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note includes a cc to Jordan Havelock.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note includes a cc to Dr. Elaine Matsuda (Apex).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references the Investor Rights Agreement by its full title and gives its date as March 21, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references the Series B Preferred Stock Purchase Agreement dated March 14, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note summarizes the Company's positions on the demand registration trigger and number of demands.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on the S-3 right.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note summarizes the Company's positions on information delivery timelines and the qualifying threshold.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on inspection rights.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on monthly financials.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note summarizes the Company's position on the board observer threshold.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on board observer exclusion rights.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on the board observer NDA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note summarizes the Company's position on the pro rata/preemptive rights threshold and exercise period.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on rejecting super pro rata rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note summarizes the Company's position limiting ROFR/co-sale to Key Holders.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on the dual-trigger drag-along approval threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note summarizes the Company's position on lock-up scope.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on the Rule 10b5-1 carve-out.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on early release.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note summarizes the Company's position on the indebtedness threshold and rejection of the capex veto.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on the CEO/CFO veto and related-party transaction threshold.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note summarizes the Company's position on the option pool limitation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note flags the super pro rata / overallotment right for further negotiation and explains that it would chill future fundraising.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note flags the capital expenditure veto for further negotiation and characterizes it as operational micromanagement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note flags the drag-along approval threshold for further negotiation and explains that Common holder consent is needed alongside Preferred approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable filename is ira-apex-counter-v2-04092025.docx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline states the information rights threshold as 400,000 shares consistently across all relevant provisions and definitions, with no conflicting value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline states the pro rata rights threshold as 750,000 shares consistently across all relevant provisions and definitions, with no conflicting value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline states the board observer threshold as 4,000,000 shares consistently across all relevant provisions, with no conflicting value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline uses provision-specific thresholds or updates the general 'Major Investor' definition so that the 400,000-share information rights, 750,000-share pro rata rights, and 4,000,000-share board observer thresholds do not conflict with a single 'Major Investor' definition.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note references April 18, 2025 as the target IRA execution date and expresses the Company's readiness to finalize on or before that date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable references April 18, 2025 as the target execution date in the cover note or redline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable shows tracked changes against ira-verdana-markup-v1-04022025.docx rather than a clean document or a redline against the original Company draft.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline preserves accepted Verdana changes and shows new Company counter-positions as additional tracked changes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The cover note specifically identifies and addresses Verdana's information rights priority item.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note specifically identifies and addresses Verdana's board observer priority item.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note specifically identifies and addresses Verdana's protective provisions priority item.",
+     "pass_if": true
+    },
+    {
+     "s": "The cover note specifically identifies and addresses Verdana's super pro rata rights priority item.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The redline preserves the original Company's standard protective provisions requiring majority-of-Preferred approval, voting as a single class.",
+     "pass_if": true
+    },
+    {
+     "s": "The Series B-specific vetoes are additions to, rather than replacements for, those standard protective provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Company's counter-position allows no more than 3 demand registrations.",
+     "pass_if": true
+    },
+    {
+     "s": "The Company's counter-position sets the information rights threshold at no fewer than 400,000 shares.",
+     "pass_if": true
+    },
+    {
+     "s": "The Company's counter-position sets the pro rata threshold at no fewer than 750,000 shares.",
+     "pass_if": true
+    },
+    {
+     "s": "The Company's counter-position sets the demand trigger at no later than 4 years post-closing.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

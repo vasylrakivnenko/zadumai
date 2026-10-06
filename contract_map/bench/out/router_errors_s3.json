@@ -1,0 +1,344 @@
+[
+{
+"id": "cuad_clause/ALCOSTORESINC_12_14_2005-EX-10.26-AGENCY AGREEMENT",
+"gold": "commercial",
+"pred": "lease",
+"p": 0.502
+},
+{
+"id": "contractnli/432",
+"gold": "nda",
+"pred": "commercial",
+"p": 0.573
+},
+{
+"id": "contractnli/465",
+"gold": "nda",
+"pred": "commercial",
+"p": 0.943
+},
+{
+"id": "lease/aL89QqQu924hlLlvJhHT7QUdXkDe-lease_579",
+"gold": "lease",
+"pred": "commercial",
+"p": 0.697
+},
+{
+"id": "mcc/1062047/000119312509019918/dex992.htm",
+"gold": "commercial",
+"pred": "nda",
+"p": 0.946
+},
+{
+"id": "mcc/847383/000104746909006308/a2193263zex-10_37.htm",
+"gold": "lease",
+"pred": "commercial",
+"p": 0.967
+},
+{
+"id": "mcc/744825/000114420416091106/v434650_ex10-9.htm",
+"gold": "lease",
+"pred": "commercial",
+"p": 0.813
+},
+{
+"id": "mcc/744825/000114420415050745/v416332_ex10-4.htm",
+"gold": "lease",
+"pred": "commercial",
+"p": 0.721
+},
+{
+"id": "mcc/1888014/000121390024018599/ea0200965ex99-1_akanda.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.854
+},
+{
+"id": "mcc/1011601/000114420405005650/v013369_ex10-1.txt",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.539
+},
+{
+"id": "mcc/863614/000086361406000013/income0306.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.455
+},
+{
+"id": "mcc/1122491/000091142003000021/e868746.txt",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.804
+},
+{
+"id": "mcc/1614466/000149315216013244/ex10-2.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.667
+},
+{
+"id": "mcc/844788/000101490911000005/fwgo2011form10k.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.626
+},
+{
+"id": "mcc/1302084/000117184318006745/exh_2.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.592
+},
+{
+"id": "mcc/1334900/000101996505000286/loanprepaymentsummary1031200.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.488
+},
+{
+"id": "mcc/1099668/000110465907038495/a07-13947_1ex10d1.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.832
+},
+{
+"id": "mcc/1060736/000106073621000012/ex-106xsgixgenmabjcareda.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.969
+},
+{
+"id": "mcc/1810739/000119312520202667/d885175dex108.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.948
+},
+{
+"id": "mcc/876779/000114420410005019/v173027_ex10-1.txt",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.31
+},
+{
+"id": "mcc/1164771/000106299305000781/exhibit10-3.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.451
+},
+{
+"id": "mcc/811808/000081180807000019/pressrelease427.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.707
+},
+{
+"id": "mcc/1375877/000110465920052010/csiq-20191231xex2d2.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.895
+},
+{
+"id": "mcc/1160846/000129281417002407/exhibit02.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.807
+},
+{
+"id": "mcc/1823857/000121390022039180/fs42022ex10-29_viveonhealth.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.879
+},
+{
+"id": "mcc/1878835/000119312522161251/d279295dex22.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.836
+},
+{
+"id": "mcc/1171008/000119380514001391/e612485_ex2-5.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.865
+},
+{
+"id": "mcc/1618500/000121390018009992/f6k080118bex99-1_medigus.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.414
+},
+{
+"id": "mcc/806968/000119312516808078/d280467dex2.htm",
+"gold": "not a contract",
+"pred": "commercial",
+"p": 0.604
+},
+{
+"id": "mcc/1501756/000162828025051593/advm-20250930ex103.htm",
+"gold": "commercial",
+"pred": "lease",
+"p": 0.659
+},
+{
+"id": "mcc/1033146/000095013404018674/f03841exv10w1.txt",
+"gold": "commercial",
+"pred": "not a contract",
+"p": 0.519
+},
+{
+"id": "mcc/1123799/000095013409001133/f51248exv2w1.htm",
+"gold": "commercial",
+"pred": "not a contract",
+"p": 0.757
+},
+{
+"id": "mcc/47217/000104746912006550/a2209764zex-10_hhh.htm",
+"gold": "commercial",
+"pred": "lease",
+"p": 0.592
+},
+{
+"id": "mcc/1091735/000119312509222145/dex993.htm",
+"gold": "commercial",
+"pred": "not a contract",
+"p": 0.4
+},
+{
+"id": "mcc/1134115/000130393606000061/exhibit2.htm",
+"gold": "commercial",
+"pred": "not a contract",
+"p": 0.737
+},
+{
+"id": "tosdr/LiveRamp_Data Plus Math Privacy Policy.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.495
+},
+{
+"id": "tosdr/Imgur_Privacy Policy.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.57
+},
+{
+"id": "tosdr/Empower Health Services_EHS | Privacy Policy.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.624
+},
+{
+"id": "tosdr/StoreMoreStore_Privacy Policy.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.347
+},
+{
+"id": "tosdr/Toyota_Privacy Notice.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.956
+},
+{
+"id": "tosdr/tinyurl_Privacy Policy - delete.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.795
+},
+{
+"id": "tosdr/CapitalOne Shopping_Privacy Policy.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.436
+},
+{
+"id": "tosdr/Simitless_Legal notice, Privacy Polic....txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.705
+},
+{
+"id": "tosdr/WireMin_Terms & Privacy Policy.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.726
+},
+{
+"id": "tosdr/Serenade_Code Privacy.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.754
+},
+{
+"id": "tosdr/Powerup Toys_Privacy Policy.txt",
+"gold": "privacy policy",
+"pred": "terms of service",
+"p": 0.783
+},
+{
+"id": "tosdr/Web Werks_Terms of Use.txt",
+"gold": "terms of service",
+"pred": "commercial",
+"p": 0.892
+},
+{
+"id": "tosdr/Covered California_Terms of Use.txt",
+"gold": "terms of service",
+"pred": "privacy policy",
+"p": 0.884
+},
+{
+"id": "tosdr/ExoClick_Privacy & Cookies Policy.txt",
+"gold": "terms of service",
+"pred": "privacy policy",
+"p": 0.684
+},
+{
+"id": "tosdr/Glassdoor_Privacy and Cookie Policy.txt",
+"gold": "terms of service",
+"pred": "privacy policy",
+"p": 0.97
+},
+{
+"id": "tosdr/General Mills_Cookie Policy.txt",
+"gold": "terms of service",
+"pred": "privacy policy",
+"p": 0.931
+},
+{
+"id": "tosdr/Bentley Motors_Cookie Policy.txt",
+"gold": "terms of service",
+"pred": "commercial",
+"p": 0.489
+},
+{
+"id": "tosdr/W3Schools_Cookies and Privacy Policy ....txt",
+"gold": "terms of service",
+"pred": "privacy policy",
+"p": 0.896
+},
+{
+"id": "tosdr/Wired (Cond\u00e9 Nast)_Privacy Policy and Cookie S....txt",
+"gold": "terms of service",
+"pred": "privacy policy",
+"p": 0.551
+},
+{
+"id": "tosdr/eBird_Privacy Policy And Cookie P....txt",
+"gold": "terms of service",
+"pred": "privacy policy",
+"p": 0.872
+},
+{
+"id": "tosdr/HideIPVPN_Privacy and Cookie Policy.txt",
+"gold": "terms of service",
+"pred": "privacy policy",
+"p": 0.666
+},
+{
+"id": "tosdr/Digital_Privacy Policy, Cookies Pol....txt",
+"gold": "terms of service",
+"pred": "privacy policy",
+"p": 0.628
+}
+]

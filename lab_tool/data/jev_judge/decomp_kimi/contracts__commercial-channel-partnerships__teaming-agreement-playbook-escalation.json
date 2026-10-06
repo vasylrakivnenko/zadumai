@@ -1,0 +1,1150 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled section titled \"Executive Summary\" (Section 1).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled section titled \"Transaction Overview\" (Section 2).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled section titled \"Authority Analysis\" (Section 3).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled section titled \"Out-of-Policy Terms\" (Section 4).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled section titled \"Risk Assessment\" (Section 5).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled section titled \"Recommended Compromise Positions\" (Section 6).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled section titled \"Timeline and Deadline\" (Section 7).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled section titled \"Recommendation and Approval Request\" (Section 8).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo contains a clearly labeled section titled \"Signature/Approval blocks\" (Section 9).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The nine sections appear in this order: (1) Executive Summary, (2) Transaction Overview, (3) Authority Analysis, (4) Out-of-Policy Terms, (5) Risk Assessment, (6) Recommended Compromise Positions, (7) Timeline and Deadline, (8) Recommendation and Approval Request, (9) Signature blocks.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's addressee (TO) line includes Dr. Lena Marchetti (CLO, Tier 4 approver).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo's addressee (TO) line includes Raymond Achebe (VP Business Development, Tier 3 approver).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo shows it is FROM Nadia Kowalski, Senior Contracts Manager.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's CC line includes Col. (Ret.) Derek Salda\u00f1a (SVP, Capture Management).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo's CC line includes Sean Nakamura (Halyard & Calloway LLP, outside counsel).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Transaction Overview identifies VDS as the prospective prime contractor.",
+     "pass_if": true
+    },
+    {
+     "s": "The Transaction Overview identifies CIS as the prospective major subcontractor.",
+     "pass_if": true
+    },
+    {
+     "s": "The Transaction Overview describes CIS's subcontract as covering the GaN-based RF amplifier subsystem.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the solicitation number is FA8812-25-R-0049.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the program codename as STORMLIGHT.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the estimated total contract value (TCV) is $187,000,000 (or $187M).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the period of performance is 8 years total, consisting of a 5-year base period plus a 3-year option period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states CIS's proposed workshare is 34% of TCV.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states CIS's proposed workshare equals $63,580,000 (or $63.58M).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states or derives CIS annual contract value (ACV) as $7,947,500 (or approximately $7.9475M).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Authority Analysis states that the CIS subcontract value of $63,580,000 falls within Tier 3 on value alone because the Tier 3 threshold is \u2264$75M TCV.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Authority Analysis classifies Exclusivity Scope as a Red Line item under CRP Annex B Item 4.",
+     "pass_if": true
+    },
+    {
+     "s": "The Authority Analysis classifies IP License-Back as a Red Line item under CRP Annex B Item 1.",
+     "pass_if": true
+    },
+    {
+     "s": "The Authority Analysis states that these two Red Line items require mandatory Tier 4 / CLO approval regardless of contract value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Authority Analysis classifies Workshare Guarantee/MFT (Annex A Item 9) as a Tier 3 deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The Authority Analysis classifies Liability Cap (Annex A Item 12) as a Tier 3 deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The Authority Analysis classifies Break-Up Fee (Annex A Item 15) as a Tier 3 deviation.",
+     "pass_if": true
+    },
+    {
+     "s": "The Authority Analysis states these three Tier 3 deviations require VP BD approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states CIS demands mutual exclusivity across all DoD EW programs for 36 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the VDS pre-approved fallback is exclusivity limited to the STORMLIGHT solicitation only, expiring upon award or 12 months, whichever is earlier.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the delta between the CIS position and the VDS fallback is 24 additional months of duration.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the delta includes an expansion of scope from STORMLIGHT only to all DoD EW programs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies the pipeline risk from broad exclusivity at $412,000,000 in combined value.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states this $412,000,000 represents VDS's three other active EW captures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo classifies Term 1 (Exclusivity) as a Red Line item per CRP Annex B Item 4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states CIS demands a guaranteed minimum 30% workshare.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states this guaranteed minimum workshare is a $56,100,000 floor.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states CIS demands an automatic +5 percentage point MFT ratchet if any other teammate exceeds 15% workshare.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the MFT ratchet could push CIS workshare to a potential ceiling of 39% / $72,930,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the VDS approved fallback is a best-efforts workshare target of 25\u201335%.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the VDS fallback includes no MFT clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies the MFT ratchet exposure delta at $16,830,000 ($72,930,000 \u2013 $56,100,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo classifies Term 2 (Workshare Guarantee/MFT) as a Tier 3 deviation per CRP Annex A Item 9.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states CIS demands a license to all VDS background IP incorporated into the joint solution.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the demanded license is irrevocable.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the demanded license is royalty-free.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the demanded license is worldwide.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the demanded license is for any purpose, including commercial resale.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the VDS approved fallback is a limited, revocable, contract-scope-only license.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the VDS fallback grants no commercial-use rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo quantifies the VDS EW background IP portfolio at risk at $28,000,000 (per VDS Technology Office valuation).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags potential conflicts with existing VDS IP licensing agreements or third-party obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo classifies Term 3 (IP License-Back) as a Red Line item per CRP Annex B Item 1 (Background IP License-Back).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states CIS demands a $2,000,000 aggregate liability cap.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the CIS cap excludes only willful misconduct.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the VDS approved fallback is a liability cap of 100% of fees paid in the trailing 12-month period.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states this fallback cap equals $7,947,500.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the CIS cap of $2,000,000 is only 25.16% of the VDS policy minimum ($7,947,500).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the shortfall between the VDS policy minimum and the CIS cap is $5,947,500.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Ridgeline Risk Advisors' analysis identifying an uncovered insurance gap of approximately $5,900,000 per occurrence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Ridgeline's recommendation to negotiate the cap to at least $4,000,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo references Ridgeline's alternative recommendation to purchase supplemental coverage at $185,000\u2013$220,000 per annum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo classifies Term 4 (Liability Cap) as a Tier 3 deviation per CRP Annex A Item 12 (Limitation of Liability).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states CIS demands a $4,500,000 break-up fee.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the break-up fee is payable if VDS terminates for convenience or re-teams prior to award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the VDS approved fallback is no break-up fee, with each party bearing its own B&P costs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that outside counsel found VDS has no precedent for break-up fees exceeding $1,000,000 in teaming agreements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo classifies Term 5 (Break-Up Fee) as a Tier 3 deviation per CRP Annex A Item 15 (Termination/Break-Up Fees).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a Term 1 compromise of mutual exclusivity limited to STORMLIGHT plus any directly competing EW solicitation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends an 18-month term for the Term 1 compromise exclusivity.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo characterizes the residual risk of the Term 1 compromise as moderate.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes that 2 of the 3 other pipeline captures would be excluded from the exclusivity scope under the Term 1 compromise.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a Term 2 compromise of a 28% hard floor ($52,360,000).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends no MFT ratchet in the Term 2 compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends a soft target of 34% in the Term 2 compromise.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo characterizes the residual risk of the Term 2 compromise as low-to-moderate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a Term 3 compromise of a non-exclusive, limited license for CIS to use VDS background IP.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo limits the Term 3 compromise license to CIS's performance of the STORMLIGHT subcontract plus any direct follow-on.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the Term 3 compromise license is revocable 24 months after program end.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the Term 3 compromise license grants no commercial resale rights.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo characterizes the residual risk of the Term 3 compromise as low.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a Term 4 compromise liability cap at 50% of trailing 12-month fees ($3,973,750).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends a carve-out for IP infringement in the Term 4 compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends a carve-out for bodily injury in the Term 4 compromise.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo characterizes the residual risk of the Term 4 compromise as moderate.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the Term 4 compromise cap is still below the policy minimum but approximately doubles CIS's original ask.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a Term 5 compromise break-up fee of $1,500,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the fee is payable only if VDS re-teams with a CIS-identified competitor within 6 months of TA execution.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states no fee is owed for a simple convenience termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo characterizes the residual risk of the Term 5 compromise as low.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the $3,000,000 reduction from CIS's ask.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo notes the narrowly scoped trigger.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states Tier 2 fallback positions were exhausted on 25 June 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the internal TA execution deadline is 18 July 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the proposal due date is 15 August 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that the 28-calendar-day rule from Capture Process Guide \u00a76.3 requires TA execution 28 days before the proposal due date, driving the 18 July 2025 deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo requests approval by 11 July 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states CIS is the sole domestic manufacturer (or sole qualified source) of the GaN-based RF amplifier subsystem critical to the STORMLIGHT technical solution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states no viable alternative teammates have been identified.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states VDS's Pwin is 65% with CIS.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states VDS's Pwin drops to below 20% without CIS.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states STORMLIGHT is VDS's highest-priority EW capture for FY25\u2013FY26.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a signature/approval block for Dr. Lena Marchetti.",
+     "pass_if": true
+    },
+    {
+     "s": "The signature block identifies Dr. Lena Marchetti as CLO and Tier 4 approver for the two Red Line terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo includes a signature/approval block for Raymond Achebe.",
+     "pass_if": true
+    },
+    {
+     "s": "The signature block identifies Raymond Achebe as VP Business Development and Tier 3 approver for the three non-Red-Line terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Risk Assessment section gives each of the five terms at least one risk category (financial, legal, strategic, operational, or reputational).",
+     "pass_if": true
+    },
+    {
+     "s": "The Risk Assessment section gives each of the five terms a likelihood, an impact, and an overall risk rating.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states the VDS initial draft was sent 19 May 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states the CIS redline was received 2 June 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo documents three negotiation sessions held on 9 June, 17 June, and 25 June 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states VDS offered Tier 1 alternatives at Session 2 (17 June 2025).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states VDS exercised all Tier 2 fallback positions at Session 3 (25 June 2025).",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states CIS declined to move on all five terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo affirmatively states that Board notice is not required.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo explains Board notice is not required because the relevant subcontract value ($63,580,000 base, up to $72,930,000 with the MFT ratchet) is below the $100,000,000 TCV threshold for Board notice under Tier 4.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references an outside counsel risk assessment from Halyard & Calloway LLP.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies Sean Nakamura as the outside counsel author of the risk assessment.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives the engagement number HC-VDS-2025-0187.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo dates the outside counsel risk assessment 28 June 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo marks the outside counsel risk assessment (or the memo itself) as privileged and confidential.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 4 (Liability Cap) risk assessment attributes the insurance analysis to Ridgeline Risk Advisors.",
+     "pass_if": true
+    },
+    {
+     "s": "The Term 4 risk assessment states an uncovered insurance gap of approximately $5,900,000 per occurrence.",
+     "pass_if": true
+    },
+    {
+     "s": "The Term 4 risk assessment states a supplemental coverage cost estimate of $185,000\u2013$220,000 per annum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo notes that Capture Process Guide \u00a76.5 provides SVP-level waiver authority.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states this waiver permits an extension of up to 7 calendar days if the 18 July 2025 deadline cannot be met.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states this provides a backstop through 25 July 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Executive Summary frames the risk as five out-of-policy terms carrying financial, legal, and/or strategic risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The Executive Summary states losing CIS reduces Pwin from 65% to below 20%.",
+     "pass_if": true
+    },
+    {
+     "s": "The Executive Summary identifies STORMLIGHT as a $187M program that is VDS's top EW capture priority.",
+     "pass_if": true
+    },
+    {
+     "s": "The Executive Summary presents these factors as warranting executive consideration of compromise positions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-081",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies VDS as a Delaware LLC.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives VDS's CAGE code as 7VD42.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives VDS's DUNS number as 08-441-9327.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-082",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies CIS as a Virginia corporation.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives CIS's CAGE code as 3CS88.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo gives CIS's DUNS number as 62-710-5583.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 5997,
+  "completion": 14191
+ }
+}

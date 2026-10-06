@@ -1,0 +1,483 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable addresses all seven contested terms in this order: (1) Arbitral Institution/Rules, (2) Number of Arbitrators, (3) Seat/Venue, (4) Scope of Arbitrable Claims, (5) Escalation Ladder & Cooling-Off Periods, (6) Interim/Emergency Relief & Injunctive Relief Carve-Outs, and (7) Costs & Fees Allocation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each of the seven contested terms includes proposed contract clause language, not merely bullet points or conceptual descriptions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each of the seven contested terms is accompanied by a negotiation rationale explaining why the compromise serves both parties' interests.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 1 clause proposes JAMS under the Comprehensive Arbitration Rules as the arbitral institution.",
+     "pass_if": true
+    },
+    {
+     "s": "The Term 1 clause does not propose AAA or ICC as the primary institution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 1 rationale explains JAMS as a bridging or middle-ground option.",
+     "pass_if": true
+    },
+    {
+     "s": "The Term 1 rationale references JAMS's cost positioning between AAA (~$19,600 admin fees) and ICC (~$85,000\u2013$120,000 admin fees) for a $17.28M claim.",
+     "pass_if": true
+    },
+    {
+     "s": "The Term 1 rationale references at least one of JAMS's domestic reputation or its neutrality.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 2 clause provides for a sole arbitrator below a specified dollar threshold and a three-arbitrator panel at or above that threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 2 clause or rationale references or reconciles the $250,000 small-claims threshold and the $2,500,000 large-claims threshold when explaining the tiered arbitrator structure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 3 clause proposes Washington, D.C. or a neutral third location other than New York, NY as the seat or venue.",
+     "pass_if": true
+    },
+    {
+     "s": "The Term 3 clause does not propose New York, NY as the seat or venue.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 3 rationale addresses geographic and/or legal neutrality considerations for both parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 4 clause retains a broad \u201carising out of or relating to\u201d arbitration scope.",
+     "pass_if": true
+    },
+    {
+     "s": "The Term 4 clause does not exclude categories of claims entirely from arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 4 clause provides for arbitrators with relevant technical or IP expertise for IP infringement or data-breach disputes.",
+     "pass_if": true
+    },
+    {
+     "s": "The Term 4 clause allows only narrowly defined injunctive-relief aspects to go to court while keeping damages claims in arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 5 clause includes mediation as a step in the pre-arbitration escalation process.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The total pre-arbitration escalation period specified in the Term 5 clause is more than 10 days and less than 60 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 5 rationale explains how the compressed timelines serve Graystone's desire for efficiency and Meridian's desire for an opportunity to resolve the dispute commercially before arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 5 clause or rationale addresses Meridian's $25,000 mediation cost cap by adopting it, modifying it, or explicitly discussing it.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 6 clause provides both emergency arbitrator relief and court access for interim injunctive relief.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 6 clause explicitly states that seeking court-ordered interim relief does not waive the right to arbitrate.",
+     "pass_if": true
+    },
+    {
+     "s": "The Term 6 clause explicitly states that seeking court-ordered interim relief does not constitute a submission to jurisdiction for purposes other than the interim relief sought.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 7 clause proposes a modified fee-shifting provision, such as a prevailing-party, hybrid/tiered, threshold-triggered, or percentage-limited model, rather than pure loser-pays-all or pure each-bears-own.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 7 rationale addresses Meridian's concern about disproportionate risk exposure as the smaller-revenue party and Graystone's objective of deterring frivolous claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The proposed language for all seven terms is drafted as operative contract provisions suitable for insertion into the MSA, rather than primarily as bullet points, summaries, or conceptual descriptions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The clause language is consistent with the agreed governing law of the State of New York, without regard to conflict-of-laws principles, as stated in Section 14.1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable references MSA Internal Reference No. GCP-MAS-2025-0041 or correctly identifies both Graystone Capital Partners, LLC and Meridian Advanced Systems, Inc.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The negotiation rationale for each of the seven compromise terms explains how the proposed language serves both Graystone's and Meridian's interests.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The rationales reference Graystone's regulatory exposure and cost-efficiency concerns as a regulated financial services firm.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationales reference Meridian's proprietary technology protection concerns and smaller-revenue-base risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Any TCV figure stated is $43,200,000 or $43.2M.",
+     "pass_if": true
+    },
+    {
+     "s": "Any ACV figure stated is $8,640,000 or $8.64M.",
+     "pass_if": true
+    },
+    {
+     "s": "Any general liability cap figure stated is $17,280,000 or $17.28M, identified as 2\u00d7 ACV where that relationship is stated.",
+     "pass_if": true
+    },
+    {
+     "s": "Any monthly run rate figure stated is $720,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Any claim-value thresholds used in the tiered arbitrator provision or escalation ladder are internally consistent with the MSA financial parameters and reference or are reconcilable with the $250,000 small-claims and $2,500,000 large-claims thresholds from the drafts.",
+     "pass_if": true
+    },
+    {
+     "s": "No claim-value threshold used in the tiered arbitrator provision or escalation ladder exceeds the $17.28M liability cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable discloses Graystone's internal authority limits, walk-away positions, board authorization details, or the playbook's classification as \u201cAttorney-Client Privileged & Confidential \u2014 Work Product.\u201d",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable reads as an internal strategy memo, work-product analysis, or privileged communication rather than an external-facing proposal for the June 23, 2025 facilitated negotiation session with counterparty counsel.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 5 clause specifies a concrete number of days for each escalation step.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 5 clause or rationale states who bears the mediator's fees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The rationale states AAA admin fees as approximately $19,600 for a $17.28M claim.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale states ICC admin fees as approximately $85,000\u2013$120,000 for a $17.28M claim.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The rationale states sole arbitrator total estimated fees as approximately $65,000, based on 10 days \u00d7 $6,500/day.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale states three-arbitrator panel total estimated fees as approximately $195,000, based on 10 days \u00d7 $19,500/day.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The rationale uses cost comparison figures to justify the compromise position on the arbitral institution in Term 1.",
+     "pass_if": true
+    },
+    {
+     "s": "The rationale uses cost comparison figures to justify the compromise position on arbitrator count in Term 2.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise clause language includes a provision requiring arbitration proceedings, evidence, and awards to be kept confidential.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 2 clause provides an expedited sole-arbitrator procedure for disputes under the $250,000 small-claims threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The deliverable explicitly proposes uncapped liability for data-breach/IP claims.",
+     "pass_if": false
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Term 4 clause or rationale acknowledges the dispute between Graystone's uncapped position and Meridian's proposed 3\u00d7 ACV ($25,920,000 or $25.92M) cap for data-breach/IP indemnity in the context of the scope or carve-out discussion.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each compromise clause fits within the existing Article XIV Sections 14.1 through 14.9 numbering\u201414.1 Governing Law, 14.2 Escalation, 14.3 Institution/Rules, 14.4 Arbitrators, 14.5 Seat/Venue, 14.6 Scope, 14.7 Interim Relief, 14.8 Costs/Fees, and 14.9 Miscellaneous\u2014or clearly indicates where new subsections are added.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

@@ -1,0 +1,965 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The preamble and agreement identify the Grantor as \u201cThornfield Estates LLC, a Vermont limited liability company.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The preamble and agreement identify the Grantee as \u201cPineRidge Solar Partners LP, a Delaware limited partnership registered to do business in Vermont.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies PineRidge Solar GP Inc., a Delaware corporation, as the general partner of PineRidge Solar Partners LP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies Green Mountain Title Services Inc., a Vermont corporation, as the Escrow Agent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes an escrow agent acknowledgment section identifying Sarah P. Lindquist as Senior Escrow Officer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states Green Mountain Title Services Inc.'s address as 58 Eastern Avenue, St. Johnsbury, VT 05819.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Grantor signature block names Margaret L. Hargrove.",
+     "pass_if": true
+    },
+    {
+     "s": "The Grantor signature block identifies Margaret L. Hargrove as Trustee of the Hargrove Family Trust dated March 12, 2008 (sole member).",
+     "pass_if": true
+    },
+    {
+     "s": "The Grantor signature block identifies Margaret L. Hargrove as Manager of Thornfield Estates LLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Grantee signature block names Daniel K. Osei as Vice President of Development of PineRidge Solar GP Inc., general partner of PineRidge Solar Partners LP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies the Servient Estate as Lot 14, Plat of the Former Caldwell Timber Tract, Volume 87, Page 214, Caledonia County Land Records, with address 4520 County Road 7, Barnet, VT 05821.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement identifies the Dominant Estate as Lot 15, Plat of the Former Caldwell Timber Tract, Volume 87, Page 216, Caledonia County Land Records, with address 4600 County Road 7, Barnet, VT 05821.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The permanent utility easement is specified as 30 feet wide, 15 feet on each side of the centerline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that the permanent easement is approximately 2,640 feet long or approximately 0.50 miles long.",
+     "pass_if": true
+    },
+    {
+     "s": "The permanent easement runs generally northwest-to-southeast from the Dominant Estate boundary to the County Road 7 right-of-way.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement specifies a minimum installation depth of 42 inches below finished grade.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that the permanent easement area is approximately 1.82 acres or 79,200 square feet.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement permits installation of up to three 34.5 kV underground cable circuits.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement permits installation of one 48-strand fiber-optic conduit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement permits one ground-mounted pad-mount switching cabinet with a maximum footprint of 12 ft \u00d7 8 ft (96 sq ft).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement permits related markers, junction boxes, and grounding systems.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement expressly states that the three-circuit provision accommodates potential future capacity upgrades without requiring a new easement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement designates the switching cabinet location on the survey plat (Exhibit A).",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement allows minor field adjustments of up to 25 feet from the switching cabinet location designated on the survey plat.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement expressly grants the permanent easement as an easement appurtenant to the Dominant Estate (Lot 15), running with the land.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement states that the easement binds successors and assigns of both the Servient Estate and Dominant Estate and survives transfer of either parcel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The temporary construction easement provides an additional 20 feet on each side of the permanent strip, for a total temporary corridor width of 70 feet.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that the temporary easement area is approximately 2.42 acres or 105,600 square feet.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that the temporary construction easement commences on the Construction Start Date, no earlier than September 2, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states that the temporary easement expires 180 calendar days after the Construction Start Date.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement states that the latest initial expiration date is March 1, 2026.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement provides for one 90-day extension of the temporary easement upon payment of $15,000.00.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement states that the $15,000.00 extension payment is payable 15 days before the then-current expiration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The consideration section states that a one-time easement payment of $385,000.00 is payable at closing via wire transfer to escrow.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The consideration section states that a temporary construction easement fee of $45,000.00 is payable at closing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states an annual maintenance-access fee of $8,500.00 payable on each anniversary of the Recording Date.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement states that the annual maintenance-access fee escalates at 2.5% per year, compounded.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement states late-payment interest of 1.0% per month (12.0% per annum), calculated as simple interest.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The insurance section requires Grantee to maintain CGL insurance at $5,000,000 per occurrence / $10,000,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The insurance section requires Umbrella/Excess Liability insurance at $10,000,000 per occurrence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The insurance section requires Pollution Legal Liability insurance at $3,000,000 per occurrence / $5,000,000 aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The insurance section requires Workers' Compensation at statutory limits.",
+     "pass_if": true
+    },
+    {
+     "s": "The insurance section requires Employer's Liability at $1,000,000/$1,000,000/$1,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The insurance section names Grantor (Thornfield) as an additional insured on CGL and Umbrella policies.",
+     "pass_if": true
+    },
+    {
+     "s": "The insurance section names Escrow Agent (Green Mountain Title) as an additional insured on CGL and Umbrella policies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The restoration section requires Grantee to restore the temporary construction corridor to pre-construction condition, determined by reference to a pre-construction survey conducted by a Vermont-licensed forester.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement requires restoration to be completed within 60 days of expiration of the temporary easement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement secures the restoration obligation with a restoration bond or irrevocable letter of credit of $125,000.00.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement provides for release of the restoration bond upon Grantor's written certification of satisfactory restoration or, absent certification, 18 months after completion of restoration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes timber-damage liquidated damages of $4,200.00 per merchantable tree removed or destroyed beyond the permanent easement strip, referencing the Vermont Department of Forests FY 2025 Stumpage Price Report.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The indemnification section includes mutual indemnification for third-party claims arising from the indemnifying party's negligence or willful misconduct.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes Grantee's additional unilateral strict-liability indemnification of Grantor, regardless of negligence, for all claims arising out of Grantee's installation, use, maintenance, repair, or removal of improvements within the easement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Grantee's strict-liability indemnification has a clear carve-out only for Grantor's sole gross negligence or willful misconduct, not ordinary negligence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Grantee's indemnification obligations have no aggregate cap or monetary limit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The term section states that the permanent easement is perpetual, runs with the land, and continues until abandoned or released by recorded instrument.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement provides for deemed abandonment if Grantee fails to use the easement for any utility purpose for 60 consecutive months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Upon the abandonment trigger, the agreement allows Grantor to deliver a Notice of Proposed Termination.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement states that the easement terminates automatically if Grantee does not resume use or object within 180 days after the notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement requires Grantee, upon termination, to remove all improvements and restore the easement area within 12 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement secures the removal obligation with a removal bond of $200,000.00.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement requires 48 hours' prior written notice for routine maintenance access.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement permits emergency access without prior notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement references the Northern Hardwood Management Plan and VT Dept. of Forests Permit No. FMP-2019-0443.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes provisions addressing or requiring minimal disruption to Grantor's timber operations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The governing law section specifies the State of Vermont.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes a notarization or acknowledgment section for the Grantor consistent with Vermont recording requirements.",
+     "pass_if": true
+    },
+    {
+     "s": "The agreement includes a notarization or acknowledgment section for the Grantee consistent with Vermont recording requirements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes space for county-specific recording information: volume, page, and recording date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement includes a return-address block required by Vermont recording formalities.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement references or addresses the PT-172 property transfer tax form per Vermont recording requirements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The exhibit list references Exhibit A as the Survey Plat by Cartwright Land Surveying PC (Emily A. Cartwright, VT LS No. 0723), dated June 3, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The exhibit list includes an exhibit for legal descriptions containing metes and bounds for both the permanent and temporary easement areas.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The exhibit list includes an Insurance Certificate form exhibit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section lists Thornfield Estates LLC's address as P.O. Box 319, St. Johnsbury, VT 05819.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section lists PineRidge Solar Partners LP's principal office at 1200 Market Street, Suite 1450, Wilmington, DE 19801.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section includes PineRidge's Vermont registered office at 27 Railroad Street, Suite 4, St. Johnsbury, VT 05819.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section includes Green Mountain Title Services Inc.'s address at 58 Eastern Avenue, St. Johnsbury, VT 05819.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement references the Phase I ESA by TerraCheck Environmental Inc., Report No. TC-ESA-25-0192, dated June 18, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals reference the title commitment by Green Mountain Title, No. TC-2025-04891, dated April 22, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement addresses or acknowledges the existing utility easements, mineral rights reservation, and real property taxes identified in the title commitment Schedule B-II.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The representations and warranties section includes Grantor's representation of clear fee simple title to the Servient Estate.",
+     "pass_if": true
+    },
+    {
+     "s": "The representations and warranties section includes Grantor's representation of authority to grant the easement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The representations and warranties section includes Grantee's representation of valid formation and good standing.",
+     "pass_if": true
+    },
+    {
+     "s": "The representations and warranties section includes Grantee's representation of foreign registration in Vermont.",
+     "pass_if": true
+    },
+    {
+     "s": "The representations and warranties section includes Grantee's representation of the signatory's authority to execute the agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement describes the solar facility as a 28 MW DC / 23.5 MW AC ground-mount photovoltaic facility interconnecting to Green Mountain Power's Barnet 46 kV substation, establishing the purpose of the easement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement provides for consideration to flow through escrow with Green Mountain Title Services Inc. holding the easement payment pending confirmation of clear title and recording.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "All bracketed template placeholders have been replaced with deal-specific terms, and no brackets, placeholder text, or unfilled template fields remain, except intentional drafting notes flagged for partner review.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The default and remedies section addresses Grantee's failure to pay fees when due and references the 1.0%/month late-payment interest rate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The default and remedies section addresses Grantee's failure to maintain required insurance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The default and remedies section addresses failure to restore within the 60-day deadline or remove improvements within the 12-month deadline, with appropriate cure periods and Grantor's remedies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The agreement provides for recording in the Caledonia County Land Records with grantor/grantee indexing appropriate for Vermont conveyancing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The agreement uses formal conveyancing style consistent with Vermont land-records practice, including a granting clause, habendum, and covenants.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The draft reflects a Grantor-protective posture through robust insurance requirements, strong indemnification including uncapped strict-liability indemnification, thorough restoration obligations, and bonding requirements of $125,000 for restoration and $200,000 for removal.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The draft makes the easement appurtenant to Lot 15.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft provides for three circuits to accommodate future capacity.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft requires 48-hour routine notice and permits emergency access without prior notice.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft allows a 25-foot field adjustment to the cabinet location.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft requires an objective restoration standard based on a forester survey.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft clearly limits the indemnification carve-out to Grantor's sole gross negligence or willful misconduct.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

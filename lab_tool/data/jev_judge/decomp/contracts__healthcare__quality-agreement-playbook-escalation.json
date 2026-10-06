@@ -1,0 +1,390 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the critical deviation notification timeline as an out-of-policy term in the Quality Agreement draft requiring escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies right to audit frequency or on-site audit rights as an out-of-policy term in the Quality Agreement draft requiring escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies regulatory inspection support, including the personnel-day cap for supporting regulatory inspections at Praecis's facility, as an out-of-policy term in the Quality Agreement draft requiring escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the Annual Product Quality Review (APQR) data delivery timeline as an out-of-policy term in the Quality Agreement draft requiring escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the change control notification timeline for advance notice of planned changes to facilities, equipment, or processes as an out-of-policy term in the Quality Agreement draft requiring escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies liability for batch failure due to CMO manufacturing error, including the liability cap, as an out-of-policy term in the Quality Agreement draft requiring escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies retention of batch records and quality documentation as an out-of-policy term in the Quality Agreement draft requiring escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo addresses Dr. Jonathan Hale as Chief Quality Officer (CQO) of Veltria Biologics.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo addresses Dr. Sienna Marchetti as Vice President of Regulatory Affairs (VP RA) at Veltria Biologics.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references SOP-QA-0042 Rev. 7 (or Revision 7), titled 'Quality Agreement Negotiation and Approval.'",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies SOP-QA-0042 as the governing procedure that defines the fallback authority matrix\u2014the maximum concessions the QA Director may accept without escalation\u2014and explains that the identified out-of-policy terms exceed that matrix and trigger escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Praecis proposes notifying Veltria of critical deviations within 10 business days of detection.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Veltria's approved fallback minimum for critical deviation notification is 3 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Veltria's preferred negotiating position for critical deviation notification is 24 hours.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Praecis proposes capping per-incident liability for batch failure at 1x the batch manufacturing fee, equal to $385,000 per incident.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo calculates or states Veltria's fallback full per-batch replacement cost as approximately $2,225,000, comprising $1,840,000 in API cost plus the $385,000 fill-finish manufacturing fee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo calculates or states Praecis's proposed annual aggregate liability cap as approximately $20,790,000, derived from 3 \u00d7 18 batches \u00d7 $385,000 per batch (3 times the annual minimum batch commitment fee).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Veltria's approved fallback position for batch failure liability has no annual aggregate cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that Praecis's proposed audit clause omits for-cause audit rights for Veltria, limiting audits to once per calendar year with no for-cause provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Veltria's approved fallback position includes unlimited for-cause audit rights in addition to twice-yearly scheduled audits.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Praecis proposes notifying Veltria of planned changes to facilities, equipment, or processes 30 calendar days before implementation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Veltria's approved fallback minimum for change control notification is 90 calendar days before implementation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains that 30 calendar days' change control notification is insufficient to allow Veltria to prepare timely regulatory filings or prior-approval supplements, or to satisfy prior-approval requirements before changes are implemented.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references Dr. Renata Moesch and identifies her as the Qualified Person (QP) for Veltria Biologics Ireland Ltd. or for EU batch release.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo raises Dr. Renata Moesch's concern about timely access to Praecis batch documentation needed for EU batch release certification and connects it to the proposed data delivery or deviation notification timelines in the Quality Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Praecis proposes retaining batch records and quality documentation for 10 years post-batch release.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Veltria's approved fallback minimum for record retention is 15 years or 3 years beyond product expiry, whichever is longer.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo applies Zelvanta's 24-month (2-year) labeled shelf life to the fallback retention formula and states that 15 years is the effective minimum because 3 years beyond a 2-year expiry is roughly 5 years from batch release, shorter than 15 years.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the FDA Form 483 observation issued at the Praecis Contract Manufacturing AG facility in Basel during the June 2024 FDA inspection and identifies it as related to environmental monitoring documentation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo uses the June 2024 FDA Form 483 observation at Praecis as context or justification for why robust audit rights or unlimited regulatory inspection support terms are critical in the Quality Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites the Q2 2025 first manufacturing campaign target or the confirmed Praecis suite reservation beginning May 5, 2025 (Campaign Ref. PRC-2025-VB-001) as a driver of urgency for escalation and timely Quality Agreement execution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo makes a clear approval request, decision ask, or call to action directed at the CQO and VP Regulatory Affairs for each identified out-of-policy term.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Praecis proposes delivering APQR-contributing data within 120 calendar days after the reporting period ends.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Veltria's approved fallback maximum for APQR data delivery is 60 calendar days after the reporting period ends.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states or indicates that Praecis's proposed 120-day APQR data delivery period is double (2x) Veltria's approved 60-day fallback maximum.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

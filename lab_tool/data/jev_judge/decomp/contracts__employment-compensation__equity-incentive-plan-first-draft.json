@@ -1,0 +1,1056 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan title is 'Verdantis Biosciences, Inc. 2025 Equity Incentive Plan'.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "All bracketed company-name placeholders are replaced with 'Verdantis Biosciences, Inc.' throughout the document.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan identifies Verdantis Biosciences, Inc. as a Delaware corporation (C-Corporation).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan states that the share reserve is 6,240,000 shares of common stock.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan states that the reserve is 10.0% of fully diluted capitalization.",
+     "pass_if": true
+    },
+    {
+     "s": "The plan states that fully diluted capitalization is 62,400,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan sets the ISO sub-limit at 4,680,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ISO sub-limit is expressed as or is consistent with 75% of the 6,240,000-share reserve.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The evergreen provision provides for an annual increase equal to 4% of fully diluted shares outstanding on the preceding December 31.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The evergreen provision caps the annual increase at 2,496,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The evergreen increase is the lesser of (a) 4% of fully diluted shares, (b) 2,496,000 shares, or (c) such lesser number as determined by the Board.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The evergreen provision commences on January 1, 2027.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The evergreen provision sunsets on January 1, 2035.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan lists all seven award types: (1) Incentive Stock Options (ISOs), (2) Non-Qualified Stock Options (NSOs), (3) Restricted Stock Awards (RSAs), (4) Restricted Stock Units (RSUs), (5) Stock Appreciation Rights (SARs), (6) Performance Stock Units (PSUs), and (7) Other Stock-Based Awards.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan restricts ISOs to employees only.",
+     "pass_if": true
+    },
+    {
+     "s": "The plan makes NSOs available to all eligible participants, including employees, consultants, and non-employee directors.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes all current and future full-time and part-time employees of Verdantis Biosciences, Inc. and its subsidiaries as eligible participants.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes independent contractors providing bona fide services as eligible participants and excludes capital-raising services.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes non-employee members of the Board as eligible participants.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan sets the per-participant annual grant cap at 624,000 shares per calendar year pre-IPO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan sets the per-participant annual grant cap at 936,000 shares per calendar year post-IPO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan caps total equity plus cash compensation for non-employee directors at $750,000 per calendar year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides a $1,000,000 cap in the year of a non-employee director's initial appointment to the Board.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The default time-based vesting schedule for options and RSUs is 4 years, with a 1-year cliff vesting 25% on the first anniversary.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "After the cliff, vesting occurs in equal monthly installments over the remaining 36 months (approximately 2.0833% per month).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan specifies a 3-year PSU performance period with cliff vesting at the end of the performance period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan specifies a PSU payout range of 0%\u2013200% of target based on achievement of performance metrics.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The plan requires a minimum vesting period of 12 months from the date of grant for all awards.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan permits up to 5% of the share reserve (312,000 shares) to be granted without the 12-month minimum vesting restriction.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan sets the option exercise price floor at not less than 100% of Fair Market Value on the date of grant.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan requires ISOs granted to 10% stockholders to have an exercise price of not less than 110% of FMV.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan limits ISOs granted to 10% stockholders to a maximum 5-year term.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The FMV definition provides that pre-IPO, FMV is determined per the most recent Section 409A valuation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The FMV definition provides that post-IPO, FMV is the closing price on the principal exchange on the trading day immediately preceding the date of grant.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Change in Control definition includes acquisition of more than 50% of the voting power as a trigger event.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Change in Control definition includes consummation of a merger or consolidation unless existing stockholders retain more than 50%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Change in Control definition includes sale of all or substantially all assets.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Change in Control definition includes complete liquidation or dissolution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Change in Control definition includes a change in Board composition such that incumbent directors cease to constitute a majority, with a successor approval carve-out.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan's default Change in Control vesting treatment is double-trigger, requiring both a Change in Control and a qualifying termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The second trigger is termination without Cause or resignation for Good Reason within 12 months following the Change in Control.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Upon both triggers being met, 100% of then-unvested shares accelerate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan gives the Board or Committee discretion to provide single-trigger acceleration or cash-out treatment in individual Award Agreements or by Board resolution prior to a Change in Control.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides that PSU performance upon a Change in Control is deemed achieved at the greater of (x) target (100%) or (y) actual performance as of the most recent measurement date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan states that any time-based component of PSUs is subject to double-trigger acceleration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides a 90-day post-termination exercise period for voluntary resignation (not for Good Reason).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides a 90-day post-termination exercise period for termination without Cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides that termination for Cause results in immediate forfeiture of all vested and unvested awards with no post-termination exercise period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides a 12-month post-termination exercise period for Death or Disability.",
+     "pass_if": true
+    },
+    {
+     "s": "The plan credits 12 months of additional vesting for Death or Disability, not to exceed the total award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan defines Retirement as age 60 with at least 10 years of service.",
+     "pass_if": true
+    },
+    {
+     "s": "The plan provides a 12-month post-termination exercise period for Retirement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides that expired, forfeited, or cash-settled awards return to the reserve.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides that shares withheld for tax withholding on RSUs or RSAs return to the reserve.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan states that shares tendered or withheld to pay the exercise price of options do not return to the reserve.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan states that shares repurchased on the open market with option exercise proceeds do not return to the reserve.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "For SARs settled in shares, the plan counts the gross number of shares underlying the SAR against the reserve, not just the net shares issued.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan states that awards are non-transferable except by will or the laws of descent and distribution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan permits the Committee to allow transfers of NSOs, but not ISOs, to immediate family members or family trusts for estate planning purposes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes post-IPO clawback provisions requiring compliance with the Company's Incentive Compensation Recoupment Policy adopted per Dodd-Frank / Exchange Act Rule 10D-1.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes a pre-IPO clawback triggered by breach of restrictive covenants, with a non-compete of 12 months, a non-solicit of 18 months, and perpetual confidentiality.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes a pre-IPO clawback triggered by material misconduct resulting in a financial restatement within a 3-year lookback period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan states that it is intended to comply with or be exempt from Section 409A.",
+     "pass_if": true
+    },
+    {
+     "s": "The plan includes a Section 409A savings clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes a construction or interpretation provision stating that the plan shall be construed consistent with Section 409A.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes a six-month delay on payments to 'specified employees' upon separation from service, applicable post-IPO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan requires SARs to be stock-settled only to maintain the Section 409A exemption.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes Rule 16b-3 compliance provisions designed to satisfy the exemption requirements for post-IPO Section 16 reporting persons.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan requires Committee members to qualify as 'non-employee directors' under Rule 16b-3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan effective date is June 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan requires stockholder approval within 12 months of the effective date, by May 31, 2026.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan expiration date is May 31, 2035, a 10-year term from the effective date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan designates the Compensation Committee of the Board as the administering body.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan requires a minimum of 2 non-employee directors on the Compensation Committee.",
+     "pass_if": true
+    },
+    {
+     "s": "The plan requires each Compensation Committee member to qualify as 'independent' under applicable exchange listing rules and as a 'non-employee director' under Rule 16b-3.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The governing law provision specifies the State of Delaware.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides that the Company may withhold shares, require cash payment, or deduct from other compensation to satisfy tax withholding.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan designates net share settlement as the default withholding method for RSUs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The plan sets the maximum withholding rate at up to the maximum individual statutory tax rate in the applicable jurisdiction and does not include language that triggers ASC 718 liability accounting.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes the IRC \u00a7422 $100,000 annual vesting limit for ISOs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan references or includes the ISO holding period requirements under IRC \u00a7422.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan explicitly limits ISOs to employees of the Company and states that they may not be granted to consultants or non-employee directors.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes RSU settlement timing provisions that comply with or are exempt from Section 409A.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan references or implements the short-term deferral exception for RSUs settled promptly upon vesting.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan contains equitable adjustment provisions for stock splits, stock dividends, recapitalizations, and similar capitalization changes, permitting proportional adjustments to the share reserve, ISO sub-limit, individual caps, evergreen amounts, and outstanding awards.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides that the Board may amend or terminate the plan.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-081",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan states that no amendment may materially impair a participant's rights under an outstanding award without the participant's consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-082",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan requires stockholder approval for amendments where required by applicable law, exchange listing requirements, or the IRC, including for ISO purposes under \u00a7422.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-083",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan includes a Section 6039 information-reporting acknowledgement or cross-reference recognizing that ISO exercises trigger information-reporting obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-084",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "No bracketed placeholders, such as [___], [Company], or [Number], remain in the delivered draft.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-085",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "No comment bubbles, internal CSW guidance notes, or template drafting instructions remain in the document.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-086",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The plan uses the double-trigger Change in Control option and the single-trigger bracketed alternative from the template has been removed.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-087",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Any reference to outstanding common stock in the plan's recitals or definitions states 48,000,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-088",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Any reference to fully diluted capitalization in the plan states 62,400,000 shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-089",
+   "logic": "any",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Wherever the plan identifies the Company's principal office address, it states 1440 Linden Park Boulevard, Suite 300, Cambridge, MA 02142.",
+     "pass_if": true
+    },
+    {
+     "s": "The plan does not include any provision that calls for the Company's principal office address.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-090",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan states that the maximum option term is 10 years from the date of grant for standard ISOs and NSOs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-091",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan provides that upon Death or Disability, 12 months of additional vesting is credited, not to exceed the total award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-092",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Retirement provision provides only a 12-month extended exercise period and no additional vesting credit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-093",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The plan defines Retirement as attaining age 60 with at least 10 years of service.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

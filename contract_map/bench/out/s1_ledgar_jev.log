@@ -1,0 +1,13 @@
+== ledgar stage 1: 100 classes, eval 500 rows, train 6000 of 60000
+   jev: 0 cached, 500 to call
+   jev: 100/500
+   jev: 200/500
+   jev: 300/500
+   jev: 400/500
+   jev: 500/500
+   (jev: 0 errors; latency p50 71 ms, p95 132 ms; this run: 500 calls, tokens in 1005873, out 455571, model jev-1.13.0)
+  jev          accuracy  73.8% [lo 0.698]  macro-F1 0.553  (70.8 ms/item)
+      answer only if p >= 0.5: coverage  94.0%  precision  77.0% [lo 0.730]
+      answer only if p >= 0.7: coverage  79.4%  precision  83.1% [lo 0.791]
+      answer only if p >= 0.9: coverage  64.4%  precision  89.8% [lo 0.860]
+      most confused (gold -> predicted): Remedies -> Specific Performance ×6; Withholdings -> Tax Withholdings ×6; Waivers -> No Waivers ×5; Organizations -> Existence ×4; Governing Laws -> Submission To Jurisdiction ×3; Successors -> Binding Effects ×2

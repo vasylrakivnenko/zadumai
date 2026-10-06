@@ -1,0 +1,948 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document title or header includes the internal reference number VIS-PCI-ARB-2025-001.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft cross-references the Supply Agreement using reference number VIS-PCI-SA-2025-001.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "VIS is identified as Vanguard Industrial Solutions, LLC.",
+     "pass_if": true
+    },
+    {
+     "s": "VIS is identified as a Delaware limited liability company.",
+     "pass_if": true
+    },
+    {
+     "s": "VIS is identified with the address 4100 Commerce Ridge Parkway, Suite 800, Charlotte, NC 28277.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "PCI is identified as Pinnacle Components International, Inc.",
+     "pass_if": true
+    },
+    {
+     "s": "PCI is identified as an Ontario (Canada) corporation registered in New York.",
+     "pass_if": true
+    },
+    {
+     "s": "PCI is identified with the address 225 Lakeview Industrial Boulevard, Unit 12, Mississauga, ON L5N 7Y2, Canada.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft identifies PCI's U.S. registered agent as CT Corporation System at 28 Liberty Street, New York, NY 10005.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Tier 1 is executive negotiation, with a 30-day window from written notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Tier 2 is ICDR-administered mediation.",
+     "pass_if": true
+    },
+    {
+     "s": "Tier 2 mediation is seated in New York.",
+     "pass_if": true
+    },
+    {
+     "s": "Tier 2 has a 60-day window.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Tier 3 is binding arbitration under ICDR Rules.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The draft requires each tier to be completed, or its time period to expire, before proceeding to the next tier.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft requires a three-arbitrator panel for claims of $5,000,000 or more.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft requires a sole arbitrator for claims below $5,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "For three-arbitrator panels, each party-appointed arbitrator must have relevant industry experience in power-generation or precision manufacturing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft provides that claims of $500,000 or less are resolved under ICDR Expedited Procedures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft requires a sole arbitrator for expedited-track claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "For expedited-track claims, the draft requires a final award within 90 days of tribunal constitution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft caps document requests at 15 per side.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft caps depositions at 5 per side.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft caps each deposition at 7 hours.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft states that the Supply Agreement is governed by the laws of the State of New York without regard to conflicts-of-law principles.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft states that the Arbitration Agreement is governed by the Federal Arbitration Act, 9 U.S.C. \u00a7\u00a7 1\u201316.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft provides for residual reference to New York law governing the Arbitration Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft specifies New York, New York as the seat (legal place) of arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft specifies English as the language of arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft provides that all arbitration proceedings are confidential.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft provides that all arbitration submissions are confidential.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft provides that all arbitration awards are confidential.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The confidentiality provision includes an exception for legally compelled disclosure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The confidentiality provision includes an exception for disclosures required to enforce an award.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft permits either party to seek provisional or interim relief from a court of competent jurisdiction without waiving the right to arbitrate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The interim-relief provision designates the U.S. District Court for the Southern District of New York as a court from which interim relief may be sought.",
+     "pass_if": true
+    },
+    {
+     "s": "The interim-relief provision designates the Ontario Superior Court of Justice as a court from which interim relief may be sought.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft carves disputes involving ownership, validity, or infringement of registered patents or trademarks out of arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft subjects carved-out IP disputes to the exclusive jurisdiction of the U.S. District Court for the Southern District of New York or the Federal Court of Canada, as applicable.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft states that misappropriation-of-trade-secrets claims remain arbitrable.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft states that misappropriation-of-trade-secrets claims qualify for the interim-relief carve-out.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft defines a 'prevailing party' as a party that obtains an award of at least 75% of its affirmative monetary claim or successfully defeats at least 75% of the opposing party's monetary claim.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft entitles the prevailing party to recover reasonable attorneys' fees and arbitration costs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft sets the aggregate liability cap for arbitration at $217,500,000 (100% of TCV).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft explicitly excludes fraud from the aggregate liability cap.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft explicitly excludes willful misconduct from the aggregate liability cap.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft explicitly excludes IP indemnification obligations from the aggregate liability cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft specifies interest at the 1-year U.S. Treasury Constant Maturity Rate plus 2.0%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft specifies that interest is compounded annually.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft provides for pre-award interest.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft provides for post-award interest.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft requires claims to be commenced within 2 years from the date the claiming party knew or should have known of the claim.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft provides that in no event may a claim be commenced later than 4 years from the act or omission giving rise to the claim.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The draft applies the limitation period symmetrically to both VIS and PCI.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft references standby letter of credit No. RDB-SBY-2025-04178.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft identifies Royal Dominion Bank, Toronto as the issuing bank for the letter of credit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft states that the letter of credit amount is USD $5,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft states that the letter of credit expires December 31, 2029.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft permits any arbitration award to be offset against draws on the letter of credit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft expressly states that the letter of credit is not the exclusive source of recovery.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft references PCI's obligation to maintain Commercial General Liability insurance of at least $10,000,000 per occurrence and $20,000,000 in the aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices provision lists VIS at 4100 Commerce Ridge Parkway, Suite 800, Charlotte, NC 28277, Attn: Dara Espinoza, SVP & General Counsel or equivalent title.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices provision lists PCI at 225 Lakeview Industrial Boulevard, Unit 12, Mississauga, ON L5N 7Y2, Canada, Attn: Jonathan Hale, VP Legal Affairs or equivalent title.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices provision includes a copy to PCI's U.S. registered agent at CT Corporation System, 28 Liberty Street, New York, NY 10005.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The VIS signature block names Marcus J. Whitfield as Chief Executive Officer or CEO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The PCI signature block names Seonaid A. MacIntyre as President & Chief Operating Officer or President & COO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft includes July 1, 2025 as the target execution date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals describe a five-year exclusive supply agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals describe PCI manufacturing and delivering precision-engineered turbine components to VIS for integration into VIS's power-generation systems.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals state a total contract value (TCV) of $217,500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals state that the Supply Agreement term runs from July 1, 2025 through June 30, 2030.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft addresses enforceability under the New York Convention on the Recognition and Enforcement of Foreign Arbitral Awards.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft acknowledges that VIS owns all design IP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft acknowledges that PCI owns all manufacturing process IP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft addresses continuation of performance under the Supply Agreement during negotiation, mediation, or arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The draft states the aggregate arbitration liability cap as $217,500,000 and does not conflict with its parallel provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The draft's LC offset language references the $5,000,000 standby LC No. RDB-SBY-2025-04178 and does not conflict with its other provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft states that liquidated damages are 0.5% of the affected PO value per calendar day, capped at 10% of the PO value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "No bracketed placeholders from the template remain in the draft.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "No template annotations, marginal comments, or drafting-guidance notes from the firm precedent remain in the draft.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft clearly states that the bespoke limits of 15 document requests and 5 depositions of 7 hours per side override any contrary default ICDR provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft clearly states that the requirement for party-appointed arbitrators to have industry experience in power-generation or precision manufacturing overrides or supplements default ICDR arbitrator appointment provisions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft clearly states that the 90-day final-award deadline for expedited-track claims of $500,000 or less overrides or supplements any contrary ICDR Expedited Procedures timeline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft specifies New York as the seat of arbitration.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft identifies the Ontario Superior Court of Justice as an alternative forum for interim relief.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft sets the three-arbitrator threshold at $5,000,000.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft requires party-appointed arbitrators to have industry experience in power-generation or precision manufacturing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft uses 75% as the prevailing-party fee-shifting threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft excludes fraud from the aggregate liability cap.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft excludes willful misconduct from the aggregate liability cap.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft excludes IP indemnification obligations from the aggregate liability cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft states that the letter of credit is not the exclusive source of recovery.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The draft applies the 2-year knowledge-based and 4-year absolute limitation periods symmetrically to both VIS and PCI.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The draft provides for ICDR as the administering institution.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft provides for mandatory confidentiality.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft provides for New York governing law.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft provides for multi-tier escalation.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft ties the liability cap to TCV.",
+     "pass_if": true
+    },
+    {
+     "s": "The draft includes the required carve-outs.",
+     "pass_if": true
+    },
+    {
+     "s": "Any deviation from VIS Dispute Resolution Playbook defaults, including a 75% prevailing-party threshold instead of the 60% playbook minimum, is clearly identifiable for internal review.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The draft states that the arbitration agreement survives termination, expiration, or rescission of the underlying Supply Agreement.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

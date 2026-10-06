@@ -1,0 +1,830 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise aggregate limit is stated as $12,500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise provides for a conditional step-up to $14,000,000 effective at the start of the second Policy Year if no Covered Loss exceeding $500,000 is reported during the first Policy Year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states that no additional premium is required for the step-up from $12,500,000 to $14,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The carrier's aggregate limit position is identified as $10,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Verdantis's aggregate limit position is identified as $15,000,000 (status quo).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise ransomware/extortion sublimit is $3,000,000 per occurrence and has no separate aggregate sublimit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ransomware sublimit includes a condition precedent requiring 24-hour notification of a ransom demand.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ransomware sublimit includes a condition precedent requiring engagement of a Company-approved Incident Response Vendor per Exhibit B of the Declarations Page.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The ransomware sublimit includes a condition precedent requiring the carrier's prior written consent, \u201cnot unreasonably withheld, conditioned, or delayed.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise carves forensic, investigation, and/or remediation costs out of the Extortion Sublimit and covers them under Incident Response Costs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The carrier's ransomware position is identified as $1,000,000 per occurrence and in the aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Verdantis's ransomware position is identified as $5,000,000 per occurrence with no separate aggregate sublimit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise base SIR is $350,000 per occurrence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise applies a reduced $250,000 per-occurrence Vendor-Incident SIR when Covered Loss arises from a security failure of a pre-approved vendor listed on the policy schedule and the insured engages a pre-approved vendor within 24 hours of discovery, with the $350,000 base SIR applying to all other incidents.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise states that defense costs within the SIR count toward satisfaction of the SIR.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The fallback SIR position is a flat $375,000 SIR with a $25,000 corridor deductible for regulatory-defense costs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The carrier's SIR position is identified as $500,000 per occurrence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Verdantis's SIR position is identified as $250,000 per occurrence (status quo).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise BI waiting period is 12 hours for Security Events affecting PHI Systems and 16 hours for Security Events affecting non-PHI Systems.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The BI drop-down provision states that coverage applies retroactively to Hour 1 once the applicable waiting-period threshold is satisfied.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The fallback BI waiting period is a flat 14 hours with no drop-down, and the clock starts at the time of the Security Event, not discovery.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The carrier's BI waiting-period position is identified as 24 hours.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Verdantis's BI waiting-period position is identified as 8 hours (status quo).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The war/nation-state exclusion applies only if both conditions are met: (i) a specified governmental authority formally attributes the cyber operation to a nation-state actor, and (ii) the attribution occurs within the defined attribution window.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The war exclusion requires formal attribution by a specified national governmental authority, such as a national government agency of the United States, United Kingdom, or Canada, or a specified Five Eyes authority such as CISA, FBI, NCSC, or another Five Eyes partner agency.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Prong (b) of the war exclusion requires attribution within 120 days of the insured's discovery of the Security Event.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The attribution required to trigger the war exclusion must be a formal, public official attribution by an authorized governmental authority, and the clause expressly excludes media reporting, private-sector threat-intelligence reports, and informal or internal government statements as sufficient attribution.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise includes a safe harbor preserving coverage for financially motivated criminal acts even if they are subsequently attributed to a nation-state actor.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise states that the burden of proving the war exclusion's applicability rests on the carrier (Company/Insurer).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The fallback is a separate buy-back endorsement with a $5M sublimit and additional premium of no more than $75,000/yr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The carrier's war/nation-state exclusion position is identified as a blanket exclusion for any state-sponsored cyber operation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The regulatory proceeding compromise covers both defense costs and insurable civil regulatory penalties, and excludes criminal fines/penalties and punitive damages.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The regulatory penalty coverage uses a \u201cmost favorable jurisdiction\u201d insurability test across (i) the jurisdiction of imposition, (ii) the Named Insured's domicile (Delaware), and (iii) the carrier's domicile (Connecticut).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise includes a $2,000,000 per-Policy-Period sublimit for Regulatory Penalties and states that it is part of, not in addition to, the Aggregate Limit.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The regulatory intentional-violation exclusion requires a final adjudication or written admission, not a mere allegation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The regulatory fallback includes a $35,000/yr premium reduction if the carrier rejects regulatory penalty coverage.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The regulatory fallback includes an alternative $1.5M sublimit for PCI-DSS assessments and contractual privacy-breach penalties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The carrier's regulatory position is identified as covering defense costs only, with all fines, penalties, and monetary sanctions excluded.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The panel counsel/vendor compromise requires notice to the carrier and a consent request for non-panel vendors, deems consent granted if the carrier does not respond within 48 hours, caps non-panel vendor fees at 115% of the highest panel rate for comparable providers, and limits reimbursement to panel fee-schedule rates for non-compliance instead of forfeiting coverage.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Non-panel vendor use requires carrier consent, which is deemed granted if the carrier does not respond within 48 hours.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Reimbursement for non-panel providers is capped at 115% of the highest panel rate for comparable providers in the same discipline and geography.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise states that non-compliance with panel requirements does not void coverage and instead limits reimbursement to panel fee-schedule rates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise specifically names Crestline Forensics, Inc. as a pre-approved non-Panel forensic provider for the full Policy Period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The carrier's panel position is identified as mandatory panel-only, with coverage voided for non-panel vendor use without prior written consent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Verdantis's panel position is identified as free vendor selection subject to fee reasonableness.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise annual premium is approximately $529,000/yr, broken down as base $515,000 + $8,000 (BI drop-down) + $18,000 (regulatory penalties) \u2212 $12,000 (SIR increase credit).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states or shows that the $529,000 compromise premium is approximately a 28.4% increase over the expiring $412,000/yr premium.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states or shows that the $529,000 compromise premium is approximately 8.6% below the carrier's proposed $578,500/yr premium.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states or shows that the $529,000/yr compromise premium does not exceed Verdantis's maximum acceptable premium ceiling of $540,000/yr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document states or reconciles the 3-year total premium as approximately $1,587,000 over 3 years at $529,000/yr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each of the seven contested terms\u2014aggregate limit, ransomware sublimit, SIR, BI waiting period, war/nation-state exclusion, regulatory penalties, and panel counsel/vendors\u2014the document presents (a) the carrier's position, (b) Verdantis's position, (c) proposed compromise clause language, (d) negotiation rationale, and (e) a fallback position.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each of the seven terms, the carrier's position references or reproduces specific language from carrier-second-position-2025-05-19.docx (the May 19 second position).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "For each of the seven terms, Verdantis's position references or reproduces specific language from verdantis-counter-proposal-2025-05-02.docx (the May 2 counter-proposal).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed compromise clause language includes section numbering and is formatted in policy-ready form suitable for endorsement to Form CL-700.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document says the compromise package is to be circulated to Marcus Ellingham (Pinnacle) via Josephine Almeda (W&C/broker) by June 9, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document requests a substantive response from the carrier by June 20, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document identifies July 15, 2025 as the binding deadline.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document identifies July 31, 2025 as the policy expiration date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document notes or makes evident that there are 25 days between the June 20 requested response date and the July 15 binding deadline, or 41 days before the July 31 policy expiration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The document identifies the carrier's proposed coverage-voiding consequence for non-panel vendor use as commercially unreasonable and/or off-market, citing market-benchmarking-report.xlsx and/or the 96-hour delay in vendor approval from verdantis-claim-2-summary-ransomware.docx.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise replaces coverage forfeiture for non-panel vendor use with a rate-limitation remedy that limits reimbursement to panel fee-schedule rates.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The negotiation rationale references the Claim 1 phishing-based wire fraud paid loss of $1,175,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The negotiation rationale references the Claim 2 ransomware event total reserve of $3,400,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The negotiation rationale references the combined loss ratio of 370.1%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The negotiation rationale references market benchmarking data from market-benchmarking-report.xlsx for the applicable terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The negotiation rationale, particularly for the BI waiting period, references Verdantis's 99.5% uptime SLA and approximately 43.8 hours of maximum annual downtime.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The negotiation rationale, particularly for regulatory penalties, references the approximately $1.8M average HIPAA resolution agreement for breaches affecting more than 500 individuals.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The negotiation rationale references applicable findings from crestline-forensics-incident-report.docx, such as forensic investigation costs, attribution analysis, or vendor institutional knowledge.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The negotiation rationale cites the $875,000 in forensic/remediation costs from the February 2025 ransomware event.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The compromise language presents all seven contested terms as a unified package deal, not as severable or piecemeal negotiations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise clause language is formatted as policy-ready text suitable for direct insertion into or endorsement of the Pinnacle CyberShield Premier Form CL-700 (2024 ed.).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The war/nation-state exclusion compromise uses a 120-day attribution window, not 180 days or an unlimited period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The document includes a summary table listing all seven terms, identifying the key concession and which party made it for each, and reconciling premium impacts as base $515,000 + $8,000 (BI drop-down) + $18,000 (regulatory penalties) \u2212 $12,000 (SIR increase credit) = $529,000/yr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The summary table shows that the $529,000/yr compromise premium is below Verdantis's maximum acceptable premium of $540,000/yr.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The summary table shows the $529,000/yr compromise premium in relation to the carrier's proposed $578,500/yr premium.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

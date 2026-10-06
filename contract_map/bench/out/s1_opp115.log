@@ -1,0 +1,14 @@
+== opp115 stage 1: 9 classes, eval 393 rows, train 2658 of 2658
+   eval rows with a type 300, none 93
+   (tfidf: trained on 2658 rows in 28s)
+   (tfidf: threshold 0.5, picked on 323 validation rows)
+  tfidf        micro P  74.2% R  76.0% F1 0.751  macro-F1 0.731  exact  57.5%  'none' rows kept empty 51/93  (0.4 ms/item)
+      weakest types (F1): Data Retention 0.50, User Choice/Control 0.55, User Access, Edit and Deletion 0.62, Data Security 0.69, Policy Change 0.76, Third Party Sharing/Collection 0.79
+   jev: 0 cached, 393 to call
+   jev: 100/393
+   jev: 200/393
+   jev: 300/393
+   (jev: 0 errors; latency p50 75 ms, p95 134 ms; this run: 393 calls, tokens in 234559, out 48673, model jev-1.13.0)
+  jev          micro P  81.9% R  63.4% F1 0.715  macro-F1 0.698  exact  59.3%  'none' rows kept empty 59/93  (74.9 ms/item)
+      (Jev picks one class per paragraph: top choice is one of the gold types or NONE when none:  83.0%)
+      weakest types (F1): Data Retention 0.48, User Choice/Control 0.55, Data Security 0.57, First Party Collection/Use 0.74, Third Party Sharing/Collection 0.75, User Access, Edit and Deletion 0.77

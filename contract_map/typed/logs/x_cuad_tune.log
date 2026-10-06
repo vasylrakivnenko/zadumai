@@ -1,0 +1,26 @@
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 9129.94it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8987.08it/s]
+/root/projects/zadumai/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 11572.55it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10194.52it/s]
+  cuad_tune: 100/1558 (164s)
+  cuad_tune: 200/1558 (290s)
+  cuad_tune: 300/1558 (428s)
+  cuad_tune: 400/1558 (630s)
+  cuad_tune: 500/1558 (800s)
+  cuad_tune: 600/1558 (939s)
+  cuad_tune: 700/1558 (1208s)
+  cuad_tune: 800/1558 (1371s)
+  cuad_tune: 900/1558 (1515s)
+  cuad_tune: 1000/1558 (1781s)
+  cuad_tune: 1100/1558 (1936s)
+  cuad_tune: 1200/1558 (2296s)
+  cuad_tune: 1300/1558 (2415s)
+  cuad_tune: 1400/1558 (2570s)
+  cuad_tune: 1500/1558 (2712s)
+done cuad_tune -> /root/zadumai_nli_proto/contract_map/typed/feats/cuad_tune.jsonl (2774s)

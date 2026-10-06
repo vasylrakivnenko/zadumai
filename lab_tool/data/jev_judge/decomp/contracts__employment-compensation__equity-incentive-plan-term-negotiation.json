@@ -1,0 +1,680 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The proposed aggregate pool, including the initial reserve and the 325,000-share rollover, is between 1,920,000 and 2,200,000 shares (12%\u201313.75% of 16,000,000 fully diluted shares).",
+     "pass_if": true
+    },
+    {
+     "s": "The compromise includes the 325,000-share rollover accepted by both sides.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable identifies the Aldridge Lydon market median of 12% as an anchor for the compromise pool size.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable calculates each side\u2019s dollar-value concession from its original position using the $12.00 implied per-share price and shows the concessions are roughly balanced.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies the investor\u2019s proposed pool as 2,400,000 shares, or 15% of 16,000,000 fully diluted shares.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable identifies the founders\u2019 proposed new pool as 1,280,000 shares, or 8% of 16,000,000 fully diluted shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable cites the Aldridge Lydon market study\u2019s median Series C option pool of 12% (range 10%\u201315%) for late-stage life sciences companies to support the compromise position.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise includes a mechanism to roll 325,000 unallocated 2020 Plan shares into the 2025 Plan.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The rollover and recycling mechanism, including future forfeitures and cancellations flowing back into the pool, is capped at a stated number of shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise states an aggregate cap of no more than 2,400,000 shares issuable under the 2025 Plan, including the initial reserve, rollover, and evergreen accrual, without stockholder approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise includes an automatic annual evergreen increase with a defined per-year share cap.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The evergreen provision includes a cap expressed as a percentage of shares outstanding, such as shares outstanding on January 1 of each year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The evergreen provision states a sunset period after which automatic increases cease.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The evergreen provision expressly allows the Board to add fewer than the maximum number of shares or no shares in a given year.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Change of Control provision grants 100% single-trigger acceleration to Dr. Chandrasekaran (CEO), Sorokin (CTO), and Dr. Osei (CSO).",
+     "pass_if": true
+    },
+    {
+     "s": "The single-trigger acceleration for Dr. Chandrasekaran, Sorokin, and Dr. Osei is not conditioned on a Qualifying Termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Change of Control provision does not grant single-trigger acceleration to all option holders and places at least rank-and-file employees on a different, double-trigger regime.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Change of Control provision includes at least two participant tiers with different acceleration treatment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Tier 2 participants (VP-level and above, excluding Tier 1 founders) receive partial immediate acceleration upon a Change of Control.",
+     "pass_if": true
+    },
+    {
+     "s": "The remaining Tier 2 unvested shares accelerate only upon a Qualifying Termination within a defined post-Change-of-Control period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Tier 3 rank-and-file employees receive Change of Control acceleration only upon a Qualifying Termination within a post-Change-of-Control period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise defines Qualifying Termination to include termination without Cause and resignation for Good Reason.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Good Reason definition includes a material compensation reduction with a stated percentage threshold.",
+     "pass_if": true
+    },
+    {
+     "s": "The Good Reason definition includes a material diminution of role or responsibilities.",
+     "pass_if": true
+    },
+    {
+     "s": "The Good Reason definition includes relocation beyond a specified mileage.",
+     "pass_if": true
+    },
+    {
+     "s": "The Good Reason definition includes a material breach by the Company.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Good Reason definition specifies a period for the holder to notify the Company.",
+     "pass_if": true
+    },
+    {
+     "s": "The Good Reason definition specifies a period for the Company to cure the condition.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The PTEP provision sets a distinct exercise period for voluntary resignation.",
+     "pass_if": true
+    },
+    {
+     "s": "The PTEP provision sets a distinct exercise period for involuntary termination without Cause.",
+     "pass_if": true
+    },
+    {
+     "s": "The PTEP provision sets a distinct exercise period for death or disability.",
+     "pass_if": true
+    },
+    {
+     "s": "The PTEP provision sets a distinct exercise period for termination for Cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The PTEP for involuntary termination without Cause is longer than the PTEP for voluntary resignation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each PTEP for a non-Cause termination category\u2014voluntary resignation, involuntary termination without Cause, and death or disability\u2014is at least 120 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The PTEP provision gives voluntary resignations a longer exercise period based on a stated service-tenure threshold.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The PTEP provision limits the exercise period to 3 months after termination to the extent necessary to preserve ISO status under IRC \u00a7 422, or 12 months for Disability.",
+     "pass_if": true
+    },
+    {
+     "s": "The PTEP provision allows the holder to elect NSO treatment to access the extended exercise period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The PTEP provision includes a Section 409A savings clause or other stated Section 409A-compliant limitation on an extended exercise period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise retains a repurchase right for vested shares following termination for Cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The repurchase exercise window is no longer than 120 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The repurchase right automatically sunsets upon an IPO, a Change of Control, or a stated anniversary date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The repurchase price for non-Cause terminations is Fair Market Value.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The repurchase price for a Cause termination is at least the original exercise price paid by the holder.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable identifies the investor\u2019s original lower-of-FMV-or-exercise-price repurchase price for Cause terminations as off-market or confiscatory.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable proposes an alternative Cause-termination repurchase price that ensures the holder recoups at least the exercise price paid.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The repurchase provision exempts Tier 1 participants Dr. Chandrasekaran, Sorokin, and Dr. Osei from the repurchase right after a stated minimum tenure.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The option pool or allocation provision provides one fallback position if the investor rejects the initial compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The option pool or allocation provision provides one fallback position if the founders reject the initial compromise.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The CIC acceleration provision provides one fallback position if the investor rejects the initial compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The CIC acceleration provision provides one fallback position if the founders reject the initial compromise.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The PTEP provision provides one fallback position if the investor rejects the initial compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The PTEP provision provides one fallback position if the founders reject the initial compromise.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The clawback or repurchase provision provides one fallback position if the investor rejects the initial compromise.",
+     "pass_if": true
+    },
+    {
+     "s": "The clawback or repurchase provision provides one fallback position if the founders reject the initial compromise.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The fallback ladders identify the investor\u2019s hard cap of 13.75% of fully diluted shares for the pool.",
+     "pass_if": true
+    },
+    {
+     "s": "The fallback ladders identify the founders\u2019 hard floor of 120 days for non-Cause PTEP.",
+     "pass_if": true
+    },
+    {
+     "s": "The fallback ladders identify the founders\u2019 hard floor that repurchase may not be below the exercise price.",
+     "pass_if": true
+    },
+    {
+     "s": "The fallback ladders identify the investor\u2019s requirement to retain repurchase for Cause terminations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The stated maximum total pool, counting the initial reserve, maximum rollover, and maximum cumulative evergreen accrual, does not exceed 2,200,000 shares or 13.75% of 16,000,000 fully diluted shares.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable provides proposed contractual clause language for the option pool size and allocation provision that is suitable for insertion into the Plan.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable provides proposed contractual clause language for the Change of Control acceleration provision, including the tiered structure, suitable for insertion into the Plan.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable provides proposed contractual clause language for the post-termination exercise period provision suitable for insertion into the Plan.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable provides proposed contractual clause language for the clawback or repurchase rights provision suitable for insertion into the Plan.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each of the four compromise provisions has a negotiation rationale explaining why its proposed position is fair and how it splits the gap between the parties.",
+     "pass_if": true
+    },
+    {
+     "s": "Each of the four compromise provisions has a rationale citing supporting market data, such as the Aldridge Lydon market study.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable references and reconciles the 2020 Stock Option Plan as a baseline or precedent.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable discusses the 2020 Plan\u2019s 90-day FMV repurchase right, which was never exercised.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable discusses the 2020 Plan\u2019s single-trigger Change of Control acceleration for all holders.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable addresses employee option holders\u2019 illiquidity hardship from a short PTEP.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable addresses the $8.40-per-share exercise cost for employee option holders.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable addresses employee option holders\u2019 uncertainty under pure double-trigger Change of Control acceleration.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable incorporates a tenure-based PTEP concept.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable calculates the investor\u2019s proposed dilution as $28,800,000 (2,400,000 \u00d7 $12.00).",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable calculates the founders\u2019 new pool as $15,360,000 (1,280,000 \u00d7 $12.00).",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable calculates the founders\u2019 total pool including rollover as 1,605,000 shares.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable calculates the dilution delta as $9,540,000 ((2,400,000 \u2212 1,605,000) \u00d7 $12.00).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable references or respects a compromise date of approximately June 18, 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable references or respects a Board meeting target of July 15, 2025.",
+     "pass_if": true
+    },
+    {
+     "s": "The deliverable references or respects a Series C closing target of August 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The compromise specifies Delaware law as the governing law for the Plan.",
+     "pass_if": true
+    },
+    {
+     "s": "The compromise specifies AAA arbitration seated in Wilmington, Delaware for disputes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The deliverable includes a summary comparison table covering the option pool, CIC acceleration, PTEP, and clawback or repurchase provisions.",
+     "pass_if": true
+    },
+    {
+     "s": "For each of the four provisions, the table shows the investor\u2019s original position, the founders\u2019 original position, the compromise position, and the approximate concession split or balance.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

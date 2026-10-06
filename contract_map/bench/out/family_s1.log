@@ -1,0 +1,25 @@
+== family.py stage 1: eval ledgar 500, cuad_clause 500, tos 500, opp115 393, contractnli 500, lease 500
+   router: train 3294 docs, test 500: accuracy 94.4% (19s); at p >= 0.9: 98.1% on 74%
+   router confusions: not a contract -> commercial ×11; terms of service -> privacy policy ×6; privacy policy -> terms of service ×5; lease -> commercial ×2; commercial -> not a contract ×2; nda -> commercial ×1
+   router by source: contractnli 98.3% (n 60), cuad_clause 100.0% (n 45), lease 100.0% (n 12), mcc 93.7% (n 253), opp115 100.0% (n 7), tosdr 91.1% (n 123)
+   commercial: borrowed U:arbitration +28 (had 40), U:jurisdiction/venue +34 (had 65), U:payment terms +235 (had 83), U:non-solicitation of employees +115 (had 41)
+   nda: borrowed nothing (no rare class has a source)
+   privacy policy: borrowed nothing (no rare class has a source)
+   terms of service: borrowed tos:Arbitration +40 (had 28), tos:Choice of law +300 (had 39), tos:Jurisdiction +65 (had 34)
+   lease: borrowed U:renewal/extension +128 (had 53), lease:vat +117 (had 87)
+   dataset         own model     per kind  kind+borrow   routed e2e  rows routed right
+   ledgar          acc 88.6%    acc 87.6%    acc 87.6%            —  
+   cuad_clause      F1 0.638     F1 0.634     F1 0.630     F1 0.631  99.6%
+   tos              F1 0.793     F1 0.793     F1 0.768            —  
+   opp115           F1 0.751     F1 0.751     F1 0.751     F1 0.751  100.0%
+   contractnli      F1 0.747     F1 0.747     F1 0.747     F1 0.740  97.6%
+   lease            F1 0.443     F1 0.443     F1 0.440     F1 0.440  96.0%
+      cuad_clause  U:non-solicitation of employees      n    4  F1 0.75 -> 0.60
+      cuad_clause  U:renewal/extension                  n    5  F1 0.50 -> 0.50
+      tos          tos:Arbitration                      n    7  F1 1.00 -> 0.92
+      tos          tos:Choice of law                    n   13  F1 0.92 -> 0.87
+      tos          tos:Jurisdiction                     n   16  F1 0.83 -> 0.77
+      contractnli  U:non-solicitation of employees      n   10  F1 0.64 -> 0.64
+      lease        U:payment terms                      n   55  F1 0.52 -> 0.52
+      lease        U:renewal/extension                  n   10  F1 0.53 -> 0.53
+      lease        lease:vat                            n   17  F1 0.55 -> 0.55

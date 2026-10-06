@@ -1,0 +1,391 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo identifies at least ten distinct categories of SOW terms that deviate from the firm's internal contracting policy.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies deviations in all of these categories: liability cap, consequential damages, indemnification scope, IP ownership, payment terms, termination for convenience, warranty period/scope, regulatory/data-handling compliance, personnel replacement and/or liquidated damages, and rate discount.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the client's proposed aggregate liability cap is 50% of fees paid in the trailing 12-month period and that this is below the internal policy floor of 100% of fees paid in the trailing 12-month period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo explains the commercial or legal exposure created by setting the proposed liability cap at half the policy-required minimum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the client's proposed consequential damages provision as allowing recovery for data breaches, beyond the policy-permitted exceptions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the client's proposed consequential damages provision as allowing recovery for regulatory fines, beyond the policy-permitted exceptions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies a carve-out for project delays exceeding 45 calendar days in the client's proposed consequential damages provision and states that it is beyond the policy-permitted exceptions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the firm's internal policy permits consequential damages carve-outs only for breaches of confidentiality and IP indemnity obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the client requires the Firm to indemnify against all third-party claims arising from the Firm's performance of services and notes that this is broader than the policy-permitted scope.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the proposed indemnification scope includes claims by regulatory authorities related to data handling.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the firm's internal policy limits indemnification to third-party IP infringement claims and breaches of confidentiality.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the client demands ownership of all custom-developed deliverables, including derivative works incorporating the Firm's pre-existing frameworks, while the Firm retains only a non-exclusive license to its own pre-existing IP as embedded.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that under the firm's internal policy, all pre-existing IP and reusable frameworks remain Firm property and the client receives only a perpetual, non-exclusive license to deliverables.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo flags the risk that the proposed IP ownership terms threaten the Firm's reusable IP portfolio or its ability to use its pre-existing frameworks in other engagements.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the client insists on Net 60 payment terms, deviating from the policy standard of Net 30 days from invoice date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the client's proposal removes or omits late payment interest and that policy requires late payment interest at 1.5% per month.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the client proposes 15 calendar days' written notice for termination for convenience, below the policy-required minimum of 30 days' written notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the client's termination-for-convenience proposal excludes payment for non-cancellable third-party costs, although policy requires the client to pay those costs upon termination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the client demands a 180-day warranty period from deliverable acceptance, which exceeds the policy-permitted 60-day warranty period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the proposed warranty covers performance failures and/or conformance to functional specifications beyond defect correction only, the policy standard.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the client requires the Firm to warrant ongoing compliance with OCC and FFIEC guidelines applicable to Meridian's technology vendors.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies that the client's proposed terms require the Firm to submit to regulatory examination.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the firm's internal policy provides that the Firm assumes no regulatory compliance obligations beyond its own standard information security practices.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the client's demand for the right to approve all replacement personnel as a deviation from policy, which gives the client only the right to request replacement with 15 business days' notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the client's proposed liquidated damages of $15,000 per incident if a named key person voluntarily departs the engagement within the first 9 months.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that the firm's internal policy does not permit liquidated damages for attrition or personnel departures.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies an approximately 12% discount from the standard blended rate of $324/hour, resulting in a proposed rate of $285/hour, and states that this exceeds the engagement lead's authorized discount authority of 8% without escalation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo gives a numerical measure of how far the discount exceeds the 8% authority, such as a percentage-point overage, a dollar-per-hour difference, or a total-fee impact.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed or directed to the Deal Review Board (DRB) and/or its Chair, Marcus Trelleborg (Chief Commercial Officer).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the statement of work by the number SOW-2025-0439.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the governing Master Services Agreement by the number MSA-2022-1187.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the internal contracting policy by the designation CTP-LEGAL-POL-009 or by a recognizable full title.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Meridian represents approximately 11% of Crestfield's trailing twelve-month consulting revenue.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo states that the proposed engagement is valued at approximately $8,740,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo makes a clear, affirmative request or recommendation to the Deal Review Board to approve, or approve with conditions, the out-of-policy terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C034",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references the next DRB session date of July 17, 2025, in connection with the urgency of the approval request.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo references the proposed SOW effective date of August 1, 2025, in connection with the urgency of the approval request.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

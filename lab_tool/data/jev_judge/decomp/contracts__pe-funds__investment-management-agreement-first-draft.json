@@ -1,0 +1,1138 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA identifies the Fund as 'Crestview Capital Partners, LP, a Delaware limited partnership' and clearly states its role in the recitals and/or definitions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA identifies the Manager as 'Crestview Capital Advisors, LLC, a Delaware limited liability company' and clearly states its role.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA identifies the General Partner as 'Crestview Capital GP, LLC, a Delaware limited liability company' and clearly states its role.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA includes the Fund's Delaware LP File No. LP-2025-04872 and/or EIN 88-4237651 where relevant.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states the Manager's SEC File No. as 801-122847.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states the Manager's CRD No. as 314529.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA represents that the Manager is registered as an investment adviser under the Investment Advisers Act of 1940.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states an effective date of June 2, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The recitals state that the Fund completed its first close at $385,000,000 of aggregate commitments on June 2, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states a management fee of 2.00% per annum on Committed Capital during the Investment Period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that after the Investment Period the management fee steps down to 1.50% per annum on Invested Capital, net of write-downs and realized dispositions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA clearly states that the management fee step-down is triggered upon the earlier of (a) the end of the Investment Period or (b) the fifth anniversary of the Final Close.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that the management fee is payable quarterly in advance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA provides a 100% offset against the management fee for all transaction fees, monitoring fees, directors' fees, and break-up fees received by the Manager or its affiliates from portfolio companies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA sets the organizational expense cap at $2,500,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA specifies that organizational expenses in excess of the $2,500,000 cap are borne by the Manager.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA specifies a carried interest or performance allocation of 20% on net profits above the preferred return.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA specifies an 8% per annum preferred return, compounded annually, on contributed capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA specifies a 100% GP catch-up until the GP has received 20% of cumulative profits.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA specifies an American-style (deal-by-deal) distribution waterfall.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA includes a whole-fund clawback provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA specifies that the GP clawback obligation is net of taxes at an assumed combined rate of 45%.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that the clawback is tested at fund liquidation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA specifies an escrow equal to 30% of carried interest distributions.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA identifies the escrow agent as First Continental Trust Company, N.A., 125 Broad Street, 12th Floor, New York, NY 10004.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that the escrow account is to be established at Final Close.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states the GP commitment as 3% of total commitments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that the GP commitment is funded by the principals personally, not through management fee waiver notes.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA expressly states or makes calculable the GP first close commitment of $11,550,000 (3% of $385,000,000).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines specify a sector focus of enterprise software (including SaaS, vertical software, infrastructure software) and data infrastructure (including data analytics, data management, cybersecurity-adjacent data platforms).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines require a minimum of 80% of invested capital to be deployed in-sector.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines restrict geography to North America only (the United States and Canada).",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines cap investments in Canadian-domiciled targets at no more than 15% of committed capital.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines include a single investment concentration limit of 20% of aggregate commitments at the time of commitment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines impose a fund-level leverage cap of 15% of aggregate commitments at any time.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA expressly excludes portfolio company-level debt and the subscription credit facility from the fund-level leverage cap calculation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines permit a subscription credit facility of up to 25% of uncalled commitments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines specify a maximum outstanding duration of 180 days for the subscription credit facility.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines specify maximum portfolio company leverage of 5.5x Debt-to-EBITDA at entry.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The investment guidelines require the Manager to reserve a minimum of 15% of aggregate commitments for follow-on investments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires the Manager to offer co-investment opportunities to LPs on a no-fee, no-carry basis before offering them to third parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA grants the LPAC a 10-business-day right of first offer for co-investment opportunities.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Key Person provision (Exhibit C or equivalent) names Marcus J. Thornfield as a designated Key Person with the title Managing Partner & CIO.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The Key Person provision (Exhibit C or equivalent) names Priya S. Nandagopal as a designated Key Person with the title Partner & Head of Investments.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA provides that a Key Person Event occurs if both Key Persons cease to devote substantially all of their business time to the Fund.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that a Key Person Event triggers automatic suspension of the Investment Period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA gives the LPAC a 90-day period following a Key Person Event to (a) reinstate the Investment Period, (b) appoint replacement key persons, or (c) terminate the IMA and begin an orderly wind-down.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that its term is co-terminous with the Fund Term of ten (10) years from the Final Close, expected December 15, 2025 and expiring December 15, 2035, unless earlier terminated.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA provides for two optional one-year extensions through December 15, 2037, subject to LPAC approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA defines the Investment Period as five (5) years from the Final Close, expected December 15, 2025 through December 15, 2030.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA lists fraud as a ground for termination for cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA lists willful misconduct as a ground for termination for cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA lists gross negligence as a ground for termination for cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA lists a material breach unremedied for 60 days after notice as a ground for termination for cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA lists bankruptcy of the Manager as a ground for termination for cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires a vote of 75% in interest of LPs, excluding GP-affiliated LPs, for removal without cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires 120 days' prior written notice for removal without cause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires quarterly reports within 60 days of quarter-end, including unaudited financial statements, portfolio company summaries, NAV statements, and a compliance certificate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-059",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires annual reports within 120 days of the December 31 fiscal year-end, including audited financial statements prepared by Whitfield & Calloway LLP and an annual investment review.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-060",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires an annual meeting of LPs within 180 days of fiscal year-end.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-061",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires a minimum of two LPAC meetings per year and provides for additional meetings upon request of any two LPAC members.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-062",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit E (or equivalent) lists Catherine A. Villanueva, CIO, Meridian Public Employees' Retirement System, with a $75,000,000 commitment as an LPAC member.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-063",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit E (or equivalent) lists Jonathan K. Prescott, Director of Private Equity, Triton Endowment Management Company, with a $60,000,000 commitment as an LPAC member.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-064",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit E (or equivalent) lists Lena M. Falkenberg, Head of Alternative Investments, Nordvest Insurance Group AG, with a $50,000,000 commitment as an LPAC member.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-065",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires investments to be valued quarterly in accordance with ASC 820 (Fair Value Measurement) and the IPEV Guidelines.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-066",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires annual valuations by Deerpath Valuation Advisors, LLC, 800 Lakeshore Drive, Suite 450, Chicago, IL 60611, as the independent third-party valuation agent.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-067",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA incorporates by reference the ESG Policy, Version 2.1, dated January 15, 2025, as governing the Manager's ESG obligations for all investment evaluations and ongoing monitoring.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-068",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA incorporates by reference the Conflicts of Interest Policy, Version 3.0, dated February 1, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-069",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA provides that all material conflicts of interest are submitted to the LPAC for approval.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-070",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that the Manager owes fiduciary duties to the Fund.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-071",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA limits the Manager's liability to acts of gross negligence, willful misconduct, fraud, or material breach of the IMA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-072",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires the Fund to indemnify the Manager and its officers, members, employees, and agents (the 'Indemnified Persons') for losses arising from performance of duties under the IMA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-073",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The indemnification provision excludes losses resulting from gross negligence, willful misconduct, fraud, or material breach.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-074",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA requires the Manager to maintain professional liability (D&O/E&O) insurance throughout the Fund Term with minimum coverage of $10,000,000 per occurrence and $20,000,000 in the aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-075",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The governing law clause specifies the State of Delaware.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-076",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The dispute resolution clause provides for binding arbitration under JAMS Comprehensive Arbitration Rules.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-077",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The arbitration is administered in Wilmington, Delaware, before a panel of three (3) arbitrators.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-078",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA represents ongoing compliance with the Investment Advisers Act of 1940 and requires delivery of Form ADV Part 2A to all LPs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-079",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA includes representations of compliance with the Bank Secrecy Act, USA PATRIOT Act, and OFAC sanctions programs.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-080",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA names David R. Eckenroth as Partner, COO & CCO and describes his responsibility for operations, compliance, and reporting obligations under the IMA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-081",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section lists the Fund and Manager address as 1200 Brandywine Boulevard, Suite 800, Wilmington, DE 19801.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-082",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section lists the GP registered office as c/o Capitol Registered Agents, Inc., 1209 Orange Street, Wilmington, DE 19801.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-083",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The notices section lists Fund counsel as Hargrove, Stein & Collett LLP, 400 Continental Plaza, 17th Floor, New York, NY 10022.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-084",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit A (Investment Guidelines) is present and populated with deal-specific terms for sector focus, geography, concentration, leverage, subscription facility, portfolio leverage, co-investment, follow-on reserves, and ESG, rather than stub or placeholder content.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-085",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit B (Fee Schedule) is present and populated with deal-specific management fee rates, step-down, fee offset, and organizational expense cap, rather than stub or placeholder content.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-086",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit C (Key Persons) is present and populated with the names and titles of Thornfield and Nandagopal, rather than stub or placeholder content.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-087",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit D (Form of Compliance Certificate) is present and populated with deal-specific form content.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-088",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Exhibit E (LPAC Composition) is present and populated with Villanueva/Meridian, Prescott/Triton, Falkenberg/Nordvest, and their commitments, rather than stub or placeholder content.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-089",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Every LPA cross-reference uses the title 'Amended and Restated Limited Partnership Agreement of Crestview Capital Partners, LP' and the date June 2, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-091",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA grants the Manager discretionary investment management authority on behalf of the Fund, subject to the investment guidelines and restrictions set forth in the IMA and the LPA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-092",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that the GP has consented to and directed the Fund's entry into the IMA.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-093",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA states that the Manager will provide investment management services exclusively to the Fund and its parallel vehicles.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-094",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA contains a confidentiality provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-095",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA contains an assignment restriction providing that no party may assign the IMA without the consent of the other parties.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-096",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA contains a signature block for Crestview Capital Partners, LP, by its general partner Crestview Capital GP, LLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-097",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA contains a signature block for Crestview Capital Advisors, LLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-098",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA contains a signature block for Crestview Capital GP, LLC.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-099",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The signature blocks identify Marcus J. Thornfield and/or Priya S. Nandagopal as co-managers or authorized signatories of the GP.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-100",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The final draft contains no bracketed placeholders (e.g., [\u25cf], [INSERT], [FUND NAME]), drafting notes or instructions, or template-default values from the precedent template; all are replaced with deal-specific terms.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-101",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA describes the Fund's investment strategy as making control and significant minority equity investments in enterprise software and data infrastructure companies in North America.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-102",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA references a target fund size of $600,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-103",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The IMA references first close aggregate commitments of $385,000,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-104",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The IMA accommodates subsequent closings up to the target fund size, such as by referencing additional closings, the expected Final Close of December 15, 2025, or provisions for new LP admissions.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

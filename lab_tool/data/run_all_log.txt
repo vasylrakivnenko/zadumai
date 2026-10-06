@@ -1,0 +1,10 @@
+A accounts/fireworks/models/kimi-k3: 120 asked, file /root/zadumai_nli_proto/lab_tool/data/out_A_kimi-k3_guided.jsonl
+A accounts/fireworks/models/deepseek-v4p1-flash: 120 asked, file /root/zadumai_nli_proto/lab_tool/data/out_A_deepseek-v4p1-flash_guided.jsonl
+A accounts/fireworks/models/gpt-oss-120b: 120 asked, file /root/zadumai_nli_proto/lab_tool/data/out_A_gpt-oss-120b_guided.jsonl
+A accounts/fireworks/models/deepseek-v4p1-flash: 120 asked, file /root/zadumai_nli_proto/lab_tool/data/out_A_deepseek-v4p1-flash_neutral.jsonl
+A accounts/fireworks/models/kimi-k3: 120 asked, file /root/zadumai_nli_proto/lab_tool/data/out_A_kimi-k3_neutral.jsonl
+A accounts/fireworks/models/gpt-oss-120b: 120 asked, file /root/zadumai_nli_proto/lab_tool/data/out_A_gpt-oss-120b_neutral.jsonl
+B accounts/fireworks/models/kimi-k3: 20 asked, file /root/zadumai_nli_proto/lab_tool/data/out_B_kimi-k3_guided.jsonl
+B accounts/fireworks/models/deepseek-v4p1-flash: 20 asked, file /root/zadumai_nli_proto/lab_tool/data/out_B_deepseek-v4p1-flash_guided.jsonl
+B accounts/fireworks/models/gpt-oss-120b: 20 asked, file /root/zadumai_nli_proto/lab_tool/data/out_B_gpt-oss-120b_guided.jsonl
+all done
