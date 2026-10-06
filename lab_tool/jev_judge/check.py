@@ -55,6 +55,14 @@ def retrieve(text, query):
     return "\n\n".join(P[i] for i in sorted(keep))
 
 
+JEV_LOG = f"{HERE}/../runs/jev_usage.jsonl"  # one line per run (Jev's input-token total), for analysis/costs.py
+
+
+def log_jev_usage(job):
+    if JEV.calls:
+        with open(JEV_LOG, "a") as f: f.write(json.dumps({"job": job, "calls": JEV.calls, "input": JEV.input_tokens, "t": time.time()}) + "\n")
+
+
 def ask(state, questions):
     out = {}
     keys = list(questions)
@@ -110,3 +118,4 @@ if __name__ == "__main__":
     with cf.ThreadPoolExecutor(8) as ex:
         for i, (t, task, n, mode) in enumerate(ex.map(run_group, jobs), 1):
             print(f"{i}/{len(jobs)} {task.split('/')[-1][:45]} {n} criteria ({mode}); Jev calls {JEV.calls}, tokens in {JEV.input_tokens:,}, {time.time() - t0:.0f}s", flush=True)
+    log_jev_usage("check")

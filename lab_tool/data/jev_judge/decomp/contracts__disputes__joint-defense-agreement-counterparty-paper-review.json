@@ -1,0 +1,346 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline changes the withdrawal notice period from 30 calendar days to no more than 15 calendar days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline modifies or deletes the requirement that a withdrawing party return or destroy shared materials within 15 business days of the withdrawal effective date.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds an exception providing that materials already reviewed and incorporated into work product need not be returned or destroyed upon withdrawal.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline reduces the settlement advance notice period from 45 calendar days to no more than 10 business days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline replaces the requirement to disclose \u201call material terms of the proposed settlement\u201d with language limiting disclosure to the existence and general nature of the settlement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline extends the surviving confidentiality obligation from 3 years to at least 7 years or makes it indefinite.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds an express conflicts-waiver carve-out preserving each party\u2019s right to assert claims against other JDA members in future litigation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The conflicts-waiver carve-out specifically mentions or clearly encompasses contribution and indemnity actions among the preserved future claims.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline changes the governing law from New York to Illinois.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds a provision addressing inadvertent disclosure or clawback of shared materials.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The added clawback provision references Federal Rule of Evidence 502(d) or provides a substantively equivalent contractual clawback mechanism.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds a provision permitting a party to withhold or restrict sharing materials that are also responsive to a separate government investigation in which other JDA members are not similarly situated.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline adds an express right for each party to object to or decline specific information-sharing requests from the Steering Committee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The added objection right identifies at least one permissible ground: work-product protection, separate-interest privilege, or regulatory sensitivity, or a substantially equivalent concept.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo classifies the blanket conflicts waiver with no carve-out for future inter-party disputes as \u201cProhibited\u201d or a \u201cnever accept\u201d term under the Vantage JDA Playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The issues/risk memo assigns the blanket conflicts waiver the highest or most severe risk rating used in the memo.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo classifies the requirement to disclose \u201call material terms\u201d of a proposed settlement as \u201cProhibited\u201d or a \u201cnever accept\u201d term under the Vantage JDA Playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The issues/risk memo assigns the \u201call material terms\u201d settlement disclosure requirement the highest or most severe risk rating used in the memo.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The issues/risk memo distinguishes among at least three playbook tiers corresponding to \u201cRequired\u201d mandatory changes, \u201cPreferred\u201d recommended changes, and \u201cProhibited\u201d never-accept terms, using those labels or equivalent classifications.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo flags the proposed cost-sharing allocation\u201450% to Kerrigan-Holst and the remaining 50% split equally among the three other parties\u2014as a deviation from the playbook\u2019s preferred pro-rata allocation based on each party\u2019s relative share of plaintiffs\u2019 claimed damages, recalculated quarterly.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo flags the proposed steering committee composition\u2014one permanent seat for Kerrigan-Holst\u2019s counsel, one rotating seat, and one seat elected by majority vote\u2014as a deviation from the playbook\u2019s preferred equal-representation model, under which each signatory receives one seat or there is no steering committee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo flags binding JAMS arbitration in New York, New York, before a single arbitrator as a deviation from the playbook\u2019s preferred approach of mediation before any binding process, followed by litigation in the forum of the underlying case rather than arbitration.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo flags the obligation to use \u201ccommercially reasonable efforts\u201d to make witnesses and documents available for 18 months after settlement as a deviation from the playbook\u2019s preferred position of no affirmative post-settlement cooperation obligation beyond document preservation, and notes that the \u201ccommercially reasonable efforts\u201d witness-availability standard is disfavored.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The issues/risk memo assigns a risk rating to each deviation it identifies from the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The issues/risk memo provides a recommended position or proposed alternative language for each deviation it identifies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo identifies Vantage JDA Playbook v4.2, dated September 15, 2024, as the benchmark standard for the review.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo references the underlying litigation by the case name In re Industrial Fasteners Antitrust Litigation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo references the case number 1:23-cv-04871.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo identifies the court as the U.S. District Court for the Northern District of Illinois or N.D. Ill.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The issues/risk memo identifies the absence of a limitation-of-liability clause among the JDA parties for breaches of the agreement as a missing protection.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline changes the JDA scope definition\u2019s coverage of \u201cany government investigation concerning the same subject matter\u201d to account for situations where a party may need to withhold materials in a separate government investigation in which other JDA members are not similarly situated.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

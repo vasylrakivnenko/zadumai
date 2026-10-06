@@ -37,7 +37,10 @@ EFFORT = os.environ.get("PILOT_EFFORT")  # reasoning effort (low / none): V4.1 F
 AGENTS = {"deepseek": {"model": MODEL, "cap": 262144, "out": 32768},
           "gemma-e4b": {"model": "accounts/fireworks/models/gemma-4-e4b", "base": "http://127.0.0.1:18080/v1", "cap": 131072 - 16384, "out": 16384},
           "gemma-26b": {"model": "accounts/fireworks/models/gemma-4-26b", "base": "http://127.0.0.1:18081/v1", "cap": 131072 - 32768, "out": 32768,
-                        "parallel": 1}}  # llama.cpp's 131k KV is shared by all requests: one episode at a time
+                        "parallel": 1},  # llama.cpp's 131k KV is shared by all requests: one episode at a time
+          # GPT-6 Luna on the user's Azure deployment (2026-10-06, the user: "Go for it"): LAB's OpenAI adapter (Responses
+          # API: reasoning effort up to "max"), our safety patches ported to it; 5,000 req/min
+          "luna": {"model": "openai/gpt-6-luna", "cap": 262144, "out": 32768, "azure": True, "parallel": 7}}
 AGENT = os.environ.get("PILOT_MODEL", "deepseek")
 
 
@@ -60,6 +63,9 @@ def run_one(arm, task):
     shutil.rmtree(f"{LAB}/results/{rid}", ignore_errors=True)
     e = dict(env(arm), LAB_DEBUG_DIR=f"{LOGS}/length/{rid}", LAB_USAGE_LOG=f"{LOGS}/{rid}.usage.jsonl", LAB_CONTEXT_CAP=str(A["cap"]), LAB_MAX_OUTPUT=str(A["out"]))
     if A.get("base"): e.update(FIREWORKS_API_BASE=A["base"], FIREWORKS_API_KEY="local")  # the agent only; the judge stays on Fireworks
+    if A.get("azure"):
+        e.update(OPENAI_BASE_URL="https://ai-vasyl-0670.services.ai.azure.com/openai/v1",
+                 OPENAI_API_KEY=next(l.split("=", 1)[1].strip().strip('"\'') for l in open("/root/.env") if l.startswith("AZURE_API_KEY=")))
     t0 = time.time()
     with open(f"{LOGS}/{rid}.log", "w") as log:
         p = subprocess.run([f"{LAB}/.venv/bin/python", "-m", "harness.run", "--model", A["model"], "--task", task, "--run-id", rid, "--temperature", "0.6"] + (["--reasoning-effort", EFFORT] if EFFORT else []),

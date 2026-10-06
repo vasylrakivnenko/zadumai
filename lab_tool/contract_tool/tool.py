@@ -261,10 +261,14 @@ class ContractTool:
             head += f' Most relevant to "{query}" first.'
         return self._page(head, [(u, f"({k}) " + change_snippet(m)) for k, u, m, _, _ in items], offset)
 
-    def show(self, document, query):
-        """paragraphs in full: query = a ¶ range ("¶62-73", "62-73", "62") or a clause number ("4.2" -> it and its items)."""
-        if not document or not query: return "Error: show needs document and query (a ¶ range like 62-73, or a clause number like 4.2)."
-        us = [self.units[i] for i in self.docs[document]]; q = query.strip().lstrip("¶§").strip()
+    def show(self, document, query, offset=0):
+        """paragraphs in full: query = a ¶ range ("¶62-73", "62-73", "62") or a clause number ("4.2" -> it and its items);
+        no query: the document from the top (or from `offset`), one page at a time (2026-10-06: agents call it that way)."""
+        if not document: return "Error: show needs a document (and optionally a ¶ range like 62-73, or a clause number like 4.2)."
+        us = [self.units[i] for i in self.docs[document]]
+        if not (query or "").strip():
+            return self._page(f"{document}, {len(us)} paragraphs", [(u.i, self._body(u)) for u in us], int(offset or 0), local=document)
+        q = query.strip().lstrip("¶§").strip()
         m = re.fullmatch(r"(\d+)\s*(?:-|to|–)\s*¶?(\d+)", q)
         if m and not re.fullmatch(r"\d+\.\d+.*", q): sel = us[int(m.group(1)):int(m.group(2)) + 1]
         elif re.fullmatch(r"\d+", q) and int(q) < len(us) and not any(u.label == q for u in us): sel = us[int(q):int(q) + 1]
@@ -312,7 +316,7 @@ class ContractTool:
             if action == "changes": return self.changes(d, query or None, int(offset or 0))
             if action == "compare": return self.compare(d, a, query or None, int(offset or 0))
             if action in ("outline", "checklist"): return self.outline(d)
-            if action == "show": return self.show(d, query)
+            if action == "show": return self.show(d, query, int(offset or 0))
         except Exception as e:  # a tool must answer, not crash the agent
             return f"Error: {action} failed: {type(e).__name__}: {e}"
         return "Error: action must be one of find, show, changes, compare, outline."

@@ -1,0 +1,361 @@
+{
+ "criteria": [
+  {
+   "id": "C001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 2 states that the guaranty covers both payment and performance of the Guaranteed Obligations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 1 retains the defined term \u201cExcluded Swap Obligations.\u201d",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition of Guaranteed Obligations excludes swap obligations for which the Guarantor is not an \u201celigible contract participant\u201d under the Commodity Exchange Act.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 5 does not give the Guarantor an operative right to terminate the guaranty for future obligations on 90 calendar days\u2019 prior written notice or any other notice period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 10 contains the mutual jury trial waiver.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 4 does not limit reinstatement to payments actually received by the Administrative Agent directly from the Guarantor, excluding payments from the Borrower or collateral proceeds.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 4 provides for reinstatement if any payment on the Guaranteed Obligations is rescinded or must be returned, regardless of its source, including payments from the Borrower or collateral proceeds.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 3 does not make subrogation effective immediately upon any payment and instead subordinates the Guarantor\u2019s subrogation, contribution, and reimbursement rights against the Borrower.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 3 bars the Guarantor from exercising subrogation rights until all Guaranteed Obligations have been indefeasibly paid in full.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 3 bars the Guarantor from exercising subrogation rights until all commitments under the Credit Agreement have been terminated.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note identifies Priya Narayan of Whitfield Crane & Sadler LLP as its sender or author.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note identifies Thomas Kuo of Marchetti DeLuca LLP as its primary addressee.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note lists Marcus Ellingham of Cascadia National Bank as a cc recipient.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note lists Diana Chow of Terraverde Group, Inc. as a cc recipient.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 2 does not make enforceability of the guaranty subject to a five (5) business-day waiting period after written demand is delivered to the Guarantor, or a comparable waiting period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 3 states that the Guarantor waives any right to require the Administrative Agent to proceed first against the Borrower or any collateral before enforcing the guaranty.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 3 states that the Guarantor waives any defense arising from the Administrative Agent\u2019s election of remedies.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 11 does not require the Guarantor\u2019s written consent for an amendment, modification, or waiver of the Guaranty Agreement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 11 provides that amendments, modifications, or waivers of the Guaranty Agreement require only the consent of the Administrative Agent acting at the direction of the Required Lenders.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C020",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 2 accepts the concept of a fraudulent-conveyance savings clause using revised or market-standard savings-clause language.",
+     "pass_if": true
+    },
+    {
+     "s": "Section 2 proposes an alternative formulation of the fraudulent-conveyance savings clause.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 8 accepts or proposes a de minimis dollar-threshold carve-out from the intercompany-debt subordination provision.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 8 does not limit intercompany-debt subordination to periods during which an Event of Default under the Credit Agreement is continuing.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "Section 3 states that the Guarantor waives any defense based on or arising from any applicable statute of limitations.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The definition of Guaranteed Obligations in Section 1 does not exclude obligations arising after an acceleration of which the Guarantor did not receive notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C025",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The Guaranty Agreement does not condition enforceability on delivery of a customary enforceability opinion from the Guarantor\u2019s Delaware counsel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note gives a reason for the agent\u2019s position that the guaranty should cover both payment and performance.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note gives a reason for the agent\u2019s position on the Section 3 suretyship waivers, including the waiver of marshaling, the election-of-remedies defense, or the statute-of-limitations defense.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note explains why reinstatement under Section 4 must apply regardless of the source of a clawed-back payment.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note gives a reason for rejecting the Guarantor\u2019s proposed right to terminate the guaranty for future obligations upon 90 calendar days\u2019 notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note gives a reason for the agent\u2019s position on Section 8 intercompany-debt subordination, including the proposed threshold or the proposed Event of Default limitation.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note gives a reason for restoring the jury trial waiver deleted by the Guarantor\u2019s counsel from Section 10.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The cover note organizes its substantive issues by section reference, issue category, or topical heading.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

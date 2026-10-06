@@ -1,6 +1,7 @@
 """GPT-6 Luna on the user's Azure AI deployment (2026-10-06; the user: "Where possible - let's switch to this API with
-GPT-6-Luna"). Responses API; 5,000 requests/min; $0.10 in / $0.50 out per 1M tokens (prompts under 250k tokens),
-$0.20 / $0.75 above. Every call's usage is appended to a log so costs are exact.
+GPT-6-Luna"). Responses API; 5,000 requests/min. Prices per 1M tokens (the user, 2026-10-06): short context (prompt under 250k tokens) $0.11 input,
+$0.011 cached input, $0.14 cache write, $0.55 output; long context $0.20 / $0.02 / $0.25 / $0.75 (analysis/costs.py).
+Every call's usage is appended to a log so costs are exact.
 usage: from luna import ask; text = ask(prompt, json_mode=True)"""
 import json, os, threading, time
 from openai import OpenAI
@@ -11,8 +12,10 @@ LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../runs/luna_usa
 
 
 def cost(u):
-    long = u["input"] > 250_000
-    return (u["input"] * (0.20 if long else 0.10) + u["output"] * (0.75 if long else 0.50)) / 1e6
+    """dollars for one logged call: uncached input, cached input, cache writes, output (short / long-context rates)."""
+    long = u["input"] > 250_000; inp, cached, write, out = (0.20, 0.02, 0.25, 0.75) if long else (0.11, 0.011, 0.14, 0.55)
+    w = u.get("cache_write", 0); plain = max(0, u["input"] - u["cached"] - w)
+    return (plain * inp + u["cached"] * cached + w * write + u["output"] * out) / 1e6
 
 
 def ask(prompt, json_mode=False, effort=None, tag=""):
@@ -26,7 +29,8 @@ def ask(prompt, json_mode=False, effort=None, tag=""):
         except Exception as e:
             if attempt == 4: raise
             time.sleep(5 * (attempt + 1))
-    u = {"tag": tag, "input": r.usage.input_tokens, "cached": getattr(r.usage.input_tokens_details, "cached_tokens", 0) or 0,
+    d = r.usage.input_tokens_details
+    u = {"tag": tag, "input": r.usage.input_tokens, "cached": getattr(d, "cached_tokens", 0) or 0, "cache_write": getattr(d, "cache_write_tokens", 0) or 0,
          "output": r.usage.output_tokens, "t": time.time()}
     with _LOCK, open(LOG, "a") as f: f.write(json.dumps(u) + "\n")
     return r.output_text

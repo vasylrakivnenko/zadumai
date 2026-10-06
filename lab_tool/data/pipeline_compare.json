@@ -1,0 +1,81 @@
+{
+ "rows": [
+  {
+   "task": "non-disclosure-agreement-first-turn-redline",
+   "base (recorded)": 0.6466666666666666,
+   "Ivo Sage (recorded)": 0.88,
+   "DeepSeek agent, LAB tools": 0.9,
+   "DeepSeek agent + tool": 0.84,
+   "Luna agent, LAB tools": 0.76,
+   "Luna agent + tool": 0.78,
+   "Gemma 26B agent, LAB tools": 0.0,
+   "Gemma 26B agent + tool": 0.68,
+   "Luna PIPELINE": 0.74,
+   "Gemma 26B PIPELINE": 0.82
+  },
+  {
+   "task": "non-disclosure-agreement-counterparty-paper-review",
+   "base (recorded)": 0.08993333333333335,
+   "Ivo Sage (recorded)": 0.9365,
+   "DeepSeek agent, LAB tools": 0.9048,
+   "DeepSeek agent + tool": 0.9048,
+   "Luna agent, LAB tools": 0.9365,
+   "Luna agent + tool": 0.9365,
+   "Gemma 26B agent, LAB tools": 0.0,
+   "Gemma 26B agent + tool": 0.5079,
+   "Luna PIPELINE": 0.8095,
+   "Gemma 26B PIPELINE": 0.6984
+  },
+  {
+   "task": "easement-agreement-counterparty-paper-review",
+   "base (recorded)": 0.0,
+   "Ivo Sage (recorded)": 1.0,
+   "DeepSeek agent, LAB tools": 1.0,
+   "DeepSeek agent + tool": 0.9825,
+   "Luna agent, LAB tools": 0.9474,
+   "Luna agent + tool": 1.0,
+   "Gemma 26B agent, LAB tools": 0.193,
+   "Gemma 26B agent + tool": 0.0,
+   "Luna PIPELINE": 0.9825,
+   "Gemma 26B PIPELINE": 0.9298
+  },
+  {
+   "task": "quality-agreement-counterparty-paper-review",
+   "base (recorded)": 0.2962666666666667,
+   "Ivo Sage (recorded)": 0.0,
+   "DeepSeek agent, LAB tools": 1.0,
+   "DeepSeek agent + tool": 1.0,
+   "Luna agent, LAB tools": 1.0,
+   "Luna agent + tool": 0.9778,
+   "Gemma 26B agent, LAB tools": 0.2444,
+   "Gemma 26B agent + tool": 0.0,
+   "Luna PIPELINE": 0.8222,
+   "Gemma 26B PIPELINE": 0.9556
+  },
+  {
+   "task": "easement-agreement-first-turn-redline",
+   "base (recorded)": 0.0,
+   "Ivo Sage (recorded)": 0.5517,
+   "DeepSeek agent, LAB tools": 0.9655,
+   "DeepSeek agent + tool": 0.9483,
+   "Luna agent, LAB tools": 0.7759,
+   "Luna agent + tool": 0.8276,
+   "Gemma 26B agent, LAB tools": 0.0,
+   "Gemma 26B agent + tool": 0.0,
+   "Luna PIPELINE": 0.8276,
+   "Gemma 26B PIPELINE": 0.9483
+  }
+ ],
+ "means": {
+  "base (recorded)": 0.20657333333333333,
+  "Ivo Sage (recorded)": 0.67364,
+  "DeepSeek agent, LAB tools": 0.9540599999999999,
+  "DeepSeek agent + tool": 0.9351200000000001,
+  "Luna agent, LAB tools": 0.8839600000000001,
+  "Luna agent + tool": 0.9043800000000001,
+  "Gemma 26B agent, LAB tools": 0.08748,
+  "Gemma 26B agent + tool": 0.23757999999999999,
+  "Luna PIPELINE": 0.83636,
+  "Gemma 26B PIPELINE": 0.87042
+ }
+}

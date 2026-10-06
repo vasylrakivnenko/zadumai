@@ -207,7 +207,90 @@ Labels: Ivo Sage's records (6,438 non-empty criteria; 3 judge passes each) + our
 - GPT-6 Luna (Azure) as the LLM judge, LAB's own judge prompt (jev_judge/luna_judge.py, $4.29): NOT validated. vs Kimi
   K3 on our runs 94.2% (kappa 0.68; Luna stricter: 87% pass vs 93%); on recorded criteria 97.3% vs one recorded pass
   99.3%; on Jev's uncertain criteria (where it would be used) 82.8% vs 96.1%. The uncertain criteria stay with Kimi
-  K3. Untested: Luna at higher reasoning effort.
+  K3. At MAX reasoning effort (jev_judge/luna_max.py, same items, $2.12): vs Kimi 96.7% (kappa 0.83; default 95.0%),
+  on uncertain criteria 85.1% (default 82.8%) vs 96.1% for a recorded pass, random 97.0% vs 99.0%. Still not
+  validated: Luna is systematically stricter (on uncertain criteria 29 of its 38 disagreements fail what the judges
+  pass; vs Kimi 10 of 10).
+
+## Round 3: GPT-6 Luna as the agent (Azure, max reasoning effort; 2026-10-06)
+Same 7 tasks, same harness and patches (ported to LAB's OpenAI / Responses adapter), graded by the Jev + Kimi K3 grader
+(jev_judge/grade.py: on the 14 DeepSeek runs it lands within 0.009 of full Kimi grading on average, 99.1% per-criterion).
+
+| task | base (rec.) | Ivo Sage (rec.) | DeepSeek V4.1 Flash, LAB tools | DeepSeek + tool | **Luna, LAB tools** | **Luna + tool** |
+|---|---|---|---|---|---|---|
+| NDA first-turn redline | 0.647 | 0.880 | 0.880 | 0.840 | 0.760 | 0.780 |
+| NDA paper review | 0.090 | 0.936 | 0.937 | 0.905 | 0.936 | 0.936 |
+| easement paper review | 0.000 | 1.000 | 1.000 | 0.982 | 0.947 | 1.000 |
+| quality-agreement paper review | 0.296 | 0.000 | 1.000 | 1.000 | 1.000 | 0.978 |
+| ISDA confirmation paper review | 0.000 | 0.931 | 0.925 | 0.887 | 0.868 | 0.887 |
+| cyber-insurance paper review | 1.000 | 0.968 | 0.968 | 0.968 | 1.000 | 1.000 |
+| easement first-turn redline | 0.000 | 0.552 | 0.931 | 0.966 | 0.776 | 0.828 |
+| **mean (7)** | 0.290 | 0.752 | **0.949** | 0.935 | 0.898 | **0.916** |
+
+- Luna is strong on paper reviews (0.93-1.00) and weaker on first-turn redlines (0.76-0.83: it left out the cover
+  note on the easement task, and its with-tool run saved a clean version, not a redline).
+- With our tool Luna scores a little higher (+0.018) and needs less context on paper reviews (e.g. quality 7.7M vs
+  11.3M input tokens, 57 vs 71 turns; ISDA 7.2M vs 10.0M; cyber 6.9M vs 9.4M); on the NDA redline it used more (80 turns).
+- Cost: all 14 Luna episodes $2.54 (118.8M input, 97% cached at $0.011/M; 1.56M output): ~$0.18 per episode.
+  Grading them: Jev $0.20 + Kimi K3 $7.62 (151 uncertain criteria).
+
+## Our working set: 5 tasks (2026-10-06)
+Not an official LAB subset: our own pick, the smallest held-out Contracts tasks (by document tokens) of the two task
+types counterparty paper review and first-turn redline (Ivo Sage's held-out validation split). The cyber-insurance
+paper review is dropped (the user, 2026-10-06): every arm scores 0.97-1.00 there, base included, so it tells nothing.
+The ISDA confirmation paper review is dropped too, for now (the user: a specialist derivatives task; it did separate
+the arms: base 0.000, others 0.87-0.93). List: runs/pilot/set5_tasks.txt (set6_tasks.txt = with ISDA).
+Means on the 5: base 0.207, Ivo Sage 0.674, DeepSeek LAB tools 0.950, DeepSeek + tool 0.939, Luna LAB tools 0.884, Luna + tool 0.904.
+
+## Kimi K2.6 Thinking (Azure) as the judge (jev_judge/kimi26_judge.py, $10.55)
+On Jev's uncertain criteria 90.3% (kappa 0.78) vs 96.8% for a second pass of the original judge and 86.3% for Luna
+at max effort; vs Kimi K3 on our runs 96.9% (kappa 0.84). Errors go both ways (14 too strict, 10 too lenient), unlike
+Luna. Better than Luna, short of a repeat of the original judge; Kimi K3 itself was not measured on those same hard
+items, so whether K2.6 is worse than K3 there is open (~$17 of K3 calls would settle it). First run: 654 of 778 calls
+hit Azure's token-per-minute cap at 64 in flight; rerun at 8 in flight.
+
+## Fixed pipeline vs agent loop (pipeline/, 2026-10-06)
+The user: "build it for counterparty paper review and first-turn redline. Run it with Luna and Gemma 26B on our 5 tasks
+against the agent-loop results ... hybrid search with a reranker ... self-critique -> refinement". Plan, self-critique
+and checkpoints: pipeline/PLAN.md, pipeline/STATUS.md. Nine fixed steps: roles, brief (checklist of instructions),
+work items (their clauses / their changed paragraphs + untracked edits), hybrid search (BM25 + bge, Cohere rerank v4.0
+pro: 75.8% -> 79.5% top-6 on our retrieval benchmark), one decision call per item, missing playbook provisions,
+instruction coverage, a deterministic tracked-changes redline with margin comments (pipeline/docx_redline.py), the memo /
+cover note (tables built from the items, narrative by one call). Reads only instructions + documents. Developed on
+4 training-split tasks (3 refinement rounds: process fixes only), then run once on the 5 held-out tasks.
+
+| 5 held-out tasks (one grader: Jev + Kimi K3) | NDA 1st-turn | NDA paper | easement paper | quality paper | easement 1st-turn | **mean** |
+|---|---|---|---|---|---|---|
+| base V4 Flash (recorded) | 0.647 | 0.090 | 0.000 | 0.296 | 0.000 | 0.207 |
+| Ivo Sage (recorded) | 0.880 | 0.936 | 1.000 | 0.000 | 0.552 | 0.674 |
+| DeepSeek V4.1 Flash agent, LAB tools | 0.900 | 0.905 | 1.000 | 1.000 | 0.966 | **0.954** |
+| DeepSeek agent + tool | 0.840 | 0.905 | 0.983 | 1.000 | 0.948 | 0.935 |
+| Luna agent, LAB tools | 0.760 | 0.936 | 0.947 | 1.000 | 0.776 | 0.884 |
+| Luna agent + tool | 0.780 | 0.936 | 1.000 | 0.978 | 0.828 | 0.904 |
+| Gemma 26B agent, LAB tools | 0.000 | 0.000 | 0.193 | 0.244 | 0.000 | 0.087 |
+| Gemma 26B agent + tool | 0.680 | 0.508 | 0.000 | 0.000 | 0.000 | 0.238 |
+| **Luna pipeline** | 0.740 | 0.809 | 0.983 | 0.822 | 0.828 | 0.836 |
+| **Gemma 26B pipeline** (4-bit, one RTX 4090) | 0.820 | 0.698 | 0.930 | 0.956 | 0.948 | **0.870** |
+
+- The pipeline makes the small local model work: Gemma 26B on one 4090 goes from 0.09 / 0.24 (agent loop: overflows,
+  no deliverables) to 0.870, above Ivo Sage's recorded 0.674 and the Luna pipeline, in 2-7 minutes per task, every
+  deliverable written, 0 failed calls.
+- For strong models the free agent loop is better: Luna 0.884 / 0.904 as an agent vs 0.836 in the pipeline; DeepSeek's
+  agent 0.954 stays the best. Where the Luna pipeline lost points the Luna agent mostly passed (NDA paper review: 9 of 12).
+- Why (critique): (1) no consolidation: per-clause decisions over-flag (NDA paper review: 37 of 55 clauses + 37 inserts)
+  and the memo lists ~70 rows where the reviewer expects ~11 distinct issues with a risk matrix; (2) the review schema
+  has no approval-authority field (who must approve a concession); (3) markup responses are per paragraph (58 for the NDA)
+  instead of per substantive change (14), so the cover note is fragmented. Fixes (v4, not done: needs another dev round,
+  re-testing on these 5 would fit the test set): a consolidation step into distinct issues with the playbook's risk and
+  approval methodology; grouping changed paragraphs by clause before deciding; approval levels in the decisions.
+- Cost / time per task: Luna pipeline $0.18-1.64 (max effort on every call; $4.50 for 5 tasks), 10-26 min; Gemma
+  pipeline ~2-7 min of one 4090 (~$0.74/h); Cohere rerank: 2,381 searches in all, 273 of them the retrieval eval (price per
+  search not known yet). Azure + Jev ledger (COSTS.md) now $31.82.
+
+All-pass (every criterion of a task passed; LAB's strict metric) on the 5 tasks: DeepSeek agent 2/5 (+ tool 1/5), Luna
+agent 1/5 (+ tool 1/5), Ivo Sage (rec.) 1/5, base 0/5, Gemma agent 0/5, Luna pipeline 0/5, Gemma pipeline 0/5 (near
+misses: 2, 3 and 4 criteria short on three tasks). Ours are one judge pass; Ivo's record needs all 3 passes to agree, so
+ours are a little easier to reach.
 
 ## Where things stand (2026-10-06)
 - **Tool callers** (replay benchmark): prompt optimization (DSPy GEPA) gets Gemma 4 E4B to ~89-91% on "when to call";
@@ -217,12 +300,14 @@ Labels: Ivo Sage's records (6,438 non-empty criteria; 3 judge passes each) + our
   up-front compound query plans (11-15%).
 - **End to end in LAB's own harness** (7 smallest held-out paper-review / first-turn-redline tasks): untrained
   DeepSeek V4.1 Flash at low reasoning effort 0.949, above Ivo Sage's recorded 0.752 (different judge, newer base);
-  the tool adds nothing for it (0.935). Small local models: Gemma 26B-A4B on one 4090 mostly overflows.
+  the tool adds nothing for it (0.935). GPT-6 Luna (Azure, max effort): 0.898 alone, 0.916 with the tool, at ~$0.18
+  per episode. Small local models: Gemma 26B-A4B on one 4090 overflows as an agent (0.09 / 0.24) but scores 0.870
+  in the fixed pipeline (above Ivo Sage); for strong models the agent loop stays better (Luna 0.904 vs 0.836).
 - **Grading:** Jev + an LLM for Jev's uncertain 11% matches one LLM judge pass (99.15% vs 99.32%) at a fraction of the
   cost. The LLM for the uncertain criteria stays Kimi K3: Luna (Azure) failed validation (82.8% vs 96.1% there).
 - **Open:** a "make the redline" action (drafting the .docx, not reading, fills the context); DeepSeek V4 Flash (now on
   Azure, $0.19 / $0.51) for a same-base comparison with Ivo Sage; the grader for new runs (Jev + Kimi K3); Luna at
-  higher reasoning effort as a cheaper judge.
+  max effort also failed as the judge (85.1% vs 96.1% on uncertain criteria).
 
 ## Files
 - `build_replay.py`, `run_replay.py`, `score_replay.py`, `optimize_dspy*.py`, `final_B.py`, `run_*.sh`: replay benchmark
