@@ -1,0 +1,20 @@
+{
+ "model": "accounts/fireworks/models/gpt-oss-120b",
+ "cost_usd": 0.94,
+ "errors": 17,
+ "recorded_uncertain": {
+  "n": 241,
+  "one_recorded_pass": 0.9585,
+  "one_recorded_pass_kappa": 0.907,
+  "kimi26": 0.8382,
+  "kimi26_kappa": 0.644,
+  "luna_max": 0.8423,
+  "luna_max_kappa": 0.661
+ },
+ "per_call": {
+  "input_tokens": 23447,
+  "cached_share": 0.057,
+  "output_tokens": 455,
+  "usd": 0.0036
+ }
+}

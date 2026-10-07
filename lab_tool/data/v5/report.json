@@ -1,0 +1,155 @@
+{
+ "review": {
+  "n": 249,
+  "deepseek": {
+   "n": 249,
+   "agreement": 0.699,
+   "kappa": 0.41
+  },
+  "gemma26": {
+   "n": 249,
+   "agreement": 0.723,
+   "kappa": 0.454
+  },
+  "input run's model (its own decisions)": {
+   "n": 249,
+   "agreement": 0.767,
+   "kappa": 0.541
+  },
+  "jev": {
+   "n": 249,
+   "auc": 0.873,
+   "base_rate_no_work": 0.522,
+   "leave_one_task_out": [
+    {
+     "task": "joint-defense-agreement-counterparty-paper-review",
+     "hi": 0.5,
+     "screened": 2,
+     "of": 104,
+     "precision": 0.5
+    },
+    {
+     "task": "license-agreement-counterparty-paper-review-scenario-03",
+     "hi": 1.01,
+     "screened": 0,
+     "of": 145,
+     "precision": null
+    }
+   ],
+   "at_0.8": {
+    "screened": 1,
+    "precision": 1.0
+   },
+   "at_0.9": {
+    "screened": 0,
+    "precision": null
+   },
+   "at_0.95": {
+    "screened": 0,
+    "precision": null
+   }
+  }
+ },
+ "markup": {
+  "n": 150,
+  "deepseek": {
+   "n": 150,
+   "agreement": 0.66,
+   "kappa": 0.486
+  },
+  "gemma26": {
+   "n": 150,
+   "agreement": 0.647,
+   "kappa": 0.47
+  },
+  "input run's model (its own decisions)": {
+   "n": 150,
+   "agreement": 0.613,
+   "kappa": 0.415
+  },
+  "jev": {
+   "n": 150,
+   "auc": 0.938,
+   "base_rate_no_work": 0.28,
+   "leave_one_task_out": [
+    {
+     "task": "account-control-agreement-first-turn-redline-scenario-01",
+     "hi": 1.01,
+     "screened": 0,
+     "of": 123,
+     "precision": null
+    },
+    {
+     "task": "guaranty-agreement-first-turn-redline",
+     "hi": 0.7,
+     "screened": 0,
+     "of": 27,
+     "precision": null
+    }
+   ],
+   "at_0.8": {
+    "screened": 1,
+    "precision": 1.0
+   },
+   "at_0.9": {
+    "screened": 0,
+    "precision": null
+   },
+   "at_0.95": {
+    "screened": 0,
+    "precision": null
+   }
+  }
+ },
+ "gap_check": {
+  "n": 54,
+  "deepseek": {
+   "n": 54,
+   "agreement": 0.963,
+   "kappa": 0.647
+  },
+  "gemma26": {
+   "n": 54,
+   "agreement": 0.981,
+   "kappa": 0.847
+  },
+  "input run's model (its own decisions)": {
+   "n": 54,
+   "agreement": 0.981,
+   "kappa": 0.791
+  },
+  "jev": {
+   "n": 54,
+   "auc": 0.925,
+   "base_rate_no_work": 0.056,
+   "leave_one_task_out": [
+    {
+     "task": "joint-defense-agreement-counterparty-paper-review",
+     "hi": 1.01,
+     "screened": 0,
+     "of": 24,
+     "precision": null
+    },
+    {
+     "task": "license-agreement-counterparty-paper-review-scenario-03",
+     "hi": 1.01,
+     "screened": 0,
+     "of": 30,
+     "precision": null
+    }
+   ],
+   "at_0.8": {
+    "screened": 3,
+    "precision": 0.667
+   },
+   "at_0.9": {
+    "screened": 1,
+    "precision": 1.0
+   },
+   "at_0.95": {
+    "screened": 0,
+    "precision": null
+   }
+  }
+ }
+}

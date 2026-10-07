@@ -2,80 +2,528 @@
  "rows": [
   {
    "task": "non-disclosure-agreement-first-turn-redline",
-   "base (recorded)": 0.6466666666666666,
-   "Ivo Sage (recorded)": 0.88,
-   "DeepSeek agent, LAB tools": 0.9,
-   "DeepSeek agent + tool": 0.84,
-   "Luna agent, LAB tools": 0.76,
-   "Luna agent + tool": 0.78,
-   "Gemma 26B agent, LAB tools": 0.0,
-   "Gemma 26B agent + tool": 0.68,
-   "Luna PIPELINE": 0.74,
-   "Gemma 26B PIPELINE": 0.82
+   "base (recorded)": {
+    "cpr": 0.6466666666666666,
+    "all": false
+   },
+   "Ivo Sage (recorded)": {
+    "cpr": 0.88,
+    "all": false
+   },
+   "DeepSeek agent, LAB tools": {
+    "cpr": 0.84,
+    "all": false,
+    "short": 8,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek agent + tool": {
+    "cpr": 0.8,
+    "all": false,
+    "short": 10,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent, LAB tools": {
+    "cpr": 0.7,
+    "all": false,
+    "short": 15,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent + tool": {
+    "cpr": 0.76,
+    "all": false,
+    "short": 12,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent, LAB tools": {
+    "cpr": 0.04,
+    "all": false,
+    "short": 48,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent + tool": {
+    "cpr": 0.68,
+    "all": false,
+    "short": 16,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v3 (max effort)": {
+    "cpr": 0.82,
+    "all": false,
+    "short": 9,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v3": {
+    "cpr": 0.8,
+    "all": false,
+    "short": 10,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v4.3 (low effort)": {
+    "cpr": 0.82,
+    "all": false,
+    "short": 9,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v4.3": {
+    "cpr": 0.76,
+    "all": false,
+    "short": 12,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek V4 Flash pipeline v4.3": {
+    "cpr": 0.88,
+    "all": false,
+    "short": 6,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 0.84,
+    "all": false,
+    "short": 8,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 0.7,
+    "all": false,
+    "short": 15,
+    "judge": "Kimi-K2.6 (brief)"
+   }
   },
   {
    "task": "non-disclosure-agreement-counterparty-paper-review",
-   "base (recorded)": 0.08993333333333335,
-   "Ivo Sage (recorded)": 0.9365,
-   "DeepSeek agent, LAB tools": 0.9048,
-   "DeepSeek agent + tool": 0.9048,
-   "Luna agent, LAB tools": 0.9365,
-   "Luna agent + tool": 0.9365,
-   "Gemma 26B agent, LAB tools": 0.0,
-   "Gemma 26B agent + tool": 0.5079,
-   "Luna PIPELINE": 0.8095,
-   "Gemma 26B PIPELINE": 0.6984
+   "base (recorded)": {
+    "cpr": 0.08993333333333335,
+    "all": false
+   },
+   "Ivo Sage (recorded)": {
+    "cpr": 0.9365,
+    "all": false
+   },
+   "DeepSeek agent, LAB tools": {
+    "cpr": 0.9206,
+    "all": false,
+    "short": 5,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek agent + tool": {
+    "cpr": 0.9048,
+    "all": false,
+    "short": 6,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent, LAB tools": {
+    "cpr": 0.9206,
+    "all": false,
+    "short": 5,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent + tool": {
+    "cpr": 0.9048,
+    "all": false,
+    "short": 6,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent, LAB tools": {
+    "cpr": 0.0,
+    "all": false,
+    "short": 63,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent + tool": {
+    "cpr": 0.4603,
+    "all": false,
+    "short": 34,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v3 (max effort)": {
+    "cpr": 0.9206,
+    "all": false,
+    "short": 5,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v3": {
+    "cpr": 0.6349,
+    "all": false,
+    "short": 23,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v4.3 (low effort)": {
+    "cpr": 0.8095,
+    "all": false,
+    "short": 12,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v4.3": {
+    "cpr": 0.5714,
+    "all": false,
+    "short": 27,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek V4 Flash pipeline v4.3": {
+    "cpr": 0.6825,
+    "all": false,
+    "short": 20,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 0.7143,
+    "all": false,
+    "short": 18,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 0.6508,
+    "all": false,
+    "short": 22,
+    "judge": "Kimi-K2.6 (brief)"
+   }
   },
   {
    "task": "easement-agreement-counterparty-paper-review",
-   "base (recorded)": 0.0,
-   "Ivo Sage (recorded)": 1.0,
-   "DeepSeek agent, LAB tools": 1.0,
-   "DeepSeek agent + tool": 0.9825,
-   "Luna agent, LAB tools": 0.9474,
-   "Luna agent + tool": 1.0,
-   "Gemma 26B agent, LAB tools": 0.193,
-   "Gemma 26B agent + tool": 0.0,
-   "Luna PIPELINE": 0.9825,
-   "Gemma 26B PIPELINE": 0.9298
+   "base (recorded)": {
+    "cpr": 0.0,
+    "all": false
+   },
+   "Ivo Sage (recorded)": {
+    "cpr": 1.0,
+    "all": true
+   },
+   "DeepSeek agent, LAB tools": {
+    "cpr": 0.9825,
+    "all": false,
+    "short": 1,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek agent + tool": {
+    "cpr": 0.9825,
+    "all": false,
+    "short": 1,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent, LAB tools": {
+    "cpr": 0.9474,
+    "all": false,
+    "short": 3,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent + tool": {
+    "cpr": 0.9825,
+    "all": false,
+    "short": 1,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent, LAB tools": {
+    "cpr": 0.1579,
+    "all": false,
+    "short": 48,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent + tool": {
+    "cpr": 0.0,
+    "all": false,
+    "short": 57,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v3 (max effort)": {
+    "cpr": 1.0,
+    "all": true,
+    "short": 0,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v3": {
+    "cpr": 0.9298,
+    "all": false,
+    "short": 4,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v4.3 (low effort)": {
+    "cpr": 0.9298,
+    "all": false,
+    "short": 4,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v4.3": {
+    "cpr": 0.7719,
+    "all": false,
+    "short": 13,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek V4 Flash pipeline v4.3": {
+    "cpr": 0.9298,
+    "all": false,
+    "short": 4,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 1.0,
+    "all": true,
+    "short": 0,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 0.9825,
+    "all": false,
+    "short": 1,
+    "judge": "Kimi-K2.6 (brief)"
+   }
   },
   {
    "task": "quality-agreement-counterparty-paper-review",
-   "base (recorded)": 0.2962666666666667,
-   "Ivo Sage (recorded)": 0.0,
-   "DeepSeek agent, LAB tools": 1.0,
-   "DeepSeek agent + tool": 1.0,
-   "Luna agent, LAB tools": 1.0,
-   "Luna agent + tool": 0.9778,
-   "Gemma 26B agent, LAB tools": 0.2444,
-   "Gemma 26B agent + tool": 0.0,
-   "Luna PIPELINE": 0.8222,
-   "Gemma 26B PIPELINE": 0.9556
+   "base (recorded)": {
+    "cpr": 0.2962666666666667,
+    "all": false
+   },
+   "Ivo Sage (recorded)": {
+    "cpr": 0.0,
+    "all": false
+   },
+   "DeepSeek agent, LAB tools": {
+    "cpr": 1.0,
+    "all": true,
+    "short": 0,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek agent + tool": {
+    "cpr": 1.0,
+    "all": true,
+    "short": 0,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent, LAB tools": {
+    "cpr": 0.9556,
+    "all": false,
+    "short": 2,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent + tool": {
+    "cpr": 0.9556,
+    "all": false,
+    "short": 2,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent, LAB tools": {
+    "cpr": 0.1778,
+    "all": false,
+    "short": 37,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent + tool": {
+    "cpr": 0.0,
+    "all": false,
+    "short": 45,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v3 (max effort)": {
+    "cpr": 0.9111,
+    "all": false,
+    "short": 4,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v3": {
+    "cpr": 0.9111,
+    "all": false,
+    "short": 4,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v4.3 (low effort)": {
+    "cpr": 0.7111,
+    "all": false,
+    "short": 13,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v4.3": {
+    "cpr": 0.6,
+    "all": false,
+    "short": 18,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek V4 Flash pipeline v4.3": {
+    "cpr": 0.8444,
+    "all": false,
+    "short": 7,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 0.9111,
+    "all": false,
+    "short": 4,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 0.8889,
+    "all": false,
+    "short": 5,
+    "judge": "Kimi-K2.6 (brief)"
+   }
   },
   {
    "task": "easement-agreement-first-turn-redline",
-   "base (recorded)": 0.0,
-   "Ivo Sage (recorded)": 0.5517,
-   "DeepSeek agent, LAB tools": 0.9655,
-   "DeepSeek agent + tool": 0.9483,
-   "Luna agent, LAB tools": 0.7759,
-   "Luna agent + tool": 0.8276,
-   "Gemma 26B agent, LAB tools": 0.0,
-   "Gemma 26B agent + tool": 0.0,
-   "Luna PIPELINE": 0.8276,
-   "Gemma 26B PIPELINE": 0.9483
+   "base (recorded)": {
+    "cpr": 0.0,
+    "all": false
+   },
+   "Ivo Sage (recorded)": {
+    "cpr": 0.5517,
+    "all": false
+   },
+   "DeepSeek agent, LAB tools": {
+    "cpr": 0.9483,
+    "all": false,
+    "short": 3,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek agent + tool": {
+    "cpr": 0.9483,
+    "all": false,
+    "short": 3,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent, LAB tools": {
+    "cpr": 0.7759,
+    "all": false,
+    "short": 13,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna agent + tool": {
+    "cpr": 0.8276,
+    "all": false,
+    "short": 10,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent, LAB tools": {
+    "cpr": 0.0,
+    "all": false,
+    "short": 58,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B agent + tool": {
+    "cpr": 0.0,
+    "all": false,
+    "short": 58,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v3 (max effort)": {
+    "cpr": 0.8966,
+    "all": false,
+    "short": 6,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v3": {
+    "cpr": 0.9138,
+    "all": false,
+    "short": 5,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Luna pipeline v4.3 (low effort)": {
+    "cpr": 0.8966,
+    "all": false,
+    "short": 6,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v4.3": {
+    "cpr": 0.8276,
+    "all": false,
+    "short": 10,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek V4 Flash pipeline v4.3": {
+    "cpr": 0.8966,
+    "all": false,
+    "short": 6,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "DeepSeek pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 0.8276,
+    "all": false,
+    "short": 10,
+    "judge": "Kimi-K2.6 (brief)"
+   },
+   "Gemma 26B pipeline v5.1 (+Jev, Kimi)": {
+    "cpr": 0.7759,
+    "all": false,
+    "short": 13,
+    "judge": "Kimi-K2.6 (brief)"
+   }
   }
  ],
- "means": {
-  "base (recorded)": 0.20657333333333333,
-  "Ivo Sage (recorded)": 0.67364,
-  "DeepSeek agent, LAB tools": 0.9540599999999999,
-  "DeepSeek agent + tool": 0.9351200000000001,
-  "Luna agent, LAB tools": 0.8839600000000001,
-  "Luna agent + tool": 0.9043800000000001,
-  "Gemma 26B agent, LAB tools": 0.08748,
-  "Gemma 26B agent + tool": 0.23757999999999999,
-  "Luna PIPELINE": 0.83636,
-  "Gemma 26B PIPELINE": 0.87042
- }
+ "summary": {
+  "base (recorded)": {
+   "mean": 0.20657333333333333,
+   "all_pass": 0,
+   "n": 5
+  },
+  "Ivo Sage (recorded)": {
+   "mean": 0.67364,
+   "all_pass": 1,
+   "n": 5
+  },
+  "DeepSeek agent, LAB tools": {
+   "mean": 0.93828,
+   "all_pass": 1,
+   "n": 5
+  },
+  "DeepSeek agent + tool": {
+   "mean": 0.92712,
+   "all_pass": 1,
+   "n": 5
+  },
+  "Luna agent, LAB tools": {
+   "mean": 0.8599,
+   "all_pass": 0,
+   "n": 5
+  },
+  "Luna agent + tool": {
+   "mean": 0.8861000000000001,
+   "all_pass": 0,
+   "n": 5
+  },
+  "Gemma 26B agent, LAB tools": {
+   "mean": 0.07514000000000001,
+   "all_pass": 0,
+   "n": 5
+  },
+  "Gemma 26B agent + tool": {
+   "mean": 0.22806,
+   "all_pass": 0,
+   "n": 5
+  },
+  "Luna pipeline v3 (max effort)": {
+   "mean": 0.90966,
+   "all_pass": 1,
+   "n": 5
+  },
+  "Gemma 26B pipeline v3": {
+   "mean": 0.8379200000000001,
+   "all_pass": 0,
+   "n": 5
+  },
+  "Luna pipeline v4.3 (low effort)": {
+   "mean": 0.8333999999999999,
+   "all_pass": 0,
+   "n": 5
+  },
+  "Gemma 26B pipeline v4.3": {
+   "mean": 0.70618,
+   "all_pass": 0,
+   "n": 5
+  },
+  "DeepSeek V4 Flash pipeline v4.3": {
+   "mean": 0.84666,
+   "all_pass": 0,
+   "n": 5
+  },
+  "DeepSeek pipeline v5.1 (+Jev, Kimi)": {
+   "mean": 0.8586,
+   "all_pass": 1,
+   "n": 5
+  },
+  "Gemma 26B pipeline v5.1 (+Jev, Kimi)": {
+   "mean": 0.79962,
+   "all_pass": 0,
+   "n": 5
+  }
+ },
+ "judges": [
+  "Kimi-K2.6 (brief)"
+ ]
 }

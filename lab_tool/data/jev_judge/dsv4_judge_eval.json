@@ -1,0 +1,30 @@
+{
+ "model": "DeepSeek-V4-Flash",
+ "cost_usd": 1.21,
+ "errors": 0,
+ "vs_kimi_k3": {
+  "n": 100,
+  "kimi_k3_pass_rate": 0.9,
+  "kimi26": 0.98,
+  "kimi26_kappa": 0.878,
+  "kimi26_pass_rate": 0.92,
+  "luna_max": 0.95,
+  "luna_max_kappa": 0.773,
+  "luna_max_pass_rate": 0.85
+ },
+ "recorded_uncertain": {
+  "n": 255,
+  "one_recorded_pass": 0.9608,
+  "one_recorded_pass_kappa": 0.911,
+  "kimi26": 0.7804,
+  "kimi26_kappa": 0.442,
+  "luna_max": 0.851,
+  "luna_max_kappa": 0.678
+ },
+ "per_call": {
+  "input_tokens": 22801,
+  "cached_share": 0.325,
+  "output_tokens": 122,
+  "usd": 0.0032
+ }
+}

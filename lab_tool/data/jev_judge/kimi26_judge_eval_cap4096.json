@@ -1,0 +1,39 @@
+{
+ "model": "Kimi-K2.6",
+ "cost_usd": 10.55,
+ "errors": 10,
+ "vs_kimi_k3": {
+  "n": 127,
+  "kimi_k3_pass_rate": 0.898,
+  "kimi26": 0.9685,
+  "kimi26_kappa": 0.84,
+  "kimi26_pass_rate": 0.882,
+  "luna_max": 0.9528,
+  "luna_max_kappa": 0.787,
+  "luna_max_pass_rate": 0.85
+ },
+ "recorded_uncertain": {
+  "n": 248,
+  "one_recorded_pass": 0.9677,
+  "one_recorded_pass_kappa": 0.927,
+  "kimi26": 0.9032,
+  "kimi26_kappa": 0.779,
+  "luna_max": 0.8629,
+  "luna_max_kappa": 0.703
+ },
+ "recorded_random": {
+  "n": 27,
+  "one_recorded_pass": 1.0,
+  "one_recorded_pass_kappa": 1.0,
+  "kimi26": 1.0,
+  "kimi26_kappa": 1.0,
+  "luna_max": 0.9259,
+  "luna_max_kappa": 0.471
+ },
+ "per_call": {
+  "input_tokens": 23107,
+  "cached_share": 0.48,
+  "output_tokens": 1886,
+  "usd": 0.0207
+ }
+}

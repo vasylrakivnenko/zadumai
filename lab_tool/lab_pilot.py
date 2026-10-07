@@ -4,7 +4,7 @@ LAB's own harness and podman sandbox (harvey-labs @ a2b429e, our opt-in patches:
   tool   the same + contract_tool (server: contract_tool/server.py on 127.0.0.1:18090) and one line about it
 Agents (PILOT_MODEL): deepseek = DeepSeek V4.1 Flash on Fireworks (default; set PILOT_EFFORT=low: at default effort it
 overthinks or loops past the output limit), gemma-e4b (vLLM, tunnel 18080), gemma-26b (llama.cpp, tunnel 18081, one
-episode at a time). All runs: temperature 0.6, an emulated context window (262,144 tokens for DeepSeek, like the
+episode at a time), gptoss (GPT-OSS-120B on Fireworks, 128K context). All runs: temperature 0.6, an emulated context window (262,144 tokens for DeepSeek, like the
 recorded runs), a 32k output cap, a looping response redrawn twice at most, usage logs (runs/pilot/<run>.usage.jsonl).
 Judge: Kimi K3 on Fireworks, one pass per criterion, LAB's rubric prompt; `pandoc` on PATH for the scorer.
 TASKS = the first 6 (round 1, the 2 run first used the default effort); EXTRA = the next ones of the 7 smallest
@@ -34,18 +34,30 @@ FW = next(l.split("=", 1)[1].strip().strip('"\'') for l in open("/root/.env") if
 EFFORT = os.environ.get("PILOT_EFFORT")  # reasoning effort (low / none): V4.1 Flash overthinks or loops at the drafting step
 # PILOT_MODEL: which agent (the user, 2026-10-06: "also in parallel with the Gemma model on the 4090"). Our own servers are
 # reached through LAB's Fireworks adapter (same patches) with FIREWORKS_API_BASE; served under Fireworks-style names.
-AGENTS = {"deepseek": {"model": MODEL, "cap": 262144, "out": 32768},
+# API agents name a providers.py model ("registry"): the provider (Azure / Fireworks) comes from providers.py (env PROVIDER
+# or PROVIDER_<MODEL>; default Azure where the model is there), reached through LAB's OpenAI-compatible adapter (patched:
+# LAB_API_MODEL). 2026-10-07, the user: "use MS Azure's DeepSeek-V4.1-Flash since now ... easy swiping between Azure and
+# Fireworks". Runs on Azure get "-azure" in the run id (the Fireworks runs before keep theirs).
+AGENTS = {"deepseek": {"model": MODEL, "registry": "deepseek-v4.1-flash", "cap": 262144, "out": 32768},
           "gemma-e4b": {"model": "accounts/fireworks/models/gemma-4-e4b", "base": "http://127.0.0.1:18080/v1", "cap": 131072 - 16384, "out": 16384},
           "gemma-26b": {"model": "accounts/fireworks/models/gemma-4-26b", "base": "http://127.0.0.1:18081/v1", "cap": 131072 - 32768, "out": 32768,
                         "parallel": 1},  # llama.cpp's 131k KV is shared by all requests: one episode at a time
           # GPT-6 Luna on the user's Azure deployment (2026-10-06, the user: "Go for it"): LAB's OpenAI adapter (Responses
           # API: reasoning effort up to "max"), our safety patches ported to it; 5,000 req/min
-          "luna": {"model": "openai/gpt-6-luna", "cap": 262144, "out": 32768, "azure": True, "parallel": 7}}
+          "luna": {"model": "openai/gpt-6-luna", "cap": 262144, "out": 32768, "azure": True, "parallel": 7},
+          # GPT-OSS-120B on Fireworks serverless (2026-10-07, the user added $20: "one task on LAB harness"); 128K context:
+          # ~96K for the conversation + 32K reserved for the answer, like Gemma 26B; $0.15 in / $0.015 cached / $0.60 out per 1M
+          "gptoss": {"model": "accounts/fireworks/models/gpt-oss-120b", "registry": "gpt-oss-120b", "cap": 131072 - 32768, "out": 32768, "parallel": 1},
+          # Claude Sonnet 5 on Azure (2026-10-07): LAB's Anthropic adapter (patched: prompt caching, usage log), adaptive thinking
+          "claude": {"model": "anthropic/claude-sonnet-5", "registry": "claude-sonnet-5", "cap": 0, "out": 32768, "parallel": 1}}
 AGENT = os.environ.get("PILOT_MODEL", "deepseek")
+sys.path.insert(0, HERE); import providers
+EP = providers.endpoint(AGENTS[AGENT]["registry"]) if AGENTS[AGENT].get("registry") else None
+if EP is not None and EFFORT is None: EFFORT = providers.MODELS[EP.model].get("effort")  # the model's default (DeepSeek V4.1: low)
 
 
 def run_id(arm, task):
-    tag = ("" if AGENT == "deepseek" else f"-{AGENT}") + (f"-e{EFFORT}" if EFFORT else "")
+    tag = ("" if AGENT == "deepseek" else f"-{AGENT}") + ("-azure" if EP is not None and EP.provider == "azure" else "") + (f"-e{EFFORT}" if EFFORT else "")
     return f"pilot-{arm}-{task.split('/')[-1]}" + (tag if arm in ("plain", "tool") else "")
 
 
@@ -63,6 +75,9 @@ def run_one(arm, task):
     shutil.rmtree(f"{LAB}/results/{rid}", ignore_errors=True)
     e = dict(env(arm), LAB_DEBUG_DIR=f"{LOGS}/length/{rid}", LAB_USAGE_LOG=f"{LOGS}/{rid}.usage.jsonl", LAB_CONTEXT_CAP=str(A["cap"]), LAB_MAX_OUTPUT=str(A["out"]))
     if A.get("base"): e.update(FIREWORKS_API_BASE=A["base"], FIREWORKS_API_KEY="local")  # the agent only; the judge stays on Fireworks
+    if EP is not None:
+        e.update(EP.lab_env())
+        json.dump({"model": EP.model, "provider": EP.provider, "deployment": EP.deployment, "effort": EFFORT}, open(f"{LOGS}/{rid}.model.json", "w"))
     if A.get("azure"):
         e.update(OPENAI_BASE_URL="https://ai-vasyl-0670.services.ai.azure.com/openai/v1",
                  OPENAI_API_KEY=next(l.split("=", 1)[1].strip().strip('"\'') for l in open("/root/.env") if l.startswith("AZURE_API_KEY=")))
@@ -115,7 +130,8 @@ def report():
 if __name__ == "__main__":
     os.makedirs(LOGS, exist_ok=True); what = sys.argv[1]
     if what == "run":  # run [task slug ...]
-        jobs = [(arm, t) for t in TASKS + EXTRA if (not sys.argv[2:] and t in TASKS) or t.split("/")[-1] in sys.argv[2:] for arm in ("tool", "plain")]
+        arms = os.environ.get("PILOT_ARMS", "tool,plain").split(",")  # PILOT_ARMS=plain: LAB's own tools only
+        jobs = [(arm, t) for t in TASKS + EXTRA if (not sys.argv[2:] and t in TASKS) or t.split("/")[-1] in sys.argv[2:] for arm in arms]
         with cf.ThreadPoolExecutor(AGENTS[AGENT].get("parallel", 4)) as ex:  # 4 episodes in flight: one call each at a time, inside the shared-account guard
             for rid, msg in ex.map(lambda j: run_one(*j), jobs): print(time.strftime("%H:%M"), rid, msg, flush=True)
     elif what == "judge":  # judge [task slug ...]: only those tasks (the user: "maybe an even smaller test first?")

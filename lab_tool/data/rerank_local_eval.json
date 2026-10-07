@@ -1,0 +1,11 @@
+{
+ "fused BM25 + bge, no rerank": {
+  "top6": 0.7509157509157509,
+  "ms_per_search": 0
+ },
+ "cross-encoder/ms-marco-MiniLM-L12-v2": {
+  "top6": 0.7765567765567766,
+  "ms_per_search": 1295.682132462442,
+  "load_s": 1.369654655456543
+ }
+}

@@ -188,26 +188,26 @@ Plan in jev_judge/PLAN.md. Rubric criteria split once into simple yes/no stateme
 held-out Contracts tasks: $0.13); Jev answers every statement plus the whole criterion (P(true)), on the exact text LAB's
 judge reads (deliverables longer than Jev's ~32k-token input: the criterion's most relevant passages); a logistic
 combiner and a confidence band fitted on half the tasks; criteria inside the band go to an LLM judge.
-Labels: Ivo Sage's records (6,438 non-empty criteria; 3 judge passes each) + our Kimi-graded runs.
+Labels: Ivo Sage's records (5,554 non-empty criteria; 3 judge passes each) + our Kimi K3-graded runs (884 criteria then).
 
 | test tasks (never used to fit), 2,349 criteria where judge passes 2 and 3 agree | agreement |
 |---|---|
 | one LLM judge pass (pass 1) | 99.32% |
 | Jev alone | 97.32% |
 | Jev on the criteria it is sure of (89%; band p <= 0.10 fail / >= 0.94 pass) | 99.52% |
-| **hybrid: Jev on 89%, the LLM judge on the other 11%** | **99.15%** |
+| **hybrid: Jev on 89%, the LLM judge on the other 11%** (simulated: the LLM's verdicts = recorded judge pass 1) | **99.15%** |
 | stricter band 0.05 / 0.97: Jev 82%, LLM 18% | 99.23% |
 
 - Task-level scores: hybrid within 0.009 of the 3-pass majority on average (Jev alone 0.022).
 - Our runs (Kimi labels): Jev alone 97.2%; on its confident 82%, 99.9%.
-- Cost: Jev $2.30 for all 6,438 criteria (54.7M input tokens at $0.042/M, output free), 427 s. A full Kimi K3 grading
+- Cost: Jev $2.30 for those 6,438 criteria (5,554 recorded + 884 ours; 54.7M input tokens at $0.042/M, output free), 427 s. A full Kimi K3 grading
   of one deliverable set is ~$2.2; hybrid ~$0.3 with Kimi on the uncertain 11%, a few cents with Luna (not yet
   validated as the judge).
 - Caveat: labels are 94% "pass", so agreement numbers start high; kappa: hybrid 0.90 vs one LLM pass 0.94.
-- GPT-6 Luna (Azure) as the LLM judge, LAB's own judge prompt (jev_judge/luna_judge.py, $4.29): NOT validated. vs Kimi
+- GPT-6 Luna (Azure) as the LLM judge, LAB's own judge prompt (jev_judge/luna_judge.py, $4.72): NOT validated. vs Kimi
   K3 on our runs 94.2% (kappa 0.68; Luna stricter: 87% pass vs 93%); on recorded criteria 97.3% vs one recorded pass
   99.3%; on Jev's uncertain criteria (where it would be used) 82.8% vs 96.1%. The uncertain criteria stay with Kimi
-  K3. At MAX reasoning effort (jev_judge/luna_max.py, same items, $2.12): vs Kimi 96.7% (kappa 0.83; default 95.0%),
+  K3. At MAX reasoning effort (jev_judge/luna_max.py, same items, $2.33): vs Kimi 96.7% (kappa 0.83; default 95.0%),
   on uncertain criteria 85.1% (default 82.8%) vs 96.1% for a recorded pass, random 97.0% vs 99.0%. Still not
   validated: Luna is systematically stricter (on uncertain criteria 29 of its 38 disagreements fail what the judges
   pass; vs Kimi 10 of 10).
@@ -242,72 +242,105 @@ The ISDA confirmation paper review is dropped too, for now (the user: a speciali
 the arms: base 0.000, others 0.87-0.93). List: runs/pilot/set5_tasks.txt (set6_tasks.txt = with ISDA).
 Means on the 5: base 0.207, Ivo Sage 0.674, DeepSeek LAB tools 0.950, DeepSeek + tool 0.939, Luna LAB tools 0.884, Luna + tool 0.904.
 
-## Kimi K2.6 Thinking (Azure) as the judge (jev_judge/kimi26_judge.py, $10.55)
+## Kimi K2.6 Thinking (Azure) as the judge (jev_judge/kimi26_judge.py, $11.71)
 On Jev's uncertain criteria 90.3% (kappa 0.78) vs 96.8% for a second pass of the original judge and 86.3% for Luna
 at max effort; vs Kimi K3 on our runs 96.9% (kappa 0.84). Errors go both ways (14 too strict, 10 too lenient), unlike
-Luna. Better than Luna, short of a repeat of the original judge; Kimi K3 itself was not measured on those same hard
-items, so whether K2.6 is worse than K3 there is open (~$17 of K3 calls would settle it). First run: 654 of 778 calls
-hit Azure's token-per-minute cap at 64 in flight; rerun at 8 in flight.
+Luna. Better than Luna, short of a repeat of the original judge. K2.6 has been our grader's LLM since the Fireworks
+account was suspended (no more Kimi K3).
+- Azure caps K2.6 at 4,096 output tokens INCLUDING its reasoning (a higher max_output_tokens is clamped; no reasoning
+  control): about half of all grading calls end without a verdict and are retried, which makes grading slow (~7 calls a
+  minute at ~8 in flight). The validation above left out the 10 items (2%) that never answered.
+- From 2026-10-06 ~14:00 UTC the grader adds "Keep your reasoning brief: decide from the decisive passage, in a few
+  sentences, then give the JSON." to LAB's prompt (scores say "Kimi-K2.6 (brief)"). On 30 hard items: cap hits 12% of
+  calls (54% before), agreement with the recorded judges 25/29 (22/29 before); on long deliverables still ~50%.
+  Escalated criteria still without a verdict after 6 tries take Jev's call: 38 of 684 (5.6%) so far.
+- DeepSeek V4 Flash as the judge (Azure, no reasoning; $1.21): 78.0% on the hard items (kappa 0.44) vs K2.6 90.3%. Not used.
 
-## Fixed pipeline vs agent loop (pipeline/, 2026-10-06)
-The user: "build it for counterparty paper review and first-turn redline. Run it with Luna and Gemma 26B on our 5 tasks
-against the agent-loop results ... hybrid search with a reranker ... self-critique -> refinement". Plan, self-critique
-and checkpoints: pipeline/PLAN.md, pipeline/STATUS.md. Nine fixed steps: roles, brief (checklist of instructions),
-work items (their clauses / their changed paragraphs + untracked edits), hybrid search (BM25 + bge, Cohere rerank v4.0
-pro: 75.8% -> 79.5% top-6 on our retrieval benchmark), one decision call per item, missing playbook provisions,
-instruction coverage, a deterministic tracked-changes redline with margin comments (pipeline/docx_redline.py), the memo /
-cover note (tables built from the items, narrative by one call). Reads only instructions + documents. Developed on
-4 training-split tasks (3 refinement rounds: process fixes only), then run once on the 5 held-out tasks.
+## Fixed pipeline (2026-10-06/07): abandoned
+We tried replacing LAB's agent loop with a fixed pipeline (roles, brief, one decision per clause or per change over hybrid
+search, missing provisions, a scripted tracked-changes redline and memo), versions v1-v5.1, the last with Jev labelling
+every decision and Kimi K2.6 deciding where Jev and the model disagreed. It made a small local model usable (Gemma 26B:
+0.08 as an agent, 0.84 in the pipeline) but never beat a strong reasoning model in LAB's own harness, whose bash sandbox
+and docx skills let the agent unpack the tracked changes, check its own redline and write the deliverables in the
+playbook's terms; we had misjudged that harness by its `read` / `grep` tools. Lessons: compare like for like (a reasoning
+model closed most of the gap, 0.714 -> 0.889 on one task), trust the same-grader dev table, do not tune on four dev
+tasks. The code was removed (archive: /root/zadumai_nli_proto/archive/pipeline_code_2026-10-07.tar.gz).
 
-| 5 held-out tasks (one grader: Jev + Kimi K3) | NDA 1st-turn | NDA paper | easement paper | quality paper | easement 1st-turn | **mean** |
-|---|---|---|---|---|---|---|
-| base V4 Flash (recorded) | 0.647 | 0.090 | 0.000 | 0.296 | 0.000 | 0.207 |
-| Ivo Sage (recorded) | 0.880 | 0.936 | 1.000 | 0.000 | 0.552 | 0.674 |
-| DeepSeek V4.1 Flash agent, LAB tools | 0.900 | 0.905 | 1.000 | 1.000 | 0.966 | **0.954** |
-| DeepSeek agent + tool | 0.840 | 0.905 | 0.983 | 1.000 | 0.948 | 0.935 |
-| Luna agent, LAB tools | 0.760 | 0.936 | 0.947 | 1.000 | 0.776 | 0.884 |
-| Luna agent + tool | 0.780 | 0.936 | 1.000 | 0.978 | 0.828 | 0.904 |
-| Gemma 26B agent, LAB tools | 0.000 | 0.000 | 0.193 | 0.244 | 0.000 | 0.087 |
-| Gemma 26B agent + tool | 0.680 | 0.508 | 0.000 | 0.000 | 0.000 | 0.238 |
-| **Luna pipeline** | 0.740 | 0.809 | 0.983 | 0.822 | 0.828 | 0.836 |
-| **Gemma 26B pipeline** (4-bit, one RTX 4090) | 0.820 | 0.698 | 0.930 | 0.956 | 0.948 | **0.870** |
+| 5 held-out tasks, one grader (Jev + Kimi K2.6) | NDA 1st-turn | NDA paper | easement paper | quality paper | easement 1st-turn | mean | all-pass |
+|---|---|---|---|---|---|---|---|
+| base (recorded) | 0.647 | 0.090 | 0.000 | 0.296 | 0.000 | 0.207 | 0/5 |
+| Ivo Sage (recorded) | 0.880 | 0.936 | 1.000 | 0.000 | 0.552 | 0.674 | 1/5 |
+| DeepSeek agent, LAB tools | 0.840 | 0.921 | 0.983 | 1.000 | 0.948 | 0.938 | 1/5 |
+| DeepSeek agent + tool | 0.800 | 0.905 | 0.983 | 1.000 | 0.948 | 0.927 | 1/5 |
+| Luna agent, LAB tools | 0.700 | 0.921 | 0.947 | 0.956 | 0.776 | 0.860 | 0/5 |
+| Luna agent + tool | 0.760 | 0.905 | 0.983 | 0.956 | 0.828 | 0.886 | 0/5 |
+| Gemma 26B agent, LAB tools | 0.040 | 0.000 | 0.158 | 0.178 | 0.000 | 0.075 | 0/5 |
+| Gemma 26B agent + tool | 0.680 | 0.460 | 0.000 | 0.000 | 0.000 | 0.228 | 0/5 |
+| Luna pipeline v3 (max effort) | 0.820 | 0.921 | 1.000 | 0.911 | 0.897 | 0.910 | 1/5 |
+| Gemma 26B pipeline v3 | 0.800 | 0.635 | 0.930 | 0.911 | 0.914 | 0.838 | 0/5 |
+| Luna pipeline v4.3 (low effort) | 0.820 | 0.809 | 0.930 | 0.711 | 0.897 | 0.833 | 0/5 |
+| Gemma 26B pipeline v4.3 | 0.760 | 0.571 | 0.772 | 0.600 | 0.828 | 0.706 | 0/5 |
+| DeepSeek V4 Flash pipeline v4.3 | 0.880 | 0.682 | 0.930 | 0.844 | 0.897 | 0.847 | 0/5 |
+| DeepSeek pipeline v5.1 (+Jev, Kimi) | 0.840 | 0.714 | 1.000 | 0.911 | 0.828 | 0.859 | 1/5 |
+| Gemma 26B pipeline v5.1 (+Jev, Kimi) | 0.700 | 0.651 | 0.983 | 0.889 | 0.776 | 0.800 | 0/5 |
 
-- The pipeline makes the small local model work: Gemma 26B on one 4090 goes from 0.09 / 0.24 (agent loop: overflows,
-  no deliverables) to 0.870, above Ivo Sage's recorded 0.674 and the Luna pipeline, in 2-7 minutes per task, every
-  deliverable written, 0 failed calls.
-- For strong models the free agent loop is better: Luna 0.884 / 0.904 as an agent vs 0.836 in the pipeline; DeepSeek's
-  agent 0.954 stays the best. Where the Luna pipeline lost points the Luna agent mostly passed (NDA paper review: 9 of 12).
-- Why (critique): (1) no consolidation: per-clause decisions over-flag (NDA paper review: 37 of 55 clauses + 37 inserts)
-  and the memo lists ~70 rows where the reviewer expects ~11 distinct issues with a risk matrix; (2) the review schema
-  has no approval-authority field (who must approve a concession); (3) markup responses are per paragraph (58 for the NDA)
-  instead of per substantive change (14), so the cover note is fragmented. Fixes (v4, not done: needs another dev round,
-  re-testing on these 5 would fit the test set): a consolidation step into distinct issues with the playbook's risk and
-  approval methodology; grouping changed paragraphs by clause before deciding; approval levels in the decisions.
-- Cost / time per task: Luna pipeline $0.18-1.64 (max effort on every call; $4.50 for 5 tasks), 10-26 min; Gemma
-  pipeline ~2-7 min of one 4090 (~$0.74/h); Cohere rerank: 2,381 searches in all, 273 of them the retrieval eval (price per
-  search not known yet). Azure + Jev ledger (COSTS.md) now $31.82.
+| NDA paper review (held-out), one task | score |
+|---|---|
+| DeepSeek V4.1 Flash agent, LAB harness (reasoning low) | 0.921 |
+| GPT-6 Luna agent, LAB harness (max effort) | 0.921 |
+| Claude Sonnet 5 agent, LAB harness (thinking low; read 8 of 8 files, 44 turns, 6.8 min, $1.67) | 0.921 |
+| pipeline v5.1, DeepSeek V4.1 Flash with reasoning + Jev + Kimi | 0.889 |
+| pipeline v5.1, Claude Sonnet 5 + Jev + Kimi ($1.70 + Kimi $0.23) | 0.857 |
+| pipeline v5.1, DeepSeek V4 Flash without reasoning + Jev + Kimi | 0.714 |
+| pipeline v5.1, GPT-OSS-120B + Jev + Kimi | 0.698 |
+| pipeline v5.1, Gemma 26B + Jev + Kimi | 0.651 |
+| GPT-OSS-120B agent, LAB harness (medium effort; read 2 of 8 files) | 0.476 |
 
-All-pass (every criterion of a task passed; LAB's strict metric) on the 5 tasks: DeepSeek agent 2/5 (+ tool 1/5), Luna
-agent 1/5 (+ tool 1/5), Ivo Sage (rec.) 1/5, base 0/5, Gemma agent 0/5, Luna pipeline 0/5, Gemma pipeline 0/5 (near
-misses: 2, 3 and 4 criteria short on three tasks). Ours are one judge pass; Ivo's record needs all 3 passes to agree, so
-ours are a little easier to reach.
+Jev as a second opinion on 453 pipeline decisions (dev tasks, reference Kimi K2.6): clause "needs no change" Jev 0.763,
+DeepSeek V4 Flash 0.699, Gemma 0.723, Luna low 0.767; DeepSeek + Jev with Kimi only where they disagree 0.920 (Kimi on
+38%). Reranker (273 queries, top-6): bge-reranker-base 81.3%, Cohere v4.0 pro 79.5%, none 75.1%.
 
-## Where things stand (2026-10-06)
-- **Tool callers** (replay benchmark): prompt optimization (DSPy GEPA) gets Gemma 4 E4B to ~89-91% on "when to call";
-  no fine-tuning needed. But Gemma 4 E4B can't drive LAB's agent loop on its own (it answers with a text plan).
-- **contract_tool v0** reads every format, shows tracked changes exactly (LAB's `read` hides them, `grep` can't see
-  inside .docx) and compares versions, at ~1/20 of the context; search works on precise questions (76-78%), not on
-  up-front compound query plans (11-15%).
-- **End to end in LAB's own harness** (7 smallest held-out paper-review / first-turn-redline tasks): untrained
-  DeepSeek V4.1 Flash at low reasoning effort 0.949, above Ivo Sage's recorded 0.752 (different judge, newer base);
-  the tool adds nothing for it (0.935). GPT-6 Luna (Azure, max effort): 0.898 alone, 0.916 with the tool, at ~$0.18
-  per episode. Small local models: Gemma 26B-A4B on one 4090 overflows as an agent (0.09 / 0.24) but scores 0.870
-  in the fixed pipeline (above Ivo Sage); for strong models the agent loop stays better (Luna 0.904 vs 0.836).
-- **Grading:** Jev + an LLM for Jev's uncertain 11% matches one LLM judge pass (99.15% vs 99.32%) at a fraction of the
-  cost. The LLM for the uncertain criteria stays Kimi K3: Luna (Azure) failed validation (82.8% vs 96.1% there).
-- **Open:** a "make the redline" action (drafting the .docx, not reading, fills the context); DeepSeek V4 Flash (now on
-  Azure, $0.19 / $0.51) for a same-base comparison with Ivo Sage; the grader for new runs (Jev + Kimi K3); Luna at
-  max effort also failed as the judge (85.1% vs 96.1% on uncertain criteria).
+## GPU: dedicated pod vs serverless, caching (GPU_COMPARE.md, analysis/gpu_compare.py)
+| setup | start to serving | workload | billed time | USD | USD / 1M tokens |
+|---|---|---|---|---|---|
+| dedicated pod, model on the network volume | 39 s | 704 s, 0 errors | est.: 797 s x $0.74/h | $0.164 | $0.113 |
+| serverless flex worker (est.: our endpoint never served, see below) | 41 s (16 s image + 25 s model load, measured) | 704 s (same GPU, engine, flags) | est.: 755 s x $1.1/h | $0.231 | $0.159 |
+
+Serverless attempt: two workers loaded the model in 25 s, but the load balancer never routed a request (12 min); endpoint
+deleted. The serverless row is an estimate from the measured start and the same workload at $1.10/h. Serverless is cheaper
+only when a dedicated pod would sit idle more than ~1/3 of the time; the network volume (EU-RO-1, 20 GB, $1.40/month) gives
+the dedicated pod a 39-second start, so start-on-demand + delete-after is the cheaper pattern for our bursty runs.
+Caching: Azure caches repeated prompt prefixes automatically (DeepSeek ~40% of input cached, Kimi in grading 66%; billed
+at 10-17%). On Gemma / llama.cpp prefix reuse is off (sliding-window attention needs context checkpoints; we run
+--ctx-checkpoints 0), but prefill is only 5% of Gemma's GPU time (~6,800 tok/s per slot); 95% is writing the JSON
+answers (~74 tok/s per slot, 4 slots). Faster Gemma = shorter answers or more slots, not caching.
+
+## GPT-OSS-120B (Fireworks serverless; 2026-10-07, the user added $20)
+One task (NDA paper review): as an agent in LAB's harness 0.476 (14 turns, 170 s; read 2 of 8 files, skipped the
+instructions). As the judge ($0.94): 83.8% on 241 hard items (kappa 0.64; 6% without a verdict) vs Kimi K2.6 90.3%,
+Luna max 84.2%, DeepSeek V4 Flash 78.0%, a repeat of the original judge 95.9%. Not a replacement. Test cost: Fireworks
+$1.04, Azure $1.48.
+
+## Claude Sonnet 5 (Azure; 2026-10-07; $2 / $10 per 1M)
+Reached through the Anthropic Messages API on the user's Azure (providers.py "claude-sonnet-5"; LAB's Anthropic adapter
+patched with prompt caching + a usage log). As the judge (low thinking; stopped at 141 of 278 hard items to save cost,
+$4.78, ~$0.034 per item): on the same 136 hard items Claude 84.6%, Kimi K2.6 88.0%, Luna max 83.8%, GPT-OSS-120B 82.4%, a repeat of the
+original judge 96.3%. Not adopted. One task: in the table of the pipeline record above.
+
+## Where things stand (2026-10-07)
+- **Best on our 5 held-out tasks** (one grader): the DeepSeek V4.1 Flash agent loop in LAB's harness, 0.938 (1/5
+  all-pass); Ivo Sage's record 0.674; base 0.207. The fixed pipeline is abandoned (record above).
+- **Models**: from 2026-10-07 DeepSeek = Azure "DeepSeek-V4.1-Flash" (the user), reasoning low by default; Claude Sonnet 5
+  on Azure ($2 / $10 per 1M, Anthropic Messages API). One registry, providers.py, switches Azure / Fireworks (env
+  PROVIDER or PROVIDER_<MODEL>) for LAB's harness and the cost ledger.
+- **Grading** is the bottleneck: Kimi K2.6 on Azure answers at most 4,096 tokens including its reasoning, so ~half the
+  calls are retried; ~6% of escalated criteria end with Jev's call. No cheaper judge validated: GPT-OSS-120B 83.8%,
+  Claude Sonnet 5 84.6%, DeepSeek V4 Flash 78.0% vs Kimi K2.6 88-90% on the hard items.
+- **GPU**: dedicated 4090 from a network volume: serving in 39 s, $0.113 per 1M tokens on our workload; serverless (est.)
+  $0.159 per 1M, and our load-balancer endpoint never served. All pods deleted; volume mdyu28czzt kept ($1.40/month).
+- **Next**: the agent loop with a reasoning model as the main system; our pieces only as optional helpers inside it (a
+  final Jev check against a checklist from the instructions, the roles check, contract_tool), each kept only if it helps
+  on >= 10 tasks run twice.
 
 ## Files
 - `build_replay.py`, `run_replay.py`, `score_replay.py`, `optimize_dspy*.py`, `final_B.py`, `run_*.sh`: replay benchmark
@@ -315,11 +348,14 @@ ours are a little easier to reach.
 - `contract_tool/`: the tool (README.md), `server.py` for the harness; `eval_tool_v0*.py`: its evaluation.
 - `lab_pilot.py`: LAB episodes (`PILOT_MODEL`, `PILOT_EFFORT`), judging, report; `analysis/`: summaries and costs;
   `pods/`: the Gemma pod setup scripts; `harvey_labs_patches.diff`: our changes to LAB's harness (below).
-- `jev_judge/`: the cheap judge (PLAN.md; texts, decompose, check, evaluate, luna, luna_judge).
+- `jev_judge/`: the cheap judge (PLAN.md; texts, decompose, check, evaluate, grade, luna, luna_judge, kimi26_judge).
+- `providers.py`: model endpoints (Azure / Fireworks / Azure Anthropic), prices, the shared usage log; `pods/replay_workload.py`:
+  the GPU comparison workload; GPU_COMPARE.md, GPU_COSTS.md, COSTS.md: cost ledgers.
 - LAB's harness patches (harvey-labs @ a2b429e; all opt-in by env var): `contract_tool` as a 7th tool
   (`LAB_CONTRACT_TOOL`) and one system-prompt line about it; Fireworks adapter: emulated context window
   (`LAB_CONTEXT_CAP`), output cap (`LAB_MAX_OUTPUT`), call timeout, redraw of looping responses
-  (`LAB_RESAMPLE_LENGTH`), usage / truncation logs, llama.cpp error mapping; judge: Fireworks models.
+  (`LAB_RESAMPLE_LENGTH`), usage / truncation logs, llama.cpp error mapping, any OpenAI-compatible endpoint (`LAB_API_MODEL`);
+  Anthropic adapter: prompt caching + usage log; judge: Fireworks models.
 - Throughput / cost notes: vLLM on one 4090 ran Gemma 4 E4B at ~9-10k prompt tokens/s (~48 requests in flight).
   Replay + DSPy: Fireworks ~810 calls, a B300 Muse deployment ~15 min, three Runpod pods ~3.5 h. Pilots: judge
   ~$43, DeepSeek ~$7.3, pods ~$3.5; Jev judge $2.30 + Luna $0.13.

@@ -62,12 +62,66 @@ index 4f97e0c2..d6fa4f4b 100644
      def _evaluate_mistral(self, prompt: str, temperature: float, _retries: int) -> dict:
          last_err: Exception | None = None
          for attempt in range(_retries):
+diff --git a/harness/adapters/anthropic.py b/harness/adapters/anthropic.py
+index 770ed0a8..89828211 100644
+--- a/harness/adapters/anthropic.py
++++ b/harness/adapters/anthropic.py
+@@ -76,10 +76,22 @@ class AnthropicAdapter(ModelAdapter):
+         # Translate tool definitions to Anthropic format
+         anthropic_tools = [self._translate_tool(t) for t in tools]
+ 
++        # Zadum (2026-10-07): prompt caching, else every turn of an agent episode re-bills the whole conversation:
++        # breakpoints on the system prompt, the tool list and the conversation's last block (the next turn reads it back)
++        import copy, os as _os
++        api_messages = copy.deepcopy(api_messages)
++        if api_messages and _os.environ.get("LAB_NO_CACHE") != "1":
++            last = api_messages[-1]
++            if isinstance(last.get("content"), str): last["content"] = [{"type": "text", "text": last["content"]}]
++            if isinstance(last.get("content"), list) and last["content"] and isinstance(last["content"][-1], dict) \
++                    and last["content"][-1].get("type") not in ("thinking", "redacted_thinking"):
++                last["content"][-1]["cache_control"] = {"type": "ephemeral"}
++            if anthropic_tools: anthropic_tools[-1] = dict(anthropic_tools[-1], cache_control={"type": "ephemeral"})
++        system = [{"type": "text", "text": self._system_prompt, "cache_control": {"type": "ephemeral"}}] if self._system_prompt else ""
+         kwargs = dict(
+             model=self.model,
+-            max_tokens=self.max_tokens,
+-            system=self._system_prompt or "",
++            max_tokens=int(_os.environ.get("LAB_MAX_OUTPUT", self.max_tokens)),
++            system=system,
+             messages=api_messages,
+             tools=anthropic_tools,
+         )
+@@ -120,12 +132,17 @@ class AnthropicAdapter(ModelAdapter):
+             "content": [self._block_to_dict(b) for b in response.content],
+         }
+ 
++        u = response.usage; cr = getattr(u, "cache_read_input_tokens", 0) or 0; cw = getattr(u, "cache_creation_input_tokens", 0) or 0
++        if _os.environ.get("LAB_USAGE_LOG"):  # Zadum: per-call usage like the other adapters (prompt = all input incl. cache reads/writes)
++            with open(_os.environ["LAB_USAGE_LOG"], "a") as f:
++                f.write(json.dumps({"prompt": u.input_tokens + cr + cw, "cached": cr, "cache_write": cw, "completion": u.output_tokens,
++                                    "finish": response.stop_reason}) + "\n")
+         return ModelResponse(
+             message=message,
+             tool_calls=tool_calls,
+             text="\n".join(text_parts),
+-            input_tokens=response.usage.input_tokens,
+-            output_tokens=response.usage.output_tokens,
++            input_tokens=u.input_tokens + cr + cw,
++            output_tokens=u.output_tokens,
+         )
+ 
+     def make_tool_result_messages(self, results: list[tuple[str, str]]) -> list[dict]:
 diff --git a/harness/adapters/fireworks.py b/harness/adapters/fireworks.py
-index 35efcbd6..094ceece 100644
+index 35efcbd6..37aaeef5 100644
 --- a/harness/adapters/fireworks.py
 +++ b/harness/adapters/fireworks.py
-@@ -27,7 +27,10 @@ class FireworksAdapter(ModelAdapter):
+@@ -25,9 +25,15 @@ class FireworksAdapter(ModelAdapter):
+         # Expand a bare name (kimi-k2p6) to the serverless resource path.
+         if not self.model.startswith("accounts/"):
              self.model = f"accounts/fireworks/models/{self.model}"
++        # Zadum: any OpenAI-compatible endpoint (Azure, a local server): LAB_API_MODEL = the model id sent to it
++        # (lab_tool/providers.py Endpoint.lab_env(); the --model argument then only routes to this adapter)
++        self.api_model = os.environ.get("LAB_API_MODEL") or self.model
          # Explicit key: openai.OpenAI(api_key=None) silently falls back to
          # OPENAI_API_KEY, which would then be sent to Fireworks.
 +        # Zadum pilot: a hung or runaway call failed only after 3 x 600 s (client default); bound it instead.
@@ -77,23 +131,24 @@ index 35efcbd6..094ceece 100644
              api_key=os.environ["FIREWORKS_API_KEY"],
              base_url=os.environ.get(
                  "FIREWORKS_API_BASE",
-@@ -36,6 +39,15 @@ class FireworksAdapter(ModelAdapter):
+@@ -36,6 +42,16 @@ class FireworksAdapter(ModelAdapter):
          )
  
      def chat(self, messages: list[dict], tools: list[dict]) -> ModelResponse:
 +        # Zadum pilot: DeepSeek V4.1 Flash has a 1M window on Fireworks; the recorded V4 Flash runs overflowed at ~256k.
-+        # Estimate this prompt from the last one's measured size + the new messages (chars / 3) and refuse past the cap.
++        # Estimate this prompt from the last one's measured size + the new messages (chars / 3.5, ensure_ascii off: the first
++        # version escaped non-ASCII and divided by 3, overestimating; code review 2026-10-06) and refuse past the cap.
 +        cap = int(os.environ.get("LAB_CONTEXT_CAP", "0"))
 +        if cap:
 +            import json as _json
 +            n_new = len(messages) - getattr(self, "_n_msgs", 0)
-+            est = getattr(self, "_last_prompt", 0) + sum(len(_json.dumps(m, default=str)) for m in messages[-n_new:]) // 3 if n_new > 0 else 0
++            est = getattr(self, "_last_prompt", 0) + sum(len(_json.dumps(m, default=str, ensure_ascii=False)) for m in messages[-n_new:]) * 2 // 7 if n_new > 0 else 0
 +            if est + 8192 > cap:
 +                raise RuntimeError(f"context_length_exceeded: emulated {cap}-token window (estimated prompt {est:,})")
          response = None
          last_error = None
          kwargs = {}
-@@ -45,26 +57,52 @@ class FireworksAdapter(ModelAdapter):
+@@ -45,26 +61,52 @@ class FireworksAdapter(ModelAdapter):
              kwargs["extra_body"] = {"reasoning_effort": self.reasoning_effort}
          else:
              kwargs["temperature"] = self.temperature
@@ -112,7 +167,7 @@ index 35efcbd6..094ceece 100644
 +            for attempt in range(_MAX_RETRIES):
 +                try:
 +                    response = self.client.chat.completions.create(
-+                        model=self.model,
++                        model=self.api_model,
 +                        messages=messages,
 +                        tools=[self._translate_tool(t) for t in tools],
 +                        max_tokens=self.max_tokens,
@@ -165,7 +220,7 @@ index 35efcbd6..094ceece 100644
          message = message_obj.model_dump(exclude_none=True)
  
          tool_calls = []
-@@ -78,6 +116,8 @@ class FireworksAdapter(ModelAdapter):
+@@ -78,6 +120,8 @@ class FireworksAdapter(ModelAdapter):
              )
  
          usage = response.usage
@@ -174,6 +229,87 @@ index 35efcbd6..094ceece 100644
          return ModelResponse(
              message=message,
              tool_calls=tool_calls,
+diff --git a/harness/adapters/openai.py b/harness/adapters/openai.py
+index f4353103..fffe0b64 100644
+--- a/harness/adapters/openai.py
++++ b/harness/adapters/openai.py
+@@ -6,9 +6,13 @@ Works alongside temperature and tool calling with no constraints.
+ """
+ 
+ import json
++import os
++import time
+ import openai
+ from harness.adapters.base import ModelAdapter, ModelResponse, ToolCall
+ 
++_MAX_RETRIES = 8
++
+ 
+ class OpenAIAdapter(ModelAdapter):
+     """Adapter for OpenAI models using the Responses API."""
+@@ -21,8 +25,10 @@ class OpenAIAdapter(ModelAdapter):
+         reasoning_effort: str | None = None,
+     ):
+         super().__init__(model, temperature, reasoning_effort)
+-        self.max_tokens = max_tokens
+-        self.client = openai.OpenAI()
++        self.max_tokens = int(os.environ.get("LAB_MAX_OUTPUT", max_tokens))  # Zadum pilot: same safety knobs as the Fireworks adapter
++        # OPENAI_BASE_URL / OPENAI_API_KEY pick the endpoint (the user's Azure deployment for GPT-6 Luna); client retries off,
++        # retried below, so a hung call fails after LAB_CALL_TIMEOUT instead of 3 x 600 s.
++        self.client = openai.OpenAI(timeout=float(os.environ.get("LAB_CALL_TIMEOUT", "600")), max_retries=0)
+         # Accumulated context items for the Responses API
+         self._context: list = []
+         self._system_instructions: str | None = None
+@@ -56,7 +62,40 @@ class OpenAIAdapter(ModelAdapter):
+         else:
+             kwargs["temperature"] = self.temperature
+ 
+-        response = self.client.responses.create(**kwargs)
++        # Zadum pilot: emulated context window (LAB_CONTEXT_CAP), as in the Fireworks adapter
++        cap = int(os.environ.get("LAB_CONTEXT_CAP", "0"))
++        if cap:
++            n_new = len(self._context) - getattr(self, "_n_ctx", 0)
++            new = self._context[-n_new:] if n_new > 0 else []
++            est = getattr(self, "_last_prompt", 0) + sum(len(json.dumps(x if isinstance(x, dict) else self._item_to_dict(x), default=str, ensure_ascii=False)) for x in new) * 2 // 7
++            if not getattr(self, "_n_ctx", 0): est = sum(len(json.dumps(x if isinstance(x, dict) else self._item_to_dict(x), default=str, ensure_ascii=False)) for x in self._context) * 2 // 7 + len(self._system_instructions or "") * 2 // 7
++            if est + 8192 > cap:
++                raise RuntimeError(f"context_length_exceeded: emulated {cap}-token window (estimated prompt {est:,})")
++        resamples = int(os.environ.get("LAB_RESAMPLE_LENGTH", "0"))
++        for draw in range(resamples + 1):  # a response cut at the output limit without a tool call is redrawn
++            response, last_error = None, None
++            for attempt in range(_MAX_RETRIES):
++                try:
++                    response = self.client.responses.create(**kwargs); break
++                except (openai.RateLimitError, openai.APIConnectionError, openai.InternalServerError) as e:
++                    last_error = e
++                    if attempt < _MAX_RETRIES - 1: time.sleep(min(60, 15 * (attempt + 1)))
++            if response is None:
++                raise last_error
++            u = response.usage
++            if u and os.environ.get("LAB_USAGE_LOG"):
++                dt = getattr(u, "input_tokens_details", None)
++                cached = getattr(dt, "cached_tokens", 0) or 0; write = getattr(dt, "cache_write_tokens", 0) or 0
++                with open(os.environ["LAB_USAGE_LOG"], "a") as f:
++                    f.write(json.dumps({"prompt": u.input_tokens, "cached": cached, "cache_write": write, "completion": u.output_tokens, "finish": response.status}) + "\n")
++            cut = response.status == "incomplete" and not any(i.type == "function_call" for i in response.output)
++            if cut and os.environ.get("LAB_DEBUG_DIR"):
++                os.makedirs(os.environ["LAB_DEBUG_DIR"], exist_ok=True)
++                with open(os.path.join(os.environ["LAB_DEBUG_DIR"], f"length_{int(time.time())}_draw{draw}.json"), "w") as f:
++                    json.dump([self._item_to_dict(i) for i in response.output], f, default=str)
++            if not cut or draw == resamples:
++                break
++        self._last_prompt = (u.input_tokens + u.output_tokens) if u else 0
+ 
+         # Extract tool calls and text from output items
+         tool_calls = []
+@@ -80,6 +119,7 @@ class OpenAIAdapter(ModelAdapter):
+ 
+         # Append output items to context for next turn
+         self._context.extend(output_items)
++        self._n_ctx = len(self._context)
+ 
+         # Build message dict (for transcript logging)
+         message = {
 diff --git a/harness/run.py b/harness/run.py
 index f306576e..a409222e 100644
 --- a/harness/run.py
@@ -190,7 +326,7 @@ index f306576e..a409222e 100644
  
      # Run the agent
 diff --git a/harness/tools.py b/harness/tools.py
-index 67e2b2e5..81234cd4 100644
+index 67e2b2e5..4653c83b 100644
 --- a/harness/tools.py
 +++ b/harness/tools.py
 @@ -24,6 +24,7 @@ Architecture:
@@ -213,7 +349,7 @@ index 67e2b2e5..81234cd4 100644
 +        "action=outline: every document with its size and title (no document), or one document's headings and clause "
 +        "numbers. action=find: the passages most relevant to `query` (all documents, or `document`), each with its "
 +        "document, section, clause number and paragraph id (¶). action=show: paragraphs of `document` in full; `query` = "
-+        "a clause number (4.2) or a ¶ range (62-73). action=changes: the tracked changes (insertions / deletions) in "
++        "a clause number (4.2) or a ¶ range (62-73); no query: the document from the top, a page at a time. action=changes: the tracked changes (insertions / deletions) in "
 +        "`document`, clause by clause; `query` puts the relevant ones first. action=compare: two versions of an agreement "
 +        "aligned paragraph by paragraph (`document` = older, `against` = newer), word-level differences. Long answers "
 +        "page with `offset`."

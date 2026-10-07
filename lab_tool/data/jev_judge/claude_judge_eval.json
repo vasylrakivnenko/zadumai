@@ -1,0 +1,20 @@
+{
+ "model": "claude-sonnet-5",
+ "cost_usd": 7.17,
+ "errors": 0,
+ "recorded_uncertain": {
+  "n": 136,
+  "one_recorded_pass": 0.9632,
+  "one_recorded_pass_kappa": 0.919,
+  "kimi26": 0.8456,
+  "kimi26_kappa": 0.667,
+  "luna_max": 0.8382,
+  "luna_max_kappa": 0.67
+ },
+ "per_call": {
+  "input_tokens": 38732,
+  "cached_share": 0.727,
+  "output_tokens": 194,
+  "usd": 0.0508
+ }
+}

@@ -1,0 +1,815 @@
+{
+ "criteria": [
+  {
+   "id": "C-001",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's single 3-year renewal option exercisable at Halcyon's sole discretion as a deviation from the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-002",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the sole-discretion renewal deviation as High Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-003",
+   "logic": "any",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends replacing the sole-discretion renewal with a mutual renewal option.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends automatic renewal with 180-day termination notice.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-004",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's silence on channel restrictions as a deviation from the playbook's Grant of Rights requirements in Section A.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-005",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends expressly defining DTC e-commerce as an approved channel.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends expressly defining specialty retail as an approved channel.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends expressly defining up to 150 department-store doors as an approved channel.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-006",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's Net Sales definition, which excludes only returns, as a deviation from the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-007",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends including deductions for returns in the Net Sales definition.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends including deductions for allowances in the Net Sales definition.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends including deductions for shipping/freight in the Net Sales definition.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends including deductions for sales taxes in the Net Sales definition.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends including deductions for chargebacks in the Net Sales definition.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-008",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's 45-business-day QC review period with deemed disapproval on silence as a deviation from the playbook's 15-business-day standard with deemed approval on silence.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-009",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the QC review period deviation as High Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-010",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a 15-business-day QC review period.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends deemed approval if there is silence during the QC review period.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-011",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's one-way indemnity\u2014under which only the licensee indemnifies the licensor, with no reciprocal licensor indemnity for IP infringement or title defects\u2014as a deviation from the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-012",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the one-way indemnification deviation as Critical Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-013",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends mutual indemnification.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends an express licensor indemnity for third-party IP infringement claims.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends an express licensor indemnity for title defects in the Licensed Marks.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-014",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's aggregate liability cap of $2,750,000, equal to the upfront license fee, as a deviation from the playbook's cap tied to trailing 12-month royalties paid or total fees paid, whichever is greater.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-015",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a liability cap tied to trailing 12-month royalties paid or total fees paid, whichever is greater.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-016",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo mentions or quantifies the disparity between the $2,750,000 draft cap and the $11,750,000 total minimum financial commitment from the GAMR schedule.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-017",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's broad consequential-damages waiver with no carve-outs as a deviation from the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-018",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a consequential-damages waiver carve-out for IP infringement.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends a consequential-damages waiver carve-out for indemnity obligations.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends a consequential-damages waiver carve-out for breaches of confidentiality.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-019",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's CGL insurance requirement of $10M per-occurrence / $20M aggregate as a deviation from the playbook standard of $5M per-occurrence / $10M aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-020",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the CGL insurance deviation as Medium Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-021",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends reducing CGL insurance to $5M per-occurrence / $10M aggregate.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-022",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies Halcyon's right to terminate for convenience on 90 days' notice after Year 1 as a deviation from the playbook, which prohibits licensor convenience termination during the initial term.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-023",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the licensor convenience termination provision as Critical Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-024",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends deleting the licensor convenience termination right entirely.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-025",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's 10-business-day cure period for monetary defaults as a deviation from the playbook's 30-calendar-day requirement.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies the draft's 20-business-day cure period for non-monetary defaults as a deviation from the playbook's 60-calendar-day requirement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-026",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends a 30-calendar-day cure period for monetary defaults.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends a 60-calendar-day cure period for non-monetary defaults.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-027",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's 60-day post-termination sell-off period as a deviation from the playbook's 180-day standard.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-028",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends extending the sell-off period to 180 days.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-029",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's assignment to Halcyon of all derivative works, co-branded trade dress, and packaging designs created by Vexillum as a deviation from the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-030",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the IP assignment/creative contributions deviation as High Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-031",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends that Vexillum retain ownership of its original creative contributions.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends a royalty-free license back to Halcyon limited to the licensed-products context.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-032",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the absence of a licensor warranty that the Licensed Marks are valid, subsisting, and free of encumbrances as a deviation from the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-033",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the absence of a licensor IP warranty as High Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-034",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends adding an express warranty from Halcyon that the Licensed Marks are valid, subsisting, and unencumbered.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-035",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's 24-month post-term non-compete barring Vexillum from licensing any third-party marks in premium home goods as a deviation from the playbook.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-036",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the 24-month post-term non-compete as Critical Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-037",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo's primary recommendation is to delete the non-compete.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo's fallback is no more than a 6-month non-solicitation of Halcyon's sub-licensees.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-038",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's New York governing law as a deviation from the playbook's preference for Delaware law and AAA Commercial Arbitration in Chicago, IL.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies the draft's exclusive jurisdiction in NY Supreme Court, NY County as a deviation from the playbook's preference for Delaware law and AAA Commercial Arbitration in Chicago, IL.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-039",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo rates the governing law/dispute resolution deviation as Medium Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-040",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends Delaware law.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends AAA Commercial Arbitration in Chicago, IL.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-041",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo identifies the draft's once-per-calendar-year audit limit as a deviation from the playbook's standards.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies the draft's 30 days' notice for audits as a deviation from the playbook's standards.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies the absence of a specified look-back period in the draft as a deviation from the playbook's standards.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-042",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo recommends allowing audits twice per calendar year.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends 15 business days' notice for audits.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo recommends a 3-year audit look-back.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-043",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline includes AURELIA, Class 021, with USPTO registration number 5,417,832.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline includes AURELIA & Design, Classes 020 and 021, with USPTO registration number 5,590,114.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline includes AURELIA MAISON, Class 024, with USPTO registration number 6,012,447.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-044",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "The memo rates at least three items as Critical Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the one-way indemnity as Critical Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates licensor convenience termination as Critical Risk.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo rates the 24-month post-term non-compete as Critical Risk.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-045",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Every deviation flagged in the memo is assigned a risk rating of Critical, High, Medium, or Low.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-046",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Any Year 1 GAMR figure stated in either deliverable is $1,200,000.",
+     "pass_if": true
+    },
+    {
+     "s": "Any Year 2 GAMR figure stated in either deliverable is $1,500,000.",
+     "pass_if": true
+    },
+    {
+     "s": "Any Year 3 GAMR figure stated in either deliverable is $1,800,000.",
+     "pass_if": true
+    },
+    {
+     "s": "Any Year 4 GAMR figure stated in either deliverable is $2,100,000.",
+     "pass_if": true
+    },
+    {
+     "s": "Any Year 5 GAMR figure stated in either deliverable is $2,400,000.",
+     "pass_if": true
+    },
+    {
+     "s": "Any annual GAMR step-up stated in either deliverable is $300,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-047",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Any upfront license fee figure stated in either deliverable is $2,750,000.",
+     "pass_if": true
+    },
+    {
+     "s": "Any total minimum financial commitment figure stated in either deliverable is $11,750,000.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-048",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo is addressed to Nathaniel R. Okonkwo.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-049",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "At least one deliverable identifies Meridian & Calloway LLP as the preparing firm.",
+     "pass_if": true
+    },
+    {
+     "s": "At least one deliverable identifies Vexillum Brands, Inc. as the client.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-050",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo references or targets a return date of December 2, 2025.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-051",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each deviation flagged in the memo identifies the specific draft provision by section number, clause reference, or description of the draft language.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-052",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each deviation flagged in the memo states the corresponding playbook standard or requirement.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-053",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each deviation flagged in the memo includes a brief explanation of the exposure or business impact to Vexillum.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-054",
+   "logic": "all",
+   "whole_document": true,
+   "checks": [
+    {
+     "s": "Each deviation flagged in the memo includes a recommended negotiation position and/or fallback.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-055",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline proposes channel restrictions limiting distribution to DTC e-commerce.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline proposes channel restrictions limiting distribution to specialty retail.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline proposes channel restrictions limiting distribution to up to 150 department-store doors.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-056",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The redline shows marked-up Net Sales text adding deductions for allowances.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline shows marked-up Net Sales text adding deductions for shipping/freight.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline shows marked-up Net Sales text adding deductions for sales taxes.",
+     "pass_if": true
+    },
+    {
+     "s": "The redline shows marked-up Net Sales text adding deductions for chargebacks.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-057",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo cites the Licensed Marks registration summary's showing no recorded encumbrances as factual support for requesting an express IP validity and non-encumbrance warranty from Halcyon.",
+     "pass_if": true
+    }
+   ]
+  },
+  {
+   "id": "C-058",
+   "logic": "all",
+   "whole_document": false,
+   "checks": [
+    {
+     "s": "The memo states that Halcyon's headline financial terms reflect the October term sheet agreement.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies the upfront fee as $2,750,000 when describing the headline financial terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo accurately states the GAMR schedule when describing the headline financial terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo identifies the running royalty as 8% when describing the headline financial terms.",
+     "pass_if": true
+    },
+    {
+     "s": "The memo focuses financial-term deviations on definitional or structural issues, such as the Net Sales definition, liability cap formula, or crediting mechanics, rather than challenging the headline commercial numbers.",
+     "pass_if": true
+    }
+   ]
+  }
+ ],
+ "model": "gpt-6-luna"
+}

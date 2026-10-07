@@ -50,7 +50,7 @@ def store(text):
 
 
 def has_files(output_dir):
-    return any(os.path.isfile(f) and "/work/" not in f for f in glob.glob(f"{output_dir}/**/*", recursive=True))
+    return any(os.path.isfile(f) for f in glob.glob(f"{output_dir}/**/*", recursive=True))  # like LAB's _load_all_output (work/ included)
 
 
 if __name__ == "__main__":
